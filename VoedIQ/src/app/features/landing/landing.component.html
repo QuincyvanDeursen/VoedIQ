@@ -1,8 +1,49 @@
-<!-- component-name.component.html -->
-<div class="h-screen bg-primary ">
-  <div class="content">
-    <h1>Welkom op mijn website!</h1>
-    <p>Dit is de inhoud van het component met een S-vormige golf onderaan.</p>
-  </div>
+<div class="container w-full max-w-none">
 
+  <!-- component-name.component.html -->
+  <div
+    class=" flex flex-col xl:flex-row items-center justify-center min-h-screen md:px-12 px-6 max-w-[90%] 2xl:max-w-[70%] mx-auto ">
+    <div class="shape-divider-top">
+      <img src="logo.png" alt="VoedIQ Logo" class="h-16 object-contain bg-primary w-full" />
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path
+          d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+          class="shape-fill"></path>
+
+      </svg>
+    </div>
+    <!-- Linkerkolom: Afbeelding -->
+    <div class="w-full xl:w-1/2 flex justify-center background h-max-[10%] min-h-[30vh] md:min-h-[40vh]">
+
+    </div>
+    <!-- Rechterkolom: Tekst -->
+    <div class="w-full xl:w-1/2 md:text-left mt-6 md:mt-0 md:pl-12 z-10">
+      <h1 class="text-3xl md:text-5xl font-bold text-gray-900">Welkom bij <span class="text-accent">VoedIQ</span>!</h1>
+      <p class="text-2xl md:text-3xl text-gray-600 mt-4 text-justify">Wat goed dat je aan de slag wilt gaan met je
+        gezondheid en/of lichamelijke doelen! VoedIQ staat voor je klaar om je te voorzien van de juiste kennis en
+        handvaten. Maar eerst, wat is jouw naam?</p>
+      <input type="text" (keydown)="onKeydown($event)" placeholder="bijv. Quincy"
+        class=" input mt-8 border-2 border-primary placeholder:text-slate-400" [(ngModel)]="name" maxlength="15"
+        pattern="[A-Za-z\s]*" required />
+      <div class="flex mt-5 gap-2">
+        <!-- Eerste knop (1 kolom breed) -->
+        <button class="btn btn-lg mr-0 hover:bg-slate-700 bg-slate-600 text-white font-bold w-1/3">
+          Overslaan
+        </button>
+
+        <!-- Tweede knop (2 kolommen breed) -->
+        <button class="btn btn-lg btn-warning text-white font-bold w-2/3 " [disabled]="!name" (click)="submitName()">
+          Ga verder
+        </button>
+      </div>
+
+    </div>
+    <div class="shape-divider-bottom">
+      <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path
+          d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+          class="shape-fill"></path>
+      </svg>
+    </div>
+  </div>
 </div>

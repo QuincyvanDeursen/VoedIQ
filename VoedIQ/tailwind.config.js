@@ -3,7 +3,10 @@
 module.exports = {
   content: ["./src/**/*.{html,ts}"],
   theme: {
-    extend: {},
+    fontFamily: {
+      title: ["Poppins", "sans-serif"], // Voor titels (h1, h2, etc.)
+      body: ["Noto Sans", "sans-serif"], // Voor gewone tekst (p, span, etc.)
+    },
   },
   plugins: [
     require('flyonui'), 
