@@ -1,0 +1,56 @@
+.background {
+  background-image: url("../../../assets/images/landingpage/landingpage_background.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.shape-divider-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.shape-divider-top svg {
+  position: relative;
+  display: block;
+  width: calc(116% + 1.3px);
+  height: 40vh;
+}
+
+.shape-divider-top .shape-fill {
+  fill: #074530;
+}
+
+.shape-divider-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.shape-divider-bottom svg {
+  position: relative;
+  display: block;
+  width: calc(200% + 1.3px);
+  height: 312px;
+}
+
+.shape-divider-bottom .shape-fill {
+  fill: #074530;
+}
+
+.container {
+  background: rgb(140, 222, 193);
+  background: linear-gradient(
+    170deg,
+    rgba(140, 222, 193, 1) 0%,
+    rgba(255, 255, 255, 1) 70%
+  );
+}
