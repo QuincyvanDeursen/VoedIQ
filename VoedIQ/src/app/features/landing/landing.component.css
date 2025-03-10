@@ -18,7 +18,7 @@
   position: relative;
   display: block;
   width: calc(116% + 1.3px);
-  height: 40vh;
+  height: 300px;
 }
 
 .shape-divider-top .shape-fill {
