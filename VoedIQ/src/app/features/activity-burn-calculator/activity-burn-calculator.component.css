@@ -1,0 +1,15 @@
+.container {
+  background: rgb(140, 222, 193);
+  background: linear-gradient(
+    170deg,
+    rgba(140, 222, 193, 1) 0%,
+    rgba(255, 255, 255, 1) 70%
+  );
+}
+
+.background {
+  background-image: url("../../../assets/images/activity-bun-calculator/activity.svg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
