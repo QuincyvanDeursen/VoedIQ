@@ -1,0 +1,6674 @@
+[
+  {
+    "Category": "Beroep",
+    "Code": 11003,
+    "MET": 2,
+    "Description": "Actieve werkplek, loopband bureau, langzaam lopen 1.6 km/u of minder"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11004,
+    "MET": 2.8,
+    "Description": "Actieve werkplek, loopband bureau, lopen 1.6 - 3.2 km/u"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11001,
+    "MET": 3.5,
+    "Description": "Actieve werkplek, Pedaleer bureau (40 watt)"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11002,
+    "MET": 5.3,
+    "Description": "Actieve werkplek, Pedaleer bureau (80 watt)"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11000,
+    "MET": 2,
+    "Description": "Actieve werkplek, Pedaleer bureau, balansstoel/ballen, Algemeen, lichte inspanning"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11884,
+    "MET": 5,
+    "Description": "Airborne Shuffle, 4,0 tot 5,6 km/u, 20-30 kg belasting"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11008,
+    "MET": 4.8,
+    "Description": "Appelplukken"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11010,
+    "MET": 4,
+    "Description": "Bakkerij, algemeen, matige inspanning"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11015,
+    "MET": 2,
+    "Description": "Bakkerij, lichte inspanning"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11500,
+    "MET": 2.5,
+    "Description": "Bediening van zwaar materieel, geautomatiseerd, niet rijden"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11020,
+    "MET": 2.3,
+    "Description": "Boekbinden"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11260,
+    "MET": 5,
+    "Description": "Bosbouw, bijl hakken, langzaam, 1.25 kg bijl, 19 slagen/min, matige inspanning"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11262,
+    "MET": 8,
+    "Description": "Bosbouw, bijl hakken, snel, 1.25 kg bijl, 35 slagen/min, energieke inspanning"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11250,
+    "MET": 17.5,
+    "Description": "Bosbouw, bijl hakken, zeer snel, 1.25 kg bijl, 51 slagen/min, uiterst intensieve inspanning"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11266,
+    "MET": 8.5,
+    "Description": "Bosbouw, hevige inspanning (bijv. schorsen, vellen of snoeien van bomen, dragen of stapelen van hout, zaaien, handzagen)"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11264,
+    "MET": 5,
+    "Description": "Bosbouw, matige inspanning (bijv. zagen met een kettingzaag, wieden, schoffelen)"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11124,
+    "MET": 2.3,
+    "Description": "Bouw, betonstaal, staaf buigen/fixen"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11120,
+    "MET": 4,
+    "Description": "Bouw, buiten, renovaties, nieuwe structuren (bijv. dakreparaties, divers werk)"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11240,
+    "MET": 8,
+    "Description": "Brandweerman, algemeen"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11245,
+    "MET": 8,
+    "Description": "Brandweerman, ladder beklimmen met volledige uitrusting"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11244,
+    "MET": 6.8,
+    "Description": "Brandweerman, redden van slachtoffers, auto-ongelukken"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11246,
+    "MET": 9,
+    "Description": "Brandweerman, slangen slepen, apparatuur dragen"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11495,
+    "MET": 12,
+    "Description": "Duiken of SCUBA-duiken als amfibische soldaat, Navy Seal"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11130,
+    "MET": 3.3,
+    "Description": "Elektrisch werk (bijv. bedrading aansluiten, draad splicen)"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11370,
+    "MET": 4.8,
+    "Description": "Furrer"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11060,
+    "MET": 8,
+    "Description": "Gemiddelde lasten dragen op trap, dozen verplaatsen (11-22 kg)"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11477,
+    "MET": 6.5,
+    "Description": "Hand- of ongeschoold werk, algemeen, hevige inspanning"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11475,
+    "MET": 2.8,
+    "Description": "Hand- of ongeschoold werk, algemeen, lichte inspanning"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11476,
+    "MET": 4.5,
+    "Description": "Hand- of ongeschoold werk, algemeen, matige inspanning"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11790,
+    "MET": 7.8,
+    "Description": "Het gebruik van zware gereedschappen (geen elektriciteit) zoals schep, houweel, tunnelstaaf, spade"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11780,
+    "MET": 6.3,
+    "Description": "Het gebruik van zware gereedschappen zoals pneumatische gereedschappen (bijv. pneumatische hamers, boren, enz.)"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11135,
+    "MET": 1.8,
+    "Description": "Ingenieur (bijv. mechanisch of elektrisch)"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11070,
+    "MET": 4,
+    "Description": "Kamermeisje, hotelkamer schoonmaken, bed opmaken, badkamer schoonmaken, kar duwen"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11378,
+    "MET": 1.8,
+    "Description": "Kapper (bijv. vlechten, manicure, make-up artist)"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11413,
+    "MET": 3,
+    "Description": "Keukenmeid"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11730,
+    "MET": 2.5,
+    "Description": "Kleermaken, algemeen"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11740,
+    "MET": 1.8,
+    "Description": "Kleermaken, handnaaien"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11750,
+    "MET": 2.5,
+    "Description": "Kleermaken, machinaal naaien"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11720,
+    "MET": 2.3,
+    "Description": "Kleermaken, stof snijden"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11760,
+    "MET": 3.5,
+    "Description": "Kleermaken, strijken"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11763,
+    "MET": 2,
+    "Description": "Kleermaken, weven, lichte inspanning (bijv. afwerkingsoperaties, wassen, verven, inspecteren van stof, tellen van meters, administratief werk)"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11765,
+    "MET": 4,
+    "Description": "Kleermaken, weven, matige inspanning (bijv. spinnen en weven, dozen garen leveren aan spinners, het laden van een weefgetouw, garenwikkelen, cone-wikkelen, warpen, stof klappen)"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11115,
+    "MET": 2.5,
+    "Description": "Kok, chef-kok"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11192,
+    "MET": 4.5,
+    "Description": "Landbouw, dieren verzorgen (bijv. scheren van schapen, verzorgen van geboorten)"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11145,
+    "MET": 7.8,
+    "Description": "Landbouw, intensieve inspanning (bijv. hooien, stallen schoonmaken)"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11180,
+    "MET": 3.5,
+    "Description": "Landbouw, kleine dieren voeren"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11147,
+    "MET": 2,
+    "Description": "Landbouw, lichte inspanning (bijv. dierenstallen schoonmaken, voer voorbereiden)"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11146,
+    "MET": 4.8,
+    "Description": "Landbouw, matige inspanning (bijv. dieren voeren, vee drijven, mest verspreiden)"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11210,
+    "MET": 3.5,
+    "Description": "Landbouw, melken met de hand, pannen schoonmaken"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11220,
+    "MET": 1.3,
+    "Description": "Landbouw, melken met machine, lichte inspanning"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11222,
+    "MET": 3,
+    "Description": "Landbouw, melken van koeien, volledige melking, moderne melkstal"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11170,
+    "MET": 2.8,
+    "Description": "Landbouw, rijden van voertuigen (bijv. tractor of oogstmachine)"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11195,
+    "MET": 3.8,
+    "Description": "Landbouw, rijst, planten, graan malen"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11190,
+    "MET": 4.3,
+    "Description": "Landbouw, vee voeren, paarden"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11191,
+    "MET": 4.3,
+    "Description": "Landbouw, water dragen voor dieren"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11516,
+    "MET": 3,
+    "Description": "Loodgieterswerk"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11820,
+    "MET": 4,
+    "Description": "Lopen of trappen aflopen of staan, met voorwerpen van ongeveer 11 tot 22 kg dragen"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11830,
+    "MET": 5.5,
+    "Description": "Lopen of trappen aflopen of staan, met voorwerpen van ongeveer 22,5 tot 33,5 kg dragen"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11840,
+    "MET": 7,
+    "Description": "Lopen of trappen aflopen of staan, met voorwerpen van ongeveer 34 tot 45 kg dragen"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11850,
+    "MET": 7.3,
+    "Description": "Lopen of trappen aflopen of staan, met voorwerpen van ongeveer 45 kg of meer dragen"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11795,
+    "MET": 3.5,
+    "Description": "Lopen op het werk, 4,0 km/u, langzaam, met lichte voorwerpen minder dan 11 kg dragen"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11792,
+    "MET": 3.8,
+    "Description": "Lopen op het werk, 4,5 tot 5,5 km/u, in een kantooromgeving, gematigde snelheid, zonder iets te dragen"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11793,
+    "MET": 4.8,
+    "Description": "Lopen op het werk, 5,5 tot 6,3 km/u, in een kantooromgeving, snelle snelheid, zonder iets te dragen"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11791,
+    "MET": 2,
+    "Description": "Lopen op het werk, minder dan 3,2 km/u, zeer langzame snelheid, in een kantoor- of laboratoriumomgeving"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11797,
+    "MET": 3.8,
+    "Description": "Lopen, 4,0 km/u, langzaam, met zware voorwerpen meer dan 11 kg dragen"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11800,
+    "MET": 4.5,
+    "Description": "Lopen, 4,8 km/u, gematigd en met lichte voorwerpen minder dan 11 kg dragen"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11810,
+    "MET": 4.5,
+    "Description": "Lopen, 5,6 km/u, snel en met voorwerpen minder dan 11 kg dragen"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11796,
+    "MET": 3,
+    "Description": "Lopen, dingen verzamelen op het werk, klaar om te vertrekken"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11805,
+    "MET": 3.8,
+    "Description": "Lopen, een rolstoel duwen"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11006,
+    "MET": 3,
+    "Description": "Luchtvaart stewardess"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11450,
+    "MET": 5,
+    "Description": "Machinebewerking, bedienen van de ponspers, matige inspanning"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11430,
+    "MET": 3,
+    "Description": "Machinebewerking, lichte tot matige inspanning (bijv. machinale bewerking, werken met plaatmetaal, machinefitter, draaien, lassen)"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11860,
+    "MET": 2.3,
+    "Description": "Magazijn/Verzendcentrum, laden/lossen van dozen"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11862,
+    "MET": 4.3,
+    "Description": "Magazijn/Verzendcentrum, verplaatsen van dozen (~5 kg)"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11472,
+    "MET": 1.8,
+    "Description": "Manager, vastgoed"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11485,
+    "MET": 5.5,
+    "Description": "Massagetherapeut, staand"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11482,
+    "MET": 2.5,
+    "Description": "Metselen, beton, lichte inspanning"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11480,
+    "MET": 4.3,
+    "Description": "Metselen, beton, matige inspanning"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11493,
+    "MET": 8.5,
+    "Description": "Mijnbouw, algemene diensten, boren, mijnwerkondersteuning (mechanisch, lassen, pijpinstallatie, algemene constructie)"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11892,
+    "MET": 6,
+    "Description": "Militaire activiteiten, arteriële veldvoorbereiding, defensieve posities graven"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11381,
+    "MET": 4.3,
+    "Description": "Paard, voeren, water geven, stallen schoonmaken, wandelen en tillen van lasten"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11390,
+    "MET": 7.8,
+    "Description": "Paardrennen, galopperen, draven"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11400,
+    "MET": 6.3,
+    "Description": "Paardrennen, Jockey, draven"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11410,
+    "MET": 2.3,
+    "Description": "Paardrennen, Jockey, wandelen"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11383,
+    "MET": 4.5,
+    "Description": "Paardrijden, werken, koeien snijden"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11380,
+    "MET": 7.3,
+    "Description": "Paardverzorging, inclusief voeren, stallen schoonmaken, wassen, borstelen, scheren, longeren en het trainen van paarden"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11650,
+    "MET": 2.3,
+    "Description": "Patiëntenzorg, gezondheidsactiviteiten"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11660,
+    "MET": 3.5,
+    "Description": "Patiëntenzorg, kamer schoonmaken/voorbereiding"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11528,
+    "MET": 4,
+    "Description": "Politie, arrestatie maken, staand"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11526,
+    "MET": 2,
+    "Description": "Politie, auto besturen, zittend"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11527,
+    "MET": 1.3,
+    "Description": "Politie, rijden in politieauto, zittend"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11525,
+    "MET": 2.5,
+    "Description": "Politie, verkeer regelen, staand"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11524,
+    "MET": 3.8,
+    "Description": "Politieagent, wandelen"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11488,
+    "MET": 3.5,
+    "Description": "Postbezorging, Elektronisch ondersteunde fiets"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11487,
+    "MET": 1.5,
+    "Description": "Postbezorging, motorfiets"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11486,
+    "MET": 2.3,
+    "Description": "Postbode, wandelen om post te bezorgen"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11520,
+    "MET": 2,
+    "Description": "Printen, papierindustrie, staand werk"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11570,
+    "MET": 6.5,
+    "Description": "Schaufelen, 4,5 tot 6,75 kg/min, hevige inspanning"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11540,
+    "MET": 7.3,
+    "Description": "Schaufelen, greppels graven"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11550,
+    "MET": 8.8,
+    "Description": "Schaufelen, meer dan 7,25 kg/min, diepe graafwerkzaamheden, hevige inspanning"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11560,
+    "MET": 5,
+    "Description": "Schaufelen, minder dan 4,5 kg/min, matige inspanning"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11514,
+    "MET": 3.3,
+    "Description": "Schilderen, huis, meubels, matige inspanning"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11530,
+    "MET": 2,
+    "Description": "Schoenmakerij, algemeen"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11125,
+    "MET": 2.3,
+    "Description": "Schoonmaakwerk, lichte inspanning (bijv. schoonmaken van wastafels, stofzuigen)"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11126,
+    "MET": 3.8,
+    "Description": "Schoonmaakwerk, matige inspanning (bijv. vloeren boenen, stofzuigen)"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11072,
+    "MET": 4.3,
+    "Description": "Schoonmaken, stofzuigen commerciële ruimte"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11420,
+    "MET": 3,
+    "Description": "Slotenmaker"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11888,
+    "MET": 8.5,
+    "Description": "Soldaten, lopen, 4,5 km/u, 10% helling, tot 21,5 kg belasting"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11889,
+    "MET": 11,
+    "Description": "Soldaten, lopen, 4,5 km/u, 15% helling, tot 21,5 kg belasting"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11887,
+    "MET": 6,
+    "Description": "Soldaten, lopen, 4,5 km/u, 5% helling, tot 21,5 kg belasting"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11886,
+    "MET": 6.3,
+    "Description": "Soldaten, militaire mars met lading, variërend terrein, 25-40 kg belasting"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11880,
+    "MET": 3.5,
+    "Description": "Soldaten, militaire mars, 2,5 tot 4 km/u"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11882,
+    "MET": 4,
+    "Description": "Soldaten, militaire mars, 2,5 tot 4 km/u, 10 tot 30 kg belasting"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11710,
+    "MET": 8.3,
+    "Description": "Staalfabriek, hevige inspanning (bijv. handrollen, merchant mill rolling, slakken verwijderen, oven bedienen)"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11708,
+    "MET": 5.3,
+    "Description": "Staalfabriek, matige inspanning (bijv. afwerken, smeden, mallen kantelen)"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11583,
+    "MET": 1.3,
+    "Description": "Staand werkstation, typen, computerwerk"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11610,
+    "MET": 3.3,
+    "Description": "Staand, lichte/matige inspanning (bijv. assembleren/repareren van zware onderdelen, lassen, onderdelen in voorraad leggen, autoreparatie, dozen inpakken, verpleegkundige patiëntenzorg, wasserij)"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11620,
+    "MET": 3.8,
+    "Description": "Staand, matige inspanning, afwisselend tillen van 22,5 kg, touwen aanslaan of draaien"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11615,
+    "MET": 4.5,
+    "Description": "Staand, matige inspanning, tillen van voorwerpen continu, 4,5 - 9 kg, met beperkte wandel- of rusttijd"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11630,
+    "MET": 4.5,
+    "Description": "Staand, matige/hevige taken (bijv. tillen van meer dan 22,5 kg, metselwerk, schilderen, behangen)"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11600,
+    "MET": 1.8,
+    "Description": "Staande taken, lichte inspanning (bijv. barwerk, winkelbediende, assembleren, archiveren, dupliceren, bibliothecaris, een kerstboom oprichten, staand en praten op het werk, kleding wisselen bij lichamelijke opvoeding)"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11100,
+    "MET": 5.5,
+    "Description": "Steenkoolmijn, algemeen"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11080,
+    "MET": 5.3,
+    "Description": "Steenkoolmijn, boren van steenkool, rotsen"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11090,
+    "MET": 5,
+    "Description": "Steenkoolmijn, opbouwen van ondersteuning"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11110,
+    "MET": 6.3,
+    "Description": "Steenkoolmijn, steenkool scheppen, met de hand"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11529,
+    "MET": 9,
+    "Description": "Tegen-terrorisme manoeuvres, gebouw ontruimen"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11038,
+    "MET": 2.5,
+    "Description": "Timmerwerk, algemeen, lichte inspanning"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11040,
+    "MET": 4.3,
+    "Description": "Timmerwerk, algemeen, matige inspanning"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11042,
+    "MET": 7,
+    "Description": "Timmerwerk, algemeen, zware of energieke inspanning"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11415,
+    "MET": 4,
+    "Description": "Tuinonderhoud, tuinwerk algemeen"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11416,
+    "MET": 3,
+    "Description": "Tuinonderhoud, wieden, met gas aangedreven gereedschap"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11770,
+    "MET": 1.3,
+    "Description": "Typen, elektrisch, handmatig of computer"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11490,
+    "MET": 7.5,
+    "Description": "Verhuizen, dragen of duwen van zware objecten, 34 kg of meer, alleen actieve tijd"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11247,
+    "MET": 3.5,
+    "Description": "Vissen, commercieel, lichte inspanning"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11248,
+    "MET": 5,
+    "Description": "Vissen, commercieel, matige inspanning"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11767,
+    "MET": 2,
+    "Description": "Vrachtwagenchauffeur, bezorging vrachtwagen, taxi, pendelbus, schoolbus"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11766,
+    "MET": 6.5,
+    "Description": "Vrachtwagenchauffeur, laden en lossen van vrachtwagen, vastbinden van lading, staan, lopen en zware lasten dragen"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11375,
+    "MET": 3.8,
+    "Description": "Vuilnisman, wandelen, vuilnis in de vrachtwagen dumpen, straatreiniging"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11418,
+    "MET": 3.3,
+    "Description": "Wasserettearbeider"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11035,
+    "MET": 2,
+    "Description": "Wegbouw, verkeer regelen, staand"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11030,
+    "MET": 6,
+    "Description": "Wegbouw, zwaar materieel besturen"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11870,
+    "MET": 3,
+    "Description": "Werken in een scènewerkplaats, theateracteur, backstage medewerker"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11510,
+    "MET": 3.5,
+    "Description": "Werken in sinaasappelboomgaard, fruit plukken"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11582,
+    "MET": 1.3,
+    "Description": "Zittend, computerwerk"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11593,
+    "MET": 2.8,
+    "Description": "Zittend, lesgeven in stretchoefeningen of yoga, of lichte inspanning oefenlessen"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11580,
+    "MET": 1.5,
+    "Description": "Zittende taken, lichte inspanning (bijv. kantoorwerk, chemisch labwerk, lichte montage-reparatie, horloge reparatie, lezen, bureauwerk)"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11590,
+    "MET": 2.5,
+    "Description": "Zittende taken, matige inspanning (bijv. zware hendels duwen, grasmaaier/heftruck rijden, kraanbediening)"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11585,
+    "MET": 1.3,
+    "Description": "Zittende vergaderingen, lichte inspanning, algemeen en/of met praten betrokken (bijv. eten tijdens een zakenbijeenkomst)"
+  },
+  {
+    "Category": "Beroep",
+    "Code": 11050,
+    "MET": 8,
+    "Description": "Zware lasten dragen (bijv. bakstenen, gereedschap)"
+  },
+  {
+    "Category": "Dansen",
+    "Code": 3005,
+    "MET": 6,
+    "Description": "Afro-Cubaanse salsa (Cuban cha-cha-cha, mambo, Afro rumba, contratiempo son stappen, orisha/santo bewegingen)"
+  },
+  {
+    "Category": "Dansen",
+    "Code": 3050,
+    "MET": 5.5,
+    "Description": "Anishinaabe Jingle dans, vlotte pas, andere traditionele Amerikaanse Indianen dansen uitgevoerd door vrouwen, gematigde inspanning"
+  },
+  {
+    "Category": "Dansen",
+    "Code": 3010,
+    "MET": 5,
+    "Description": "Ballet, modern, of jazz algemeen, repetitie of les"
+  },
+  {
+    "Category": "Dansen",
+    "Code": 3012,
+    "MET": 6.8,
+    "Description": "Ballet, modern, of jazz, uitvoering, intensieve inspanning"
+  },
+  {
+    "Category": "Dansen",
+    "Code": 3011,
+    "MET": 6.3,
+    "Description": "Balletoefeningen (plie, tendus, jetes, rond de Jambes, fondus, grand battement, grand adage, sautes, temp Leve's)"
+  },
+  {
+    "Category": "Dansen",
+    "Code": 3040,
+    "MET": 3,
+    "Description": "Ballroom, langzaam, voorbeelden: wals, foxtrot, langzaam dansen, samba, tango, rumba, 19e-eeuwse dans, mambo, cha-cha"
+  },
+  {
+    "Category": "Dansen",
+    "Code": 3038,
+    "MET": 11.3,
+    "Description": "Ballroomdans, competitief, algemeen"
+  },
+  {
+    "Category": "Dansen",
+    "Code": 3039,
+    "MET": 13,
+    "Description": "Ballroomdans, DanceSport competitie (moderne wals, tango, Weense wals, slowfox, quickstep, samba, chacha, rumba, paso doble, jive)"
+  },
+  {
+    "Category": "Dansen",
+    "Code": 3042,
+    "MET": 6,
+    "Description": "Ballroomdans, recreatief (Wals, Foxtrot, Cha-cha, Swing)"
+  },
+  {
+    "Category": "Dansen",
+    "Code": 3030,
+    "MET": 5.5,
+    "Description": "Ballroomdans, snel"
+  },
+  {
+    "Category": "Dansen",
+    "Code": 3060,
+    "MET": 3.5,
+    "Description": "Caribische dans (Abakua, Beguine, Bellair, Bongo, Brukin's, Caribbean Quadrills, Dinki Mini, Gere, Gumbay, Ibo, Jonkonnu, Kumina, Oreisha, Jambu)"
+  },
+  {
+    "Category": "Dansen",
+    "Code": 3029,
+    "MET": 7.3,
+    "Description": "Chinese vierkantdans, aerobe dans"
+  },
+  {
+    "Category": "Dansen",
+    "Code": 3028,
+    "MET": 5.5,
+    "Description": "Chinese vierkantdans, ballet & Tibetaanse dans"
+  },
+  {
+    "Category": "Dansen",
+    "Code": 3025,
+    "MET": 4.5,
+    "Description": "Etnische of culturele dans (bijv. Grieks, Midden-Oosters, hula, salsa, merengue, bamba y plena, flamenco, buikdansen, swing)"
+  },
+  {
+    "Category": "Dansen",
+    "Code": 3075,
+    "MET": 8.5,
+    "Description": "Flamenco dans"
+  },
+  {
+    "Category": "Dansen",
+    "Code": 3070,
+    "MET": 3.8,
+    "Description": "Hedendaagse dans, algemeen"
+  },
+  {
+    "Category": "Dansen",
+    "Code": 3072,
+    "MET": 4.3,
+    "Description": "Hedendaagse dans, nachtclub"
+  },
+  {
+    "Category": "Dansen",
+    "Code": 3078,
+    "MET": 4.5,
+    "Description": "Jazzdans, algemeen"
+  },
+  {
+    "Category": "Dansen",
+    "Code": 3080,
+    "MET": 10.3,
+    "Description": "Musical Theater, zingen/dansen"
+  },
+  {
+    "Category": "Dansen",
+    "Code": 3031,
+    "MET": 9.8,
+    "Description": "Nachtclub- of volksdans, intensieve inspanning (bijv. nachtclub, disco, volksdans, linedance, Ierse stepdans, polka, contra)"
+  },
+  {
+    "Category": "Dansen",
+    "Code": 3085,
+    "MET": 5.8,
+    "Description": "Polynesische dans, Hawaiiaanse hula langzaam, Maori haka, Tongaans"
+  },
+  {
+    "Category": "Dansen",
+    "Code": 3086,
+    "MET": 7,
+    "Description": "Polynesische dans, Hawaiiaanse hula snel, Samoaanse sasa, Fijiaanse stijl snel, Filipijnse Tinikling"
+  },
+  {
+    "Category": "Dansen",
+    "Code": 3087,
+    "MET": 8.8,
+    "Description": "Polynesische dans, Samoaanse klap, Tahitiaanse dans"
+  },
+  {
+    "Category": "Dansen",
+    "Code": 3090,
+    "MET": 4.8,
+    "Description": "Salsa dansen, met partner"
+  },
+  {
+    "Category": "Dansen",
+    "Code": 3091,
+    "MET": 6.3,
+    "Description": "Salsa dansen, naar een video"
+  },
+  {
+    "Category": "Dansen",
+    "Code": 3093,
+    "MET": 5.5,
+    "Description": "Square Dance, Amerikaanse Westerse, country"
+  },
+  {
+    "Category": "Dansen",
+    "Code": 3014,
+    "MET": 4.8,
+    "Description": "Tapdans"
+  },
+  {
+    "Category": "Dansen",
+    "Code": 3033,
+    "MET": 5,
+    "Description": "Volksdans, gematigde inspanning"
+  },
+  {
+    "Category": "Overige Activiteiten",
+    "Code": 9000,
+    "MET": 1.3,
+    "Description": "Bordspel spelen, zittend"
+  },
+  {
+    "Category": "Overige Activiteiten",
+    "Code": 9005,
+    "MET": 2.5,
+    "Description": "Casino gokken, staand"
+  },
+  {
+    "Category": "Overige Activiteiten",
+    "Code": 9015,
+    "MET": 1.5,
+    "Description": "Documenten kopiëren of archiveren, staand"
+  },
+  {
+    "Category": "Overige Activiteiten",
+    "Code": 9010,
+    "MET": 1.5,
+    "Description": "Kaartspelen, zittend"
+  },
+  {
+    "Category": "Overige Activiteiten",
+    "Code": 9110,
+    "MET": 2.5,
+    "Description": "Kamperen met staan, wandelen, zitten, lichte tot matige inspanning"
+  },
+  {
+    "Category": "Overige Activiteiten",
+    "Code": 9025,
+    "MET": 1,
+    "Description": "Lachen, zittend"
+  },
+  {
+    "Category": "Overige Activiteiten",
+    "Code": 9101,
+    "MET": 2.5,
+    "Description": "Retreat/familiebijeenkomst activiteiten, spelen met kinderen"
+  },
+  {
+    "Category": "Overige Activiteiten",
+    "Code": 9100,
+    "MET": 1.5,
+    "Description": "Retreat/familiebijeenkomst activiteiten, zitten, ontspannen, praten, eten"
+  },
+  {
+    "Category": "Overige Activiteiten",
+    "Code": 9105,
+    "MET": 2,
+    "Description": "Rondreizen/reizen/vakantie met voertuig"
+  },
+  {
+    "Category": "Overige Activiteiten",
+    "Code": 9106,
+    "MET": 3.5,
+    "Description": "Rondreizen/reizen/vakantie met wandelen"
+  },
+  {
+    "Category": "Overige Activiteiten",
+    "Code": 9013,
+    "MET": 1.5,
+    "Description": "Schaken, zittend"
+  },
+  {
+    "Category": "Overige Activiteiten",
+    "Code": 9095,
+    "MET": 3.5,
+    "Description": "Staan - kunst en ambacht, zand schilderen, snijden, weven, intensieve inspanning"
+  },
+  {
+    "Category": "Overige Activiteiten",
+    "Code": 9090,
+    "MET": 3.3,
+    "Description": "Staan - kunst en ambacht, zand schilderen, snijden, weven, matige inspanning"
+  },
+  {
+    "Category": "Overige Activiteiten",
+    "Code": 9070,
+    "MET": 1,
+    "Description": "Staan - lezen"
+  },
+  {
+    "Category": "Overige Activiteiten",
+    "Code": 9071,
+    "MET": 2.5,
+    "Description": "Staan: divers"
+  },
+  {
+    "Category": "Overige Activiteiten",
+    "Code": 9085,
+    "MET": 2.5,
+    "Description": "Staan: kunst en ambacht, zand schilderen, snijden, weven, lichte inspanning"
+  },
+  {
+    "Category": "Overige Activiteiten",
+    "Code": 9050,
+    "MET": 1.3,
+    "Description": "Staan: praten in persoon, aan de telefoon, computer, sms, schrijven"
+  },
+  {
+    "Category": "Overige Activiteiten",
+    "Code": 9020,
+    "MET": 1.8,
+    "Description": "Tekenen, schrijven, schilderen, staand"
+  },
+  {
+    "Category": "Overige Activiteiten",
+    "Code": 9036,
+    "MET": 2,
+    "Description": "Televisie kijken, stappen tijdens reclameonderbrekingen"
+  },
+  {
+    "Category": "Overige Activiteiten",
+    "Code": 9065,
+    "MET": 1.8,
+    "Description": "Zitten - in de klas, algemeen, inclusief notities maken of klasdiscussie"
+  },
+  {
+    "Category": "Overige Activiteiten",
+    "Code": 9060,
+    "MET": 1.5,
+    "Description": "Zitten - studeren, algemeen, inclusief lezen en/of schrijven, lichte inspanning"
+  },
+  {
+    "Category": "Overige Activiteiten",
+    "Code": 9115,
+    "MET": 1.5,
+    "Description": "Zitten bij een sportevenement, toeschouwer"
+  },
+  {
+    "Category": "Overige Activiteiten",
+    "Code": 9034,
+    "MET": 1.8,
+    "Description": "Zitten, typen of lezen op een balansstoel/stabiliteitsbal"
+  },
+  {
+    "Category": "Overige Activiteiten",
+    "Code": 9075,
+    "MET": 1.8,
+    "Description": "Zitten: kunst en ambacht, hout snijden, weven, wol spinnen, lichte inspanning"
+  },
+  {
+    "Category": "Overige Activiteiten",
+    "Code": 9080,
+    "MET": 3,
+    "Description": "Zitten: kunst en ambacht, hout snijden, weven, wol spinnen, matige inspanning"
+  },
+  {
+    "Category": "Overige Activiteiten",
+    "Code": 9030,
+    "MET": 1,
+    "Description": "Zitten: lezen, boek, krant, tijdschrift"
+  },
+  {
+    "Category": "Overige Activiteiten",
+    "Code": 9055,
+    "MET": 1.3,
+    "Description": "Zitten: praten in persoon, aan de telefoon, computer, sms, lichte inspanning"
+  },
+  {
+    "Category": "Overige Activiteiten",
+    "Code": 9040,
+    "MET": 1.3,
+    "Description": "Zitten: schrijven, bureauwerk, typen"
+  },
+  {
+    "Category": "Fietsen",
+    "Code": 1008,
+    "MET": 8.5,
+    "Description": "BMX-fietsen"
+  },
+  {
+    "Category": "Fietsen",
+    "Code": 1084,
+    "MET": 6,
+    "Description": "E-bike (elektrische ondersteuning) met lichte elektronische ondersteuning"
+  },
+  {
+    "Category": "Fietsen",
+    "Code": 1088,
+    "MET": 4,
+    "Description": "E-bike (elektrische ondersteuning) met sterke elektronische ondersteuning"
+  },
+  {
+    "Category": "Fietsen",
+    "Code": 1080,
+    "MET": 6.8,
+    "Description": "E-bike (elektrische ondersteuning) zonder elektronische ondersteuning"
+  },
+  {
+    "Category": "Fietsen",
+    "Code": 1070,
+    "MET": 5,
+    "Description": "Eenwieleren"
+  },
+  {
+    "Category": "Fietsen",
+    "Code": 1010,
+    "MET": 4,
+    "Description": "Fietsen, <16 km/u, recreatief, naar werk of voor plezier"
+  },
+  {
+    "Category": "Fietsen",
+    "Code": 1060,
+    "MET": 16.8,
+    "Description": "Fietsen, >32 km/u, wedstrijd, niet in slipstream"
+  },
+  {
+    "Category": "Fietsen",
+    "Code": 1020,
+    "MET": 6.8,
+    "Description": "Fietsen, 16-19 km/u, recreatief, langzaam, lichte inspanning"
+  },
+  {
+    "Category": "Fietsen",
+    "Code": 1066,
+    "MET": 9,
+    "Description": "Fietsen, 19 km/u, staand, handen op remgrepen, 60 rpm"
+  },
+  {
+    "Category": "Fietsen",
+    "Code": 1065,
+    "MET": 8.5,
+    "Description": "Fietsen, 19 km/u, zittend, handen op remgrepen of stuurbochten, 80 rpm"
+  },
+  {
+    "Category": "Fietsen",
+    "Code": 1030,
+    "MET": 8,
+    "Description": "Fietsen, 19-22 km/u, recreatief, gematigde inspanning"
+  },
+  {
+    "Category": "Fietsen",
+    "Code": 1040,
+    "MET": 10,
+    "Description": "Fietsen, 22-26 km/u, wedstrijd of recreatief, snel, intensieve inspanning"
+  },
+  {
+    "Category": "Fietsen",
+    "Code": 1050,
+    "MET": 12,
+    "Description": "Fietsen, 26-31 km/u, wedstrijd/niet in slipstream of >31 km/u in slipstream, zeer snel, wedstrijd algemeen"
+  },
+  {
+    "Category": "Fietsen",
+    "Code": 1014,
+    "MET": 7,
+    "Description": "Fietsen, algemeen"
+  },
+  {
+    "Category": "Fietsen",
+    "Code": 1305,
+    "MET": 8.8,
+    "Description": "Fietsen, high-intensity interval training (HIIT)"
+  },
+  {
+    "Category": "Fietsen",
+    "Code": 1013,
+    "MET": 5.8,
+    "Description": "Fietsen, op zand- of boerenweg, gematigd tempo"
+  },
+  {
+    "Category": "Fietsen",
+    "Code": 1018,
+    "MET": 3.5,
+    "Description": "Fietsen, recreatief 9 km/u"
+  },
+  {
+    "Category": "Fietsen",
+    "Code": 1019,
+    "MET": 5.8,
+    "Description": "Fietsen, recreatief, 15 km/u"
+  },
+  {
+    "Category": "Fietsen",
+    "Code": 1011,
+    "MET": 6.8,
+    "Description": "Fietsen, woon-werkverkeer, zelfgekozen tempo"
+  },
+  {
+    "Category": "Fietsen",
+    "Code": 1016,
+    "MET": 7,
+    "Description": "Fietsen, zelfgekozen gematigd tempo"
+  },
+  {
+    "Category": "Fietsen",
+    "Code": 1017,
+    "MET": 9,
+    "Description": "Fietsen, zelfgekozen intensief tempo"
+  },
+  {
+    "Category": "Fietsen",
+    "Code": 1015,
+    "MET": 4.3,
+    "Description": "Fietsen, zelfgekozen rustig tempo"
+  },
+  {
+    "Category": "Fietsen",
+    "Code": 1248,
+    "MET": 16.3,
+    "Description": "Hometrainer, >325 watt, zeer intensief"
+  },
+  {
+    "Category": "Fietsen",
+    "Code": 1224,
+    "MET": 6.8,
+    "Description": "Hometrainer, 101-125 watt"
+  },
+  {
+    "Category": "Fietsen",
+    "Code": 1228,
+    "MET": 8,
+    "Description": "Hometrainer, 126-150 watt"
+  },
+  {
+    "Category": "Fietsen",
+    "Code": 1232,
+    "MET": 10.3,
+    "Description": "Hometrainer, 151-199 watt"
+  },
+  {
+    "Category": "Fietsen",
+    "Code": 1236,
+    "MET": 10.8,
+    "Description": "Hometrainer, 200-229 watt, intensief"
+  },
+  {
+    "Category": "Fietsen",
+    "Code": 1240,
+    "MET": 12.5,
+    "Description": "Hometrainer, 230-250 watt, zeer intensief"
+  },
+  {
+    "Category": "Fietsen",
+    "Code": 1210,
+    "MET": 3.5,
+    "Description": "Hometrainer, 25-30 watt, zeer lichte tot lichte inspanning"
+  },
+  {
+    "Category": "Fietsen",
+    "Code": 1244,
+    "MET": 13.8,
+    "Description": "Hometrainer, 270-305 watt, zeer intensief"
+  },
+  {
+    "Category": "Fietsen",
+    "Code": 1214,
+    "MET": 4,
+    "Description": "Hometrainer, 50 watt, lichte inspanning"
+  },
+  {
+    "Category": "Fietsen",
+    "Code": 1216,
+    "MET": 5,
+    "Description": "Hometrainer, 60 watt, lichte tot gematigde inspanning"
+  },
+  {
+    "Category": "Fietsen",
+    "Code": 1218,
+    "MET": 5.8,
+    "Description": "Hometrainer, 70-80 watt"
+  },
+  {
+    "Category": "Fietsen",
+    "Code": 1220,
+    "MET": 6,
+    "Description": "Hometrainer, 90-100 watt, gematigd tot intensief"
+  },
+  {
+    "Category": "Fietsen",
+    "Code": 1200,
+    "MET": 6.8,
+    "Description": "Hometrainer, algemeen"
+  },
+  {
+    "Category": "Fietsen",
+    "Code": 1252,
+    "MET": 5.5,
+    "Description": "Hometrainer, alleen concentrisch, 100 W"
+  },
+  {
+    "Category": "Fietsen",
+    "Code": 1254,
+    "MET": 11,
+    "Description": "Hometrainer, alleen concentrisch, 200 W"
+  },
+  {
+    "Category": "Fietsen",
+    "Code": 1262,
+    "MET": 2.3,
+    "Description": "Hometrainer, alleen excentrisch, 100-149 W"
+  },
+  {
+    "Category": "Fietsen",
+    "Code": 1264,
+    "MET": 4,
+    "Description": "Hometrainer, alleen excentrisch, 200 W"
+  },
+  {
+    "Category": "Fietsen",
+    "Code": 1270,
+    "MET": 9,
+    "Description": "Hometrainer, RPM/Spinningles"
+  },
+  {
+    "Category": "Fietsen",
+    "Code": 1290,
+    "MET": 8.8,
+    "Description": "Interactief virtueel fietsen, indoor fiets ergometer"
+  },
+  {
+    "Category": "Fietsen",
+    "Code": 1009,
+    "MET": 8.5,
+    "Description": "Mountainbiken, algemeen"
+  },
+  {
+    "Category": "Fietsen",
+    "Code": 1003,
+    "MET": 14,
+    "Description": "Mountainbiken, bergop, intensief"
+  },
+  {
+    "Category": "Fietsen",
+    "Code": 1004,
+    "MET": 16,
+    "Description": "Mountainbiken, competitieve race"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12150,
+    "MET": 8,
+    "Description": "Hardlopen"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12060,
+    "MET": 10.5,
+    "Description": "Hardlopen, 10.7 km/u"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12070,
+    "MET": 11,
+    "Description": "Hardlopen, 11.3 km/u"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12080,
+    "MET": 11.8,
+    "Description": "Hardlopen, 12.1 km/u"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12090,
+    "MET": 12,
+    "Description": "Hardlopen, 12.9 km/u"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12100,
+    "MET": 12.5,
+    "Description": "Hardlopen, 13.8 km/u"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12110,
+    "MET": 13,
+    "Description": "Hardlopen, 14.5 km/u"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12115,
+    "MET": 14.8,
+    "Description": "Hardlopen, 15.0 km/u"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12120,
+    "MET": 14.8,
+    "Description": "Hardlopen, 16.1 km/u"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12130,
+    "MET": 16.8,
+    "Description": "Hardlopen, 17.7 km/u"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12132,
+    "MET": 18.5,
+    "Description": "Hardlopen, 19.3 km/u"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12134,
+    "MET": 19.8,
+    "Description": "Hardlopen, 20.9 km/u"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12135,
+    "MET": 23,
+    "Description": "Hardlopen, 22.5 km/u"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12508,
+    "MET": 8.5,
+    "Description": "Hardlopen, 5-6 km/u, 1-3 kg rugzak"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12028,
+    "MET": 6.5,
+    "Description": "Hardlopen, 6.4 tot 6.7 km/u"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12029,
+    "MET": 7.8,
+    "Description": "Hardlopen, 6.9 tot 7.7 km/u"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12510,
+    "MET": 9.5,
+    "Description": "Hardlopen, 6-7 km/u, 1-3 kg rugzak"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12512,
+    "MET": 9.8,
+    "Description": "Hardlopen, 7-8 km/u, 1-3 kg rugzak"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12030,
+    "MET": 8.5,
+    "Description": "Hardlopen, 8.0 tot 8.4 km/u"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12045,
+    "MET": 9,
+    "Description": "Hardlopen, 8.8 tot 9.3 km/u"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12514,
+    "MET": 12,
+    "Description": "Hardlopen, 8-9 km/u, 1-3 kg rugzak"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12050,
+    "MET": 9.3,
+    "Description": "Hardlopen, 9.6 tot 10.1 km/u"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12555,
+    "MET": 7.8,
+    "Description": "Hardlopen, blote voeten, 5-6 km/u"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12560,
+    "MET": 12,
+    "Description": "Hardlopen, blote voeten, 6-8 km/u"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12565,
+    "MET": 13.5,
+    "Description": "Hardlopen, blote voeten, 8-9 km/u"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12414,
+    "MET": 14,
+    "Description": "Hardlopen, gebogen loopband, 10-12 km/u"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12416,
+    "MET": 16.8,
+    "Description": "Hardlopen, gebogen loopband, 11-12 km/u"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12410,
+    "MET": 11,
+    "Description": "Hardlopen, gebogen loopband, 7-9 km/u"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12412,
+    "MET": 12,
+    "Description": "Hardlopen, gebogen loopband, 9-10 km/u"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12335,
+    "MET": 8.8,
+    "Description": "Hardlopen, heuvelopwaarts, 1.0-1.6 km/u, 30% helling"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12337,
+    "MET": 10.3,
+    "Description": "Hardlopen, heuvelopwaarts, 1.6-1.9 km/u, 30% helling"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12358,
+    "MET": 9.3,
+    "Description": "Hardlopen, heuvelopwaarts, 10.5-14.1 km/u, -3% tot -9%"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12265,
+    "MET": 15.5,
+    "Description": "Hardlopen, heuvelopwaarts, 11.3 km/u, 5% helling"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12361,
+    "MET": 13.8,
+    "Description": "Hardlopen, heuvelopwaarts, 13.8-16.9 km/u, -3% tot -9%"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12339,
+    "MET": 11.8,
+    "Description": "Hardlopen, heuvelopwaarts, 2.0-2.3 km/u, 30% helling"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12341,
+    "MET": 13.5,
+    "Description": "Hardlopen, heuvelopwaarts, 2.4-2.5 km/u, 30-40% helling"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12343,
+    "MET": 14.8,
+    "Description": "Hardlopen, heuvelopwaarts, 2.5-2.6 km/u, 30% helling"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12345,
+    "MET": 16.3,
+    "Description": "Hardlopen, heuvelopwaarts, 2.7-2.8 km/u, 30% helling"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12350,
+    "MET": 16,
+    "Description": "Hardlopen, heuvelopwaarts, 3.0-3.2 km/u, 10-30% helling"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12255,
+    "MET": 10.3,
+    "Description": "Hardlopen, heuvelopwaarts, 7.2 km/u, 5% helling"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12353,
+    "MET": 7.5,
+    "Description": "Hardlopen, heuvelopwaarts, 8.0-10.7 km/u, -10% tot -15%"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12325,
+    "MET": 17.5,
+    "Description": "Hardlopen, heuvelopwaarts, 8.0-9.5 km/u, 15% helling"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12355,
+    "MET": 9,
+    "Description": "Hardlopen, heuvelopwaarts, 9.3-12.4 km/u, -3% tot -9%"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12260,
+    "MET": 13.3,
+    "Description": "Hardlopen, heuvelopwaarts, 9.7 km/u, 5% helling"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12352,
+    "MET": 5.8,
+    "Description": "Hardlopen, heuvelopwaarts, bergachtig terrein"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12600,
+    "MET": 11.5,
+    "Description": "Hardlopen, huppelen, 8.8 km/u"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12585,
+    "MET": 8,
+    "Description": "Hardlopen, joggend met kinderwagen, binnen"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12588,
+    "MET": 9,
+    "Description": "Hardlopen, joggend met kinderwagen, binnen"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12593,
+    "MET": 10,
+    "Description": "Hardlopen, joggend met kinderwagen, buiten"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12595,
+    "MET": 11.5,
+    "Description": "Hardlopen, joggend met kinderwagen, buiten"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12200,
+    "MET": 13.3,
+    "Description": "Hardlopen, marathon"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12186,
+    "MET": 19.3,
+    "Description": "Hardlopen, op baan, 2000-3000m, competitief"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12184,
+    "MET": 18,
+    "Description": "Hardlopen, op baan, 500-1500m, competitief"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12180,
+    "MET": 10,
+    "Description": "Hardlopen, op een baan, teamtraining"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12190,
+    "MET": 8,
+    "Description": "Hardlopen, trainen, met rolstoel of babydrager"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12170,
+    "MET": 15,
+    "Description": "Hardlopen, trappen, omhoog"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12140,
+    "MET": 9.3,
+    "Description": "Hardlopen, veldloop"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12145,
+    "MET": 10.5,
+    "Description": "Hardlopen, zelfgekozen snelheid"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12405,
+    "MET": 5.3,
+    "Description": "Hardlopen/joggen, gebogen loopband, 5-6 km/u"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12408,
+    "MET": 6.5,
+    "Description": "Hardlopen/joggen, gebogen loopband, 6-7 km/u"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12010,
+    "MET": 6,
+    "Description": "Jog/walk combinatie (jogging component van minder dan 10 minuten)"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12026,
+    "MET": 3.3,
+    "Description": "Joggen 4.2 tot 5.9 km/u"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12027,
+    "MET": 4.5,
+    "Description": "Joggen op een mini-trampoline"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12020,
+    "MET": 7.5,
+    "Description": "Joggen, algemeen, zelfgekozen snelheid"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12025,
+    "MET": 4.8,
+    "Description": "Joggen, ter plaatse"
+  },
+  {
+    "Category": "Hardlopen",
+    "Code": 12620,
+    "MET": 13,
+    "Description": "Triatlon, hardlopen"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5042,
+    "MET": 2,
+    "Description": "Afwassen, gerechten van tafel halen, lopen, lichte inspanning"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5041,
+    "MET": 2,
+    "Description": "Afwassen, staand of algemeen (niet gesplitst in staan/lopen componenten)"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5110,
+    "MET": 5,
+    "Description": "Ahornsiroop maken / suikerbomen kappen (inclusief het dragen van emmers, hout dragen)"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5100,
+    "MET": 3,
+    "Description": "Bed opmaken, beddengoed wisselen"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5060,
+    "MET": 3.3,
+    "Description": "Boodschappen doen met of zonder winkelwagentje, 4.5 kg tas dragen, staan of lopen"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5054,
+    "MET": 3.5,
+    "Description": "Boodschappen dragen, op vlak terrein, lopen"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5056,
+    "MET": 5.3,
+    "Description": "Boodschappen naar boven dragen"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5055,
+    "MET": 2.5,
+    "Description": "Boodschappen opruimen (bijv. boodschappen dragen, pakketten dragen)"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5189,
+    "MET": 2,
+    "Description": "Borstvoeding, zittend of liggend"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5080,
+    "MET": 1.3,
+    "Description": "Breien, naaien, lichte inspanning, cadeaus inpakken, zittend"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5045,
+    "MET": 6,
+    "Description": "Dieren slachten, groot, zware inspanning"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5044,
+    "MET": 3,
+    "Description": "Dieren slachten, klein"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5197,
+    "MET": 2.3,
+    "Description": "Dierenzorg, huishoudelijke dieren, algemeen"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5023,
+    "MET": 2.5,
+    "Description": "Dweilen, staand, lichte inspanning"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5125,
+    "MET": 4.8,
+    "Description": "Een kamer organiseren"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5149,
+    "MET": 2.5,
+    "Description": "Een vuur maken binnen"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5140,
+    "MET": 3,
+    "Description": "Garage vegen, stoep of buitenkant van het huis"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5300,
+    "MET": 1.3,
+    "Description": "Handwassen"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5053,
+    "MET": 2.5,
+    "Description": "Huisdieren voeren"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5150,
+    "MET": 9,
+    "Description": "Huishoudelijke items naar boven dragen, dozen of meubels"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5147,
+    "MET": 3,
+    "Description": "Impliciet lopen, huishoudelijke items opruimen, matige inspanning"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5035,
+    "MET": 3.3,
+    "Description": "Keukenactiviteit, algemeen, (bijv. koken, afwassen, schoonmaken) matige inspanning"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5184,
+    "MET": 2.5,
+    "Description": "Kinderzorg, baby, algemeen"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5186,
+    "MET": 3.5,
+    "Description": "Kinderzorg: staan, aankleden, baden, verzorgen, voeden, af en toe optillen van kind - lichte inspanning"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5185,
+    "MET": 2,
+    "Description": "Kinderzorg: zitten of knielen, aankleden, baden, verzorgen, voeden, af en toe optillen van kind - lichte inspanning, algemeen"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5050,
+    "MET": 2,
+    "Description": "Koken of voedsel bereiden - staand of zittend of algemeen (niet gesplitst in staan/lopen componenten), lichte inspanning"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5051,
+    "MET": 2.3,
+    "Description": "Koken of voedsel bereiden, lopen"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5049,
+    "MET": 3.5,
+    "Description": "Koken of voedsel bereiden, matige inspanning"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5057,
+    "MET": 3,
+    "Description": "Koken van Indiaas brood of ander voedsel op een buitenfornuis"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5188,
+    "MET": 1.5,
+    "Description": "Liggen met baby"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5181,
+    "MET": 3,
+    "Description": "Lopen en dragen van klein kind, kind van 15 kg of meer"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5182,
+    "MET": 2.5,
+    "Description": "Lopen en dragen van klein kind, kind van minder dan 15 kg"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5192,
+    "MET": 2.8,
+    "Description": "Lopen of rennen, spelen met dieren, algemeen, lichte inspanning, alleen actieve periodes"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5165,
+    "MET": 3.5,
+    "Description": "Lopen, matige inspanningstaken, geen schoonmaak (klaar maken om te vertrekken, deuren sluiten/slot, ramen sluiten, enz.)"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5193,
+    "MET": 4,
+    "Description": "Lopen/rennen, spelen met dieren, matige inspanning, alleen actieve periodes"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5194,
+    "MET": 5,
+    "Description": "Lopen/rennen, spelen met dieren, zware inspanning, alleen actieve periodes"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5175,
+    "MET": 3.5,
+    "Description": "Lopen/rennen, spelen met kinderen, matige inspanning, alleen actieve periodes"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5180,
+    "MET": 5.8,
+    "Description": "Lopen/rennen, spelen met kinderen, zware inspanning, alleen actieve periodes"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5025,
+    "MET": 2.8,
+    "Description": "Meerdere huishoudelijke taken tegelijk, lichte inspanning"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5026,
+    "MET": 3.3,
+    "Description": "Meerdere huishoudelijke taken tegelijk, matige inspanning"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5027,
+    "MET": 4.3,
+    "Description": "Meerdere huishoudelijke taken tegelijk, zware inspanning"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5120,
+    "MET": 5.8,
+    "Description": "Meubels verplaatsen, huishoudelijke items, dozen dragen"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5082,
+    "MET": 2.8,
+    "Description": "Naaien met een machine"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5065,
+    "MET": 2.3,
+    "Description": "Niet-voedingswinkelen, met of zonder winkelwagentje, staan of lopen"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5200,
+    "MET": 3,
+    "Description": "Ouderenzorg, gehandicapte volwassene, baden, aankleden, uit en in bed, alleen actieve periodes"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5205,
+    "MET": 1.8,
+    "Description": "Ouderenzorg, gehandicapte volwassene, voeden, haren kammen, lichte inspanning, alleen actieve periodes"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5148,
+    "MET": 2,
+    "Description": "Planten water geven"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5022,
+    "MET": 3.3,
+    "Description": "Ramen wassen, algemeen"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5040,
+    "MET": 2.5,
+    "Description": "Schoonmaken, algemeen (opruimen, beddengoed wisselen, vuilnis wegbrengen), lichte inspanning"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5021,
+    "MET": 3.5,
+    "Description": "Schoonmaken, dweilen, staand, matige inspanning"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5030,
+    "MET": 3.3,
+    "Description": "Schoonmaken, huis of cabine, algemeen, matige inspanning"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5010,
+    "MET": 3.3,
+    "Description": "Schoonmaken, stofzuigen tapijt of vloeren, algemeen"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5011,
+    "MET": 2.3,
+    "Description": "Schoonmaken, stofzuigen, langzaam, lichte inspanning"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5012,
+    "MET": 3.8,
+    "Description": "Schoonmaken, stofzuigen, snel, matige inspanning"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5020,
+    "MET": 3.5,
+    "Description": "Schoonmaken, zwaar of grootschalig (bijv. auto wassen, garage schoonmaken), matige inspanning"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5146,
+    "MET": 3.8,
+    "Description": "Staan, dozen in- of uitpakken, af en toe lichte huishoudelijke items tillen, laden of lossen in een auto, matige inspanning"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5195,
+    "MET": 3.5,
+    "Description": "Staan, hond wassen"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5183,
+    "MET": 2,
+    "Description": "Staan, kind vasthouden"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5160,
+    "MET": 2,
+    "Description": "Staan, lichte inspanningstaken (benzine tanken, lamp vervangen, enz.)"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5191,
+    "MET": 2.8,
+    "Description": "Staan, spelen met dieren, lichte inspanning, alleen actieve periodes"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5171,
+    "MET": 2.8,
+    "Description": "Staan, spelen met kinderen, lichte inspanning, alleen actieve periodes"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5032,
+    "MET": 2.5,
+    "Description": "Stof afnemen of meubels polijsten, algemeen"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5043,
+    "MET": 3,
+    "Description": "Stofzuigen, algemeen, matige inspanning"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5070,
+    "MET": 1.8,
+    "Description": "Strijken"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5048,
+    "MET": 4,
+    "Description": "Vellen van dieren, algemeen"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5121,
+    "MET": 5,
+    "Description": "Verhuizen, lichte ladingen tillen"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5046,
+    "MET": 2.3,
+    "Description": "Vissen snijden en roken, vis of vlees drogen"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5024,
+    "MET": 4.5,
+    "Description": "Vloeren poetsen, staand, langzaam lopen, gebruik van elektrische poetsmachine"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5131,
+    "MET": 2,
+    "Description": "Vloeren schrobben, op handen en knieën, badkamer, badkuip schrobben, lichte inspanning"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5130,
+    "MET": 3.5,
+    "Description": "Vloeren schrobben, op handen en knieën, badkamer, badkuip schrobben, matige inspanning"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5132,
+    "MET": 6.5,
+    "Description": "Vloeren schrobben, op handen en knieën, badkamer, badkuip schrobben, zware inspanning"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5052,
+    "MET": 2.3,
+    "Description": "Voedsel serveren, tafel dekken/schoonmaken, impliciet lopen of staan"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5095,
+    "MET": 2,
+    "Description": "Was, kleding opruimen, kleding verzamelen om in te pakken, kleding opruimen, impliciet lopen"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5092,
+    "MET": 4,
+    "Description": "Was, matige inspanning"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5090,
+    "MET": 2.3,
+    "Description": "Was, vouwen of ophangen van kleding, kleding in wasmachine of droger doen, koffer inpakken, met de hand wassen, impliciet staan, lichte inspanning"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5091,
+    "MET": 2,
+    "Description": "Was, vouwen of ophangen van kleding, zittend"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5190,
+    "MET": 2.5,
+    "Description": "Zitten, spelen met dieren, licht, alleen actieve periodes"
+  },
+  {
+    "Category": "Huishoudelijke Activiteiten",
+    "Code": 5170,
+    "MET": 2.3,
+    "Description": "Zitten, spelen met kinderen, lichte inspanning, alleen actieve periodes"
+  },
+  {
+    "Category": "Klussen",
+    "Code": 6210,
+    "MET": 5,
+    "Description": "Aarde verspreiden met een schop"
+  },
+  {
+    "Category": "Klussen",
+    "Code": 6126,
+    "MET": 2.5,
+    "Description": "Algemene woningreparatie, lichte inspanning"
+  },
+  {
+    "Category": "Klussen",
+    "Code": 6127,
+    "MET": 4.5,
+    "Description": "Algemene woningreparatie, matige inspanning"
+  },
+  {
+    "Category": "Klussen",
+    "Code": 6128,
+    "MET": 6,
+    "Description": "Algemene woningreparatie, zware inspanning"
+  },
+  {
+    "Category": "Klussen",
+    "Code": 6144,
+    "MET": 3,
+    "Description": "Apparaten repareren"
+  },
+  {
+    "Category": "Klussen",
+    "Code": 6030,
+    "MET": 3.3,
+    "Description": "Auto repareren, licht of matige inspanning"
+  },
+  {
+    "Category": "Klussen",
+    "Code": 6240,
+    "MET": 3.3,
+    "Description": "Bedrading, tappen-splitsen"
+  },
+  {
+    "Category": "Klussen",
+    "Code": 6122,
+    "MET": 5,
+    "Description": "Binnenhuis gipsplaat ophangen"
+  },
+  {
+    "Category": "Klussen",
+    "Code": 6020,
+    "MET": 4,
+    "Description": "Carrosseriewerk aan auto's"
+  },
+  {
+    "Category": "Klussen",
+    "Code": 6180,
+    "MET": 6,
+    "Description": "Dakbedekking"
+  },
+  {
+    "Category": "Klussen",
+    "Code": 6110,
+    "MET": 5,
+    "Description": "Garage uitgraven"
+  },
+  {
+    "Category": "Klussen",
+    "Code": 6205,
+    "MET": 2,
+    "Description": "Gereedschap slijpen"
+  },
+  {
+    "Category": "Klussen",
+    "Code": 6100,
+    "MET": 5,
+    "Description": "Goot reinigen"
+  },
+  {
+    "Category": "Klussen",
+    "Code": 6230,
+    "MET": 4.5,
+    "Description": "Hek wassen, schilderen hek, matige inspanning"
+  },
+  {
+    "Category": "Klussen",
+    "Code": 6090,
+    "MET": 4.5,
+    "Description": "Kitten, behalve log cabin"
+  },
+  {
+    "Category": "Klussen",
+    "Code": 6080,
+    "MET": 5,
+    "Description": "Kitten, inpakken van een log cabin"
+  },
+  {
+    "Category": "Klussen",
+    "Code": 6167,
+    "MET": 3,
+    "Description": "Loodgieterswerk, algemeen"
+  },
+  {
+    "Category": "Klussen",
+    "Code": 6165,
+    "MET": 4.5,
+    "Description": "Schilderen"
+  },
+  {
+    "Category": "Klussen",
+    "Code": 6160,
+    "MET": 3.3,
+    "Description": "Schilderen binnenhuis, behangen, verf schrapen"
+  },
+  {
+    "Category": "Klussen",
+    "Code": 6150,
+    "MET": 5,
+    "Description": "Schilderen, buitenkant huis"
+  },
+  {
+    "Category": "Klussen",
+    "Code": 6200,
+    "MET": 4.5,
+    "Description": "Schrapen en schilderen van zeilboot of motorboot"
+  },
+  {
+    "Category": "Klussen",
+    "Code": 6124,
+    "MET": 3,
+    "Description": "Spijkeren"
+  },
+  {
+    "Category": "Klussen",
+    "Code": 6120,
+    "MET": 5,
+    "Description": "Stormramen ophangen"
+  },
+  {
+    "Category": "Klussen",
+    "Code": 6130,
+    "MET": 4.5,
+    "Description": "Tapijt leggen of verwijderen"
+  },
+  {
+    "Category": "Klussen",
+    "Code": 6170,
+    "MET": 3,
+    "Description": "Tarp opzetten en verwijderen - zeilboot"
+  },
+  {
+    "Category": "Klussen",
+    "Code": 6140,
+    "MET": 3.8,
+    "Description": "Tegels of linoleum leggen"
+  },
+  {
+    "Category": "Klussen",
+    "Code": 6060,
+    "MET": 3.3,
+    "Description": "Timmerwerk, afwerking, vernissen of restaureren van kasten of meubels"
+  },
+  {
+    "Category": "Klussen",
+    "Code": 6040,
+    "MET": 3,
+    "Description": "Timmerwerk, algemeen, werkplaats"
+  },
+  {
+    "Category": "Klussen",
+    "Code": 6050,
+    "MET": 6,
+    "Description": "Timmerwerk, buitenhuis"
+  },
+  {
+    "Category": "Klussen",
+    "Code": 6052,
+    "MET": 3.8,
+    "Description": "Timmerwerk, buitenhuis, hek bouwen"
+  },
+  {
+    "Category": "Klussen",
+    "Code": 6070,
+    "MET": 6,
+    "Description": "Timmerwerk, hardhout zagen, schaven en boren, matige tot krachtige inspanning"
+  },
+  {
+    "Category": "Klussen",
+    "Code": 6074,
+    "MET": 2.3,
+    "Description": "Timmerwerk, woningrenovatie taken, lichte inspanning"
+  },
+  {
+    "Category": "Klussen",
+    "Code": 6072,
+    "MET": 4,
+    "Description": "Timmerwerk, woningrenovatie taken, matige inspanning"
+  },
+  {
+    "Category": "Klussen",
+    "Code": 6010,
+    "MET": 3,
+    "Description": "Vliegtuig repareren"
+  },
+  {
+    "Category": "Klussen",
+    "Code": 6190,
+    "MET": 4.5,
+    "Description": "Vloeren schuren met een elektrische schuurmachine"
+  },
+  {
+    "Category": "Klussen",
+    "Code": 6225,
+    "MET": 2,
+    "Description": "Was en waxen van auto"
+  },
+  {
+    "Category": "Klussen",
+    "Code": 6220,
+    "MET": 4.5,
+    "Description": "Was en waxen van romp van zeilboot of vliegtuig"
+  },
+  {
+    "Category": "Muziek Spelen",
+    "Code": 10010,
+    "MET": 1.8,
+    "Description": "Accordeon, zittend"
+  },
+  {
+    "Category": "Muziek Spelen",
+    "Code": 10115,
+    "MET": 1.8,
+    "Description": "Blaasinstrumenten, zittend"
+  },
+  {
+    "Category": "Muziek Spelen",
+    "Code": 10020,
+    "MET": 2.3,
+    "Description": "Cello, zittend"
+  },
+  {
+    "Category": "Muziek Spelen",
+    "Code": 10035,
+    "MET": 2.5,
+    "Description": "Contrabas, staand"
+  },
+  {
+    "Category": "Muziek Spelen",
+    "Code": 10045,
+    "MET": 3,
+    "Description": "Drummen (bijv. bongo, conga, benbe), matige inspanning, zittend"
+  },
+  {
+    "Category": "Muziek Spelen",
+    "Code": 10048,
+    "MET": 8.3,
+    "Description": "Drummen, concert/live show"
+  },
+  {
+    "Category": "Muziek Spelen",
+    "Code": 10040,
+    "MET": 3.8,
+    "Description": "Drums, zittend"
+  },
+  {
+    "Category": "Muziek Spelen",
+    "Code": 10050,
+    "MET": 2,
+    "Description": "Fluit, zittend"
+  },
+  {
+    "Category": "Muziek Spelen",
+    "Code": 10120,
+    "MET": 2,
+    "Description": "Gitaar, klassiek, folk, zittend"
+  },
+  {
+    "Category": "Muziek Spelen",
+    "Code": 10125,
+    "MET": 3,
+    "Description": "Gitaar, rockband, staand"
+  },
+  {
+    "Category": "Muziek Spelen",
+    "Code": 10060,
+    "MET": 1.8,
+    "Description": "Hoorn, staand"
+  },
+  {
+    "Category": "Muziek Spelen",
+    "Code": 10110,
+    "MET": 1.8,
+    "Description": "Houtblazers, zittend"
+  },
+  {
+    "Category": "Muziek Spelen",
+    "Code": 10130,
+    "MET": 4,
+    "Description": "Marcherend orkest, baton twirling, wandelend, matige snelheid"
+  },
+  {
+    "Category": "Muziek Spelen",
+    "Code": 10135,
+    "MET": 3.5,
+    "Description": "Marcherend orkest, drummajor, wandelend"
+  },
+  {
+    "Category": "Muziek Spelen",
+    "Code": 10131,
+    "MET": 5.5,
+    "Description": "Marcherend orkest, muziekinstrument spelen, wandelend, snelle snelheid"
+  },
+  {
+    "Category": "Muziek Spelen",
+    "Code": 10074,
+    "MET": 2,
+    "Description": "Muziekinstrumenten spelen, algemeen"
+  },
+  {
+    "Category": "Muziek Spelen",
+    "Code": 10077,
+    "MET": 2,
+    "Description": "Orgel, zittend"
+  },
+  {
+    "Category": "Muziek Spelen",
+    "Code": 10030,
+    "MET": 2.3,
+    "Description": "Orkest dirigeren, staand"
+  },
+  {
+    "Category": "Muziek Spelen",
+    "Code": 10070,
+    "MET": 2.3,
+    "Description": "Piano, zittend"
+  },
+  {
+    "Category": "Muziek Spelen",
+    "Code": 10080,
+    "MET": 3.5,
+    "Description": "Trombone, staand"
+  },
+  {
+    "Category": "Muziek Spelen",
+    "Code": 10090,
+    "MET": 2.5,
+    "Description": "Trompet, staand"
+  },
+  {
+    "Category": "Muziek Spelen",
+    "Code": 10100,
+    "MET": 2.5,
+    "Description": "Viool, zittend"
+  },
+  {
+    "Category": "Religieuze Activiteiten",
+    "Code": 20047,
+    "MET": 3.3,
+    "Description": "Afwassen, keuken schoonmaken in de kerk"
+  },
+  {
+    "Category": "Religieuze Activiteiten",
+    "Code": 20061,
+    "MET": 4,
+    "Description": "Algemeen tuinwerk in de kerk"
+  },
+  {
+    "Category": "Religieuze Activiteiten",
+    "Code": 20039,
+    "MET": 2,
+    "Description": "Combinatie van lopen/sta staan voor religieuze doeleinden, usher"
+  },
+  {
+    "Category": "Religieuze Activiteiten",
+    "Code": 20050,
+    "MET": 1.5,
+    "Description": "Eten in de kerk"
+  },
+  {
+    "Category": "Religieuze Activiteiten",
+    "Code": 20045,
+    "MET": 2.3,
+    "Description": "Eten serveren in de kerk"
+  },
+  {
+    "Category": "Religieuze Activiteiten",
+    "Code": 20046,
+    "MET": 2,
+    "Description": "Eten voorbereiden in de kerk"
+  },
+  {
+    "Category": "Religieuze Activiteiten",
+    "Code": 20055,
+    "MET": 2,
+    "Description": "Eten/praten in de kerk of staand eten, Amerikaanse indianen feestdagen"
+  },
+  {
+    "Category": "Religieuze activiteiten",
+    "Code": 20025,
+    "MET": 1.3,
+    "Description": "Knielen in de kerk of thuis, bidden"
+  },
+  {
+    "Category": "Religieuze Activiteiten",
+    "Code": 20040,
+    "MET": 5,
+    "Description": "Prijzen met dans of hardlopen, spirituele dans in de kerk"
+  },
+  {
+    "Category": "Religieuze Activiteiten",
+    "Code": 20060,
+    "MET": 3.3,
+    "Description": "Schoonmaken van de kerk"
+  },
+  {
+    "Category": "Religieuze activiteiten",
+    "Code": 20030,
+    "MET": 1.3,
+    "Description": "Staan, praten in de kerk"
+  },
+  {
+    "Category": "Religieuze activiteiten",
+    "Code": 20015,
+    "MET": 1.3,
+    "Description": "Staan, rustig in de kerk, deelnemen aan een ceremonie"
+  },
+  {
+    "Category": "Religieuze activiteiten",
+    "Code": 20020,
+    "MET": 2,
+    "Description": "Staan, zingen in de kerk, deelnemen aan een ceremonie"
+  },
+  {
+    "Category": "Religieuze Activiteiten",
+    "Code": 20065,
+    "MET": 3.8,
+    "Description": "Staand, matige inspanning (bijv. tillen van zware voorwerpen, snel assembleren)"
+  },
+  {
+    "Category": "Religieuze Activiteiten",
+    "Code": 20095,
+    "MET": 4.5,
+    "Description": "Staand, matige tot zware inspanning, handarbeid, tillen ? 22,68 kg, zwaar onderhoud"
+  },
+  {
+    "Category": "Religieuze Activiteiten",
+    "Code": 20100,
+    "MET": 1.3,
+    "Description": "Typen, elektrisch, handmatig of computer"
+  },
+  {
+    "Category": "Religieuze activiteiten",
+    "Code": 20035,
+    "MET": 2,
+    "Description": "Wandelen in de kerk"
+  },
+  {
+    "Category": "Religieuze activiteiten",
+    "Code": 20037,
+    "MET": 3.8,
+    "Description": "Wandelen, 4.5-5.4 km/u, gematigde snelheid, zonder iets te dragen"
+  },
+  {
+    "Category": "Religieuze activiteiten",
+    "Code": 20038,
+    "MET": 4.8,
+    "Description": "Wandelen, 5.6-6.3 km/u, snelle snelheid, zonder iets te dragen"
+  },
+  {
+    "Category": "Religieuze activiteiten",
+    "Code": 20036,
+    "MET": 2,
+    "Description": "Wandelen, minder dan 3.2 km/u, heel langzaam"
+  },
+  {
+    "Category": "Religieuze activiteiten",
+    "Code": 20000,
+    "MET": 1,
+    "Description": "Zitten in de kerk, in de dienst, bijwonen van een ceremonie, stil zitten"
+  },
+  {
+    "Category": "Religieuze activiteiten",
+    "Code": 20005,
+    "MET": 1.8,
+    "Description": "Zitten in de kerk, praten of zingen, actief deelnemen aan een ceremonie"
+  },
+  {
+    "Category": "Religieuze activiteiten",
+    "Code": 20001,
+    "MET": 2,
+    "Description": "Zitten, instrument spelen in de kerk"
+  },
+  {
+    "Category": "Religieuze activiteiten",
+    "Code": 20010,
+    "MET": 1.5,
+    "Description": "Zitten, religieuze materialen lezen thuis"
+  },
+  {
+    "Category": "Rusten",
+    "Code": 7009,
+    "MET": 1,
+    "Description": "Liggen rustig en televisie kijken"
+  },
+  {
+    "Category": "Rusten",
+    "Code": 7011,
+    "MET": 1,
+    "Description": "Liggen rustig, niets doen, in bed wakker liggen, muziek luisteren (niet praten of lezen)"
+  },
+  {
+    "Category": "Rusten",
+    "Code": 7070,
+    "MET": 1.3,
+    "Description": "Liggend, lezen"
+  },
+  {
+    "Category": "Rusten",
+    "Code": 7060,
+    "MET": 1.3,
+    "Description": "Liggend, praten of telefoneren"
+  },
+  {
+    "Category": "Rusten",
+    "Code": 7050,
+    "MET": 1.5,
+    "Description": "Liggend, schrijven"
+  },
+  {
+    "Category": "Rusten",
+    "Code": 7075,
+    "MET": 1,
+    "Description": "Mediteren"
+  },
+  {
+    "Category": "Rusten",
+    "Code": 7030,
+    "MET": 1,
+    "Description": "Slapen"
+  },
+  {
+    "Category": "Rusten",
+    "Code": 7041,
+    "MET": 1.5,
+    "Description": "Staan (friemelen)"
+  },
+  {
+    "Category": "Rusten",
+    "Code": 7040,
+    "MET": 1.3,
+    "Description": "Staan rustig (in de rij staan)"
+  },
+  {
+    "Category": "Rusten",
+    "Code": 7045,
+    "MET": 1.3,
+    "Description": "Staan, televisie kijken"
+  },
+  {
+    "Category": "Rusten",
+    "Code": 7026,
+    "MET": 1.3,
+    "Description": "Zitten aan een bureau, hoofd in de handen rusten"
+  },
+  {
+    "Category": "Rusten",
+    "Code": 7021,
+    "MET": 1,
+    "Description": "Zitten rustig, algemeen"
+  },
+  {
+    "Category": "Rusten",
+    "Code": 7022,
+    "MET": 1.5,
+    "Description": "Zitten rustig, friemelen, algemeen, friemelen met de handen"
+  },
+  {
+    "Category": "Rusten",
+    "Code": 7023,
+    "MET": 1.8,
+    "Description": "Zitten, friemelen met de voeten"
+  },
+  {
+    "Category": "Rusten",
+    "Code": 7025,
+    "MET": 1.5,
+    "Description": "Zitten, muziek luisteren (niet praten of lezen) of een film in de bioscoop kijken"
+  },
+  {
+    "Category": "Rusten",
+    "Code": 7024,
+    "MET": 1.3,
+    "Description": "Zitten, roken"
+  },
+  {
+    "Category": "Rusten",
+    "Code": 7020,
+    "MET": 1,
+    "Description": "Zitten, televisie kijken"
+  },
+  {
+    "Category": "Seksuele Activiteit",
+    "Code": 14010,
+    "MET": 5.8,
+    "Description": "Actief, intensieve inspanning"
+  },
+  {
+    "Category": "Seksuele Activiteit",
+    "Code": 14020,
+    "MET": 3,
+    "Description": "Algemeen, matige inspanning"
+  },
+  {
+    "Category": "Seksuele Activiteit",
+    "Code": 14030,
+    "MET": 1.8,
+    "Description": "Passief, lichte inspanning, kussen, knuffelen"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2007,
+    "MET": 10,
+    "Description": "Aerobic dance met gewichten van 4,5-7 kg"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2006,
+    "MET": 8,
+    "Description": "Aerobic dance, hoog impact, intensieve inspanning"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2005,
+    "MET": 4.8,
+    "Description": "Aerobic dance, laag impact, gematigde inspanning"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2000,
+    "MET": 7.3,
+    "Description": "Aerobics, algemeen"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2001,
+    "MET": 5.5,
+    "Description": "Aerobics, step, met 10 cm stapje"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2002,
+    "MET": 7.3,
+    "Description": "Aerobics, step, met 15-20 cm stapje"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2003,
+    "MET": 9,
+    "Description": "Aerobics, step, met 25-30 cm stapje"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15000,
+    "MET": 5.5,
+    "Description": "Alaska Native Games, Eskimo Olympics, algemeen"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2116,
+    "MET": 2,
+    "Description": "Arm ergometer, handbike, 15W"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2117,
+    "MET": 2.8,
+    "Description": "Arm ergometer, handbike, 25-30W"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2118,
+    "MET": 3.5,
+    "Description": "Arm ergometer, handbike, 45W"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15733,
+    "MET": 6,
+    "Description": "Atletiek (bijv. hoogspringen, verspringen, hink-stap-springen, speerwerpen, polsstokhoogspringen)"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15732,
+    "MET": 4,
+    "Description": "Atletiek (bijv. kogelstoten, discuswerpen, hamerslingeren)"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15734,
+    "MET": 10,
+    "Description": "Atletiek (bijv. steeplechase, hordenlopen)"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15192,
+    "MET": 8.5,
+    "Description": "Autoracen, open wiel"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15020,
+    "MET": 7,
+    "Description": "Badminton, competitief"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15025,
+    "MET": 9,
+    "Description": "Badminton, competitief, wedstrijd spelen"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15030,
+    "MET": 5.5,
+    "Description": "Badminton, sociale singles en doubles, algemeen"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2225,
+    "MET": 2.3,
+    "Description": "Balansoefening Assist Robot (BEAR), gesimuleerde skiën, tennis, rodeo"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15055,
+    "MET": 7.5,
+    "Description": "Basketbal, algemeen"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15072,
+    "MET": 9.3,
+    "Description": "Basketbal, drills, oefenen"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15050,
+    "MET": 6,
+    "Description": "Basketbal, niet-wedstrijd, algemeen"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15062,
+    "MET": 5.8,
+    "Description": "Basketbal, scheidsrechter"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15060,
+    "MET": 7,
+    "Description": "Basketbal, scheidsrechter"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15070,
+    "MET": 5,
+    "Description": "Basketbal, schieten op doel"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15040,
+    "MET": 8,
+    "Description": "Basketbal, wedstrijd"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2004,
+    "MET": 7.8,
+    "Description": "Bench step class, algemeen"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15080,
+    "MET": 2.5,
+    "Description": "Biljart"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2288,
+    "MET": 13,
+    "Description": "Blackbox Immersive virtual reality exergaming system, intensieve inspanning"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15110,
+    "MET": 5.8,
+    "Description": "Boksen, bokszak"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15115,
+    "MET": 8.5,
+    "Description": "Boksen, bokszak, 120 slagen/minuut"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15118,
+    "MET": 10.8,
+    "Description": "Boksen, bokszak, 180 slagen/minuut"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15113,
+    "MET": 7,
+    "Description": "Boksen, bokszak, 60 slagen/minuut"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15125,
+    "MET": 9.3,
+    "Description": "Boksen, gesimuleerde bokswedstrijd, oefening"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15100,
+    "MET": 12.3,
+    "Description": "Boksen, in de ring, algemeen"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15120,
+    "MET": 7.8,
+    "Description": "Boksen, sparren"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15010,
+    "MET": 4.3,
+    "Description": "Boogschieten (niet-jagen)"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2115,
+    "MET": 2.8,
+    "Description": "Bovenlichaamsoefening, arm ergometer, algemeen, licht"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2119,
+    "MET": 4.3,
+    "Description": "Bovenlichaamsoefening, stationaire fiets - Airdyne (alleen armen) 40 rpm, gematigde intensiteit"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15090,
+    "MET": 3,
+    "Description": "Bowlen"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15092,
+    "MET": 3.8,
+    "Description": "Bowlen, binnen, bowlingbaan"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15130,
+    "MET": 7,
+    "Description": "Broomball"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2024,
+    "MET": 2.8,
+    "Description": "Calisthenics (bijv. crunches, abdominal crunches, plank), lichte inspanning"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2020,
+    "MET": 7.5,
+    "Description": "Calisthenics (bijv. push-ups, sit-ups, pull-ups, jumping jacks, burpees, battle ropes), intensief"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2022,
+    "MET": 3.8,
+    "Description": "Calisthenics (bijv. push-ups, sit-ups, pull-ups, lunges), gematigde inspanning"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2030,
+    "MET": 3.5,
+    "Description": "Calisthenics, lichte of gematigde inspanning, algemeen (bijv. rugoefeningen), op en neer van de grond"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15138,
+    "MET": 6,
+    "Description": "Cheerleading, gymnastische bewegingen, competitief"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2035,
+    "MET": 5,
+    "Description": "Circuittraining, gematigde inspanning"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2040,
+    "MET": 7.5,
+    "Description": "Circuittraining, inclusief kettlebells, enige aerobe beweging met minimale rust, algemeen, intensief"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2032,
+    "MET": 6,
+    "Description": "Circuittraining, lichaamsgewicht oefeningen"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2034,
+    "MET": 3.5,
+    "Description": "Circuittraining, lichte inspanning"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15142,
+    "MET": 8,
+    "Description": "Coaching, actief sport spelen met spelers"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15140,
+    "MET": 4,
+    "Description": "Coaching, voetbal, voetbal, basketbal, honkbal, zwemmen, etc."
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15150,
+    "MET": 4.8,
+    "Description": "Cricket, batten, bowlen, veldwerk"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15160,
+    "MET": 3.3,
+    "Description": "Croquet"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15170,
+    "MET": 4,
+    "Description": "Curling"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2045,
+    "MET": 3.5,
+    "Description": "Curves oefenroutines voor vrouwen"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15180,
+    "MET": 2.5,
+    "Description": "Darten, muur of tuin"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15190,
+    "MET": 6,
+    "Description": "Drag racing, duwen of autorijden"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2048,
+    "MET": 5,
+    "Description": "Elliptische trainer, gematigde inspanning"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2049,
+    "MET": 9,
+    "Description": "Elliptische trainer, intensieve inspanning"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2284,
+    "MET": 9.3,
+    "Description": "ExerCube, workout series"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15205,
+    "MET": 10.5,
+    "Description": "Floorball"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15252,
+    "MET": 3.8,
+    "Description": "Frisbee golf"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15240,
+    "MET": 3,
+    "Description": "Frisbee spelen, algemeen"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15250,
+    "MET": 8,
+    "Description": "Frisbee, ultiem"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15195,
+    "MET": 7.8,
+    "Description": "Futsal"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2061,
+    "MET": 5,
+    "Description": "Gezondheidsclub oefening klassen, algemeen, gecombineerde training van gym/gewichtstraining"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2060,
+    "MET": 5.5,
+    "Description": "Gezondheidsclub oefening, algemeen"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2062,
+    "MET": 7.8,
+    "Description": "Gezondheidsclub oefening, conditieklassen"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15255,
+    "MET": 4.5,
+    "Description": "Golf, algemeen"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15290,
+    "MET": 3.5,
+    "Description": "Golf, gebruik maken van power cart"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15270,
+    "MET": 3.5,
+    "Description": "Golf, mini-golf, driving range"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15265,
+    "MET": 4.3,
+    "Description": "Golf, wandelen, dragen van clubs"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15285,
+    "MET": 4.5,
+    "Description": "Golf, wandelen, trekken van clubs"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15300,
+    "MET": 3.8,
+    "Description": "Gymnastiek, algemeen"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15310,
+    "MET": 4,
+    "Description": "Hacky sack"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15320,
+    "MET": 12,
+    "Description": "Handbal, algemeen"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15330,
+    "MET": 8,
+    "Description": "Handbal, team"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15340,
+    "MET": 3.5,
+    "Description": "Hang gliding"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2214,
+    "MET": 11,
+    "Description": "High intensity interval training, burpees, mountain climbers, squat jumps, Tabata, intensieve inspanning"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2210,
+    "MET": 7,
+    "Description": "High intensity interval training, gematigde inspanning"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15360,
+    "MET": 8,
+    "Description": "Hockey, ijs, algemeen"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15362,
+    "MET": 10,
+    "Description": "Hockey, ijs, competitief"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15350,
+    "MET": 7.8,
+    "Description": "Hockey, veld"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2230,
+    "MET": 5.8,
+    "Description": "Hoepelen (voorheen bekend als hula hoepelen)"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15335,
+    "MET": 4,
+    "Description": "Hoog touwenparcours, meerdere elementen"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2240,
+    "MET": 9,
+    "Description": "Impulse Training System, Inertial Exercise Trainer"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2200,
+    "MET": 5.3,
+    "Description": "Inheemse Nieuw-Zeelandse PA, (bijv. Haka Powhiri, Poi, Moteatea, enz.), algemeen, gematigde inspanning"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2205,
+    "MET": 6.8,
+    "Description": "Inheemse Nieuw-Zeelandse PA, algemeen, intensieve inspanning"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15591,
+    "MET": 7.5,
+    "Description": "Inline skaten, 14.4 km/h (9.0 mph), recreatief tempo"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15592,
+    "MET": 9.8,
+    "Description": "Inline skaten, 17.7 km/h (11.0 mph), gematigd tempo, oefening"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15593,
+    "MET": 12.3,
+    "Description": "Inline skaten, 21.0 tot 21.7 km/h (13.0 tot 13.6 mph), snel tempo, oefening"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15594,
+    "MET": 15.5,
+    "Description": "Inline skaten, 24.0 km/h (15.0 mph), maximale inspanning"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15420,
+    "MET": 12,
+    "Description": "Jai alai"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15440,
+    "MET": 4,
+    "Description": "Jongleren"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15433,
+    "MET": 11.3,
+    "Description": "Judo"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2069,
+    "MET": 9,
+    "Description": "Jump rope, Digi-Jump Machine, 120 sprongen/minuut"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15446,
+    "MET": 11.3,
+    "Description": "Kendo, kakari keiko stijl, zeer hoge intensiteit"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15444,
+    "MET": 6.5,
+    "Description": "Kendo, kihon-keiko stijl, gematigde intensiteit"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15445,
+    "MET": 9.6,
+    "Description": "Kendo, kirikaeshi stijl, hoge intensiteit"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2058,
+    "MET": 9.8,
+    "Description": "Kettlebell swings"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15450,
+    "MET": 7,
+    "Description": "Kickball"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15457,
+    "MET": 7.3,
+    "Description": "Kickboksen"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15135,
+    "MET": 5.8,
+    "Description": "Kinderspellen, volwassenen spelen (bijv. hinkelen, 4-vier, trefbal, speeltuinapparatuur, t-ball, tetherball, knikkeren, jacks, arcadegames), matige inspanning"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2052,
+    "MET": 5,
+    "Description": "Krachttraining (gewicht), squats, deadlift, langzame of explosieve inspanning"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2050,
+    "MET": 6,
+    "Description": "Krachttraining (gewichtheffen - vrije gewichten, nautilus of universeel type), powerlifting of bodybuilding, intensief"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2055,
+    "MET": 5.8,
+    "Description": "Krachttraining, circuit, wederzijdse supersets, perifere hartactie training"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2054,
+    "MET": 3.5,
+    "Description": "Krachttraining, meerdere oefeningen, 8-15 herhalingen bij variabele weerstand"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15455,
+    "MET": 5.5,
+    "Description": "Kung Fu gymnastiek"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15460,
+    "MET": 8,
+    "Description": "Lacrosse"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15465,
+    "MET": 3.3,
+    "Description": "Lawn bowling, bocce bal, buiten"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2008,
+    "MET": 5,
+    "Description": "Leger type hindernisbaan, bootcamp training"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2110,
+    "MET": 6.8,
+    "Description": "Lessen geven, bijvoorbeeld aerobics, water"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2056,
+    "MET": 3,
+    "Description": "Lichaamsgewicht weerstandsoefeningen (bijv. squat, lunge, push-up, crunch), algemeen"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2057,
+    "MET": 6.5,
+    "Description": "Lichaamsgewicht weerstandsoefeningen (bijv. squat, lunge, push-up, crunch), intensief"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15470,
+    "MET": 4,
+    "Description": "Motocross, off-road motorsport, all-terrain voertuig, algemeen"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15475,
+    "MET": 5.3,
+    "Description": "Motorcross, Supormoto racing"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15477,
+    "MET": 7,
+    "Description": "Netbal"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15480,
+    "MET": 9,
+    "Description": "Oriëntatielopen"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15370,
+    "MET": 5.5,
+    "Description": "Paardrijden, algemeen"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15390,
+    "MET": 5.8,
+    "Description": "Paardrijden, draven"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15395,
+    "MET": 7.3,
+    "Description": "Paardrijden, galopperen"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15403,
+    "MET": 6,
+    "Description": "Paardrijden, reining"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15406,
+    "MET": 2.1,
+    "Description": "Paardrijden, simulator"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15402,
+    "MET": 9,
+    "Description": "Paardrijden, springen"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15400,
+    "MET": 3.8,
+    "Description": "Paardrijden, wandelen"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15410,
+    "MET": 3,
+    "Description": "Paardshoefwerpen, quoits"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15380,
+    "MET": 4.5,
+    "Description": "Paardverzorging, onderhoud, zadelen"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15408,
+    "MET": 1.8,
+    "Description": "Paardwagen rijden, staand of zittend"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15500,
+    "MET": 6,
+    "Description": "Paddleball, casual, algemeen"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15490,
+    "MET": 10,
+    "Description": "Paddleball, competitief"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15503,
+    "MET": 1.8,
+    "Description": "Paragliden, gematigde hoogte"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2105,
+    "MET": 2.8,
+    "Description": "Pilates, algemeen"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2103,
+    "MET": 1.8,
+    "Description": "Pilates, traditioneel, mat"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2108,
+    "MET": 4.5,
+    "Description": "Pole dancing, oefenles"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15510,
+    "MET": 8,
+    "Description": "Polo, te paard"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2107,
+    "MET": 8.5,
+    "Description": "Pound, combinatie van Pilates en lichaamsbewegingen met drummen"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15506,
+    "MET": 6.5,
+    "Description": "Prusik klimmen"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15525,
+    "MET": 11.1,
+    "Description": "Racewandelen, 3.1 m/s (6.9 mph)"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15527,
+    "MET": 13.4,
+    "Description": "Racewandelen, 3.7 m/s (8.3 mph)"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15528,
+    "MET": 14.4,
+    "Description": "Racewandelen, race snelheid, 4.0 m/s (8.95 mph)"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15530,
+    "MET": 7,
+    "Description": "Racketbal, algemeen"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15520,
+    "MET": 10,
+    "Description": "Racketbal, competitief"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2101,
+    "MET": 2.3,
+    "Description": "Rekken, mild"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15544,
+    "MET": 5.5,
+    "Description": "Rodeo sport, algemeen, gematigde inspanning"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15546,
+    "MET": 7,
+    "Description": "Rodeo sport, algemeen, hevige inspanning"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15542,
+    "MET": 4,
+    "Description": "Rodeo sport, algemeen, lichte inspanning"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2074,
+    "MET": 14,
+    "Description": "Roeien, stationaire ergometer, ? 148 watt, zeer intensieve inspanning"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2073,
+    "MET": 11,
+    "Description": "Roeien, stationaire ergometer, 111-148 watt, intensieve inspanning"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2072,
+    "MET": 7.5,
+    "Description": "Roeien, stationaire ergometer, 74-111 watt, intensieve inspanning"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2071,
+    "MET": 5,
+    "Description": "Roeien, stationaire ergometer, algemeen, < 74 watt, gematigde inspanning"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2070,
+    "MET": 7.3,
+    "Description": "Roeien, stationaire ergometer, algemeen, intensieve inspanning"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15533,
+    "MET": 8,
+    "Description": "Rots- of bergbeklimmen"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15540,
+    "MET": 5,
+    "Description": "Rotsklimmen, rappeleren"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15537,
+    "MET": 5.8,
+    "Description": "Rotsklimmen, rots beklimmen of doorkruisen, lage tot gematigde moeilijkheid"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15535,
+    "MET": 7.3,
+    "Description": "Rotsklimmen, rots beklimmen, hoge moeilijkheid"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15536,
+    "MET": 10.5,
+    "Description": "Rotsklimmen, snelheid, zeer moeilijk"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15538,
+    "MET": 10.5,
+    "Description": "Rotsklimmen, treadwall, 4-6 m/min"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15539,
+    "MET": 10.5,
+    "Description": "Rotsklimmen, treadwall, 7-10 m/min"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15534,
+    "MET": 8.8,
+    "Description": "Rotsklimmen, vrije boulder"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15562,
+    "MET": 6.3,
+    "Description": "Rugby, touch, niet-competitief"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15560,
+    "MET": 8.3,
+    "Description": "Rugby, union, team, competitief"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15590,
+    "MET": 7,
+    "Description": "Schaatsen, roller"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15570,
+    "MET": 3,
+    "Description": "Shuffleboard"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2078,
+    "MET": 11,
+    "Description": "Shuttle running, vooruit/achteruit/lateraal"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15595,
+    "MET": 6.8,
+    "Description": "Skateboard, longboard, 13.3 km/h, langzaam tempo"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15596,
+    "MET": 8.3,
+    "Description": "Skateboard, longboard, 16.2 km/h, typisch tempo"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15597,
+    "MET": 10.5,
+    "Description": "Skateboard, longboard, 18.4 km/h, snel tempo"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15580,
+    "MET": 5,
+    "Description": "Skateboarden, algemeen, gematigde inspanning"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15582,
+    "MET": 6,
+    "Description": "Skateboarden, competitief, hevige inspanning"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2082,
+    "MET": 10.5,
+    "Description": "Ski ergometer, cross country, double poling, langzaam tot gematigd tempo"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2084,
+    "MET": 18,
+    "Description": "Ski ergometer, cross country, double poling, snel tot maximaal tempo"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2080,
+    "MET": 6.8,
+    "Description": "Ski machine, algemeen"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15600,
+    "MET": 3.5,
+    "Description": "Skydiven, base-jumping, bungee jumping"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2085,
+    "MET": 10.5,
+    "Description": "Slide board oefening, algemeen"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2090,
+    "MET": 6,
+    "Description": "Slimnastics, jazzercise"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15620,
+    "MET": 5,
+    "Description": "Softbal of honkbal, fast of slow pitch, algemeen, gematigde inspanning"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15630,
+    "MET": 4,
+    "Description": "Softbal, arbitrage"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15625,
+    "MET": 4,
+    "Description": "Softbal, oefenen"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15640,
+    "MET": 6,
+    "Description": "Softbal, werpen"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15645,
+    "MET": 3.3,
+    "Description": "Sporttoeschouwer, zeer enthousiast, emotioneel, fysiek in beweging"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15650,
+    "MET": 12,
+    "Description": "Squash"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15652,
+    "MET": 7.3,
+    "Description": "Squash, algemeen"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15432,
+    "MET": 14.3,
+    "Description": "Taekwondo, gevechtssimulatie"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15660,
+    "MET": 4,
+    "Description": "Tafeltennis, pingpong"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15674,
+    "MET": 6,
+    "Description": "Tai chi chuan, Yang stijl"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15670,
+    "MET": 3.3,
+    "Description": "Tai chi, qi gong, algemeen"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15672,
+    "MET": 1.5,
+    "Description": "Tai chi, qi gong, zittend, lichte inspanning"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15676,
+    "MET": 8,
+    "Description": "Tennis, algemeen, competitief"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15675,
+    "MET": 6.8,
+    "Description": "Tennis, algemeen, gematigde inspanning"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15695,
+    "MET": 5,
+    "Description": "Tennis, ballen slaan, geen wedstrijd, gematigde inspanning"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15685,
+    "MET": 4.5,
+    "Description": "Tennis, dubbelspel"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15680,
+    "MET": 6,
+    "Description": "Tennis, dubbelspel"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15690,
+    "MET": 8,
+    "Description": "Tennis, enkelspel"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2112,
+    "MET": 2.8,
+    "Description": "Therapeutisch oefenbal, Fitball oefening"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2114,
+    "MET": 9.5,
+    "Description": "Therapeutisch oefenbal, Fitball oefening, hoge intensiteit"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2064,
+    "MET": 3.8,
+    "Description": "Thuisoefeningen, algemeen"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2068,
+    "MET": 11,
+    "Description": "Touwspringen, algemeen"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15554,
+    "MET": 10,
+    "Description": "Touwspringen, dubbele onder of meer"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15551,
+    "MET": 11.8,
+    "Description": "Touwspringen, gematigd tempo, algemeen, 100 tot 120 sprongen/min, 2-voet sprong, gewone sprongetje"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15552,
+    "MET": 8.3,
+    "Description": "Touwspringen, langzaam tempo, < 100 sprongen/min, 2-voet sprong, ritme sprongetje"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15550,
+    "MET": 12.3,
+    "Description": "Touwspringen, snel tempo, 120-160 sprongen/min"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15702,
+    "MET": 10.3,
+    "Description": "Trampoline, competitief"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15700,
+    "MET": 6.3,
+    "Description": "Trampoline, recreatief"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2065,
+    "MET": 9.3,
+    "Description": "Traptrede loopband ergometer, algemeen"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15430,
+    "MET": 10.3,
+    "Description": "Vechtkunsten, verschillende soorten, gematigd tempo (bijv. judo, jujitsu, karate, kickboksen, tae kwon do, tai-bo, Muay Thai boksen)"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15425,
+    "MET": 5.3,
+    "Description": "Vechtkunsten, verschillende soorten, langzamer tempo, beginnende beoefenaars, oefening"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2143,
+    "MET": 4,
+    "Description": "Video, oefenprogramma's op tv, gematigde inspanning"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2145,
+    "MET": 6,
+    "Description": "Video, oefenprogramma's op tv, intensieve inspanning"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2140,
+    "MET": 2.5,
+    "Description": "Video, oefenprogramma's op tv, lichte inspanning"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2280,
+    "MET": 7.9,
+    "Description": "Virtual Reality Fitness, Supernatural \"Flow\", \"Boxing\", intensieve inspanning"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15235,
+    "MET": 2.5,
+    "Description": "Voetbal of honkbal, vangen"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15610,
+    "MET": 7,
+    "Description": "Voetbal, casual, algemeen"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15210,
+    "MET": 8,
+    "Description": "Voetbal, competitief"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15605,
+    "MET": 9.5,
+    "Description": "Voetbal, competitief"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15230,
+    "MET": 8,
+    "Description": "Voetbal, touch, vlag, algemeen"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15232,
+    "MET": 4,
+    "Description": "Voetbal, touch, vlag, lichte inspanning"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15710,
+    "MET": 4,
+    "Description": "Volleybal"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15711,
+    "MET": 6,
+    "Description": "Volleybal, competitief, in de gymzaal"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15720,
+    "MET": 3,
+    "Description": "Volleybal, niet-competitief, 6 - 9 leden team, algemeen"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15725,
+    "MET": 8,
+    "Description": "Volleybal, strand, in het zand"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15615,
+    "MET": 3.5,
+    "Description": "Walking football/soccer"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15731,
+    "MET": 7,
+    "Description": "Wallyball, algemeen"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2300,
+    "MET": 3,
+    "Description": "Wand oefening, Life-Build-Line"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2120,
+    "MET": 5.3,
+    "Description": "Wateraerobics, water calisthenics, wateroefeningen"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2135,
+    "MET": 1.3,
+    "Description": "Whirlpool, zitten"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15730,
+    "MET": 6,
+    "Description": "Worstelen, competitief (één wedstrijd = 5 minuten)"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2175,
+    "MET": 2.3,
+    "Description": "Yoga, algemeen"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2150,
+    "MET": 2.3,
+    "Description": "Yoga, Hatha"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2153,
+    "MET": 8,
+    "Description": "Yoga, Hatha, hoge intensiteit"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2155,
+    "MET": 3,
+    "Description": "Yoga, Hot"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2170,
+    "MET": 2,
+    "Description": "Yoga, Nadisodhana"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2160,
+    "MET": 4,
+    "Description": "Yoga, Power"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2180,
+    "MET": 3.5,
+    "Description": "Yoga, Surya Namaskar"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2185,
+    "MET": 2.7,
+    "Description": "Yoga, Vinyasa"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2344,
+    "MET": 4,
+    "Description": "Zit-sta oefening, 18-24 keer/min"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2340,
+    "MET": 2.8,
+    "Description": "Zit-sta oefening, 6-12 keer/min"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2310,
+    "MET": 6.5,
+    "Description": "Zumba, groepsles"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 2315,
+    "MET": 5.5,
+    "Description": "Zumba, home video"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15200,
+    "MET": 6,
+    "Description": "Zwaardvechten, algemeen"
+  },
+  {
+    "Category": "Sporten",
+    "Code": 15203,
+    "MET": 9.8,
+    "Description": "Zwaardvechten, epee, competitief"
+  },
+  {
+    "Category": "Tuin & Tuinieren",
+    "Code": 8160,
+    "MET": 4,
+    "Description": "Bladeren of gras harken, matige inspanning"
+  },
+  {
+    "Category": "Tuin & Tuinieren",
+    "Code": 8150,
+    "MET": 4.5,
+    "Description": "Bomen planten"
+  },
+  {
+    "Category": "Tuin & Tuinieren",
+    "Code": 8057,
+    "MET": 8.3,
+    "Description": "Bomen vellen, grote bomen"
+  },
+  {
+    "Category": "Tuin & Tuinieren",
+    "Code": 8058,
+    "MET": 5.3,
+    "Description": "Bomen vellen, kleine tot middelgrote bomen"
+  },
+  {
+    "Category": "Tuin & Tuinieren",
+    "Code": 8170,
+    "MET": 4,
+    "Description": "Dak sneeuw harken"
+  },
+  {
+    "Category": "Tuin & Tuinieren",
+    "Code": 8246,
+    "MET": 3.5,
+    "Description": "Fruit of koffie oogsten van bomen, matige inspanning"
+  },
+  {
+    "Category": "Tuin & Tuinieren",
+    "Code": 8090,
+    "MET": 5,
+    "Description": "Gras leggen"
+  },
+  {
+    "Category": "Tuin & Tuinieren",
+    "Code": 8190,
+    "MET": 4,
+    "Description": "Gras of bladeren in zakken doen"
+  },
+  {
+    "Category": "Tuin & Tuinieren",
+    "Code": 8230,
+    "MET": 4,
+    "Description": "Gras of tuin water geven, staan of lopen"
+  },
+  {
+    "Category": "Tuin & Tuinieren",
+    "Code": 8095,
+    "MET": 5.5,
+    "Description": "Grasmaaien, algemeen, wandelen, matige inspanning"
+  },
+  {
+    "Category": "Tuin & Tuinieren",
+    "Code": 8110,
+    "MET": 6,
+    "Description": "Grasmaaien, handmaaier, zware inspanning"
+  },
+  {
+    "Category": "Tuin & Tuinieren",
+    "Code": 8125,
+    "MET": 4.5,
+    "Description": "Grasmaaien, krachtmaaier, lichte tot matige inspanning"
+  },
+  {
+    "Category": "Tuin & Tuinieren",
+    "Code": 8120,
+    "MET": 5,
+    "Description": "Grasmaaien, lopen, elektrische maaier, matige of zware inspanning"
+  },
+  {
+    "Category": "Tuin & Tuinieren",
+    "Code": 8100,
+    "MET": 2.5,
+    "Description": "Grasmaaien, rijdende maaier"
+  },
+  {
+    "Category": "Tuin & Tuinieren",
+    "Code": 8165,
+    "MET": 4,
+    "Description": "Graspunt harken"
+  },
+  {
+    "Category": "Tuin & Tuinieren",
+    "Code": 8050,
+    "MET": 5,
+    "Description": "Graven, spaden, tuin vullen, composteren"
+  },
+  {
+    "Category": "Tuin & Tuinieren",
+    "Code": 8045,
+    "MET": 3.5,
+    "Description": "Graven, spaden, tuin vullen, composteren, lichte tot matige inspanning"
+  },
+  {
+    "Category": "Tuin & Tuinieren",
+    "Code": 8052,
+    "MET": 7.3,
+    "Description": "Graven, spaden, tuin vullen, composteren, zware inspanning"
+  },
+  {
+    "Category": "Tuin & Tuinieren",
+    "Code": 8080,
+    "MET": 6.3,
+    "Description": "Grind of gravel leggen"
+  },
+  {
+    "Category": "Tuin & Tuinieren",
+    "Code": 8192,
+    "MET": 5.5,
+    "Description": "Grond of modder scheppen"
+  },
+  {
+    "Category": "Tuin & Tuinieren",
+    "Code": 8009,
+    "MET": 4.1,
+    "Description": "Hout dragen, laden of stapelen, licht tot matige inspanning"
+  },
+  {
+    "Category": "Tuin & Tuinieren",
+    "Code": 8010,
+    "MET": 5.5,
+    "Description": "Hout dragen, laden of stapelen, matige inspanning"
+  },
+  {
+    "Category": "Tuin & Tuinieren",
+    "Code": 8019,
+    "MET": 4.5,
+    "Description": "Hout hakken, logs splijten, matige inspanning"
+  },
+  {
+    "Category": "Tuin & Tuinieren",
+    "Code": 8020,
+    "MET": 6.5,
+    "Description": "Hout hakken, logs splijten, zware inspanning"
+  },
+  {
+    "Category": "Tuin & Tuinieren",
+    "Code": 8070,
+    "MET": 4,
+    "Description": "Irrigatiekanalen, poorten openen en sluiten"
+  },
+  {
+    "Category": "Tuin & Tuinieren",
+    "Code": 8030,
+    "MET": 6.3,
+    "Description": "Land opruimen, takken of ondergroei vervoeren, zware inspanning"
+  },
+  {
+    "Category": "Tuin & Tuinieren",
+    "Code": 8025,
+    "MET": 3.5,
+    "Description": "Lichte struiken opruimen, tuin dunnen, matige inspanning"
+  },
+  {
+    "Category": "Tuin & Tuinieren",
+    "Code": 8239,
+    "MET": 3.8,
+    "Description": "Onkruid wieden, tuin bewerken, lichte tot matige inspanning"
+  },
+  {
+    "Category": "Tuin & Tuinieren",
+    "Code": 8240,
+    "MET": 4.5,
+    "Description": "Onkruid wieden, tuin bewerken, matige inspanning"
+  },
+  {
+    "Category": "Tuin & Tuinieren",
+    "Code": 8241,
+    "MET": 5,
+    "Description": "Onkruid wieden, tuin bewerken, met schoffel, matige tot zware inspanning"
+  },
+  {
+    "Category": "Tuin & Tuinieren",
+    "Code": 8248,
+    "MET": 4.5,
+    "Description": "Oogsten van fruit, fruit van bomen plukken, ladder gebruiken, zware inspanning"
+  },
+  {
+    "Category": "Tuin & Tuinieren",
+    "Code": 8145,
+    "MET": 4.3,
+    "Description": "Oogsten van gewassen, groenten of fruit, ladder gebruiken voor fruit plukken, zware inspanning"
+  },
+  {
+    "Category": "Tuin & Tuinieren",
+    "Code": 8135,
+    "MET": 2.6,
+    "Description": "Planten, potten, verplanten van zaailingen of planten, lichte inspanning"
+  },
+  {
+    "Category": "Tuin & Tuinieren",
+    "Code": 8200,
+    "MET": 6,
+    "Description": "Sneeuw scheppen met de hand"
+  },
+  {
+    "Category": "Tuin & Tuinieren",
+    "Code": 8195,
+    "MET": 5.3,
+    "Description": "Sneeuw scheppen met de hand, matige inspanning"
+  },
+  {
+    "Category": "Tuin & Tuinieren",
+    "Code": 8202,
+    "MET": 7.5,
+    "Description": "Sneeuw scheppen met de hand, zware inspanning"
+  },
+  {
+    "Category": "Tuin & Tuinieren",
+    "Code": 8130,
+    "MET": 2.5,
+    "Description": "Sneeuwblazer bedienen, wandelen"
+  },
+  {
+    "Category": "Tuin & Tuinieren",
+    "Code": 8180,
+    "MET": 3,
+    "Description": "Sneeuwblazer rijden"
+  },
+  {
+    "Category": "Tuin & Tuinieren",
+    "Code": 8215,
+    "MET": 3.3,
+    "Description": "Struiken of bomen trimmen, elektrische gereedschappen, bladhark of randmaaier, matige inspanning"
+  },
+  {
+    "Category": "Tuin & Tuinieren",
+    "Code": 8210,
+    "MET": 3.8,
+    "Description": "Struiken of bomen trimmen, handgereedschap"
+  },
+  {
+    "Category": "Tuin & Tuinieren",
+    "Code": 8055,
+    "MET": 2.8,
+    "Description": "Tractor rijden"
+  },
+  {
+    "Category": "Tuin & Tuinieren",
+    "Code": 8250,
+    "MET": 3,
+    "Description": "Tuin opruimen, licht werk, bloemen of groenten plukken"
+  },
+  {
+    "Category": "Tuin & Tuinieren",
+    "Code": 8060,
+    "MET": 5.8,
+    "Description": "Tuinieren met zware elektrische gereedschappen, kettingzaag gebruiken, tuin bewerken"
+  },
+  {
+    "Category": "Tuin & Tuinieren",
+    "Code": 8066,
+    "MET": 2,
+    "Description": "Tuinieren, algemeen"
+  },
+  {
+    "Category": "Tuin & Tuinieren",
+    "Code": 8245,
+    "MET": 3.8,
+    "Description": "Tuinieren, algemeen, matige inspanning"
+  },
+  {
+    "Category": "Tuin & Tuinieren",
+    "Code": 8256,
+    "MET": 6,
+    "Description": "Tuinwagentje, duwen van grote tuinkar of zware kruiwagen tot 150 kg"
+  },
+  {
+    "Category": "Tuin & Tuinieren",
+    "Code": 8255,
+    "MET": 4.8,
+    "Description": "Tuinwagentje, duwen van tuinkar of kruiwagen, algemeen"
+  },
+  {
+    "Category": "Tuin & Tuinieren",
+    "Code": 8260,
+    "MET": 2.3,
+    "Description": "Tuinwerk, algemeen, lichte inspanning"
+  },
+  {
+    "Category": "Tuin & Tuinieren",
+    "Code": 8261,
+    "MET": 4,
+    "Description": "Tuinwerk, algemeen, matige inspanning"
+  },
+  {
+    "Category": "Tuin & Tuinieren",
+    "Code": 8262,
+    "MET": 6,
+    "Description": "Tuinwerk, algemeen, zware inspanning"
+  },
+  {
+    "Category": "Tuin & Tuinieren",
+    "Code": 8220,
+    "MET": 3,
+    "Description": "Wandelen, gras of tuin bemesten, duwapplicator"
+  },
+  {
+    "Category": "Tuin & Tuinieren",
+    "Code": 8251,
+    "MET": 3,
+    "Description": "Wandelen, tuin gereedschap verzamelen"
+  },
+  {
+    "Category": "Tuin & Tuinieren",
+    "Code": 8140,
+    "MET": 4.3,
+    "Description": "Zaailingen, struiken planten, bukken, matige inspanning"
+  },
+  {
+    "Category": "Tuin & Tuinieren",
+    "Code": 8040,
+    "MET": 5,
+    "Description": "Zandbak graven, zand scheppen"
+  },
+  {
+    "Category": "Vervoer",
+    "Code": 16010,
+    "MET": 2,
+    "Description": "Auto of lichte vrachtwagen (geen vrachtwagen), rijden"
+  },
+  {
+    "Category": "Vervoer",
+    "Code": 16005,
+    "MET": 6.8,
+    "Description": "E-bike (elektrisch ondersteund) voor vervoer"
+  },
+  {
+    "Category": "Vervoer",
+    "Code": 16002,
+    "MET": 6.8,
+    "Description": "Fietsen voor vervoer, gematigde inspanning"
+  },
+  {
+    "Category": "Vervoer",
+    "Code": 16004,
+    "MET": 9.3,
+    "Description": "Fietsen voor vervoer, hoge inspanning"
+  },
+  {
+    "Category": "Vervoer",
+    "Code": 16035,
+    "MET": 6.3,
+    "Description": "Het trekken van een riksja"
+  },
+  {
+    "Category": "Vervoer",
+    "Code": 16030,
+    "MET": 2.8,
+    "Description": "Motor scooter, motorfiets"
+  },
+  {
+    "Category": "Vervoer",
+    "Code": 16015,
+    "MET": 1.3,
+    "Description": "Rijden in een auto of vrachtwagen"
+  },
+  {
+    "Category": "Vervoer",
+    "Code": 16016,
+    "MET": 1.3,
+    "Description": "Rijden in een bus of trein"
+  },
+  {
+    "Category": "Vervoer",
+    "Code": 16020,
+    "MET": 1.8,
+    "Description": "Vliegen met een vliegtuig of helikopter"
+  },
+  {
+    "Category": "Vervoer",
+    "Code": 16040,
+    "MET": 6,
+    "Description": "Vliegtuig duwen in en uit de hangar"
+  },
+  {
+    "Category": "Vervoer",
+    "Code": 16050,
+    "MET": 2.5,
+    "Description": "Vrachtwagen, semi, tractor, ?1 ton, of bus, rijden"
+  },
+  {
+    "Category": "Vervoer",
+    "Code": 16060,
+    "MET": 3.5,
+    "Description": "Wandelen voor vervoer, 4.5-5.1 km/h, vlak, gematigd tempo, stevige ondergrond"
+  },
+  {
+    "Category": "Videogames",
+    "Code": 22200,
+    "MET": 3,
+    "Description": "Actieve videogame, bewegingssensor game/gebruik van bovenlichaam (lichte tot matige inspanning)"
+  },
+  {
+    "Category": "Videogames",
+    "Code": 22240,
+    "MET": 4,
+    "Description": "Actieve videogame, bewegingssensor game/gebruik van het hele lichaam (matige inspanning)"
+  },
+  {
+    "Category": "Videogames",
+    "Code": 22280,
+    "MET": 5,
+    "Description": "Actieve videogame, bewegingssensor game/gebruik van het hele lichaam (matige tot intensieve inspanning)"
+  },
+  {
+    "Category": "Videogames",
+    "Code": 22320,
+    "MET": 7.5,
+    "Description": "Actieve videogame, bewegingssensor game/gebruik van het hele lichaam, exergames, workouts, dansen (intensieve inspanning)"
+  },
+  {
+    "Category": "Videogames",
+    "Code": 22360,
+    "MET": 9.8,
+    "Description": "Conditie/oefening virtuele realiteit fitness, intensieve intensiteit"
+  },
+  {
+    "Category": "Videogames",
+    "Code": 22120,
+    "MET": 1.5,
+    "Description": "Videogame, handcontroller (lichte inspanning)"
+  },
+  {
+    "Category": "Videogames",
+    "Code": 22160,
+    "MET": 2.3,
+    "Description": "Videogame, lichte inspanning (Wii Fit, yoga, bowlen, enz.)"
+  },
+  {
+    "Category": "Videogames",
+    "Code": 22040,
+    "MET": 1.3,
+    "Description": "Zittend, videogame, handcontroller (inactief)"
+  },
+  {
+    "Category": "Vissen en Jagen",
+    "Code": 4168,
+    "MET": 3.3,
+    "Description": "Activiteiten in een boot, tillen, laten zakken"
+  },
+  {
+    "Category": "Vissen en Jagen",
+    "Code": 4145,
+    "MET": 2.5,
+    "Description": "Geweer oefeningen, schieten, knielend of staand"
+  },
+  {
+    "Category": "Vissen en Jagen",
+    "Code": 4140,
+    "MET": 2.3,
+    "Description": "Geweer oefeningen, schieten, liggend"
+  },
+  {
+    "Category": "Vissen en Jagen",
+    "Code": 4125,
+    "MET": 9.5,
+    "Description": "Jagen - wandelen met jachtuitrusting"
+  },
+  {
+    "Category": "Vissen en Jagen",
+    "Code": 4081,
+    "MET": 9.8,
+    "Description": "Jagen groot wild, het slepen van het karkas"
+  },
+  {
+    "Category": "Vissen en Jagen",
+    "Code": 4086,
+    "MET": 2,
+    "Description": "Jagen op groot wild vanuit een auto, vliegtuig of boot"
+  },
+  {
+    "Category": "Vissen en Jagen",
+    "Code": 4083,
+    "MET": 4,
+    "Description": "Jagen op grote zee dieren"
+  },
+  {
+    "Category": "Vissen en Jagen",
+    "Code": 4095,
+    "MET": 3,
+    "Description": "Jagen op vliegende vos, eekhoorn"
+  },
+  {
+    "Category": "Vissen en Jagen",
+    "Code": 4115,
+    "MET": 3.3,
+    "Description": "Jagen op vogels"
+  },
+  {
+    "Category": "Vissen en Jagen",
+    "Code": 4123,
+    "MET": 3.3,
+    "Description": "Jagen op wilde varkens"
+  },
+  {
+    "Category": "Vissen en Jagen",
+    "Code": 4100,
+    "MET": 5,
+    "Description": "Jagen, algemeen"
+  },
+  {
+    "Category": "Vissen en Jagen",
+    "Code": 4070,
+    "MET": 2.5,
+    "Description": "Jagen, boog en pijl of kruisboog"
+  },
+  {
+    "Category": "Vissen en Jagen",
+    "Code": 4090,
+    "MET": 2.5,
+    "Description": "Jagen, eenden, waden"
+  },
+  {
+    "Category": "Vissen en Jagen",
+    "Code": 4110,
+    "MET": 6,
+    "Description": "Jagen, fazanten of grouse"
+  },
+  {
+    "Category": "Vissen en Jagen",
+    "Code": 4085,
+    "MET": 2.5,
+    "Description": "Jagen, groot wild vanuit een jachtstoel, beperkt wandelen"
+  },
+  {
+    "Category": "Vissen en Jagen",
+    "Code": 4080,
+    "MET": 6,
+    "Description": "Jagen, herten, elanden, groot wild"
+  },
+  {
+    "Category": "Vissen en Jagen",
+    "Code": 4120,
+    "MET": 5,
+    "Description": "Jagen, konijn, eekhoorn, prairiekip, wasbeer, klein wild"
+  },
+  {
+    "Category": "Vissen en Jagen",
+    "Code": 4130,
+    "MET": 2.5,
+    "Description": "Pistool schieten of trap schieten, staand"
+  },
+  {
+    "Category": "Vissen en Jagen",
+    "Code": 4164,
+    "MET": 1.5,
+    "Description": "Staan in boot"
+  },
+  {
+    "Category": "Vissen en Jagen",
+    "Code": 4124,
+    "MET": 2,
+    "Description": "Vallen zetten voor wild, algemeen"
+  },
+  {
+    "Category": "Vissen en Jagen",
+    "Code": 4150,
+    "MET": 2.8,
+    "Description": "Verzamelactiviteiten, 0-9.9 kg rugzak"
+  },
+  {
+    "Category": "Vissen en Jagen",
+    "Code": 4152,
+    "MET": 3,
+    "Description": "Verzamelactiviteiten, 10-15 kg rugzak"
+  },
+  {
+    "Category": "Vissen en Jagen",
+    "Code": 4010,
+    "MET": 4.3,
+    "Description": "Vissen gerelateerd, wormen graven met een schop"
+  },
+  {
+    "Category": "Vissen en Jagen",
+    "Code": 4050,
+    "MET": 6,
+    "Description": "Vissen in een stroom, in waders"
+  },
+  {
+    "Category": "Vissen en Jagen",
+    "Code": 4065,
+    "MET": 2.3,
+    "Description": "Vissen met een speer, staand"
+  },
+  {
+    "Category": "Vissen en Jagen",
+    "Code": 4020,
+    "MET": 4,
+    "Description": "Vissen vanaf de rivier oever en wandelen"
+  },
+  {
+    "Category": "Vissen en Jagen",
+    "Code": 4040,
+    "MET": 3.5,
+    "Description": "Vissen vanaf de rivier oever, staand"
+  },
+  {
+    "Category": "Vissen en Jagen",
+    "Code": 4030,
+    "MET": 2,
+    "Description": "Vissen vanuit een boot of kano, zittend"
+  },
+  {
+    "Category": "Vissen en Jagen",
+    "Code": 4001,
+    "MET": 3.5,
+    "Description": "Vissen, algemeen"
+  },
+  {
+    "Category": "Vissen en Jagen",
+    "Code": 4062,
+    "MET": 3.5,
+    "Description": "Vissen, dipnet, net zetten en vissen ophalen, algemeen"
+  },
+  {
+    "Category": "Vissen en Jagen",
+    "Code": 4060,
+    "MET": 2,
+    "Description": "Vissen, ijsvissen, zittend"
+  },
+  {
+    "Category": "Vissen en Jagen",
+    "Code": 4061,
+    "MET": 1.8,
+    "Description": "Vissen, jig of lijn, staand, algemeen"
+  },
+  {
+    "Category": "Vissen en Jagen",
+    "Code": 4005,
+    "MET": 4.5,
+    "Description": "Vissen, krabben vangen"
+  },
+  {
+    "Category": "Vissen en Jagen",
+    "Code": 4007,
+    "MET": 4,
+    "Description": "Vissen, vissen met de handen"
+  },
+  {
+    "Category": "Vissen en Jagen",
+    "Code": 4064,
+    "MET": 3,
+    "Description": "Vissen, viswiel, net zetten en vissen ophalen, algemeen"
+  },
+  {
+    "Category": "Vissen en Jagen",
+    "Code": 4063,
+    "MET": 3.8,
+    "Description": "Vissen, zetnet, net zetten en vissen ophalen, algemeen"
+  },
+  {
+    "Category": "Vissen en Jagen",
+    "Code": 4160,
+    "MET": 1,
+    "Description": "Zitten in boot, passagier"
+  },
+  {
+    "Category": "Vrijwilligersactiviteiten",
+    "Code": 21055,
+    "MET": 3.5,
+    "Description": "Lopen, 4,0 km/u langzaam en dragen van objecten minder dan 11,34 kg"
+  },
+  {
+    "Category": "Vrijwilligersactiviteiten",
+    "Code": 21045,
+    "MET": 3.8,
+    "Description": "Lopen, 4,5 tot 5,5 km/u, matige snelheid, niets dragen"
+  },
+  {
+    "Category": "Vrijwilligersactiviteiten",
+    "Code": 21060,
+    "MET": 4.5,
+    "Description": "Lopen, 4,8 km/u gematigd en dragen van objecten minder dan 11,34 kg, iets duwen"
+  },
+  {
+    "Category": "Vrijwilligersactiviteiten",
+    "Code": 21050,
+    "MET": 4.8,
+    "Description": "Lopen, 5,5 tot 6,3 km/u, stevige snelheid, niets dragen"
+  },
+  {
+    "Category": "Vrijwilligersactiviteiten",
+    "Code": 21065,
+    "MET": 4.5,
+    "Description": "Lopen, 5,6 km/u, snel en dragen van objecten minder dan 11,34 kg"
+  },
+  {
+    "Category": "Vrijwilligersactiviteiten",
+    "Code": 21040,
+    "MET": 2.3,
+    "Description": "Lopen, minder dan 3,22 km/u, heel langzaam"
+  },
+  {
+    "Category": "Vrijwilligersactiviteiten",
+    "Code": 21019,
+    "MET": 5.8,
+    "Description": "Lopen/rentenspelen met kinderen, intensief, alleen actieve periodes"
+  },
+  {
+    "Category": "Vrijwilligersactiviteiten",
+    "Code": 21018,
+    "MET": 3.5,
+    "Description": "Lopen/rentenspelen met kinderen, matig, alleen actieve periodes"
+  },
+  {
+    "Category": "Vrijwilligersactiviteiten",
+    "Code": 21070,
+    "MET": 3,
+    "Description": "Lopen/staand combinatie, voor vrijwilligersdoeleinden"
+  },
+  {
+    "Category": "Vrijwilligersactiviteiten",
+    "Code": 21017,
+    "MET": 3.5,
+    "Description": "Staand, kinderopvang, alleen actieve periodes"
+  },
+  {
+    "Category": "Vrijwilligersactiviteiten",
+    "Code": 21015,
+    "MET": 1.8,
+    "Description": "Staand, licht werk (bestanden, praten, assembleren)"
+  },
+  {
+    "Category": "Vrijwilligersactiviteiten",
+    "Code": 21020,
+    "MET": 3.3,
+    "Description": "Staand, licht/matig werk (bijv. dozen inpakken, assembleren/repareren, stoelen/furniture opzetten)"
+  },
+  {
+    "Category": "Vrijwilligersactiviteiten",
+    "Code": 21025,
+    "MET": 3.5,
+    "Description": "Staand, matig (bijv. 22,68 kg tillen, snel assembleren)"
+  },
+  {
+    "Category": "Vrijwilligersactiviteiten",
+    "Code": 21030,
+    "MET": 4.5,
+    "Description": "Staand, matig/zwaar werk"
+  },
+  {
+    "Category": "Vrijwilligersactiviteiten",
+    "Code": 21035,
+    "MET": 1.3,
+    "Description": "Typen, elektrisch, handmatig of computer"
+  },
+  {
+    "Category": "Vrijwilligersactiviteiten",
+    "Code": 21016,
+    "MET": 2,
+    "Description": "Zittend, kinderopvang, alleen actieve periodes"
+  },
+  {
+    "Category": "Vrijwilligersactiviteiten",
+    "Code": 21005,
+    "MET": 1.5,
+    "Description": "Zittend, licht kantoorbureauwerk, in het algemeen"
+  },
+  {
+    "Category": "Vrijwilligersactiviteiten",
+    "Code": 21010,
+    "MET": 2.5,
+    "Description": "Zittend, matig werk"
+  },
+  {
+    "Category": "Vrijwilligersactiviteiten",
+    "Code": 21000,
+    "MET": 1.3,
+    "Description": "Zittend, vergadering, algemeen, en/of met praten betrokken"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17016,
+    "MET": 4,
+    "Description": "Draag 2.3 tot 6.4 kg last (bijv. koffer, dozen, boodschappen), vlak terrein, gematigd tempo"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17019,
+    "MET": 6.5,
+    "Description": "Draag 22.7 tot 68 kg last (bijv. voer voor paarden of runderen, hekbuizen, meubels), vlak terrein, gematigd tempo"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17018,
+    "MET": 4.5,
+    "Description": "Draag 6.8 - 70.4 kg last (bijv. koffer, dozen, meubels), vlak terrein of trappen, langzaam tempo"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17021,
+    "MET": 2.3,
+    "Description": "Draag een kind van ~4.5 kg, langzaam wandelen"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17100,
+    "MET": 3.8,
+    "Description": "Duwen of trekken van een kinderwagen met kind of wandelen met kinderen, 4.0 tot 5.0 km/h"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17105,
+    "MET": 3.8,
+    "Description": "Duwen van een rolstoel, niet-beroepsmatig"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17142,
+    "MET": 7,
+    "Description": "Gebruik van krukken, snel tempo"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17140,
+    "MET": 4.5,
+    "Description": "Gebruik van krukken, vlak terrein, algemeen"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17145,
+    "MET": 4.3,
+    "Description": "Gebruik van medische knie-scooter"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17045,
+    "MET": 6.5,
+    "Description": "Heuvel opklimmen, 4.5-9.1 kg last, 5-10% helling, gematigd"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17033,
+    "MET": 3.8,
+    "Description": "Heuvel opklimmen, 6.8-22.7 kg last, 1-2% helling, langzaam tempo"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17060,
+    "MET": 10,
+    "Description": "Heuvel opklimmen, 9.1 kg+ last, 5-20% helling, gematigd tot snel tempo"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17050,
+    "MET": 7.5,
+    "Description": "Heuvel opklimmen, 9.5-18.1 kg last, 3-10% helling, gematigd-tempo"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17036,
+    "MET": 8.8,
+    "Description": "Heuvel opklimmen, geen last, 11-20% helling, langzaam tot gematigd tempo"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17034,
+    "MET": 5.3,
+    "Description": "Heuvel opklimmen, geen last, 1-5% helling, gematigd-tempo"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17037,
+    "MET": 10,
+    "Description": "Heuvel opklimmen, geen last, 4.8 tot 8.0 km/h, 3-5% helling, zeer snel tempo"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17032,
+    "MET": 5,
+    "Description": "Heuvel opklimmen, geen last, 5-20% helling, zeer langzaam tempo"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17035,
+    "MET": 7,
+    "Description": "Heuvel opklimmen, geen last, 6-10% helling, gematigd-tempo"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17040,
+    "MET": 16.3,
+    "Description": "Heuvel opklimmen, geen last, steile helling (10-40%), 2.9 tot 8.0 km/h"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17038,
+    "MET": 8.5,
+    "Description": "Heuvel opklimmen, geen last, steile helling (30%), langzaam tempo (minder dan 1.9 km/h)"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17039,
+    "MET": 15.5,
+    "Description": "Heuvel opklimmen, geen last, zeer steile helling (30-40%), 1.9 tot 2.9 km/h"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17031,
+    "MET": 3.8,
+    "Description": "Laden en/of lossen van een auto, implied wandelen"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17025,
+    "MET": 8.3,
+    "Description": "Last de trap opbrengen, algemeen"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17030,
+    "MET": 12,
+    "Description": "Last dragen, >33.6 kg last, trap op"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17026,
+    "MET": 5.5,
+    "Description": "Last dragen, 1 tot 6.8 kg last, trap op"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17028,
+    "MET": 8,
+    "Description": "Last dragen, 11.3 tot 22.2 kg last, trap op"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17029,
+    "MET": 10,
+    "Description": "Last dragen, 22.7 tot 33.6 kg last, trap op"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17027,
+    "MET": 6,
+    "Description": "Last dragen, 7.3 tot 10.9 kg last, trap op"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17088,
+    "MET": 4.5,
+    "Description": "Marcheren, gematigde snelheid, militair, geen rugzak"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17110,
+    "MET": 6.5,
+    "Description": "Racewalking"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17010,
+    "MET": 7,
+    "Description": "Rugzakwandelen"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17012,
+    "MET": 7.8,
+    "Description": "Rugzakwandelen, wandelen met een dagrugzak, georganiseerde wandelingen met een dagrugzak"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17090,
+    "MET": 8,
+    "Description": "Snel marcheren, militair, geen rugzak"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17131,
+    "MET": 6.8,
+    "Description": "Traplopen, algemeen"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17130,
+    "MET": 8,
+    "Description": "Traplopen, gebruik van of omhoog klimmen via ladder"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17133,
+    "MET": 4.5,
+    "Description": "Traplopen, langzaam tempo"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17138,
+    "MET": 7.5,
+    "Description": "Traplopen, op en af de trap"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17134,
+    "MET": 9.3,
+    "Description": "Traplopen, snel tempo, één trede per keer"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17136,
+    "MET": 7.5,
+    "Description": "Traplopen, twee treden tegelijk"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17070,
+    "MET": 3.5,
+    "Description": "Trappen afdalen"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17085,
+    "MET": 2.5,
+    "Description": "Vogelspotten, wandelen en stoppen"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17081,
+    "MET": 3.8,
+    "Description": "Wandelen langzaam of dwalen door velden en heuvels, geen last"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17165,
+    "MET": 3,
+    "Description": "Wandelen met de hond"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17011,
+    "MET": 3.5,
+    "Description": "Wandelen met een dagrugzak, vlak terrein, aangenomen in de stad"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17162,
+    "MET": 2.5,
+    "Description": "Wandelen naar de buren of familie voor sociale doeleinden"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17082,
+    "MET": 5.3,
+    "Description": "Wandelen of normaal wandelen door velden en heuvels, geen last"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17475,
+    "MET": 7.8,
+    "Description": "Wandelen op een loopband, achteruit, 4.0 km/h, +10% helling"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17161,
+    "MET": 2.5,
+    "Description": "Wandelen van huis naar auto of bus, van auto of bus naar werkplek"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17302,
+    "MET": 4.3,
+    "Description": "Wandelen voor oefening, 4.0 tot 5.6 km/h, met skistokken, Nordic walking, vlak, matig tempo"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17304,
+    "MET": 5.3,
+    "Description": "Wandelen voor oefening, 5.8 tot 7.1 km/h, met skistokken, Nordic walking, vlak, matig tempo"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17305,
+    "MET": 8.5,
+    "Description": "Wandelen voor oefening, 7.2 tot 8.0 km/h, met skistokken, Nordic walking, vlak, snel tempo"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17310,
+    "MET": 8.8,
+    "Description": "Wandelen voor oefening, met skistokken, Nordic walking, bergopwaarts, matig tempo"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17315,
+    "MET": 12.3,
+    "Description": "Wandelen voor oefening, met skistokken, Nordic walking, bergopwaarts, met 9.0 tot 15.0 kg gewicht"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17313,
+    "MET": 10.8,
+    "Description": "Wandelen voor oefening, met skistokken, Nordic walking, vlak terrein, met 9.0 tot 15.0 kg gewicht"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17160,
+    "MET": 3.5,
+    "Description": "Wandelen voor plezier"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17250,
+    "MET": 3.5,
+    "Description": "Wandelen voor plezier, werkpauze"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17152,
+    "MET": 2.8,
+    "Description": "Wandelen, 3.2 tot 3.9 km/h, vlak, langzaam tempo, stevige ondergrond"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17180,
+    "MET": 3.3,
+    "Description": "Wandelen, 4.0 km/h, bergafwaarts"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17170,
+    "MET": 3,
+    "Description": "Wandelen, 4.0 km/h, stevige, vlakke ondergrond"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17190,
+    "MET": 3.8,
+    "Description": "Wandelen, 4.5 tot 5.5 km/h, vlak, matig tempo, stevige ondergrond"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17200,
+    "MET": 4.8,
+    "Description": "Wandelen, 5.6 tot 6.3 km/h, vlak, energiek, stevige ondergrond, wandelen voor oefening"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17220,
+    "MET": 5.5,
+    "Description": "Wandelen, 6.4 tot 7.0 km/h, vlak, stevige ondergrond, zeer energiek tempo"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17230,
+    "MET": 7,
+    "Description": "Wandelen, 7.2 tot 7.9 km/h, vlak, stevige ondergrond, zeer, zeer energiek"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17231,
+    "MET": 8.5,
+    "Description": "Wandelen, 8.0 tot 8.9 km/h, vlak, stevige ondergrond"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17325,
+    "MET": 7.8,
+    "Description": "Wandelen, achteruit, 5.6 km/h, bergop, 5% helling"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17320,
+    "MET": 6,
+    "Description": "Wandelen, achteruit, 5.6 km/h, vlak"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17260,
+    "MET": 4.8,
+    "Description": "Wandelen, grasbaan"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17150,
+    "MET": 2.3,
+    "Description": "Wandelen, huishouden"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17492,
+    "MET": 1.5,
+    "Description": "Wandelen, met een wandelhulp of stap-voor-stap op de loopband, 1.1 km/h, 0% helling"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17151,
+    "MET": 2.3,
+    "Description": "Wandelen, minder dan 3.2 km/h, vlak, rustig, zeer langzaam"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17280,
+    "MET": 2.5,
+    "Description": "Wandelen, naar en van een toilet"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17270,
+    "MET": 4,
+    "Description": "Wandelen, naar werk of school"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17262,
+    "MET": 4.5,
+    "Description": "Wandelen, normaal tempo, bewerkte velden of zand"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17343,
+    "MET": 2.3,
+    "Description": "Wandelen, op de loopband, 1.6 km/h, 0% helling"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17346,
+    "MET": 2.8,
+    "Description": "Wandelen, op de loopband, 1.9 tot 3.0 km/h, 0% helling"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17349,
+    "MET": 3,
+    "Description": "Wandelen, op de loopband, 3.2 tot 3.9 km/h, 0% helling"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17438,
+    "MET": 5.8,
+    "Description": "Wandelen, op de loopband, 4.0 km/h, 0% helling, -10 tot 0 graden, 18.2 kg gewicht"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17434,
+    "MET": 4.8,
+    "Description": "Wandelen, op de loopband, 4.0 km/h, 0% helling, 5 tot 20 graden, 18.2 kg gewicht"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17352,
+    "MET": 3.5,
+    "Description": "Wandelen, op de loopband, 4.0 tot 4.7 km/h, 0% helling"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17355,
+    "MET": 3.8,
+    "Description": "Wandelen, op de loopband, 4.8 tot 5.5 km/h, 0% helling"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17358,
+    "MET": 4.8,
+    "Description": "Wandelen, op de loopband, 5.6 tot 6.3 km/h, 0% helling"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17361,
+    "MET": 5.8,
+    "Description": "Wandelen, op de loopband, 6.4 tot 7.1 km/h, 0% helling"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17364,
+    "MET": 6.8,
+    "Description": "Wandelen, op de loopband, 7.2 tot 7.9 km/h, 0% helling"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17367,
+    "MET": 8.3,
+    "Description": "Wandelen, op de loopband, 8.0 tot 8.9 km/h, 0% helling"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17382,
+    "MET": 3.3,
+    "Description": "Wandelen, op de loopband, bergafwaarts (-3% tot -12% helling), 4.5 tot 5.0 km/h"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17412,
+    "MET": 3.3,
+    "Description": "Wandelen, op de loopband, bergafwaarts (-5% tot -25% helling), 4.5 km/h, met Nordic Poles"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17340,
+    "MET": 2.1,
+    "Description": "Wandelen, op de loopband, minder dan 1.6 km/h, 0% helling"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17455,
+    "MET": 8.3,
+    "Description": "Wandelen, op een gebogen loopband, 4.8 tot 8.0 km/h, energiek tempo"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17080,
+    "MET": 6,
+    "Description": "Wandelen, over land"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17332,
+    "MET": 3.5,
+    "Description": "Wandelen, Putey walk, Monty Python Ministry of Silly Walks"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17330,
+    "MET": 8,
+    "Description": "Wandelen, Teabag walk, Monty Python Ministry of Silly Walks"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17255,
+    "MET": 4,
+    "Description": "Wandelen, zelfgekozen snelheid, binnen- of buitenbaan, stevige ondergrond"
+  },
+  {
+    "Category": "Wandelen",
+    "Code": 17076,
+    "MET": 4.5,
+    "Description": "Water dragen, hoofdheffen, lopen op vlakke ondergrond"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18428,
+    "MET": 6.5,
+    "Description": "Aquatisch fietsen, 100 W, 40-50 RPM"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18430,
+    "MET": 7,
+    "Description": "Aquatisch fietsen, 100 W, 60-70 RPM"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18432,
+    "MET": 7.5,
+    "Description": "Aquatisch fietsen, 125 W, 40-50 RPM"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18436,
+    "MET": 9,
+    "Description": "Aquatisch fietsen, 125 W, 60-70 RPM"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18404,
+    "MET": 2.8,
+    "Description": "Aquatisch fietsen, 25 W, 40-50 RPM"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18408,
+    "MET": 4.8,
+    "Description": "Aquatisch fietsen, 25 W, 60-70 RPM"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18412,
+    "MET": 3.8,
+    "Description": "Aquatisch fietsen, 50 W, 40-50 RPM"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18416,
+    "MET": 6,
+    "Description": "Aquatisch fietsen, 50 W, 60-70 RPM"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18420,
+    "MET": 5,
+    "Description": "Aquatisch fietsen, 75 W, 40-50 RPM"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18424,
+    "MET": 6.3,
+    "Description": "Aquatisch fietsen, 75 W, 60-70 RPM"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18440,
+    "MET": 10.3,
+    "Description": "Aquatisch fietsen, 90+ RPM"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18090,
+    "MET": 3,
+    "Description": "Duiken, plank of duikplank"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18160,
+    "MET": 7,
+    "Description": "Jet skiën, besturen, in water"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18104,
+    "MET": 13.5,
+    "Description": "Kajakken, competitie"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18100,
+    "MET": 5,
+    "Description": "Kajakken, matige inspanning"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18106,
+    "MET": 9,
+    "Description": "Kajakken, slalom, vlak water"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18080,
+    "MET": 12,
+    "Description": "Kanoën of roeien, competitie, bemanning of scullen"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18030,
+    "MET": 7,
+    "Description": "Kanoën, portaging"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18040,
+    "MET": 2.8,
+    "Description": "Kanoën, roeien, 3.2-6.3 km/h, lichte inspanning"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18050,
+    "MET": 5.8,
+    "Description": "Kanoën, roeien, 6.4-9.5 km/h, matige inspanning"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18060,
+    "MET": 12.5,
+    "Description": "Kanoën, roeien, kajakken, competitie, > 9.7 km/h, intensieve inspanning"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18070,
+    "MET": 3.5,
+    "Description": "Kanoën, roeien, voor plezier, algemeen"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18020,
+    "MET": 4,
+    "Description": "Kanoën, tijdens kampeertocht"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18025,
+    "MET": 3.3,
+    "Description": "Kanoën, wild rijstoogst, rijst van de stelen slaan"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18110,
+    "MET": 4,
+    "Description": "Peddelboot"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18010,
+    "MET": 2.5,
+    "Description": "Powerbooten, besturen"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18012,
+    "MET": 1.3,
+    "Description": "Powerbooten, passagier, licht"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18114,
+    "MET": 15.5,
+    "Description": "Roeien, enkel scull, ergometer, op schuiven, racen (32+ slagen/min, >16 km/h)"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18112,
+    "MET": 15.5,
+    "Description": "Roeien, gesimuleerd bemanning in een watertank, enkele riem, 33 slagen/min"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18202,
+    "MET": 5.3,
+    "Description": "Scuba diving, algemeen, lichte inspanning"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18204,
+    "MET": 5.8,
+    "Description": "Scuba diving, algemeen, matige inspanning"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18206,
+    "MET": 5.5,
+    "Description": "Scuba diving, professionele duiker"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18208,
+    "MET": 6.8,
+    "Description": "Scuba diving, recreatieve duiker"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18150,
+    "MET": 6,
+    "Description": "Skiën, water of wakeboarden"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18190,
+    "MET": 11.8,
+    "Description": "Skindiving, matig"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18200,
+    "MET": 7,
+    "Description": "Skindiving, scuba diving, algemeen"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18180,
+    "MET": 15.8,
+    "Description": "Skindiving, snel"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18210,
+    "MET": 5,
+    "Description": "Snorkelen"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18224,
+    "MET": 6.5,
+    "Description": "Stand up paddle boarding, algemeen"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18225,
+    "MET": 2.8,
+    "Description": "Stand up paddleboard, staand, 16-31 slagen/min"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18226,
+    "MET": 3.8,
+    "Description": "Stand up paddleboard, staand, 32-46 slagen/min"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18227,
+    "MET": 5,
+    "Description": "Stand up paddleboard, staand, 47-58 slagen/min"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18228,
+    "MET": 9.8,
+    "Description": "Stand up paddleboard, staand, 59-79 slagen/min"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18229,
+    "MET": 11,
+    "Description": "Stand up paddleboard, staand, 80-111 slagen/min"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18221,
+    "MET": 6.8,
+    "Description": "Surfboard, peddelen"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18220,
+    "MET": 3,
+    "Description": "Surfen, lichaam of board, algemeen"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18222,
+    "MET": 5,
+    "Description": "Surfen, lichaam of board, competitief"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18352,
+    "MET": 2.3,
+    "Description": "Tuben, drijven op een rivier, algemeen"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18374,
+    "MET": 6.5,
+    "Description": "Water hardlopen, 30 stappen/min, langzaam"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18375,
+    "MET": 7.5,
+    "Description": "Water hardlopen, 40 stappen/min, gematigd"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18376,
+    "MET": 8.5,
+    "Description": "Water hardlopen, 50 stappen/min, snel"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18377,
+    "MET": 9.8,
+    "Description": "Water hardlopen, 60 stappen/min, zeer snel"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18366,
+    "MET": 9.8,
+    "Description": "Water joggen, intensieve inspanning"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18358,
+    "MET": 7.5,
+    "Description": "Wateraerobics, hoge intensiteit"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18355,
+    "MET": 5.5,
+    "Description": "Wateraerobics, water calisthenics, algemeen"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18356,
+    "MET": 3.8,
+    "Description": "Wateraerobics, weerstandsoefeningen"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18360,
+    "MET": 10,
+    "Description": "Waterpolo"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18365,
+    "MET": 3,
+    "Description": "Watervolleybal"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18369,
+    "MET": 6.8,
+    "Description": "Waterwandelen, intensieve inspanning, snel tempo"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18367,
+    "MET": 2.5,
+    "Description": "Waterwandelen, lichte inspanning, langzame pas"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18368,
+    "MET": 4.8,
+    "Description": "Waterwandelen, matige inspanning, gematigd tempo"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18370,
+    "MET": 5,
+    "Description": "Wildwaterraften, kajakken, of kanoën"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18385,
+    "MET": 11,
+    "Description": "Windsurfen of kitesurfen, over de golven"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18390,
+    "MET": 14,
+    "Description": "Windsurfen, competitie, pompen voor snelheid"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18380,
+    "MET": 5,
+    "Description": "Windsurfen, niet pompen voor snelheid"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18120,
+    "MET": 3,
+    "Description": "Zeilen, boot- en boardsurfen, windsurfen, ijszeilen, algemeen"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18142,
+    "MET": 2,
+    "Description": "Zeilen, dinghy"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18130,
+    "MET": 4.5,
+    "Description": "Zeilen, in competitie, algemeen"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18132,
+    "MET": 9.3,
+    "Description": "Zeilen, in competitie, hoge inspanning"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18140,
+    "MET": 3.3,
+    "Description": "Zeilen, Sunfish/Laser/Hobby Cat, kielboten, oceaanzeilen, recreatief"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18294,
+    "MET": 14.5,
+    "Description": "Zwemmen, crawl, elite zwemmers, competitie, >82 meter/min"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18290,
+    "MET": 8,
+    "Description": "Zwemmen, crawl, gemiddelde snelheid, ~45 meter/min, intensieve inspanning"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18292,
+    "MET": 5.8,
+    "Description": "Zwemmen, crawl, langzaam, 27-41 meter/min, matige inspanning"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18280,
+    "MET": 10.5,
+    "Description": "Zwemmen, crawl, snel, ~68 meter/min, intensieve inspanning"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18240,
+    "MET": 5.8,
+    "Description": "Zwemmen, langzaam, borstcrawl, recreatief"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18300,
+    "MET": 6,
+    "Description": "Zwemmen, meer, oceaan, rivier"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18310,
+    "MET": 6,
+    "Description": "Zwemmen, ontspannend, niet als baantjes zwemmen, algemeen"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18285,
+    "MET": 10.5,
+    "Description": "Zwemmen, open water, 5 km"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18255,
+    "MET": 4.8,
+    "Description": "Zwemmen, rugslag, recreatief"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18250,
+    "MET": 9.5,
+    "Description": "Zwemmen, rugslag, training of competitie"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18260,
+    "MET": 10.3,
+    "Description": "Zwemmen, schoolslag, algemeen, training of competitie"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18265,
+    "MET": 5.3,
+    "Description": "Zwemmen, schoolslag, recreatief"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18230,
+    "MET": 9.8,
+    "Description": "Zwemmen, snel, borstcrawl, intensieve inspanning"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18330,
+    "MET": 8,
+    "Description": "Zwemmen, synchroon"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18270,
+    "MET": 13.8,
+    "Description": "Zwemmen, vlinderslag, algemeen"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18350,
+    "MET": 3.5,
+    "Description": "Zwemmen, water trappen, matige inspanning, algemeen"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18340,
+    "MET": 9.8,
+    "Description": "Zwemmen, water trappen, snel, intensieve inspanning"
+  },
+  {
+    "Category": "Wateractiviteiten",
+    "Code": 18320,
+    "MET": 7,
+    "Description": "Zwemmen, zijslagen, algemeen"
+  },
+  {
+    "Category": "Winteractiviteiten",
+    "Code": 19400,
+    "MET": 9,
+    "Description": "Bergbeklimmen, afdalend klimmen, naar beneden lopen met touw"
+  },
+  {
+    "Category": "Winteractiviteiten",
+    "Code": 19405,
+    "MET": 10.3,
+    "Description": "Bergbeklimmen, afdalend klimmen/skiën"
+  },
+  {
+    "Category": "Winteractiviteiten",
+    "Code": 19144,
+    "MET": 12.8,
+    "Description": "Biatlontraining, 5 graden helling, 10.7 km/u, met/zonder geweer"
+  },
+  {
+    "Category": "Winteractiviteiten",
+    "Code": 19142,
+    "MET": 12.8,
+    "Description": "Biatlontraining, 5 graden helling, 8 km/u, met/zonder geweer"
+  },
+  {
+    "Category": "Winteractiviteiten",
+    "Code": 19005,
+    "MET": 7.5,
+    "Description": "Honden sleeën, mushen"
+  },
+  {
+    "Category": "Winteractiviteiten",
+    "Code": 19006,
+    "MET": 2.5,
+    "Description": "Honden sleeën, passagier"
+  },
+  {
+    "Category": "Winteractiviteiten",
+    "Code": 19010,
+    "MET": 6,
+    "Description": "IJshut verplaatsen, opzetten/gaatjes boren"
+  },
+  {
+    "Category": "Winteractiviteiten",
+    "Code": 19011,
+    "MET": 2,
+    "Description": "Ijsvissen"
+  },
+  {
+    "Category": "Winteractiviteiten",
+    "Code": 19345,
+    "MET": 16,
+    "Description": "Rolskiën, >16.1 km/u, 6-10 graden helling"
+  },
+  {
+    "Category": "Winteractiviteiten",
+    "Code": 19305,
+    "MET": 5.5,
+    "Description": "Rolskiën, 16-20.7 km/u, geen helling"
+  },
+  {
+    "Category": "Winteractiviteiten",
+    "Code": 19330,
+    "MET": 12.5,
+    "Description": "Rolskiën, 16-24.1 km/u, 2-5 graden helling"
+  },
+  {
+    "Category": "Winteractiviteiten",
+    "Code": 19310,
+    "MET": 6.8,
+    "Description": "Rolskiën, 20.9-27.3 km/u, geen helling"
+  },
+  {
+    "Category": "Winteractiviteiten",
+    "Code": 19335,
+    "MET": 14.3,
+    "Description": "Rolskiën, 25.7-35.4 km/u, 2-5 graden helling"
+  },
+  {
+    "Category": "Winteractiviteiten",
+    "Code": 19315,
+    "MET": 8.3,
+    "Description": "Rolskiën, 27.4-32.2 km/u, geen helling"
+  },
+  {
+    "Category": "Winteractiviteiten",
+    "Code": 19320,
+    "MET": 10.5,
+    "Description": "Rolskiën, 32.3-38.4 km/u, geen helling"
+  },
+  {
+    "Category": "Winteractiviteiten",
+    "Code": 19325,
+    "MET": 15,
+    "Description": "Rolskiën, 38.5-44.8 km/u, geen helling"
+  },
+  {
+    "Category": "Winteractiviteiten",
+    "Code": 19340,
+    "MET": 12.3,
+    "Description": "Rolskiën, 9.6-14.5 km/u, 6-10 graden helling"
+  },
+  {
+    "Category": "Winteractiviteiten",
+    "Code": 19046,
+    "MET": 10,
+    "Description": "Schaatsen op de loopband, 11.2-12.7 km/u, 2% helling"
+  },
+  {
+    "Category": "Winteractiviteiten",
+    "Code": 19047,
+    "MET": 10.5,
+    "Description": "Schaatsen op de loopband, 12.8-14.3 km/u, 2% helling"
+  },
+  {
+    "Category": "Winteractiviteiten",
+    "Code": 19048,
+    "MET": 11,
+    "Description": "Schaatsen op de loopband, 14.4-16.1 km/u, 2% helling"
+  },
+  {
+    "Category": "Winteractiviteiten",
+    "Code": 19045,
+    "MET": 9,
+    "Description": "Schaatsen op de loopband, 9.6-11.2 km/u, 2% helling"
+  },
+  {
+    "Category": "Winteractiviteiten",
+    "Code": 19020,
+    "MET": 5.5,
+    "Description": "Schaatsen, ijs, 14.5 km/u of minder"
+  },
+  {
+    "Category": "Winteractiviteiten",
+    "Code": 19030,
+    "MET": 7,
+    "Description": "Schaatsen, ijs, algemeen"
+  },
+  {
+    "Category": "Winteractiviteiten",
+    "Code": 19040,
+    "MET": 9,
+    "Description": "Schaatsen, ijs, snel, meer dan 14.5 km/u maar niet competitief"
+  },
+  {
+    "Category": "Winteractiviteiten",
+    "Code": 19018,
+    "MET": 14,
+    "Description": "Schaatsen, ijsdansen"
+  },
+  {
+    "Category": "Winteractiviteiten",
+    "Code": 19050,
+    "MET": 13.8,
+    "Description": "Schaatsen, snelheid, competitief"
+  },
+  {
+    "Category": "Winteractiviteiten",
+    "Code": 19060,
+    "MET": 7,
+    "Description": "Ski springen, omhoog klimmen met ski's"
+  },
+  {
+    "Category": "Winteractiviteiten",
+    "Code": 19075,
+    "MET": 7,
+    "Description": "Skiën, algemeen"
+  },
+  {
+    "Category": "Winteractiviteiten",
+    "Code": 19174,
+    "MET": 7.3,
+    "Description": "Skiën, Alpineskiën intensieve training"
+  },
+  {
+    "Category": "Winteractiviteiten",
+    "Code": 19150,
+    "MET": 4.3,
+    "Description": "Skiën, downhill, alpien of snowboarden, lichte inspanning, actieve tijd alleen"
+  },
+  {
+    "Category": "Winteractiviteiten",
+    "Code": 19160,
+    "MET": 6.3,
+    "Description": "Skiën, downhill, alpien of snowboarden, matige inspanning, algemene tijd alleen"
+  },
+  {
+    "Category": "Winteractiviteiten",
+    "Code": 19170,
+    "MET": 8,
+    "Description": "Skiën, downhill, alpien of snowboarden, zware inspanning, actieve tijd alleen"
+  },
+  {
+    "Category": "Winteractiviteiten",
+    "Code": 19112,
+    "MET": 16,
+    "Description": "Skiën, langlaufen, 19.3-25.7 km/u, elite skiër, racen"
+  },
+  {
+    "Category": "Winteractiviteiten",
+    "Code": 19080,
+    "MET": 6.8,
+    "Description": "Skiën, langlaufen, 4.0 km/u, langzaam of lichte inspanning, ski-walk"
+  },
+  {
+    "Category": "Winteractiviteiten",
+    "Code": 19090,
+    "MET": 8.5,
+    "Description": "Skiën, langlaufen, 6.4-7.9 km/u, matige snelheid en inspanning"
+  },
+  {
+    "Category": "Winteractiviteiten",
+    "Code": 19100,
+    "MET": 11.3,
+    "Description": "Skiën, langlaufen, 8.0-12.8 km/u, snelle snelheid, krachtige inspanning"
+  },
+  {
+    "Category": "Winteractiviteiten",
+    "Code": 19140,
+    "MET": 13.5,
+    "Description": "Skiën, langlaufen, biatlon, schaatstechniek"
+  },
+  {
+    "Category": "Winteractiviteiten",
+    "Code": 19110,
+    "MET": 14,
+    "Description": "Skiën, langlaufen, elite skiër, >12.9 km/u, racen"
+  },
+  {
+    "Category": "Winteractiviteiten",
+    "Code": 19130,
+    "MET": 15.5,
+    "Description": "Skiën, langlaufen, harde sneeuw, bergopwaarts, maximaal, sneeuw bergbeklimmen"
+  },
+  {
+    "Category": "Winteractiviteiten",
+    "Code": 19115,
+    "MET": 9.5,
+    "Description": "Skiën, langlaufen, intensieve training"
+  },
+  {
+    "Category": "Winteractiviteiten",
+    "Code": 19135,
+    "MET": 13.3,
+    "Description": "Skiën, langlaufen, schaatsen"
+  },
+  {
+    "Category": "Winteractiviteiten",
+    "Code": 19300,
+    "MET": 12.5,
+    "Description": "Skiën, rolskiën, elite racers"
+  },
+  {
+    "Category": "Winteractiviteiten",
+    "Code": 19146,
+    "MET": 9.3,
+    "Description": "Skiën, slalom"
+  },
+  {
+    "Category": "Winteractiviteiten",
+    "Code": 19180,
+    "MET": 7,
+    "Description": "Sleeën, tobbogganen, bobsleeën, luge"
+  },
+  {
+    "Category": "Winteractiviteiten",
+    "Code": 19254,
+    "MET": 7.5,
+    "Description": "Sneeuw schovelen, met de hand, intensieve inspanning"
+  },
+  {
+    "Category": "Winteractiviteiten",
+    "Code": 19252,
+    "MET": 5.3,
+    "Description": "Sneeuw schovelen, met de hand, matige inspanning"
+  },
+  {
+    "Category": "Winteractiviteiten",
+    "Code": 19260,
+    "MET": 2.5,
+    "Description": "Sneeuwblazer, lopen en duwen"
+  },
+  {
+    "Category": "Winteractiviteiten",
+    "Code": 19192,
+    "MET": 10,
+    "Description": "Sneeuwschoenwandelen, intensieve inspanning"
+  },
+  {
+    "Category": "Winteractiviteiten",
+    "Code": 19190,
+    "MET": 5.3,
+    "Description": "Sneeuwschoenwandelen, matige inspanning"
+  },
+  {
+    "Category": "Winteractiviteiten",
+    "Code": 19202,
+    "MET": 2,
+    "Description": "Sneeuwscooteren, passagier, licht"
+  },
+  {
+    "Category": "Winteractiviteiten",
+    "Code": 19200,
+    "MET": 3.8,
+    "Description": "Sneeuwscooteren, rijden, gematigd tempo, vlak terrein"
+  },
+  {
+    "Category": "Winteractiviteiten",
+    "Code": 19201,
+    "MET": 7.5,
+    "Description": "Snowboarden, recreatief, gematigd tempo, berg"
+  },
+  {
+    "Category": "Zelfverzorging",
+    "Code": 13010,
+    "MET": 1.5,
+    "Description": "Baden, zittend"
+  },
+  {
+    "Category": "Zelfverzorging",
+    "Code": 13050,
+    "MET": 2,
+    "Description": "Douchen, afdrogen, staand"
+  },
+  {
+    "Category": "Zelfverzorging",
+    "Code": 13030,
+    "MET": 1.5,
+    "Description": "Eten, zittend"
+  },
+  {
+    "Category": "Zelfverzorging",
+    "Code": 13046,
+    "MET": 1.3,
+    "Description": "Haar of nagels laten doen door iemand anders, zittend"
+  },
+  {
+    "Category": "Zelfverzorging",
+    "Code": 13045,
+    "MET": 2.5,
+    "Description": "Haarstyling, staand"
+  },
+  {
+    "Category": "Zelfverzorging",
+    "Code": 13000,
+    "MET": 2.3,
+    "Description": "Klaar maken voor bed, algemeen, staand"
+  },
+  {
+    "Category": "Zelfverzorging",
+    "Code": 13020,
+    "MET": 2.8,
+    "Description": "Kleding aandoen, uittrekken, staand of zittend"
+  },
+  {
+    "Category": "Zelfverzorging",
+    "Code": 13036,
+    "MET": 1.5,
+    "Description": "Medicijnen innemen, zittend of staand"
+  },
+  {
+    "Category": "Zelfverzorging",
+    "Code": 13035,
+    "MET": 2,
+    "Description": "Praten en eten of alleen eten, staand"
+  },
+  {
+    "Category": "Zelfverzorging",
+    "Code": 13040,
+    "MET": 2,
+    "Description": "Verzorging, handen wassen, scheren, tanden poetsen, make-up aanbrengen, zittend of staand"
+  },
+  {
+    "Category": "Zelfverzorging",
+    "Code": 13009,
+    "MET": 2.3,
+    "Description": "Zittend op het toilet, elimineren terwijl staand of hurkend"
+  }
+]

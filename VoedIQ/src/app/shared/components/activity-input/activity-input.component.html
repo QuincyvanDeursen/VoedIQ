@@ -1,0 +1,67 @@
+<div class="flex flex-col lg:flex-row justify-center gap-3">
+    <!-- Activity Search Column -->
+    <div class="flex-col flex w-full">
+        <label for="activitySearch" class="label label-text font-bold">Kies een activiteit</label>
+        <div class="flex-row flex">
+            <input class="input w-full" id="activitySearch" [(ngModel)]="searchTerm" (input)="filterActivities()"
+                autocomplete="off" placeholder="Typ om te zoeken...">
+            <button class="btn btn-sm btn-primary h-10" (click)="clearInput()"><span
+                    class="icon-[solar--trash-bin-trash-bold] rounded-l-none size-5 flex-shrink-0"></span></button>
+        </div>
+
+        <!-- Dropdown voor de gefilterde activiteiten -->
+        <div *ngIf="filteredActivities.length > 0"
+            class="absolute bg-white max-h-80 overflow-y-auto xl:w-1/4 mt-20 border-4 border-primary rounded z-10">
+            <ul>
+                <li *ngFor="let activity of filteredActivities"
+                    class="p-2 border-y-2 border-secondary cursor-pointer hover:bg-gray-200"
+                    (click)="selectActivity(activity); sendActivityData()">
+                    {{ activity.Description }}
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- Duration Column -->
+    <div class="flex-col">
+        <div>
+            <label for="duration" class="label label-text font-bold">{{ timeUnit }}</label>
+            <div class="flex space-x-2">
+                <!-- Duur in uren -->
+                <div class="input-group max-w-md" data-input-number>
+                    <input class="input pr-0" type="number" [(ngModel)]="durationHours" (input)="sendActivityData()"
+                        min="0" aria-label="Aantal uren" data-input-number-input />
+                    <span class="input-group-text text-xs pl-0 pr-1">u.</span>
+                    <span class="input-group-text gap-1">
+                        <button type="button" class="btn btn-primary btn-soft size-[22px] rounded min-h-0 p-0"
+                            aria-label="Decrement button" (click)="decrementDurationHours(); sendActivityData()">
+                            <span class="icon-[tabler--minus] size-3.5 flex-shrink-0"></span>
+                        </button>
+                        <button type="button" class="btn btn-primary btn-soft size-[22px] rounded min-h-0 p-0"
+                            aria-label="Increment button" (click)="incrementDurationHours(); sendActivityData()">
+                            <span class="icon-[tabler--plus] size-3.5 flex-shrink-0"></span>
+                        </button>
+                    </span>
+                </div>
+
+                <!-- Duur in minuten -->
+                <div class="input-group max-w-md" data-input-number>
+                    <input class="input pr-0" type="number" [(ngModel)]="durationMinutes" (input)="sendActivityData()"
+                        min="0" aria-label="Aantal minuten" data-input-number-input />
+                    <span class="input-group-text text-xs pl-0 pr-1">min.</span>
+                    <span class="input-group-text gap-1">
+                        <button type="button" class="btn btn-primary btn-soft size-[22px] rounded min-h-0 p-0"
+                            aria-label="Decrement button" (click)="decrementDurationMinutes(); sendActivityData()">
+                            <span class="icon-[tabler--minus] size-3.5 flex-shrink-0"></span>
+                        </button>
+                        <button type="button" class="btn btn-primary btn-soft size-[22px] rounded min-h-0 p-0"
+                            aria-label="Increment button" (click)="incrementDurationMinutes(); sendActivityData()">
+                            <span class="icon-[tabler--plus] size-3.5 flex-shrink-0"></span>
+                        </button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
