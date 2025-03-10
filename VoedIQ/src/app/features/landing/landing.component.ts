@@ -5,9 +5,9 @@ import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-landing',
-  imports: [ CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule],
   templateUrl: './landing.component.html',
-  styleUrl: './landing.component.css'
+  styleUrl: './landing.component.css',
 })
 export class LandingComponent implements OnInit {
   name: string = '';
@@ -16,7 +16,6 @@ export class LandingComponent implements OnInit {
 
   ngOnInit(): void {
     this.redirectToHomeIfNameExists();
-    console.log('test');
   }
 
   submitName() {
@@ -45,14 +44,12 @@ export class LandingComponent implements OnInit {
 
     // Laat alleen letters (A-Z, a-z), spaties, en Backspace door
     if (!/^[a-zA-Z\s]$/.test(key) && key !== 'Backspace') {
-      event.preventDefault();  // Voorkom dat andere toetsen worden ingevoerd
+      event.preventDefault(); // Voorkom dat andere toetsen worden ingevoerd
     }
 
     // Als de Enter toets wordt ingedrukt en het invoerveld is niet leeg
     if (key === 'Enter' && this.name) {
-      this.submitName();  // Trigger de submitfunctie als Enter wordt ingedrukt
+      this.submitName(); // Trigger de submitfunctie als Enter wordt ingedrukt
     }
   }
-
-
 }
