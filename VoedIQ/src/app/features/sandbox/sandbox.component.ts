@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivityBurnCalculatorComponent } from '../activity-burn-calculator/activity-burn-calculator.component';
+import { PalCalculatorComponent } from '../../shared/components/pal-calculator/pal-calculator.component';
 
 @Component({
   selector: 'app-sandbox',
-  imports: [ActivityBurnCalculatorComponent],
+  imports: [PalCalculatorComponent],
   templateUrl: './sandbox.component.html',
   styleUrl: './sandbox.component.css',
 })

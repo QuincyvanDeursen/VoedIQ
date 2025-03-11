@@ -1,4 +1,10 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import {
+  Component,
+  Input,
+  Output,
+  EventEmitter,
+  HostListener,
+} from '@angular/core';
 import { ActivityService } from '../../../core/services/activity.service';
 import { Activity } from '../../../core/models/activity';
 import { FormsModule } from '@angular/forms';
@@ -22,6 +28,7 @@ export class ActivityInputComponent {
   durationHours: number = 0; // Uren
   durationMinutes: number = 0; // Minuten
   filteredActivities: any[] = [];
+  dropdownOpen: boolean = false;
 
   constructor(private activityService: ActivityService) {}
 
@@ -80,5 +87,16 @@ export class ActivityInputComponent {
   }
   incrementDurationHours() {
     this.durationHours += 1;
+  }
+
+  // Detecteer klik buiten component om dropdown te sluiten
+  @HostListener('document:click', ['$event'])
+  handleClickOutside(event: Event) {
+    this.dropdownOpen = false;
+  }
+
+  // Voorkom dat klikken in de dropdown zelf deze sluit
+  stopPropagation(event: Event) {
+    event.stopPropagation();
   }
 }
