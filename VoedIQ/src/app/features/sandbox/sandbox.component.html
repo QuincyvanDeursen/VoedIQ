@@ -1,0 +1,64 @@
+<div class="container w-full flex justify-center mx-auto items-center">
+    <div class="flex flex-col flex-grow h-full p-4 my-20 gap-y-4">
+        <h1 class="text-3xl">Standalone input field</h1>
+        <ul>
+            <li>- Haalt 1100+ activiteiten op met MET-values zonder externe database</li>
+            <li>- Heeft zoek functie met auto complete</li>
+            <li>- Heeft zoek functie die enkel kijkt naar overeenkomende karakters</li>
+            <li>- Heeft increment/decrement knoppen voor duur</li>
+            <li>- Increment/decrement knoppen zijn ingedrukt te houden</li>
+            <li>- Is volledig responsive voor alle soorten schermen</li>
+            <li>- Heeft een verwijder knop, om makkelijk de gekozen activiteit te verwijderen</li>
+        </ul>
+        <app-activity-input class="w-full max-w-full"></app-activity-input>
+        <h1 class="text-3xl mt-20">Activity kcal calculator</h1>
+        <ul>
+            <li>- Heeft een input voor lichaamsgewicht</li>
+            <li>- Is volledig responsive voor alle soorten schermen</li>
+            <li>- Heeft een verwijder knop, om makkelijk de gekozen activiteit te verwijderen</li>
+            <li>- Heeft een bereken knop om de kcal te berekenen</li>
+            <li>- Heeft een resultaat container die de berekende kcal weergeeft</li>
+            <li>- Heeft form validation welke een toast toont indien er iets fout gaat of goed gegaan is</li>
+        </ul>
+        <app-activity-kcal-calculator class="w-full max-w-full"></app-activity-kcal-calculator>
+        <h1 class="text-3xl mt-20">PAL calculator</h1>
+        <ul>
+            <li>- Berekent de gemiddelde activiteiten factor van een persoon op basis van alle activiteiten die de
+                persoon doet in een week.</li>
+            <li>- Heeft een dynamisch (uitbreidbaar) form</li>
+            <li>- Is volledig responsive voor alle soorten schermen</li>
+            <li>- Heeft een verwijder knop, om makkelijk de gekozen activiteit in zijn geheel te verwijderen</li>
+            <li>- Heeft een bereken knop om de PAL-waarde te berekenen</li>
+            <li>- Heeft een resultaat container die de berekende PAL-waarde weergeeft</li>
+            <li>- Heeft form validation welke een toast toont indien er iets fout gaat of goed gegaan is</li>
+
+        </ul>
+        <app-pal-calculator class="w-full max-w-full"></app-pal-calculator>
+
+        <h1 class="text-3xl mt-20">BMR Calculator</h1>
+        <ul>
+            <li>- Gebruikt de Mifflin st. Jeor formule om ruststofwisseling te berekenen</li>
+            <li>- Heeft increment/decrement knoppen voor gewicht en lengte</li>
+            <li>- Increment/decrement knoppen zijn ingedrukt te houden</li>
+            <li>- Is volledig responsive voor alle soorten schermen</li>
+            <li>- Heeft een bereken knop om de BMR te berekenen</li>
+            <li>- Heeft een resultaat container die de berekende BMR weergeeft</li>
+            <li>- Heeft form validation welke een toast toont indien er iets fout gaat of goed gegaan is</li>
+        </ul>
+        <app-bmr-calculator class="w-full max-w-full"></app-bmr-calculator>
+        <h1 class="text-3xl mt-20">Toast notification</h1>
+        <ul>
+            <li>- Heeft 4 verschillende soorten toasts: Success, Info, Error, Warning</li>
+            <li>- Heeft een fade in en fade out animatie</li>
+            <li>- Is volledig responsive voor alle soorten schermen</li>
+            <li>- is uitbreidbaar met meerdere soorten toasts</li>
+            <li>- Is generiek opgezet, en dus herbruikbaar</li>
+            <li>- Is volledig te stylen met css en html</li>
+        </ul>
+        <button class="btn btn-primary" (click)="showSuccessToast()">Success</button>
+        <button class="btn btn-primary" (click)="showInfoToast()">Info</button>
+        <button class="btn btn-primary" (click)="showErrorToast()">Error</button>
+        <button class="btn btn-primary" (click)="showWarningToast()">Warning</button>
+    </div>
+    <div class="flex flex-col flex-grow h-full p-4 my-20">
+    </div>

@@ -1,4 +1,10 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import {
+  Component,
+  Input,
+  Output,
+  EventEmitter,
+  HostListener,
+} from '@angular/core';
 import { ActivityService } from '../../../core/services/activity.service';
 import { Activity } from '../../../core/models/activity';
 import { FormsModule } from '@angular/forms';
@@ -22,6 +28,8 @@ export class ActivityInputComponent {
   durationHours: number = 0; // Uren
   durationMinutes: number = 0; // Minuten
   filteredActivities: any[] = [];
+  dropdownOpen: boolean = false;
+  private interval: any;
 
   constructor(private activityService: ActivityService) {}
 
@@ -62,23 +70,45 @@ export class ActivityInputComponent {
       activity: this.selectedActivity,
       totalMinutes: totalMinutes,
     });
+
+    console.log(
+      'Data verzonden naar de parent:',
+      this.selectedActivity,
+      'Totaal aantal minuten:',
+      totalMinutes
+    );
+  }
+  // Detecteer klik buiten component om dropdown te sluiten
+  @HostListener('document:click', ['$event'])
+  handleClickOutside(event: Event) {
+    this.dropdownOpen = false;
   }
 
-  decrementDurationHours() {
-    if (this.durationHours > 0) {
-      this.durationHours -= 1;
-    }
-  }
-  incrementDurationMinutes() {
-    this.durationMinutes += 1;
+  // Voorkom dat klikken in de dropdown zelf deze sluit
+  stopPropagation(event: Event) {
+    event.stopPropagation();
   }
 
-  decrementDurationMinutes() {
-    if (this.durationMinutes > 0) {
-      this.durationMinutes -= 1;
-    }
+  adjustValue(
+    field: 'durationMinutes' | 'durationHours',
+    change: number
+  ): void {
+    if (this[field] === null) this[field] = 0;
+    this[field]! += change;
   }
-  incrementDurationHours() {
-    this.durationHours += 1;
+
+  startAdjusting(
+    event: Event,
+    field: 'durationMinutes' | 'durationHours',
+    change: number
+  ): void {
+    event.preventDefault(); // Voorkomt ongewenste gedrag op mobiel (zoals tekstselectie)
+    this.adjustValue(field, change);
+    this.interval = setInterval(() => this.adjustValue(field, change), 100);
+  }
+
+  stopAdjusting(): void {
+    clearInterval(this.interval);
+    this.sendActivityData();
   }
 }
