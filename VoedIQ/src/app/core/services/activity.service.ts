@@ -31,7 +31,7 @@ export class ActivityService {
   filterActivities(searchTerm: string): any {
     const filteredActivities: any = [];
 
-    if (!searchTerm) {
+    if (!searchTerm || searchTerm.trim() === '') {
       return this.activityList; // Als er geen zoekterm is, geef alle activiteiten terug
     }
 

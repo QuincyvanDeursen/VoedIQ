@@ -28,19 +28,21 @@
     <div class="flex-col">
         <div>
             <label for="duration" class="label label-textfont-bold text-sm text-white">{{ timeUnit }}</label>
-            <div class="flex space-x-2">
+            <div class="flex flex-col md:flex-row md:space-x-2 space-y-2 md:space-y-0">
                 <!-- Duur in uren -->
                 <div class="input-group max-w-md" data-input-number>
-                    <input class="input pr-0 pl-1" type="number" [(ngModel)]="durationHours"
-                        (input)="sendActivityData()" min="0" aria-label="Aantal uren" data-input-number-input />
-                    <span class="input-group-text text-xs pl-0 pr-0">u.</span>
+                    <input class="input pr-0" type="number" [(ngModel)]="durationHours" (input)="sendActivityData()"
+                        min="0" aria-label="Aantal uren" data-input-number-input />
+                    <span class="input-group-text text-xs">u.</span>
                     <span class="input-group-text gap-1">
                         <button type="button" class="btn btn-primary btn-soft size-[22px] rounded min-h-0 p-0"
-                            aria-label="Decrement button" (click)="decrementDurationHours(); sendActivityData()">
+                            aria-label="Decrement button" (pointerdown)="startAdjusting($event, 'durationHours', -1); "
+                            (pointerup)="stopAdjusting()" (pointerleave)="stopAdjusting()">
                             <span class="icon-[tabler--minus] size-3.5 flex-shrink-0"></span>
                         </button>
                         <button type="button" class="btn btn-primary btn-soft size-[22px] rounded min-h-0 p-0"
-                            aria-label="Increment button" (click)="incrementDurationHours(); sendActivityData()">
+                            aria-label="Increment button" (pointerdown)="startAdjusting($event, 'durationHours', 1)"
+                            (pointerup)="stopAdjusting();" (pointerleave)="stopAdjusting()">
                             <span class="icon-[tabler--plus] size-3.5 flex-shrink-0"></span>
                         </button>
                     </span>
@@ -48,16 +50,18 @@
 
                 <!-- Duur in minuten -->
                 <div class="input-group max-w-md" data-input-number>
-                    <input class="input pr-0 pl-1" type="number" [(ngModel)]="durationMinutes"
-                        (input)="sendActivityData()" min="0" aria-label="Aantal minuten" data-input-number-input />
-                    <span class="input-group-text text-xs pl-0 pr-0">min.</span>
+                    <input class="input pr-0" type="number" [(ngModel)]="durationMinutes" (input)="sendActivityData()"
+                        min="0" aria-label="Aantal minuten" data-input-number-input />
+                    <span class="input-group-text text-xs">min.</span>
                     <span class="input-group-text gap-1">
                         <button type="button" class="btn btn-primary btn-soft size-[22px] rounded min-h-0 p-0"
-                            aria-label="Decrement button" (click)="decrementDurationMinutes(); sendActivityData()">
+                            aria-label="Decrement button" (pointerdown)="startAdjusting($event, 'durationMinutes', -1)"
+                            (pointerup)="stopAdjusting()" (pointerleave)="stopAdjusting()">
                             <span class="icon-[tabler--minus] size-3.5 flex-shrink-0"></span>
                         </button>
                         <button type="button" class="btn btn-primary btn-soft size-[22px] rounded min-h-0 p-0"
-                            aria-label="Increment button" (click)="incrementDurationMinutes(); sendActivityData()">
+                            aria-label="Increment button" (pointerdown)="startAdjusting($event, 'durationMinutes', 1)"
+                            (pointerup)="stopAdjusting()" (pointerleave)="stopAdjusting()">
                             <span class="icon-[tabler--plus] size-3.5 flex-shrink-0"></span>
                         </button>
                     </span>

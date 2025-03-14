@@ -29,6 +29,7 @@ export class ActivityInputComponent {
   durationMinutes: number = 0; // Minuten
   filteredActivities: any[] = [];
   dropdownOpen: boolean = false;
+  private interval: any;
 
   constructor(private activityService: ActivityService) {}
 
@@ -69,26 +70,14 @@ export class ActivityInputComponent {
       activity: this.selectedActivity,
       totalMinutes: totalMinutes,
     });
-  }
 
-  decrementDurationHours() {
-    if (this.durationHours > 0) {
-      this.durationHours -= 1;
-    }
+    console.log(
+      'Data verzonden naar de parent:',
+      this.selectedActivity,
+      'Totaal aantal minuten:',
+      totalMinutes
+    );
   }
-  incrementDurationMinutes() {
-    this.durationMinutes += 1;
-  }
-
-  decrementDurationMinutes() {
-    if (this.durationMinutes > 0) {
-      this.durationMinutes -= 1;
-    }
-  }
-  incrementDurationHours() {
-    this.durationHours += 1;
-  }
-
   // Detecteer klik buiten component om dropdown te sluiten
   @HostListener('document:click', ['$event'])
   handleClickOutside(event: Event) {
@@ -98,5 +87,28 @@ export class ActivityInputComponent {
   // Voorkom dat klikken in de dropdown zelf deze sluit
   stopPropagation(event: Event) {
     event.stopPropagation();
+  }
+
+  adjustValue(
+    field: 'durationMinutes' | 'durationHours',
+    change: number
+  ): void {
+    if (this[field] === null) this[field] = 0;
+    this[field]! += change;
+  }
+
+  startAdjusting(
+    event: Event,
+    field: 'durationMinutes' | 'durationHours',
+    change: number
+  ): void {
+    event.preventDefault(); // Voorkomt ongewenste gedrag op mobiel (zoals tekstselectie)
+    this.adjustValue(field, change);
+    this.interval = setInterval(() => this.adjustValue(field, change), 100);
+  }
+
+  stopAdjusting(): void {
+    clearInterval(this.interval);
+    this.sendActivityData();
   }
 }
