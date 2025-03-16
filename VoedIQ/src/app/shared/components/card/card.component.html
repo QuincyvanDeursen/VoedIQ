@@ -1,0 +1,13 @@
+<div class="card group max-w-[300px] shadow-xl mx-4 lg:mx-2 shadow-gray-300 flex flex-col h-full">
+
+    <figure>
+        <img [src]="imageUrl" alt="Course Image" class="transition-transform duration-500 group-hover:scale-110" />
+    </figure>
+    <div class="card-body flex flex-col flex-grow">
+        <h5 class="card-title mb-2.5 flex-grow break-words">{{ title }}</h5>
+        <p class="mb-6 ">{{ description }}</p>
+        <div class="card-actions mt-auto">
+            <button class="btn btn-primary lg:btn-wide mx-auto">{{ buttonText }}</button>
+        </div>
+    </div>
+</div>

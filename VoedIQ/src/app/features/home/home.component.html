@@ -1,9 +1,252 @@
-<!-- home.component.html -->
-<div class="h-screen flex items-center justify-center">
-  <div class="text-center">
-    <h1 class="text-3xl font-bold underline bg-base-100">
-      {{ greeting }}{{ userName ? ' ' + userName : '' }}!
-    </h1>
-    <h1 class="text-3xl font-bold underline">Wat wil je doen?</h1>
+<!-- Banner -->
+<div class="bg-primary">
+  <div class="flex flex-col lg:flex-row max-w-7xl mx-auto w-full py-7 lg:py-20 ">
+    <!-- image -->
+    <div class="hidden lg:flex lg:w-1/3  lg:justify-end ">
+      <img src="homepage_banner.svg" alt="Banner foto" class="object-contain  h-[250px] lg:h-[350px] xl:h-[400px]" />
+    </div>
+    <!-- text -->
+    <div class="flex flex-col lg:w-2/3  mx-5 xl:mx-20">
+      <h1 class="text-3xl text-secondary font-bold md:text-4xl lg:text-6xl"> Welkom bij Voed<span
+          class="text-white">IQ</span>!</h1>
+      <h2 class="text-white text-xl md:text-3xl lg:text-4xl mt-3">Jouw gids naar een gezonder, sterker en energieker
+        leven.
+      </h2>
+      <p class="text-white mt-3 md:text-xl lg:text-2xl">Of je nu fitter wilt worden, je gezondheid wilt verbeteren of
+        meer
+        wilt leren
+        over
+        voeding, wij helpen je met
+        praktische tips en waardevolle kennis. Zet vandaag de eerste stap naar jouw gezondheidsdoelen!</p>
+      <div class="flex flex-col items-center gap-4 mt-4 lg:flex-row lg:mt-6 ">
+        <div class=" lg:hidden">
+          <img src="homepage_banner.svg" alt="Banner foto" class="object-contain mx-auto h-[180px] md:h-[260px]" />
+        </div>
+        <button (click)="scrollToElement('cursus_aanbod')"
+          class="w-full sm:w-1/2 lg:w-1/2 px-6 py-3 text-lg font-semibold text-white bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full shadow-lg hover:scale-105 transition-all duration-300">
+          Bekijk Gratis Cursussen
+        </button>
+        <button (click)="scrollToElement('calculators')"
+          class="w-full sm:w-1/2 lg:w-1/2 px-6 py-3 text-lg font-semibold text-white bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full shadow-lg hover:scale-105 transition-all duration-300">
+          Bekijk Health Calculators
+        </button>
+      </div>
+    </div>
   </div>
 </div>
+
+
+<!-- first container-->
+<div class="flex flex-col bg-white py-10 px-6 max-w-4xl mx-auto">
+  <!-- Titel + Intro -->
+  <div class="text-center mb-6">
+    <small>(Nog in development en niet werkend)</small>
+    <h1 class="text-3xl sm:text-4xl font-bold text-gray-900">
+      {{ greeting }} <span *ngIf="userName" class="text-primary"> {{ userName }}</span>!
+    </h1>
+    <p class="text-gray-600 text-base sm:text-lg mt-2">Ik heb je recentste resultaten voor je onthouden!</p>
+  </div>
+
+  <!-- Energie Gegevens -->
+  <div class="mb-8">
+    <h2 class="text-xl sm:text-2xl text-center font-bold text-gray-800 mb-4">Energie Gegevens</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+      <div class="relative flex flex-col items-center bg-secondary p-3 sm:p-4 rounded-xl shadow-md">
+
+        <!-- Tooltip-knop rechtsboven -->
+        <div class="absolute top-2 right-2 tooltip">
+          <button type="button"
+            class="tooltip-toggle btn-secondary bg-primary btn btn-xs btn-square icon-[solar--info-square-bold]"
+            aria-label="Tooltip">
+          </button>
+          <span
+            class="tooltip-content tooltip-shown:opacity-100 tooltip-shown:visible overflow-visible max-w-md lg:max-w-none break-words"
+            role="tooltip">
+            <span class="tooltip-body">Basal Metabolic Rate (BMR) is de hoeveelheid kcal jouw lichaam verbruikt in
+              rust.</span>
+          </span>
+        </div>
+
+        <!-- Titel en waarde -->
+        <div class="flex items-start gap-1">
+          <h3 class="text-base sm:text-lg font-semibold text-gray-900">BMR</h3>
+        </div>
+
+        <p class="text-xl sm:text-2xl font-bold text-primary">1798 <small class="text-gray-700 text-sm">kcal</small></p>
+      </div>
+
+      <!-- TDEE -->
+      <div class="relative flex flex-col items-center bg-secondary p-3 sm:p-4 rounded-xl shadow-md">
+        <!-- Tooltip-knop rechtsboven -->
+        <div class="absolute top-2 right-2 tooltip">
+          <button type="button"
+            class="tooltip-toggle btn-secondary bg-primary btn btn-xs btn-square icon-[solar--info-square-bold]"
+            aria-label="Tooltip">
+          </button>
+          <span
+            class="tooltip-content tooltip-shown:opacity-100 tooltip-shown:visible overflow-visible max-w-xs break-words"
+            role="tooltip">
+            <span class="tooltip-body">Total Daily Energy Expenditure (TDEE) is het totaal aantal kcal dat je per dag
+              verbruikt.</span>
+          </span>
+        </div>
+
+        <h3 class="text-base sm:text-lg font-semibold text-gray-900">TDEE</h3>
+        <p class="text-xl sm:text-2xl font-bold text-primary">2345 <small class="text-gray-700 text-sm">kcal</small></p>
+      </div>
+
+      <!-- PAL -->
+      <div class="relative flex flex-col items-center bg-secondary p-3 sm:p-4 rounded-xl shadow-md">
+        <!-- Tooltip-knop rechtsboven -->
+        <div class="absolute top-2 right-2 tooltip">
+          <button type="button"
+            class="tooltip-toggle btn-secondary bg-primary btn btn-xs btn-square icon-[solar--info-square-bold]"
+            aria-label="Tooltip">
+          </button>
+          <span
+            class="tooltip-content tooltip-shown:opacity-100 tooltip-shown:visible overflow-visible max-w-xs break-words"
+            role="tooltip">
+            <span class="tooltip-body ">
+              Physical Activity Level (PAL) drukt uit hoe actief je bent. Vaak op een schaal van 1.0 (Niet actief) tot
+              2.0 (Heel actief).
+            </span>
+          </span>
+        </div>
+
+        <h3 class="text-base sm:text-lg font-semibold text-gray-900">PAL</h3>
+        <p class="text-xl sm:text-2xl font-bold text-primary">1.5</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Macronutriënt Behoefte -->
+  <div>
+    <h2 class="text-xl sm:text-2xl text-center font-bold text-gray-800 mb-4">Macronutriënt Behoefte</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+      <div class="flex flex-col items-center bg-secondary p-3 sm:p-4 rounded-xl shadow-md">
+        <h3 class="text-base sm:text-lg font-semibold text-gray-900">Eiwitten</h3>
+        <p class="text-xl sm:text-2xl font-bold text-primary">100-120 <small class="text-gray-700 text-sm">g</small></p>
+      </div>
+      <div class="flex flex-col items-center bg-secondary p-3 sm:p-4 rounded-xl shadow-md">
+        <h3 class="text-base sm:text-lg font-semibold text-gray-900">Koolhydraten</h3>
+        <p class="text-xl sm:text-2xl font-bold text-primary">200-350 <small class="text-gray-700 text-sm">g</small></p>
+      </div>
+      <div class="flex flex-col items-center bg-secondary p-3 sm:p-4 rounded-xl shadow-md">
+        <h3 class="text-base sm:text-lg font-semibold text-gray-900">Vetten</h3>
+        <p class="text-xl sm:text-2xl font-bold text-primary">50-100 <small class="text-gray-700 text-sm">g</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Feitjes container -->
+<div class="bg-primary">
+
+  <div class="flex flex-col bg-primary py-10 px-6 max-w-4xl mx-auto">
+    <div id="auto-play" data-carousel='{ "loadingClasses": "opacity-0", "isAutoPlay": true, "speed": 4000 }'
+      class="relative w-full">
+      <div class="carousel h-20">
+        <div class="carousel-body opacity-0 h-full">
+          <!-- Slide 1 -->
+          <div class="carousel-slide">
+            <div class="bg-base-300/60 flex h-full justify-center p-6">
+              <span class="self-center "> <small class="text-white">(Nog in development en niet
+                  werkend)</small></span>
+            </div>
+          </div>
+          <!-- Slide 2 -->
+          <div class="carousel-slide">
+            <div class="bg-base-300/80 flex h-full justify-center p-6">
+              <span class="self-center"> <small class="text-white">(Nog in development en niet
+                  werkend)</small></span>
+            </div>
+          </div>
+          <!-- Slide 3 -->
+          <div class="carousel-slide">
+            <div class="bg-base-300 flex h-full justify-center p-6">
+              <span class="self-center "> <small class="text-white">(Nog in development en niet
+                  werkend)</small></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Previous Slide -->
+      <button type="button" class="carousel-prev">
+        <span class="size-9.5 bg-base-100 flex items-center justify-center rounded-full shadow">
+          <span class="icon-[tabler--chevron-left] size-5 cursor-pointer rtl:rotate-180"></span>
+        </span>
+        <span class="sr-only">Previous</span>
+      </button>
+      <!-- Next Slide -->
+      <button type="button" class="carousel-next">
+        <span class="sr-only">Next</span>
+        <span class="size-9.5 bg-base-100 flex items-center justify-center rounded-full shadow">
+          <span class="icon-[tabler--chevron-right] size-5 cursor-pointer rtl:rotate-180"></span>
+        </span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- cursus aanbod container -->
+<div class="bg-white" id="cursus_aanbod">
+  <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 text-center pt-25 ">Cursus Aanbod</h1>
+  <div class="flex flex-wrap justify-center gap-7 py-10 px-6 max-w-6xl mx-auto">
+    <!-- Card 1 -->
+    <app-course-card title="Basiskennis" description="De cursus Basiskennis Voeding biedt inzicht in hoe het lichaam voedingsstoffen gebruikt, 
+    het belang van een gebalanceerd dieet, en hoe je voedingsinformatie op etiketten kunt begrijpen en toepassen 
+    voor een gezondere levensstijl." imageUrl="https://cdn.flyonui.com/fy-assets/components/card/image-8.png"
+      buttonText="Start!"></app-course-card>
+
+    <app-course-card title="Doelgericht Eten" description="In deze cursus leer je hoe je voeding kunt afstemmen op je doelen, zoals afvallen of aankomen, 
+    met praktische tips voor een effectief en duurzaam resultaat."
+      imageUrl="https://cdn.flyonui.com/fy-assets/components/card/image-8.png" buttonText="Start!"></app-course-card>
+
+    <app-course-card title="Gezond Eten" description="Deze cursus biedt inzicht in wat een gezond dieet is, met aandacht voor gebalanceerde voeding, 
+    het belang van verschillende voedingsgroepen en hoe je een gezonde eetstijl kunt behouden."
+      imageUrl="https://cdn.flyonui.com/fy-assets/components/card/image-8.png" buttonText="Start!"></app-course-card>
+
+  </div>
+
+</div>
+
+
+<!-- Health Calculators container -->
+<div class="bg-primary" id="calculators">
+  <h1 class="text-3xl sm:text-4xl font-bold text-white text-center pt-25">Health Calculators</h1>
+  <div class="flex flex-wrap justify-center gap-7 py-10 px-6 max-w-6xl mx-auto">
+
+    <app-course-card title="Rust Metabolisme (BMR)"
+      description="De Basal Metabolic Rate (BMR) calculator berekent de hoeveelheid calorieën die je lichaam verbrandt in rust, op basis van je lengte, gewicht, leeftijd en geslacht."
+      imageUrl="https://cdn.flyonui.com/fy-assets/components/card/image-8.png" buttonText="Bereken!">
+    </app-course-card>
+
+    <app-course-card title="Dagelijkse Energie Behoefte (TDEE)"
+      description="De Total Daily Energy Expenditure (TDEE) calculator berekent het totale aantal calorieën dat je per dag verbrandt, inclusief je BMR en activiteitsniveau."
+      imageUrl="https://cdn.flyonui.com/fy-assets/components/card/image-8.png" buttonText="Bereken!">
+    </app-course-card>
+
+    <app-course-card title="Macronutriënten"
+      description="Deze calculator berekent de optimale verdeling van eiwitten, koolhydraten en vetten op basis van je doelen en activiteitsniveau."
+      imageUrl="https://cdn.flyonui.com/fy-assets/components/card/image-8.png" buttonText="Bereken!">
+    </app-course-card>
+
+    <app-course-card title="Activiteiten Factor"
+      description="Deze calculator berekent de hoeveelheid calorieën die je verbrandt tijdens verschillende activiteiten, zoals sporten, huishoudelijke taken en werk."
+      imageUrl="https://cdn.flyonui.com/fy-assets/components/card/image-8.png" buttonText="Bereken!">
+    </app-course-card>
+
+    <app-course-card title="Activiteiten Verbranding"
+      description="Deze calculator berekent de hoeveelheid calorieën die je verbrandt tijdens verschillende activiteiten, zoals sporten, huishoudelijke taken en werk."
+      imageUrl="https://cdn.flyonui.com/fy-assets/components/card/image-8.png" buttonText="Bereken!">
+    </app-course-card>
+
+    <app-course-card title="Doelgewicht Tijdsschatting"
+      description="Deze calculator schat de tijd die nodig is om je doelgewicht te bereiken op basis van je huidige gewicht, doelgewicht en calorie-inname."
+      imageUrl="https://cdn.flyonui.com/fy-assets/components/card/image-8.png" buttonText="Bereken!">
+    </app-course-card>
+
+
+  </div>
