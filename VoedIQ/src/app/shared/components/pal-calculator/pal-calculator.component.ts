@@ -2,8 +2,6 @@ import { Component, Inject, OnInit } from '@angular/core';
 import { ActivityInputComponent } from '../activity-input/activity-input.component';
 import { CommonModule } from '@angular/common';
 import { Activity } from '../../../core/models/activity';
-import { Notyf } from 'notyf';
-import { NOTYF } from '../../utils/notyf.token';
 import { ToastService } from '../services/toast.service';
 
 @Component({
@@ -20,7 +18,7 @@ export class PalCalculatorComponent implements OnInit {
     };
   }[] = [];
 
-  calculatePalValue: string = ''; // PAL-waarde
+  calculatePalValue: number = 0; // PAL-waarde
 
   constructor(private toastService: ToastService) {}
 
@@ -67,8 +65,8 @@ export class PalCalculatorComponent implements OnInit {
     const palValue = (totalMETvalues + totalRestMetHours) / hoursInWeek;
     // rounded to 2 decimals
     const roundedPalValue = Math.round(palValue * 100) / 100;
-    this.calculatePalValue = roundedPalValue.toString();
-    localStorage.setItem('palValue', roundedPalValue.toString());
+    this.calculatePalValue = roundedPalValue;
+    this.updatePAL(roundedPalValue);
     return roundedPalValue;
   }
 
@@ -111,8 +109,21 @@ export class PalCalculatorComponent implements OnInit {
       );
       return false;
     }
+
     this.toastService.success('PAL-waarde berekend');
     return true;
+  }
+
+  private updatePAL(value: number) {
+    localStorage.setItem('pal', JSON.stringify(value));
+
+    // Manueel een StorageEvent aanmaken en dispatchen
+    window.dispatchEvent(
+      new StorageEvent('storage', {
+        key: 'pal',
+        newValue: JSON.stringify(value),
+      })
+    );
   }
 
   //////////////////////////////////////////////////////////////////////

@@ -33,8 +33,26 @@ export class BmrCalculatorComponent {
         10 * this.weight! + 6.25 * this.height! - 5 * this.age! - 161
       );
     }
-
+    if (this.bmr == null) {
+      this.toastService.error(
+        'Er is iets misgegaan bij het berekenen van de BMR'
+      );
+      return;
+    }
+    this.updateBMR(this.bmr);
     this.toastService.success('Berekening voltooid!');
+  }
+
+  private updateBMR(value: number) {
+    localStorage.setItem('bmr', JSON.stringify(value));
+
+    // Manueel een StorageEvent aanmaken en dispatchen
+    window.dispatchEvent(
+      new StorageEvent('storage', {
+        key: 'bmr',
+        newValue: JSON.stringify(value),
+      })
+    );
   }
 
   private validateForm(): boolean {

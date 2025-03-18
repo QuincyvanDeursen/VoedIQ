@@ -4,6 +4,7 @@ import { BmrCalculatorComponent } from '../../shared/components/bmr-calculator/b
 import { ActivityInputComponent } from '../../shared/components/activity-input/activity-input.component';
 import { ActivityKcalCalculatorComponent } from '../../shared/components/activity-kcal-calculator/activity-kcal-calculator.component';
 import { ToastService } from '../../shared/components/services/toast.service';
+import { TdeeCalculatorComponent } from '../../shared/components/tdee-calculator/tdee-calculator.component';
 
 @Component({
   selector: 'app-sandbox',
@@ -12,6 +13,7 @@ import { ToastService } from '../../shared/components/services/toast.service';
     BmrCalculatorComponent,
     ActivityInputComponent,
     ActivityKcalCalculatorComponent,
+    TdeeCalculatorComponent,
   ],
   templateUrl: './sandbox.component.html',
   styleUrl: './sandbox.component.css',
