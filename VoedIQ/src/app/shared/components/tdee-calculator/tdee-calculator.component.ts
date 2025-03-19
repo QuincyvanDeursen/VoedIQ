@@ -2,7 +2,8 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
-import { ToastService } from '../services/toast.service';
+import { ToastService } from '../../services/toast.service';
+import { ButtonHoldService } from '../../services/button-hold.service';
 
 @Component({
   selector: 'app-tdee-calculator',
@@ -15,9 +16,12 @@ export class TdeeCalculatorComponent implements OnInit, OnDestroy {
   pal: number = 1.2; // Default waarde
   tdee: number | null = null;
   isVisible: boolean = false;
-  private interval: any; // Timer voor het ingedrukt houden van de knoppen
 
-  constructor(private router: Router, private toastService: ToastService) {}
+  constructor(
+    private router: Router,
+    private toastService: ToastService,
+    private buttonHoldService: ButtonHoldService
+  ) {}
 
   ngOnInit(): void {
     this.retrieveInfoFromLocalStorage();
@@ -36,9 +40,14 @@ export class TdeeCalculatorComponent implements OnInit, OnDestroy {
       return;
     }
 
+    // Bereken TDEE
     this.tdee = this.bmr * this.pal;
-    this.isVisible = true;
 
+    // Ronden naar het dichtstbijzijnde gehele getal
+    this.tdee = Math.round(this.tdee);
+
+    this.isVisible = true;
+    this.updateTDEE(this.tdee);
     this.toastService.success('Berekening voltooid!');
   }
 
@@ -54,7 +63,7 @@ export class TdeeCalculatorComponent implements OnInit, OnDestroy {
     return true;
   }
 
-  updateTDEE(value: number) {
+  private updateTDEE(value: number) {
     localStorage.setItem('tdee', JSON.stringify(value));
 
     // Manueel een StorageEvent aanmaken en dispatchen
@@ -87,7 +96,7 @@ export class TdeeCalculatorComponent implements OnInit, OnDestroy {
     }
   }
 
-  syncLocalStorageChanges(event: StorageEvent) {
+  private syncLocalStorageChanges(event: StorageEvent) {
     if (event.key === 'bmr') {
       this.bmr = JSON.parse(event.newValue || '0');
     }
@@ -97,26 +106,17 @@ export class TdeeCalculatorComponent implements OnInit, OnDestroy {
     }
   }
 
-  startAdjusting(event: Event, field: 'bmr' | 'pal', change: number) {
-    event.preventDefault();
-    this.adjustValue(field, change);
-    this.interval = setInterval(() => this.adjustValue(field, change), 100);
+  startAdjusting(field: string, change: number, decimalPlaces: number): void {
+    this.buttonHoldService.startAdjusting(
+      this,
+      field,
+      change,
+      0,
+      decimalPlaces
+    );
   }
 
-  stopAdjusting() {
-    clearInterval(this.interval);
-  }
-
-  private adjustValue(field: 'bmr' | 'pal', change: number) {
-    if (field === 'bmr') {
-      this.bmr = Math.max(0, this.bmr + change);
-      localStorage.setItem('bmr', JSON.stringify(this.bmr));
-    } else if (field === 'pal') {
-      this.pal = Math.max(
-        1.2,
-        Math.min(2.5, Number((this.pal + change).toFixed(1)))
-      );
-      localStorage.setItem('pal', JSON.stringify(this.pal));
-    }
+  stopAdjusting(): void {
+    this.buttonHoldService.stopAdjusting();
   }
 }

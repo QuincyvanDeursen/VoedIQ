@@ -9,7 +9,14 @@
         <h5 class="card-title mb-2.5 flex-grow break-words">{{ title }}</h5>
         <p class="mb-6 ">{{ description }}</p>
         <div class="card-actions mt-auto">
-            <button class="btn btn-primary lg:btn-wide mx-auto">{{ buttonText }}</button>
+            <!-- Voeg hier een routerLink toe voor navigatie -->
+            <button *ngIf="linkUrl" [routerLink]="linkUrl" class="btn btn-primary lg:btn-wide mx-auto">
+                {{ buttonText }}
+            </button>
+            <!-- Of een normale knop zonder link -->
+            <button *ngIf="!linkUrl" class="btn btn-primary lg:btn-wide mx-auto">
+                {{ buttonText }}
+            </button>
         </div>
     </div>
 </div>

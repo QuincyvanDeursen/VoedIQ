@@ -9,6 +9,7 @@ import { ActivityService } from '../../../core/services/activity.service';
 import { Activity } from '../../../core/models/activity';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
+import { ButtonHoldService } from '../../services/button-hold.service';
 
 @Component({
   selector: 'app-activity-input',
@@ -29,9 +30,11 @@ export class ActivityInputComponent {
   durationMinutes: number = 0; // Minuten
   filteredActivities: any[] = [];
   dropdownOpen: boolean = false;
-  private interval: any;
 
-  constructor(private activityService: ActivityService) {}
+  constructor(
+    private activityService: ActivityService,
+    private buttonHoldService: ButtonHoldService
+  ) {}
 
   ngOnInit() {
     // Activiteiten ophalen
@@ -65,18 +68,13 @@ export class ActivityInputComponent {
   }
 
   sendActivityData() {
+    console.log('triggered');
     const totalMinutes = this.durationMinutes + this.durationHours * 60;
     this.activityData.emit({
       activity: this.selectedActivity,
       totalMinutes: totalMinutes,
     });
-
-    console.log(
-      'Data verzonden naar de parent:',
-      this.selectedActivity,
-      'Totaal aantal minuten:',
-      totalMinutes
-    );
+    console.log('totalMinutes', totalMinutes);
   }
   // Detecteer klik buiten component om dropdown te sluiten
   @HostListener('document:click', ['$event'])
@@ -89,26 +87,18 @@ export class ActivityInputComponent {
     event.stopPropagation();
   }
 
-  adjustValue(
-    field: 'durationMinutes' | 'durationHours',
-    change: number
-  ): void {
-    if (this[field] === null) this[field] = 0;
-    this[field]! += change;
-  }
-
-  startAdjusting(
-    event: Event,
-    field: 'durationMinutes' | 'durationHours',
-    change: number
-  ): void {
-    event.preventDefault(); // Voorkomt ongewenste gedrag op mobiel (zoals tekstselectie)
-    this.adjustValue(field, change);
-    this.interval = setInterval(() => this.adjustValue(field, change), 100);
+  startAdjusting(field: string, change: number, decimalPlaces: number): void {
+    this.buttonHoldService.startAdjusting(
+      this,
+      field,
+      change,
+      0,
+      decimalPlaces
+    );
   }
 
   stopAdjusting(): void {
-    clearInterval(this.interval);
+    this.buttonHoldService.stopAdjusting();
     this.sendActivityData();
   }
 }
