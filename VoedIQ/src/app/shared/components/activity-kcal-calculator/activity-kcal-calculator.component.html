@@ -11,12 +11,12 @@
                     data-input-number-input />
                 <span class="input-group-text gap-3">
                     <button type="button" class="btn btn-primary btn-soft size-[22px] rounded min-h-0 p-0"
-                        aria-label="Decrement button" (pointerdown)="startAdjusting($event, 'bodyWeight', -1)"
+                        aria-label="Decrement button" (pointerdown)="startAdjusting('bodyWeight', -1, 0)"
                         (pointerup)="stopAdjusting()" (pointerleave)="stopAdjusting()">
                         <span class="icon-[tabler--minus] size-3.5 flex-shrink-0"></span>
                     </button>
                     <button type="button" class="btn btn-primary btn-soft size-[22px] rounded min-h-0 p-0"
-                        aria-label="Increment button" (pointerdown)="startAdjusting($event, 'bodyWeight', 1)"
+                        aria-label="Increment button" (pointerdown)="startAdjusting('bodyWeight', 1, 0)"
                         (pointerup)="stopAdjusting()" (pointerleave)="stopAdjusting()">
                         <span class="icon-[tabler--plus] size-3.5 flex-shrink-0"></span>
                     </button>
@@ -33,9 +33,9 @@
         <!-- Bereken knop -->
         <div
             class="flex flex-col items-center md:flex-row  justify-center p-4 border-t-2 border-secondary bg-primary/40 rounded-b-xl gap-3">
-            <button type="button" class="btn btn-primary font-bold hover:text-secondary text-white btn-lg btn-wide"
+            <button type="button" class="btn btn-primary  hover:text-secondary text-white btn-lg btn-wide"
                 (click)="calculateCalories()">
-                Bereken
+                <span class="icon-[solar--calculator-bold] size-6 flex-shrink-0 bg-white"></span>Bereken
             </button>
         </div>
     </div>

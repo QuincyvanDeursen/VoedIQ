@@ -1,10 +1,14 @@
-import { Component, Inject, OnInit } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  Inject,
+  OnInit,
+  ViewChild,
+} from '@angular/core';
 import { ActivityInputComponent } from '../activity-input/activity-input.component';
 import { CommonModule } from '@angular/common';
 import { Activity } from '../../../core/models/activity';
-import { Notyf } from 'notyf';
-import { NOTYF } from '../../utils/notyf.token';
-import { ToastService } from '../services/toast.service';
+import { ToastService } from '../../services/toast.service';
 
 @Component({
   selector: 'app-pal-calculator',
@@ -13,6 +17,7 @@ import { ToastService } from '../services/toast.service';
   styleUrl: './pal-calculator.component.css',
 })
 export class PalCalculatorComponent implements OnInit {
+  @ViewChild('scrollContainer') private scrollContainer!: ElementRef;
   activities: {
     data: {
       activity: Activity | undefined;
@@ -20,7 +25,7 @@ export class PalCalculatorComponent implements OnInit {
     };
   }[] = [];
 
-  calculatePalValue: string = ''; // PAL-waarde
+  calculatePalValue: number = 0; // PAL-waarde
 
   constructor(private toastService: ToastService) {}
 
@@ -67,8 +72,8 @@ export class PalCalculatorComponent implements OnInit {
     const palValue = (totalMETvalues + totalRestMetHours) / hoursInWeek;
     // rounded to 2 decimals
     const roundedPalValue = Math.round(palValue * 100) / 100;
-    this.calculatePalValue = roundedPalValue.toString();
-    localStorage.setItem('palValue', roundedPalValue.toString());
+    this.calculatePalValue = roundedPalValue;
+    this.updatePAL(roundedPalValue);
     return roundedPalValue;
   }
 
@@ -111,8 +116,28 @@ export class PalCalculatorComponent implements OnInit {
       );
       return false;
     }
+
     this.toastService.success('PAL-waarde berekend');
     return true;
+  }
+
+  private updatePAL(value: number) {
+    localStorage.setItem('pal', JSON.stringify(value));
+
+    // Manueel een StorageEvent aanmaken en dispatchen
+    window.dispatchEvent(
+      new StorageEvent('storage', {
+        key: 'pal',
+        newValue: JSON.stringify(value),
+      })
+    );
+  }
+
+  scrollDown() {
+    if (this.scrollContainer) {
+      const container = this.scrollContainer.nativeElement;
+      container.scrollTo({ top: container.scrollHeight, behavior: 'smooth' });
+    }
   }
 
   //////////////////////////////////////////////////////////////////////
@@ -120,8 +145,8 @@ export class PalCalculatorComponent implements OnInit {
   //////////////////////////////////////////////////////////////////////
 
   addActivity() {
-    // Voeg een nieuwe lege activiteit toe
     this.activities.push({ data: { activity: undefined, totalMinutes: 0 } });
+    setTimeout(() => this.scrollDown(), 50); // Wacht even zodat het DOM geüpdatet is
   }
 
   removeActivity(index: number) {
@@ -143,6 +168,7 @@ export class PalCalculatorComponent implements OnInit {
       totalMinutes: number;
     }
   ) {
+    console.log(data);
     this.activities[index].data = data;
   }
 }
