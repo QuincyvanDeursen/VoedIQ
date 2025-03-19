@@ -3,7 +3,7 @@
 </style>
 <div class="flex flex-col bg-primary/65 border-4 border-secondary rounded-xl p-4">
     <!-- Titel -->
-    <h1 class="text-2xl text-center text-white font-bold mb-4">BMR Calculator</h1>
+
 
     <!-- Formulier voor invoer -->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -24,12 +24,12 @@
                     style="appearance: textfield; -webkit-appearance: none; -moz-appearance: textfield;" />
                 <span class="input-group-text gap-1">
                     <button type="button" class="btn btn-primary btn-soft size-[22px] rounded min-h-0 p-0"
-                        (pointerdown)="startAdjusting($event, 'age', -1)" (pointerup)="stopAdjusting()"
+                        (pointerdown)="startAdjusting('age', -1, 0)" (pointerup)="stopAdjusting()"
                         (pointerleave)="stopAdjusting()">
                         <span class="icon-[tabler--minus] size-3.5 flex-shrink-0"></span>
                     </button>
                     <button type="button" class="btn btn-primary btn-soft size-[22px] rounded min-h-0 p-0"
-                        (pointerdown)="startAdjusting($event, 'age', 1)" (pointerup)="stopAdjusting()"
+                        (pointerdown)="startAdjusting('age', 1, 0)" (pointerup)="stopAdjusting()"
                         (pointerleave)="stopAdjusting()">
                         <span class="icon-[tabler--plus] size-3.5 flex-shrink-0"></span>
                     </button>
@@ -45,12 +45,12 @@
                     data-input-number-input />
                 <span class="input-group-text gap-1">
                     <button type="button" class="btn btn-primary btn-soft size-[22px] rounded min-h-0 p-0"
-                        (pointerdown)="startAdjusting($event, 'weight', -1)" (pointerup)="stopAdjusting()"
+                        (pointerdown)="startAdjusting('weight', -1, 0)" (pointerup)="stopAdjusting()"
                         (pointerleave)="stopAdjusting()">
                         <span class="icon-[tabler--minus] size-3.5 flex-shrink-0"></span>
                     </button>
                     <button type="button" class="btn btn-primary btn-soft size-[22px] rounded min-h-0 p-0"
-                        (pointerdown)="startAdjusting($event, 'weight', 1)" (pointerup)="stopAdjusting()"
+                        (pointerdown)="startAdjusting( 'weight', 1, 0)" (pointerup)="stopAdjusting()"
                         (pointerleave)="stopAdjusting()">
                         <span class="icon-[tabler--plus] size-3.5 flex-shrink-0"></span>
                     </button>
@@ -66,12 +66,12 @@
                     data-input-number-input />
                 <span class="input-group-text gap-1">
                     <button type="button" class="btn btn-primary btn-soft size-[22px] rounded min-h-0 p-0"
-                        (pointerdown)="startAdjusting($event, 'height', -1)" (pointerup)="stopAdjusting()"
+                        (pointerdown)="startAdjusting('height', -1, 0)" (pointerup)="stopAdjusting()"
                         (pointerleave)="stopAdjusting()">
                         <span class="icon-[tabler--minus] size-3.5 flex-shrink-0"></span>
                     </button>
                     <button type="button" class="btn btn-primary btn-soft size-[22px] rounded min-h-0 p-0"
-                        (pointerdown)="startAdjusting($event, 'height', 1)" (pointerup)="stopAdjusting()"
+                        (pointerdown)="startAdjusting('height', 1, 0)" (pointerup)="stopAdjusting()"
                         (pointerleave)="stopAdjusting()">
                         <span class="icon-[tabler--plus] size-3.5 flex-shrink-0"></span>
                     </button>
@@ -83,7 +83,7 @@
     <!-- Bereken knop -->
     <div class="flex justify-center mt-4">
         <button class="btn btn-primary w-full sm:w-auto rounded-xl text-white" (click)="calculateBMR()">
-            <span class="icon-[solar--calculator-bold] size-6 bg-white"></span> Bereken BMR
+            <span class="icon-[solar--calculator-bold] size-6 bg-white"></span> Bereken
         </button>
     </div>
 </div>

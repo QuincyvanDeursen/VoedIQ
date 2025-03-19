@@ -40,11 +40,11 @@
 <div class="flex flex-col bg-white py-10 px-6 max-w-4xl mx-auto">
   <!-- Titel + Intro -->
   <div class="text-center mb-6">
-    <small>(Nog in development en niet werkend)</small>
     <h1 class="text-3xl sm:text-4xl font-bold text-gray-900">
       {{ greeting }} <span *ngIf="userName" class="text-primary"> {{ userName }}</span>!
     </h1>
-    <p class="text-gray-600 text-base sm:text-lg mt-2">Ik heb je recentste resultaten voor je onthouden!</p>
+    <p class="text-gray-600  sm:text-lg text-xl mt-2">Ik heb je recentste resultaten voor je onthouden!</p>
+    <small>*Dit is apparaat gebonden</small>
   </div>
 
   <!-- Energie Gegevens -->
@@ -72,7 +72,8 @@
           <h3 class="text-base sm:text-lg font-semibold text-gray-900">BMR</h3>
         </div>
 
-        <p class="text-xl sm:text-2xl font-bold text-primary">1798 <small class="text-gray-700 text-sm">kcal</small></p>
+        <p class="text-xl sm:text-2xl font-bold text-primary">{{bmr || 0}} <small
+            class="text-gray-700 text-sm">kcal</small></p>
       </div>
 
       <!-- TDEE -->
@@ -92,7 +93,8 @@
         </div>
 
         <h3 class="text-base sm:text-lg font-semibold text-gray-900">TDEE</h3>
-        <p class="text-xl sm:text-2xl font-bold text-primary">2345 <small class="text-gray-700 text-sm">kcal</small></p>
+        <p class="text-xl sm:text-2xl font-bold text-primary">{{tdee || 0}} <small
+            class="text-gray-700 text-sm">kcal</small></p>
       </div>
 
       <!-- PAL -->
@@ -114,7 +116,7 @@
         </div>
 
         <h3 class="text-base sm:text-lg font-semibold text-gray-900">PAL</h3>
-        <p class="text-xl sm:text-2xl font-bold text-primary">1.5</p>
+        <p class="text-xl sm:text-2xl font-bold text-primary">{{pal || 0}}</p>
       </div>
 
     </div>
@@ -126,15 +128,18 @@
     <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
       <div class="flex flex-col items-center bg-secondary p-3 sm:p-4 rounded-xl shadow-md">
         <h3 class="text-base sm:text-lg font-semibold text-gray-900">Eiwitten</h3>
-        <p class="text-xl sm:text-2xl font-bold text-primary">100-120 <small class="text-gray-700 text-sm">g</small></p>
+        <p class="text-xl sm:text-2xl font-bold text-primary">{{proteinMin || 0}}-{{proteinMax || 0}} <small
+            class="text-gray-700 text-sm">g</small></p>
       </div>
       <div class="flex flex-col items-center bg-secondary p-3 sm:p-4 rounded-xl shadow-md">
         <h3 class="text-base sm:text-lg font-semibold text-gray-900">Koolhydraten</h3>
-        <p class="text-xl sm:text-2xl font-bold text-primary">200-350 <small class="text-gray-700 text-sm">g</small></p>
+        <p class="text-xl sm:text-2xl font-bold text-primary">{{carbsMin || 0}}-{{carbsMax || 0}} <small
+            class="text-gray-700 text-sm">g</small></p>
       </div>
       <div class="flex flex-col items-center bg-secondary p-3 sm:p-4 rounded-xl shadow-md">
         <h3 class="text-base sm:text-lg font-semibold text-gray-900">Vetten</h3>
-        <p class="text-xl sm:text-2xl font-bold text-primary">50-100 <small class="text-gray-700 text-sm">g</small></p>
+        <p class="text-xl sm:text-2xl font-bold text-primary">{{fatMin || 0}}-{{fatMax || 0}} <small
+            class="text-gray-700 text-sm">g</small></p>
       </div>
     </div>
   </div>
@@ -219,23 +224,25 @@
 
     <app-course-card title="Rust Metabolisme (BMR)"
       description="De Basal Metabolic Rate (BMR) calculator berekent de hoeveelheid calorieën die je lichaam verbrandt in rust, op basis van je lengte, gewicht, leeftijd en geslacht."
-      imageUrl="calculator_1.svg" buttonText="Bereken!">
+      imageUrl="calculator_1.svg" linkUrl="/energy-calculator" buttonText="Bereken!">
+    </app-course-card>
+
+    <app-course-card title="Activiteiten Factor (PAL)"
+      description="Deze calculator berekent de hoeveelheid calorieën die je verbrandt tijdens verschillende activiteiten, zoals sporten, huishoudelijke taken en werk."
+      imageUrl="calculator_4.svg" linkUrl="/energy-calculator" buttonText="Bereken!">
     </app-course-card>
 
     <app-course-card title="Dagelijkse Energie Behoefte (TDEE)"
       description="De Total Daily Energy Expenditure (TDEE) calculator berekent het totale aantal calorieën dat je per dag verbrandt, inclusief je BMR en activiteitsniveau."
-      imageUrl="calculator_2.svg" buttonText="Bereken!">
+      imageUrl="calculator_2.svg" linkUrl="/energy-calculator" buttonText="Bereken!">
     </app-course-card>
 
     <app-course-card title="Macronutriënten"
-      description="Deze calculator berekent de optimale verdeling van eiwitten, koolhydraten en vetten op basis van je doelen en activiteitsniveau."
+      description="Deze calculator berekent de optimale verdeling van eiwitten, koolhydraten en vetten op basis van de Nederlandse voedingsrichtlijnen"
       imageUrl="calculator_3.svg" buttonText="Bereken!">
     </app-course-card>
 
-    <app-course-card title="Activiteiten Factor"
-      description="Deze calculator berekent de hoeveelheid calorieën die je verbrandt tijdens verschillende activiteiten, zoals sporten, huishoudelijke taken en werk."
-      imageUrl="calculator_4.svg" buttonText="Bereken!">
-    </app-course-card>
+
 
     <app-course-card title="Activiteiten Verbranding"
       description="Deze calculator berekent de hoeveelheid calorieën die je verbrandt tijdens verschillende activiteiten, zoals sporten, huishoudelijke taken en werk."

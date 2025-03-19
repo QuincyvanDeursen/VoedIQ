@@ -3,8 +3,10 @@ import { PalCalculatorComponent } from '../../shared/components/pal-calculator/p
 import { BmrCalculatorComponent } from '../../shared/components/bmr-calculator/bmr-calculator.component';
 import { ActivityInputComponent } from '../../shared/components/activity-input/activity-input.component';
 import { ActivityKcalCalculatorComponent } from '../../shared/components/activity-kcal-calculator/activity-kcal-calculator.component';
-import { ToastService } from '../../shared/components/services/toast.service';
 import { TdeeCalculatorComponent } from '../../shared/components/tdee-calculator/tdee-calculator.component';
+import { MacronutrientCalculatorComponent } from '../../shared/components/macronutrient-calculator/macronutrient-calculator.component';
+import { ToastService } from '../../shared/services/toast.service';
+import { TargetWeightTimeCalculatorComponent } from '../../shared/components/target-weight-time-calculator/target-weight-time-calculator.component';
 
 @Component({
   selector: 'app-sandbox',
@@ -14,6 +16,8 @@ import { TdeeCalculatorComponent } from '../../shared/components/tdee-calculator
     ActivityInputComponent,
     ActivityKcalCalculatorComponent,
     TdeeCalculatorComponent,
+    MacronutrientCalculatorComponent,
+    TargetWeightTimeCalculatorComponent,
   ],
   templateUrl: './sandbox.component.html',
   styleUrl: './sandbox.component.css',

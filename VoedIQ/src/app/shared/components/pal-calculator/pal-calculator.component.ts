@@ -1,8 +1,14 @@
-import { Component, Inject, OnInit } from '@angular/core';
+import {
+  Component,
+  ElementRef,
+  Inject,
+  OnInit,
+  ViewChild,
+} from '@angular/core';
 import { ActivityInputComponent } from '../activity-input/activity-input.component';
 import { CommonModule } from '@angular/common';
 import { Activity } from '../../../core/models/activity';
-import { ToastService } from '../services/toast.service';
+import { ToastService } from '../../services/toast.service';
 
 @Component({
   selector: 'app-pal-calculator',
@@ -11,6 +17,7 @@ import { ToastService } from '../services/toast.service';
   styleUrl: './pal-calculator.component.css',
 })
 export class PalCalculatorComponent implements OnInit {
+  @ViewChild('scrollContainer') private scrollContainer!: ElementRef;
   activities: {
     data: {
       activity: Activity | undefined;
@@ -126,13 +133,20 @@ export class PalCalculatorComponent implements OnInit {
     );
   }
 
+  scrollDown() {
+    if (this.scrollContainer) {
+      const container = this.scrollContainer.nativeElement;
+      container.scrollTo({ top: container.scrollHeight, behavior: 'smooth' });
+    }
+  }
+
   //////////////////////////////////////////////////////////////////////
   /////////////////////////// Dynamic form /////////////////////////////
   //////////////////////////////////////////////////////////////////////
 
   addActivity() {
-    // Voeg een nieuwe lege activiteit toe
     this.activities.push({ data: { activity: undefined, totalMinutes: 0 } });
+    setTimeout(() => this.scrollDown(), 50); // Wacht even zodat het DOM geüpdatet is
   }
 
   removeActivity(index: number) {
@@ -154,6 +168,7 @@ export class PalCalculatorComponent implements OnInit {
       totalMinutes: number;
     }
   ) {
+    console.log(data);
     this.activities[index].data = data;
   }
 }

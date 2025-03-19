@@ -1,0 +1,138 @@
+<div class="flex flex-col bg-primary/65 border-4 border-secondary rounded-xl p-4">
+    <h1 class="text-2xl text-center text-white font-bold mb-4">Gewichtsdoel Calculator</h1>
+
+    <!-- Inputvelden -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <!-- Huidig gewicht -->
+        <div>
+            <label class="text-white">Huidig Gewicht (kg)</label>
+            <div class="input-group max-w-sm">
+                <input class="input" type="number" [(ngModel)]="weight" min="1">
+                <span class="input-group-text gap-3">
+                    <button type="button" class="btn btn-primary btn-soft size-[22px] rounded min-h-0 p-0"
+                        (pointerdown)="startAdjusting('weight', -1, 1)" (pointerup)="stopAdjusting()"
+                        (pointerleave)="stopAdjusting()">
+                        <span class="icon-[tabler--minus] size-3.5"></span>
+                    </button>
+                    <button type="button" class="btn btn-primary btn-soft size-[22px] rounded min-h-0 p-0"
+                        (pointerdown)="startAdjusting('weight', 1, 1)" (pointerup)="stopAdjusting()"
+                        (pointerleave)="stopAdjusting()">
+                        <span class="icon-[tabler--plus] size-3.5"></span>
+                    </button>
+                </span>
+            </div>
+        </div>
+
+        <!-- Lengte -->
+        <div>
+            <label class="text-white">Lengte (cm)</label>
+            <div class="input-group max-w-sm">
+                <input class="input" type="number" [(ngModel)]="height" min="1">
+                <span class="input-group-text gap-3">
+                    <button type="button" class="btn btn-primary btn-soft size-[22px] rounded min-h-0 p-0"
+                        (pointerdown)="startAdjusting('height', -1, 1)" (pointerup)="stopAdjusting()"
+                        (pointerleave)="stopAdjusting()">
+                        <span class="icon-[tabler--minus] size-3.5"></span>
+                    </button>
+                    <button type="button" class="btn btn-primary btn-soft size-[22px] rounded min-h-0 p-0"
+                        (pointerdown)="startAdjusting('height', 1, 1)" (pointerup)="stopAdjusting()"
+                        (pointerleave)="stopAdjusting()">
+                        <span class="icon-[tabler--plus] size-3.5"></span>
+                    </button>
+                </span>
+            </div>
+        </div>
+
+        <!-- TDEE -->
+        <div>
+            <label class="text-white">TDEE (kcal)</label>
+            <div class="input-group max-w-sm">
+                <input class="input" type="number" [(ngModel)]="tdee" min="1">
+                <span class="input-group-text gap-3">
+                    <button type="button" class="btn btn-primary btn-soft size-[22px] rounded min-h-0 p-0"
+                        (pointerdown)="startAdjusting('tdee', -50, 1)" (pointerup)="stopAdjusting()"
+                        (pointerleave)="stopAdjusting()">
+                        <span class="icon-[tabler--minus] size-3.5"></span>
+                    </button>
+                    <button type="button" class="btn btn-primary btn-soft size-[22px] rounded min-h-0 p-0"
+                        (pointerdown)="startAdjusting('tdee', 50, 1)" (pointerup)="stopAdjusting()"
+                        (pointerleave)="stopAdjusting()">
+                        <span class="icon-[tabler--plus] size-3.5"></span>
+                    </button>
+                </span>
+            </div>
+        </div>
+
+        <!-- Doelgewicht -->
+        <div>
+            <label class="text-white">Gewenst Gewicht (kg)</label>
+            <div class="input-group max-w-sm">
+                <input class="input" type="number" [(ngModel)]="goalWeight" min="1">
+                <span class="input-group-text gap-3">
+                    <button type="button" class="btn btn-primary btn-soft size-[22px] rounded min-h-0 p-0"
+                        (pointerdown)="startAdjusting('goalWeight', -1, 1)" (pointerup)="stopAdjusting()"
+                        (pointerleave)="stopAdjusting()">
+                        <span class="icon-[tabler--minus] size-3.5"></span>
+                    </button>
+                    <button type="button" class="btn btn-primary btn-soft size-[22px] rounded min-h-0 p-0"
+                        (pointerdown)="startAdjusting('goalWeight', 1, 1)" (pointerup)="stopAdjusting()"
+                        (pointerleave)="stopAdjusting()">
+                        <span class="icon-[tabler--plus] size-3.5"></span>
+                    </button>
+                </span>
+            </div>
+        </div>
+
+        <!-- Calorietekort -->
+        <div>
+            <label class="text-white">Dagelijks Calorietekort of overschot (kcal)</label>
+            <div class="input-group max-w-sm">
+                <input class="input" type="number" [(ngModel)]="calorieDeficit" min="1">
+                <span class="input-group-text gap-3">
+                    <button type="button" class="btn btn-primary btn-soft size-[22px] rounded min-h-0 p-0"
+                        (pointerdown)="startAdjusting('calorieDeficit', -50, 1)" (pointerup)="stopAdjusting()"
+                        (pointerleave)="stopAdjusting()">
+                        <span class="icon-[tabler--minus] size-3.5"></span>
+                    </button>
+                    <button type="button" class="btn btn-primary btn-soft size-[22px] rounded min-h-0 p-0"
+                        (pointerdown)="startAdjusting('calorieDeficit', 50, 1)" (pointerup)="stopAdjusting()"
+                        (pointerleave)="stopAdjusting()">
+                        <span class="icon-[tabler--plus] size-3.5"></span>
+                    </button>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bereken knop -->
+    <div class="flex justify-center mt-4">
+        <button class="btn btn-primary w-full sm:w-auto rounded-xl text-white" (click)="calculateWeightLossDuration()">
+            <span class="icon-[solar--calculator-bold] size-6 bg-white"></span> Bereken
+        </button>
+    </div>
+</div>
+
+<!-- Resultaten weergeven -->
+<div *ngIf="daysToGoal == null" class="mt-4 p-4 bg-primary/65 rounded-xl border-4 border-secondary">
+    <h2 class="text-xl text-white font-bold text-center">Resultaat nog niet berekend!</h2>
+</div>
+
+<div *ngIf="daysToGoal !== null" class="mt-4 p-4 bg-primary/65 rounded-xl border-4 border-secondary">
+    <h2 class="text-xl text-white font-bold text-center">Resultaat</h2>
+
+    <p class="text-white text-center">
+        De verwachting is dat je je doelgewicht bereikt in ongeveer <span class="font-bold">{{ daysToGoal }}</span>
+        dagen.
+    </p>
+
+    <p class="text-center mt-5 lg:mt-2 text-white">
+        Calorie advies:
+        <span *ngIf=" adviceColor==='green'">✅ Gekozen calorie tekort ofoverschot is goed vol te houden</span>
+        <span *ngIf=" adviceColor==='orange'">⚠️ Gekozen calorie tekort of overschot is mogelijk lastig vol te
+            houden</span>
+        <span *ngIf=" adviceColor==='red'">❌ Gekozen calorie tekort of overschot is mogelijk moeilijk vol te
+            houden</span>
+    </p>
+
+    <p class=" text-white text-center mt-5 lg:mt-2">Doelgewicht BMI klasse: {{ bmiStatus }}</p>
+</div>

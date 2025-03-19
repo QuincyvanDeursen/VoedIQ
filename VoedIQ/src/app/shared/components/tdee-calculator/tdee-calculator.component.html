@@ -7,12 +7,12 @@
             <input class="input" type="text" [(ngModel)]="bmr" data-input-number-input />
             <span class="input-group-text gap-3">
                 <button type="button" class="btn btn-primary btn-soft size-[22px] rounded min-h-0 p-0"
-                    aria-label="Decrement button" (pointerdown)="startAdjusting($event, 'bmr', -10)"
+                    aria-label="Decrement button" (pointerdown)="startAdjusting('bmr', -10, 0)"
                     (pointerup)="stopAdjusting()" (pointerleave)="stopAdjusting()">
                     <span class="icon-[tabler--minus] size-3.5 flex-shrink-0"></span>
                 </button>
                 <button type="button" class="btn btn-primary btn-soft size-[22px] rounded min-h-0 p-0"
-                    aria-label="Increment button" (pointerdown)="startAdjusting($event, 'bmr', 10)"
+                    aria-label="Increment button" (pointerdown)="startAdjusting('bmr', 10, 0)"
                     (pointerup)="stopAdjusting()" (pointerleave)="stopAdjusting()">
                     <span class="icon-[tabler--plus] size-3.5 flex-shrink-0"></span>
                 </button>
@@ -27,15 +27,15 @@
     <div class="mb-4">
         <label class="label text-white">Activiteitsniveau (PAL-waarde):</label>
         <div class="input-group max-w-sm" data-input-number>
-            <input class="input" type="text" [(ngModel)]="pal" data-input-number-input />
+            <input class="input" type="text" min="0" [(ngModel)]="pal" data-input-number-input />
             <span class="input-group-text gap-3">
                 <button type="button" class="btn btn-primary btn-soft size-[22px] rounded min-h-0 p-0"
-                    aria-label="Decrement button" (pointerdown)="startAdjusting($event, 'pal', -0.1)"
+                    aria-label="Decrement button" (pointerdown)="startAdjusting('pal', -0.1, 1)"
                     (pointerup)="stopAdjusting()" (pointerleave)="stopAdjusting()">
                     <span class="icon-[tabler--minus] size-3.5 flex-shrink-0"></span>
                 </button>
                 <button type="button" class="btn btn-primary btn-soft size-[22px] rounded min-h-0 p-0"
-                    aria-label="Increment button" (pointerdown)="startAdjusting($event, 'pal', 0.1)"
+                    aria-label="Increment button" (pointerdown)="startAdjusting('pal', 0.1, 1)"
                     (pointerup)="stopAdjusting()" (pointerleave)="stopAdjusting()">
                     <span class="icon-[tabler--plus] size-3.5 flex-shrink-0"></span>
                 </button>
@@ -47,8 +47,8 @@
     </div>
 
     <!-- Bereken TDEE knop -->
-    <button class="btn btn-primary font-bold text-white w-1/2" (click)="calculateTDEE()">
-        Bereken TDEE
+    <button class="btn btn-primary text-white" (click)="calculateTDEE()">
+        <span class="icon-[solar--calculator-bold] size-6 flex-shrink-0 bg-white"></span>Bereken
     </button>
 </div>
 

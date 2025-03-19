@@ -1,7 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { ToastService } from '../services/toast.service';
+import { ToastService } from '../../services/toast.service';
+import { ButtonHoldService } from '../../services/button-hold.service';
 
 @Component({
   selector: 'app-bmr-calculator',
@@ -17,7 +18,10 @@ export class BmrCalculatorComponent {
   bmr: number | null = null;
   private interval: any;
 
-  constructor(private toastService: ToastService) {}
+  constructor(
+    private toastService: ToastService,
+    private buttonHoldService: ButtonHoldService
+  ) {}
 
   calculateBMR(): void {
     if (!this.validateForm()) return;
@@ -78,22 +82,17 @@ export class BmrCalculatorComponent {
   /////////////////////////// button hold  //////////////////////////
   ///////////////////////////////////////////////////////////////////
 
-  adjustValue(field: 'age' | 'weight' | 'height', change: number): void {
-    if (this[field] === null) this[field] = 0;
-    this[field]! += change;
-  }
-
-  startAdjusting(
-    event: Event,
-    field: 'age' | 'weight' | 'height',
-    change: number
-  ): void {
-    event.preventDefault(); // Voorkomt ongewenste gedrag op mobiel (zoals tekstselectie)
-    this.adjustValue(field, change);
-    this.interval = setInterval(() => this.adjustValue(field, change), 100);
+  startAdjusting(field: string, change: number, decimalPlaces: number): void {
+    this.buttonHoldService.startAdjusting(
+      this,
+      field,
+      change,
+      0,
+      decimalPlaces
+    );
   }
 
   stopAdjusting(): void {
-    clearInterval(this.interval);
+    this.buttonHoldService.stopAdjusting();
   }
 }
