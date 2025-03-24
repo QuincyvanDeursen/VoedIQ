@@ -1,11 +1,11 @@
 import { Component } from '@angular/core';
-import { NavigationEnd, Router, RouterOutlet, Event, ActivatedRoute } from '@angular/router';
+import { Router, Event, NavigationEnd, RouterOutlet } from '@angular/router';
+import { NavbarComponent } from './shared/components/navbar/navbar.component';
+import { FooterComponent } from './shared/components/footer/footer.component';
+
+import { CommonModule } from '@angular/common';
 
 import { IStaticMethods } from 'flyonui/flyonui';
-import { NavbarComponent } from "./shared/components/navbar/navbar.component";
-import { FooterComponent } from "./shared/components/footer/footer.component";
-import { filter, map, mergeMap } from 'rxjs';
-import { CommonModule } from '@angular/common';
 declare global {
   interface Window {
     HSStaticMethods: IStaticMethods;
@@ -16,13 +16,22 @@ declare global {
   selector: 'app-root',
   imports: [CommonModule, RouterOutlet, NavbarComponent, FooterComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
 })
 export class AppComponent {
-
   showHeaderFooter = true;
 
-  constructor(private router: Router) {
+  constructor(private router: Router) {}
+
+  ngOnInit() {
+    this.router.events.subscribe((event: Event) => {
+      if (event instanceof NavigationEnd) {
+        setTimeout(() => {
+          window.HSStaticMethods.autoInit();
+        }, 100);
+      }
+    });
+
     this.router.events.subscribe(() => {
       this.showHeaderFooter = this.router.url !== '/landing'; // Verberg navbar/footer op de landing pagina
     });

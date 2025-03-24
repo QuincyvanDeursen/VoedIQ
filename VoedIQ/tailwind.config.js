@@ -2,7 +2,7 @@
 /** @type {import('tailwindcss').Config} */
 const { addDynamicIconSelectors } = require("@iconify/tailwind")
 module.exports = {
-  content: ["./src/**/*.{html,ts}", "./node_modules/flyonui/dist/js/*.js"],
+  content: ["./src/**/*.{html,ts}", './node_modules/flyonui/dist/js/*.js'],
   theme: {
     fontFamily: {
       title: ["Poppins", "sans-serif"], // Voor titels (h1, h2, etc.)
@@ -10,9 +10,9 @@ module.exports = {
     },
   },
   plugins: [
+    addDynamicIconSelectors(),
     require('flyonui'), 
-    require('flyonui/plugin'),
-    addDynamicIconSelectors()
+    require('flyonui/plugin')
   ],
 
   flyonui: {

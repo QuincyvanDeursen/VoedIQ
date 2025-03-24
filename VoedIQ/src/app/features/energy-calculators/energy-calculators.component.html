@@ -73,78 +73,89 @@
 
 
 </div>
-<div class="flex flex-col lg:flex-row max-w-7xl mx-5 xl:mx-auto">
-    <div class="flex flex-col item-center mt-20 w-full mb-[400px]">
+<div class="flex flex-col lg:flex-row max-w-7xl  mx-5 xl:mx-auto ">
+    <div class="flex flex-col item-center mt-20 w-full     mb-[400px] ">
         <nav class="tabs space-x-1 rtl:space-x-reverse overflow-x-auto" aria-label="Tabs" role="tablist"
             aria-orientation="horizontal">
-            <button type="button" (click)="setSelectedTab(1)"
-                class="grow btn btn-text bg-primary text-secondary hover:bg-primary/40" id="tabs-fill-item-1"
-                aria-controls="tabs-fill-1" role="tab" [attr.aria-selected]="selectedTab === 1 ? 'true' : 'false'">
+            <button type="button"
+                class="grow btn btn-text active-tab:bg-primary active-tab:text-white bg-primary/20 text-primary active hover:bg-primary/40"
+                id="tabs-fill-item-1" data-tab="#tabs-fill-1" aria-controls="tabs-fill-1" role="tab"
+                aria-selected="false">
                 BMR
             </button>
-            <button type="button" (click)="setSelectedTab(2)"
-                class="grow btn btn-text bg-primary text-secondary hover:bg-primary/40" id="tabs-fill-item-2"
-                aria-controls="tabs-fill-2" role="tab" [attr.aria-selected]="selectedTab === 2 ? 'true' : 'false'">
+            <button type="button"
+                class="grow btn btn-text active-tab:bg-primary active-tab:text-white bg-primary/20 text-primary hover:bg-primary/40"
+                id="tabs-fill-item-2" data-tab="#tabs-fill-2" aria-controls="tabs-fill-2" role="tab"
+                aria-selected="false">
                 PAL
             </button>
-            <button type="button" (click)="setSelectedTab(3)"
-                class="grow btn btn-text bg-primary text-secondary hover:bg-primary/40" id="tabs-fill-item-3"
-                aria-controls="tabs-fill-3" role="tab" [attr.aria-selected]="selectedTab === 3 ? 'true' : 'false'">
+            <button type="button"
+                class="grow btn btn-text active-tab:bg-primary active-tab:text-white bg-primary/20 text-primary hover:bg-primary/40"
+                id="tabs-fill-item-3" data-tab="#tabs-fill-3" aria-controls="tabs-fill-3" role="tab"
+                aria-selected="false">
                 TDEE
             </button>
         </nav>
 
-
-
-
-
-
-
         <div class="mt-3">
-            <div *ngIf="selectedTab === 1" id="tabs-fill-1" role="tabpanel" aria-labelledby="tabs-fill-item-1">
+            <div id="tabs-fill-1" role="tabpanel" aria-labelledby="tabs-fill-item-1">
                 <div class="bg-primary/80 rounded-t-xl">
                     <h1 class="text-xl lg:text-3xl text-center text-white font-bold p-4">Basal Metabolic Rate (BMR)
                         Calculator</h1>
+
                 </div>
                 <div class="bg-primary/65 rounded-b-xl mb-5 p-5">
                     <ul class="mx-5">
-                        <li class="text-white">- De calculator werkt op basis van de Mifflin-St Jeor formule.</li>
-                        <li class="text-white">- Vul je geslacht, gewicht, leeftijd en lengte in. Druk vervolgens op
-                            bereken.</li>
+                        <li class="text-white">
+                            - De calculator werkt op basis van de Mifflin-St Jeor formule.
+
+                        </li>
+                        <li class="text-white">
+                            - Vul je geslacht, gewicht, leeftijd en lengte in. Druk vervolgens op bereken.
+                        </li>
                     </ul>
                 </div>
                 <app-bmr-calculator class="w-full max-w-full"></app-bmr-calculator>
             </div>
-
-            <div *ngIf="selectedTab === 2" id="tabs-fill-2" role="tabpanel" aria-labelledby="tabs-fill-item-2">
+            <div id="tabs-fill-2" class="hidden" role="tabpanel" aria-labelledby="tabs-fill-item-2">
                 <div class="bg-primary/80 rounded-t-xl">
                     <h1 class="text-xl lg:text-3xl text-center text-white font-bold p-4">Physical Activity Level (PAL)
                         Calculator</h1>
+
                 </div>
                 <div class="bg-primary/65 rounded-b-xl mb-5 p-5">
                     <ul class="mx-5">
-                        <li class="text-white"><span class="font-bold text-orange-300">Let op!</span> De calculator
-                            werkt op basis van de activiteiten die je per week invoert.</li>
-                        <li class="text-white">- Een week heeft 168 uur. Het is niet verplicht om al deze uren in te
-                            vullen. Niet-toegekende uren krijgen automatisch de laagste score (MET 1.0).</li>
+                        <li class="text-white">
+                            - <span class="font-bold text-orange-300">Let op!</span> De calculator werkt op basis van de
+                            activiteiten die je per week invoert.
+                        </li>
+                        <li class="text-white">
+                            - Een week heeft 168 uur. Het is niet verplicht om al deze uren in te vullen.
+                            Niet-toegekende uren krijgen automatisch de laagste score (MET 1.0).
+                        </li>
                     </ul>
                 </div>
+
                 <app-pal-calculator class="w-full max-w-full"></app-pal-calculator>
             </div>
-
-            <div *ngIf="selectedTab === 3" id="tabs-fill-3" role="tabpanel" aria-labelledby="tabs-fill-item-3">
+            <div id="tabs-fill-3" class="hidden" role="tabpanel" aria-labelledby="tabs-fill-item-3">
                 <div class="bg-primary/80 rounded-t-xl">
                     <h1 class="text-xl lg:text-3xl text-center text-white font-bold p-4">Total Daily Energy Expenditure
-                        (TDEE) Calculator</h1>
+                        (TDEE)
+                        Calculator</h1>
+
                 </div>
                 <div class="bg-primary/65 rounded-b-xl mb-5 p-5">
                     <ul class="mx-5">
-                        <li class="text-white">- De calculator werkt op basis van de BMR en PAL-waarde.</li>
-                        <li class="text-white">- TDEE = BMR x PAL</li>
+                        <li class="text-white">
+                            - De calculator werkt op basis van de BMR en PAL-waarde.
+                        </li>
+                        <li class="text-white
+                            ">
+                            - TDEE = BMR x PAL
                     </ul>
                 </div>
                 <app-tdee-calculator class="w-full max-w-full"></app-tdee-calculator>
             </div>
         </div>
     </div>
-</div>
