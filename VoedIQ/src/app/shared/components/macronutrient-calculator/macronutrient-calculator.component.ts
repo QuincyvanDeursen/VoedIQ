@@ -12,14 +12,16 @@ import { ToastService } from '../../services/toast.service';
 })
 export class MacronutrientCalculatorComponent implements OnInit, OnDestroy {
   tdee: number = 2000; // Default TDEE waarde (kcal)
+  hasOverweight: boolean = false; // Extra input om overgewicht aan te geven
 
-  // Gezonde range voor eiwitten, vetten en koolhydraten
-  proteinPercentRange: [number, number] = [10, 35]; // Gezonde range voor eiwitten
-  fatPercentRange: [number, number] = [20, 40]; // Gezonde range voor totaal vet
-  carbPercentRange: [number, number] = [40, 70]; // Gezonde range voor koolhydraten
-  saturatedFatPercentMax: number = 10; // Maximaal percentage voor verzadigd vet
+  // Gezonde ranges
+  proteinPercentRange: [number, number] = [10, 35]; // Eiwitten
+  fatPercentRange: [number, number] = [20, 40]; // Vet (normaal)
+  fatPercentRangeOverweight: [number, number] = [20, 35]; // Vet (bij overgewicht)
+  carbPercentRange: [number, number] = [40, 70]; // Koolhydraten
+  saturatedFatPercentMax: number = 10; // Max verzadigd vet
 
-  // Resultaten voor berekende macronutriënten
+  // Resultaten
   proteinRange: [number, number] = [0, 0];
   fatRange: [number, number] = [0, 0];
   carbRange: [number, number] = [0, 0];
@@ -28,10 +30,9 @@ export class MacronutrientCalculatorComponent implements OnInit, OnDestroy {
   // Vezels - vast aantal
   fiber: number = 30;
 
-  // Toon resultaten pas na berekening
   resultsCalculated: boolean = false;
 
-  // Constanten voor de calorieën per gram van elk macronutriënt
+  // Constanten
   private readonly CALORIES_PER_GRAM_CARB: number = 4;
   private readonly CALORIES_PER_GRAM_PROTEIN: number = 4;
   private readonly CALORIES_PER_GRAM_FAT: number = 9;
@@ -55,6 +56,10 @@ export class MacronutrientCalculatorComponent implements OnInit, OnDestroy {
   }
 
   calculateHealthyRanges() {
+    const fatRange = this.hasOverweight
+      ? this.fatPercentRangeOverweight
+      : this.fatPercentRange;
+
     // Koolhydraten
     const minCarbKcal = (this.carbPercentRange[0] / 100) * this.tdee;
     const maxCarbKcal = (this.carbPercentRange[1] / 100) * this.tdee;
@@ -63,15 +68,15 @@ export class MacronutrientCalculatorComponent implements OnInit, OnDestroy {
       Math.round(maxCarbKcal / this.CALORIES_PER_GRAM_CARB),
     ];
 
-    // Vet (totaal vet)
-    const minFatKcal = (this.fatPercentRange[0] / 100) * this.tdee;
-    const maxFatKcal = (this.fatPercentRange[1] / 100) * this.tdee;
+    // Vet
+    const minFatKcal = (fatRange[0] / 100) * this.tdee;
+    const maxFatKcal = (fatRange[1] / 100) * this.tdee;
     this.fatRange = [
       Math.round(minFatKcal / this.CALORIES_PER_GRAM_FAT),
       Math.round(maxFatKcal / this.CALORIES_PER_GRAM_FAT),
     ];
 
-    // Verzadigd vet (max 10%)
+    // Verzadigd vet
     const maxSaturatedFatKcal = (this.saturatedFatPercentMax / 100) * this.tdee;
     this.saturatedFatRange = [
       0,
@@ -86,17 +91,15 @@ export class MacronutrientCalculatorComponent implements OnInit, OnDestroy {
       Math.round(maxProteinKcal / this.CALORIES_PER_GRAM_PROTEIN),
     ];
 
-    // Resultaten zijn berekend
     this.resultsCalculated = true;
     this.saveMacronutrientRanges();
     this.toastService.success('Berekening voltooid!');
   }
 
   retrieveInfoFromLocalStorage() {
-    const storedBmr = localStorage.getItem('tdee');
-
-    if (storedBmr !== null) {
-      this.tdee = JSON.parse(storedBmr);
+    const storedTdee = localStorage.getItem('tdee');
+    if (storedTdee !== null) {
+      this.tdee = JSON.parse(storedTdee);
     }
   }
 

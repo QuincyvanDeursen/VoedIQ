@@ -75,14 +75,6 @@ export class TdeeCalculatorComponent implements OnInit, OnDestroy {
     );
   }
 
-  navigateToBmr() {
-    this.router.navigate(['/bmr-calculator']);
-  }
-
-  navigateToPal() {
-    this.router.navigate(['/pal-calculator']);
-  }
-
   retrieveInfoFromLocalStorage() {
     const storedBmr = localStorage.getItem('bmr');
     const storedPal = localStorage.getItem('pal');

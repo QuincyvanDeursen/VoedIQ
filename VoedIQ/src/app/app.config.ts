@@ -10,7 +10,7 @@ export const appConfig: ApplicationConfig = {
     provideRouter(
       routes,
       withInMemoryScrolling({
-        scrollPositionRestoration: 'enabled', // enable position restoration
+        scrollPositionRestoration: 'top', // enable position restoration
       })
     ),
     { provide: NOTYF, useFactory: notyfFactory },
