@@ -15,11 +15,4 @@ import { CommonModule } from '@angular/common';
   templateUrl: './energy-calculators.component.html',
   styleUrl: './energy-calculators.component.css',
 })
-export class EnergyCalculatorsComponent {
-  selectedTab = 1; // Standaard geselecteerde tab (BMR)
-
-  // Methode om het geselecteerde tabblad in te stellen
-  setSelectedTab(tabNumber: number): void {
-    this.selectedTab = tabNumber;
-  }
-}
+export class EnergyCalculatorsComponent {}
