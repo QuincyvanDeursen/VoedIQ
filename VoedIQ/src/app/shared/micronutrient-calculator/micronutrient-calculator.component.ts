@@ -468,32 +468,32 @@ export class MicronutrientCalculatorComponent {
         amount: '10 µg',
         reason: 'Verminderde aanmaak door huidskleur',
       });
+    }
 
-      if (this.isVegan) {
-        this.recommendedSupplements.push({
-          name: 'Vitamine B12',
-          amount: 'Aanvulling tot ADH',
-          reason: 'Dieet zonder vlees',
-        });
-      }
+    if (this.isVegan) {
+      this.recommendedSupplements.push({
+        name: 'Vitamine B12',
+        amount: 'Aanvulling tot ADH',
+        reason: 'Dieet zonder vlees',
+      });
+    }
 
-      // Pregnancy-related supplement recommendations
-      if (this.isPregnant) {
-        this.recommendedSupplements.push({
-          name: 'Vitamine D',
-          amount: '10 µg (tijdens zwangerschap)',
-          reason: 'Zwangerschap',
-        });
-      }
+    // Pregnancy-related supplement recommendations
+    if (this.isPregnant) {
+      this.recommendedSupplements.push({
+        name: 'Vitamine D',
+        amount: '10 µg',
+        reason: 'Zwangerschap',
+      });
+    }
 
-      // Planning pregnancy supplement recommendation
-      if (this.isPlanningPregnancy) {
-        this.recommendedSupplements.push({
-          name: 'Foliumzuur',
-          amount: '400 µg ',
-          reason: 'Voor en tijdens de eerste tien weken zwangerschap',
-        });
-      }
+    // Planning pregnancy supplement recommendation
+    if (this.isPlanningPregnancy) {
+      this.recommendedSupplements.push({
+        name: 'Foliumzuur',
+        amount: '400 µg ',
+        reason: 'Voor en tijdens de eerste tien weken zwangerschap',
+      });
     }
   }
 

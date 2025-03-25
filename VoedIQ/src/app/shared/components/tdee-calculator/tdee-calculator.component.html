@@ -1,7 +1,5 @@
 <div class="flex flex-col bg-primary/65 border-4 border-secondary rounded-xl items-center">
-    <!-- BMR input met plus- en min-knoppen -->
-    <h1 class="text-2xl text-center text-white font-bold my-4">Dagelijkse caloriebehoefte Calculator</h1>
-    <div class="mb-4">
+    <div class="m-4">
         <label class="label text-white">Basale Metabolisme (BMR):</label>
         <div class="input-group max-w-sm" data-input-number>
             <input class="input" type="text" [(ngModel)]="bmr" data-input-number-input />
@@ -21,7 +19,7 @@
     </div>
 
     <!-- PAL input met plus- en min-knoppen -->
-    <div class="mb-4">
+    <div class="m-4">
         <label class="label text-white">Activiteitsniveau (PAL-waarde):</label>
         <div class="input-group max-w-sm" data-input-number>
             <input class="input" type="text" min="0" [(ngModel)]="pal" data-input-number-input />

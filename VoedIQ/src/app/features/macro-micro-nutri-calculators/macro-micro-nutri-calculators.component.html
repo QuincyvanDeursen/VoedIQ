@@ -85,36 +85,58 @@
         <div class="mt-3">
             <div id="tabs-fill-1" role="tabpanel" aria-labelledby="tabs-fill-item-1">
                 <div class="bg-primary/80 rounded-t-xl">
-                    <h1 class="text-xl lg:text-3xl text-center text-white font-bold p-4">Macronutriënt Calculator</h1>
+                    <h1 class="text-xl lg:text-2xl text-center text-white font-bold p-4">Macronutriënt Calculator</h1>
 
                 </div>
                 <div class="bg-primary/65 rounded-b-xl mb-5 p-5">
-
-                    <p class="text-xl text-white text-justify mt-4">
-                        De <strong>Macronutriënt</strong> calculator berekent hoeveel koolhydraten, eiwitten en vetten
-                        jij dagelijks nodig hebt op basis van de Nederlandse voedingsrichtlijnen. Deze richtlijnen geven
-                        aan dat een gezond voedingspatroon bestaat uit een specifieke verhouding van macronutriënten.
-                        Dit wordt uitgedrukt in energieprocenten (en%). Een energieprocent geeft aan
-                        welk percentage van je totale dagelijkse energie-inname afkomstig is van een bepaalde
-                        macronutriënt. Bijvoorbeeld, als je 2000 kcal per dag eet en 20% daarvan uit eiwitten komt, dan
-                        haal je 400 kcal uit eiwitten. De verdeling van macronutriënten in energieprocenten helpt bij
-                        het samenstellen van een gebalanceerd dieet. Deze tool vertaalt deze richtlijnen naar grammen,
-                        zodat jij een beter beeld krijgt van wat je dagelijks binnen zou moeten krijgen.
-
-                    </p>
-
-                    <p class="text-xl text-white text-justify mt-4">
-                        Het enige wat je hoeft te doen, is je totale dagelijkse energiebehoefte (TDEE) invullen. Mocht
-                        je deze nog niet weten, dan kun je deze berekenen met de <a href="/energy-calculator"
-                            class="link link-accent">TDEE
-                            calculator</a>.
-                    </p>
-
-                    <p class="text-xl text-white text-justify mt-4">
-                        <span class="font-bold text-orange-300">Let op!</span> Hoewel dit de gezonde hoeveelheden zijn,
+                    <p class="text-white text-justify text-base">De Macronutriënt calculator berekent hoeveel
+                        koolhydraten,
+                        eiwitten en
+                        vetten
+                        jij dagelijks nodig hebt op basis van de Nederlandse voedingsrichtlijnen.</p>
+                    <p class="text-base text-white text-justify mt-4">
+                        <span class="font-bold text-orange-300">Let op!</span> Hoewel dit de gezonde
+                        hoeveelheden zijn,
                         is het belangrijk om ook op de calorie-inname
                         te letten om ongewenste gewichtstoename of -verlies te voorkomen.
                     </p>
+
+                    <div id="show-hide-collapse-heading"
+                        class="collapse hidden w-full overflow-hidden transition-[height] duration-300"
+                        aria-labelledby="show-hide-collapse">
+                        <p class="text-base text-white text-justify mt-4">
+                            Deze
+                            richtlijnen geven
+                            aan dat een gezond voedingspatroon bestaat uit een specifieke verhouding van
+                            macronutriënten.
+                            Dit wordt uitgedrukt in energieprocenten (en%). Een energieprocent geeft aan
+                            welk percentage van je totale dagelijkse energie-inname afkomstig is van een bepaalde
+                            macronutriënt. Bijvoorbeeld, als je 2000 kcal per dag eet en 20% daarvan uit eiwitten
+                            komt, dan
+                            haal je 400 kcal uit eiwitten. De verdeling van macronutriënten in energieprocenten
+                            helpt bij
+                            het samenstellen van een gebalanceerd dieet. Deze tool vertaalt deze richtlijnen naar
+                            grammen,
+                            zodat jij een beter beeld krijgt van wat je dagelijks binnen zou moeten krijgen.
+
+                        </p>
+
+                        <p class="text-base text-white text-justify mt-4">
+                            Het enige wat je hoeft te doen, is je totale dagelijkse energiebehoefte (TDEE) invullen.
+                            Mocht
+                            je deze nog niet weten, dan kun je deze berekenen met de <a href="/energy-calculator"
+                                class="link link-accent">TDEE
+                                calculator</a>.
+                        </p>
+                    </div>
+                    <button type="button" class="collapse-toggle text-center link text-white flex mx-auto items-center"
+                        id="show-hide-collapse" aria-expanded="false" aria-controls="show-hide-collapse-heading"
+                        data-collapse="#show-hide-collapse-heading">
+                        <span class="collapse-open:hidden">Lees meer</span>
+                        <span class="collapse-open:block hidden">Lees minder</span>
+                        <span class="icon-[tabler--chevron-down] collapse-open:rotate-180 ms-2 size-4"></span>
+                    </button>
+
 
 
                 </div>
@@ -122,30 +144,49 @@
             </div>
             <div id="tabs-fill-2" class="hidden" role="tabpanel" aria-labelledby="tabs-fill-item-2">
                 <div class="bg-primary/80 rounded-t-xl">
-                    <h1 class="text-xl lg:text-3xl text-center text-white font-bold p-4">Micronutriënt Calculator</h1>
+                    <h1 class="text-xl lg:text-2xl text-center text-white font-bold p-4">Micronutriënt Calculator</h1>
 
                 </div>
+
                 <div class="bg-primary/65 rounded-b-xl mb-5 p-5">
-
-                    <p class="text-xl text-white text-justify mt-4">
-                        De <strong>Micronutriënt</strong> calculator berekent hoeveel vitamines, mineralen en
+                    <p class="text-white text-justify text-base"> De Micronutriënt calculator berekent hoeveel
+                        vitamines,
+                        mineralen en
                         spoorelementen
-                        jij dagelijks nodig hebt. Deze hoeveelheden kunnen afhankelijk zijn van verschillende
-                        factoren zoals leeftijd, geslacht, huidskleur, het geven van borstvoeding en zwangerschap. De
-                        informatie is afkomstig van het <a class="link link-accent" target="_blank"
-                            rel="noopener noreferrer" target="_blank" rel="noopener noreferrer"
-                            href="https://www.voedingscentrum.nl/Assets/Uploads/voedingscentrum/Documents/Professionals/Pers/Factsheets/Factsheet%20Aanbevelingen%20vitamines%20en%20mineralen.pdf">VoedingsCentrum</a>
-                        en de Gezondheidsraad.
+                        jij dagelijks nodig hebt.</p>
+                    <div id="show-hide-collapse-heading1"
+                        class="collapse hidden w-full overflow-hidden transition-[height] duration-300"
+                        aria-labelledby="show-hide-collapse">
+                        <p class="text-base text-white text-justify mt-4">
+                            Deze hoeveelheden kunnen afhankelijk zijn van verschillende
+                            factoren zoals leeftijd, geslacht, huidskleur, het geven van borstvoeding en
+                            zwangerschap. De
+                            informatie is afkomstig van het <a class="link link-accent" target="_blank"
+                                rel="noopener noreferrer" target="_blank" rel="noopener noreferrer"
+                                href="https://www.voedingscentrum.nl/Assets/Uploads/voedingscentrum/Documents/Professionals/Pers/Factsheets/Factsheet%20Aanbevelingen%20vitamines%20en%20mineralen.pdf">VoedingsCentrum</a>
+                            en de Gezondheidsraad.
 
-                    </p>
+                        </p>
 
-                    <p class="text-xl text-white text-justify mt-4">
-                        Het enige wat je hoeft te doen, is je totale dagelijkse energiebehoefte (TDEE), leeftijd,
-                        geslacht en extra factoren in te invullen. Mocht
-                        je je TDEE deze nog niet weten, dan kun je deze berekenen met de <a href="/energy-calculator"
-                            class="link link-accent">TDEE
-                            calculator</a>.
-                    </p>
+                        <p class="text-base text-white text-justify mt-4">
+                            Het enige wat je hoeft te doen, is je totale dagelijkse energiebehoefte (TDEE),
+                            leeftijd,
+                            geslacht en extra factoren in te invullen. Mocht
+                            je je TDEE deze nog niet weten, dan kun je deze berekenen met de <a
+                                href="/energy-calculator" class="link link-accent">TDEE
+                                calculator</a>.
+                        </p>
+                    </div>
+                    <button type="button"
+                        class="collapse-toggle text-center link text-white flex mx-auto items-center mt-4"
+                        id="show-hide-collapse" aria-expanded="false" aria-controls="show-hide-collapse-heading"
+                        data-collapse="#show-hide-collapse-heading1">
+                        <span class="collapse-open:hidden">Lees meer</span>
+                        <span class="collapse-open:block hidden">Lees minder</span>
+                        <span class="icon-[tabler--chevron-down] collapse-open:rotate-180 ms-2 size-4"></span>
+                    </button>
+
+
                 </div>
                 <app-micronutrient-calculator class="w-full max-w-full"></app-micronutrient-calculator>
 
