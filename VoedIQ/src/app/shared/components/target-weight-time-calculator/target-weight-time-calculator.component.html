@@ -1,8 +1,8 @@
-<div class="flex flex-col bg-primary/65 border-4 border-secondary rounded-xl p-4">
-    <h1 class="text-2xl text-center text-white font-bold mb-4">Gewichtsdoel Calculator</h1>
+<div class="flex flex-col bg-primary/65 border-4 border-secondary rounded-xl ">
+    <h1 class="text-2xl text-center text-white font-bold my-4">Gewichtsdoel Calculator</h1>
 
     <!-- Inputvelden -->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4  mx-auto">
         <!-- Huidig gewicht -->
         <div>
             <label class="text-white">Huidig Gewicht (kg)</label>
@@ -105,7 +105,8 @@
     </div>
 
     <!-- Bereken knop -->
-    <div class="flex justify-center mt-4">
+    <div
+        class="flex flex-col md:flex-row justify-center p-4 border-t-2 bg-primary/40 rounded border-secondary gap-3 mt-4">
         <button class="btn btn-primary w-full sm:w-auto rounded-xl text-white" (click)="calculateWeightLossDuration()">
             <span class="icon-[solar--calculator-bold] size-6 bg-white"></span> Bereken
         </button>
