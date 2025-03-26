@@ -143,6 +143,10 @@
       </div>
     </div>
   </div>
+  <div>
+    <h2 class="text-xl sm:text-2xl text-center font-bold text-gray-800 m-4">Micronutriënt Behoefte (In development)</h2>
+
+  </div>
 </div>
 
 
@@ -196,7 +200,7 @@
 </div>
 
 <!-- cursus aanbod container -->
-<div class="bg-white" id="cursus_aanbod">
+<div class="bg-white pb-24" id="cursus_aanbod">
   <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 text-center pt-25 ">Cursus Aanbod</h1>
   <div class="flex flex-wrap justify-center gap-7 py-10 px-6 max-w-6xl mx-auto">
     <!-- Card 1 -->
@@ -218,41 +222,22 @@
 
 
 <!-- Health Calculators container -->
-<div class="bg-primary" id="calculators">
+<div class="bg-primary pb-24" id="calculators">
   <h1 class="text-3xl sm:text-4xl font-bold text-white text-center pt-25">Health Calculators</h1>
   <div class="flex flex-wrap justify-center gap-7 py-10 px-6 max-w-6xl mx-auto">
 
-    <app-course-card title="Rust Metabolisme (BMR)"
-      description="De Basal Metabolic Rate (BMR) calculator berekent de hoeveelheid calorieën die je lichaam verbrandt in rust, op basis van je lengte, gewicht, leeftijd en geslacht."
+    <app-course-card title="Energiebehoefte"
+      description="Deze calculator berekent de hoeveelheid calorieën die je lichaam per dag nodig heeft op basis van je rustmetabolisme en activiteitsniveau."
       imageUrl="calculator_1.svg" linkUrl="/energy-calculator" buttonText="Bereken!">
     </app-course-card>
 
-    <app-course-card title="Activiteiten Factor (PAL)"
-      description="Deze calculator berekent de hoeveelheid calorieën die je verbrandt tijdens verschillende activiteiten, zoals sporten, huishoudelijke taken en werk."
-      imageUrl="calculator_4.svg" linkUrl="/energy-calculator" buttonText="Bereken!">
-    </app-course-card>
-
-    <app-course-card title="Dagelijkse Energie Behoefte (TDEE)"
-      description="De Total Daily Energy Expenditure (TDEE) calculator berekent het totale aantal calorieën dat je per dag verbrandt, inclusief je BMR en activiteitsniveau."
-      imageUrl="calculator_2.svg" linkUrl="/energy-calculator" buttonText="Bereken!">
-    </app-course-card>
-
     <app-course-card title="Macro- en Micronutriënten"
-      description="Deze calculator berekent de optimale verdeling van eiwitten, koolhydraten en vetten op basis van de Nederlandse voedingsrichtlijnen"
-      imageUrl="calculator_3.svg" linkUrl="/nutri-calculators" buttonText="Bereken!">
-    </app-course-card>
-
-
-
-    <app-course-card title="Activiteiten Verbranding"
-      description="Deze calculator berekent de hoeveelheid calorieën die je verbrandt tijdens verschillende activiteiten, zoals sporten, huishoudelijke taken en werk."
-      imageUrl="calculator_5.svg" buttonText="Bereken!">
+      description="Deze calculator berekent de optimale verdeling van eiwitten, koolhydraten, vetten, vitamines en mineralen op basis van de Nederlandse voedingsrichtlijnen"
+      imageUrl="calculator_3.svg" linkUrl="/nutri-calculator" buttonText="Bereken!">
     </app-course-card>
 
     <app-course-card title="Doelgewicht Tijdsschatting"
       description="Deze calculator schat de tijd die nodig is om je doelgewicht te bereiken op basis van je huidige gewicht, doelgewicht en calorie-inname."
       imageUrl="calculator_6.svg" buttonText="Bereken!">
     </app-course-card>
-
-
   </div>

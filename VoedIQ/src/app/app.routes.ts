@@ -10,6 +10,6 @@ export const routes: Routes = [
   { path: 'landing', component: LandingComponent },
   { path: 'home', component: HomeComponent },
   { path: 'energy-calculator', component: EnergyCalculatorsComponent },
-  { path: 'nutri-calculators', component: MacroMicroNutriCalculatorsComponent },
+  { path: 'nutri-calculator', component: MacroMicroNutriCalculatorsComponent },
   { path: 'sandbox', component: SandboxComponent },
 ];

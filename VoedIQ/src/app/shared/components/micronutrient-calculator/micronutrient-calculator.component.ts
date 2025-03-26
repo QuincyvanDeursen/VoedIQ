@@ -1,8 +1,8 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { AfterViewChecked, ChangeDetectorRef, Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { ToastService } from '../services/toast.service';
-import { ButtonHoldService } from '../services/button-hold.service';
+import { ToastService } from '../../services/toast.service';
+import { ButtonHoldService } from '../../services/button-hold.service';
 
 @Component({
   selector: 'app-micronutrient-calculator',
@@ -10,7 +10,7 @@ import { ButtonHoldService } from '../services/button-hold.service';
   templateUrl: './micronutrient-calculator.component.html',
   styleUrl: './micronutrient-calculator.component.css',
 })
-export class MicronutrientCalculatorComponent {
+export class MicronutrientCalculatorComponent implements AfterViewChecked {
   // Gebruikersinput
   age: number = 30;
   sex: 'male' | 'female' = 'male';
@@ -111,8 +111,13 @@ export class MicronutrientCalculatorComponent {
   // Voor de input-group knoppen
   adjustingInterval: any;
 
+  private shouldScroll = false;
+  private sectionId: string | null = null;
+  copied = false; // Houdt bij of er gekopieerd is
+
   constructor(
     private toastService: ToastService,
+    private cdr: ChangeDetectorRef,
     private buttonHoldSerivce: ButtonHoldService
   ) {}
 
@@ -126,6 +131,63 @@ export class MicronutrientCalculatorComponent {
       'storage',
       this.syncLocalStorageChanges.bind(this)
     );
+  }
+
+  ngAfterViewChecked() {
+    if (this.shouldScroll && this.sectionId) {
+      setTimeout(() => {
+        if (!this.sectionId) return; // Als de sectie ondertussen gereset is, stop met scroll
+        const element = document.getElementById(this.sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        } else {
+          console.warn(`Element met ID '${this.sectionId}' niet gevonden.`);
+        }
+        this.shouldScroll = false;
+        this.sectionId = null; // Reset de sectie na scrollen
+      }, 100); // 100ms wacht zodat de DOM echt geladen is
+    }
+  }
+
+  copyToClipboard() {
+    const value = this.vitaminAndMineralDataToString();
+    navigator.clipboard
+      .writeText(value.toString())
+      .then(() => {
+        this.copied = true; // Zet de melding aan
+        setTimeout(() => (this.copied = false), 2000); // Verberg na 2 sec
+      })
+      .catch((err) => {
+        console.error('Fout bij kopiëren:', err);
+      });
+  }
+
+  private vitaminAndMineralDataToString(): string {
+    let result = 'Vitaminen:\n';
+    for (const vitamin of this.vitamins[this.sex]) {
+      result += `${vitamin.name}: ADH ${vitamin.adh}, AB ${vitamin.ab}\n`;
+    }
+
+    result += '\nMineralen:\n';
+    for (const mineral of this.minerals[this.sex]) {
+      result += `${mineral.name}: ADH ${mineral.adh}, AB ${mineral.ab}\n`;
+    }
+
+    if (this.recommendedSupplements.length > 0) {
+      result += '\nAanbevolen supplementen:\n';
+      for (const supplement of this.recommendedSupplements) {
+        result += `${supplement.name}: ${supplement.amount} (${supplement.reason})\n`;
+      }
+    }
+
+    return result;
+  }
+
+  scrollToElement(section: string) {
+    this.sectionId = section; // Onthoud naar welke sectie we willen scrollen
+    this.shouldScroll = true;
+
+    this.cdr.detectChanges(); // Forceer een DOM update
   }
 
   private syncLocalStorageChanges(event: StorageEvent) {

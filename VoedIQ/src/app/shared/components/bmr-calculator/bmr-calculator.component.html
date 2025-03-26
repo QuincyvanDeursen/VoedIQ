@@ -1,4 +1,4 @@
-<div class="flex flex-col bg-primary/65 border-4 border-secondary rounded-xl">
+<div class="flex flex-col bg-primary/80 rounded-xl">
 
 
 
@@ -78,22 +78,34 @@
     </div>
 
     <!-- Bereken knop -->
-    <div
-        class="flex flex-col md:flex-row justify-center p-4 border-t-2 bg-primary/40 rounded border-secondary gap-3 mt-4">
-        <button class="btn btn-primary w-full sm:w-auto rounded-xl text-white" (click)="calculateBMR()">
-            <span class="icon-[solar--calculator-bold] size-6 bg-white"></span> Bereken
+    <div class="flex flex-col md:flex-row justify-center rounded-b-xl p-4 bg-primary   gap-3 ">
+        <button class="btn border  bg-warning/80 w-full sm:w-auto rounded-xl text-white"
+            (click)="calculateBMR(); scrollToElement('result')">
+            <span class="icon-[solar--calculator-bold] size-6 "></span> Bereken
         </button>
     </div>
 </div>
 
 <!-- Resultaat weergeven -->
-<div class="flex p-4 bg-primary/75 rounded-xl mt-4 border-4 border-secondary justify-center" *ngIf="bmr !== null">
-    <div class="w-3/4">
-        <h1 class="text-2xl text-center text-white font-bold">BMR: {{ bmr }} kcal/dag</h1>
+<div #result id="result" class="flex flex-col p-4 bg-primary mt-4 rounded-xl justify-center" *ngIf="bmr !== null">
+    <div class="">
+        <h1 class="text-2xl text-center text-white font-bold">
+            BMR: <span class="text-secondary">{{ bmr }}</span> kcal/dag
+        </h1>
     </div>
+    <div class="flex flex-col md:w-1/4 md:mx-auto">
+        <button (click)="copyToClipboard(bmr)"
+            class="ml-2 p-2 btn bg-blue-400 hover:bg-blue-800 text-white rounded-lg mt-2">
+            <span *ngIf="!copied" class="icon-[solar--clipboard-linear] size-6"></span>
+            <span *ngIf="copied" class="icon-[solar--check-square-bold] size-6 bg-secondary"></span>
+            <span *ngIf="!copied">Kopieer</span>
+            <span *ngIf="copied">Hebbes!</span>
+        </button>
+    </div>
+
 </div>
 
-<div class="flex p-4 bg-primary/65 rounded-xl mt-4 border-4 border-secondary justify-center" *ngIf="bmr === null">
+<div class="flex p-4 bg-primary rounded-xl  mt-4 justify-center" *ngIf="bmr === null">
     <div class="mx-auto w-3/4">
         <h1 class="text-2xl text-center text-white font-bold">BMR: nog niet berekend!</h1>
     </div>

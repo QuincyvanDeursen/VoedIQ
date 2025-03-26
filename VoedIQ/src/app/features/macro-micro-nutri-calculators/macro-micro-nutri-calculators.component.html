@@ -1,4 +1,5 @@
 <div class="flex flex-col  max-w-7xl  mx-auto justify-center ">
+
     <h1 class="text-3xl md:text-4xl lg:text-6xl font-bold mx-auto text-primary my-20 px-5 ">Macro- en micronutriënten
         Calculators</h1>
 
@@ -12,7 +13,7 @@
             <img src="macronutrient.svg" alt="macronutrient-calculators"
                 class=" h-auto max-h-[300px] md:max-h-[400px] object-contain lg:hidden">
             <div class="mx-5">
-                <p class="text-xl text-justify">
+                <p class="text-base md:text-xl text-justify">
                     Voeding bestaat uit verschillende voedingsstoffen die je lichaam nodig heeft om goed te
                     functioneren.
                     <span class="text-primary font-bold">VoedIQ</span> biedt handige tools om te berekenen hoeveel
@@ -30,7 +31,7 @@
                     Wat heb je aan deze informatie?
                 </h2>
 
-                <p class="text-xl text-justify">
+                <p class="text-base md:text-xl text-justify">
                     Macronutriënten – eiwitten, koolhydraten en vetten – leveren energie en spelen een essentiële rol in
                     lichaamsfuncties
                     zoals spieropbouw, energievoorziening, celherstel en nog vele andere. Micronutriënten - vitaminen en
@@ -41,7 +42,7 @@
                     krijgen.
                 </p>
 
-                <p class="text-xl text-justify mt-5">
+                <p class="text-base md:text-xl text-justify mt-5">
                     Met de informatie die de calculators jouw geven kun je bijvoorbeeld je eigen voedingspatroon
                     vergelijken met de richtlijnen. Zo kun je
                     eventuele tekorten
@@ -72,37 +73,23 @@
                 class="grow btn btn-text active-tab:bg-primary active-tab:text-white bg-primary/20 text-primary active hover:bg-primary/40"
                 id="tabs-fill-item-1" data-tab="#tabs-fill-1" aria-controls="tabs-fill-1" role="tab"
                 aria-selected="false">
-                Macronutriënten
+                1. Macronutriënten
             </button>
             <button type="button"
                 class="grow btn btn-text active-tab:bg-primary active-tab:text-white bg-primary/20 text-primary hover:bg-primary/40"
                 id="tabs-fill-item-2" data-tab="#tabs-fill-2" aria-controls="tabs-fill-2" role="tab"
                 aria-selected="false">
-                Micronutriënten
+                2. Micronutriënten
             </button>
         </nav>
 
         <div class="mt-3">
             <div id="tabs-fill-1" role="tabpanel" aria-labelledby="tabs-fill-item-1">
-                <div class="bg-primary/80 rounded-t-xl">
-                    <h1 class="text-xl lg:text-2xl text-center text-white font-bold p-4">Macronutriënt Calculator</h1>
-
-                </div>
-                <div class="bg-primary/65 rounded-b-xl mb-5 p-5">
-                    <p class="text-white text-justify text-base">De Macronutriënt calculator berekent hoeveel
-                        koolhydraten,
-                        eiwitten en
-                        vetten
-                        jij dagelijks nodig hebt op basis van de Nederlandse voedingsrichtlijnen.</p>
-                    <p class="text-base text-white text-justify mt-4">
-                        <span class="font-bold text-orange-300">Let op!</span> Hoewel dit de gezonde
-                        hoeveelheden zijn,
-                        is het belangrijk om ook op de calorie-inname
-                        te letten om ongewenste gewichtstoename of -verlies te voorkomen.
-                    </p>
-
+                <div class="bg-primary rounded-xl mb-4">
+                    <h1 class="text-xl lg:text-2xl text-center text-white font-bold px-4 pt-4">Macronutriënt Calculator
+                    </h1>
                     <div id="show-hide-collapse-heading"
-                        class="collapse hidden w-full overflow-hidden transition-[height] duration-300"
+                        class="collapse hidden w-full overflow-hidden transition-[height] duration-300 p-5"
                         aria-labelledby="show-hide-collapse">
                         <p class="text-base text-white text-justify mt-4">
                             Deze
@@ -125,38 +112,56 @@
                             Het enige wat je hoeft te doen, is je totale dagelijkse energiebehoefte (TDEE) invullen.
                             Mocht
                             je deze nog niet weten, dan kun je deze berekenen met de <a href="/energy-calculator"
-                                class="link link-accent">TDEE
+                                class="link link-info">TDEE
                                 calculator</a>.
                         </p>
+                        <p class="text-white text-justify text-base">De Macronutriënt calculator berekent hoeveel
+                            koolhydraten,
+                            eiwitten en
+                            vetten
+                            jij dagelijks nodig hebt op basis van de Nederlandse voedingsrichtlijnen.</p>
+                        <p class="text-base text-white text-justify mt-4">
+                            <li><span class="font-bold text-orange-300">Let op!</span> Hoewel dit de gezonde
+                                hoeveelheden zijn,
+                                is het belangrijk om ook op de calorie-inname
+                                te letten om ongewenste gewichtstoename of -verlies te voorkomen.</li>
+                        </p>
+
+
+
+
+
                     </div>
-                    <button type="button" class="collapse-toggle text-center link text-white flex mx-auto items-center"
+                    <button type="button"
+                        class="collapse-toggle text-center link text-white flex mx-auto items-center my-2 pb-4"
                         id="show-hide-collapse" aria-expanded="false" aria-controls="show-hide-collapse-heading"
                         data-collapse="#show-hide-collapse-heading">
-                        <span class="collapse-open:hidden">Lees meer</span>
-                        <span class="collapse-open:block hidden">Lees minder</span>
+                        <span class="collapse-open:hidden text-secondary">Ik wil uitleg!</span>
+                        <span class="collapse-open:block hidden text-secondary">Ik het heb begrepen!</span>
                         <span class="icon-[tabler--chevron-down] collapse-open:rotate-180 ms-2 size-4"></span>
                     </button>
-
-
-
                 </div>
+
+
+
+
+
                 <app-macronutrient-calculator class="w-full max-w-full"></app-macronutrient-calculator>
             </div>
             <div id="tabs-fill-2" class="hidden" role="tabpanel" aria-labelledby="tabs-fill-item-2">
-                <div class="bg-primary/80 rounded-t-xl">
-                    <h1 class="text-xl lg:text-2xl text-center text-white font-bold p-4">Micronutriënt Calculator</h1>
+                <div class="bg-primary rounded-xl">
+                    <h1 class="text-xl lg:text-2xl text-center text-white font-bold px-4 pt-4">Micronutriënt Calculator
+                    </h1>
 
-                </div>
-
-                <div class="bg-primary/65 rounded-b-xl mb-5 p-5">
-                    <p class="text-white text-justify text-base"> De Micronutriënt calculator berekent hoeveel
-                        vitamines,
-                        mineralen en
-                        spoorelementen
-                        jij dagelijks nodig hebt.</p>
-                    <div id="show-hide-collapse-heading1"
+                    <div id="show-hide-collapse-heading3"
                         class="collapse hidden w-full overflow-hidden transition-[height] duration-300"
                         aria-labelledby="show-hide-collapse">
+
+                        <p class="text-white text-justify text-base"> De Micronutriënt calculator berekent hoeveel
+                            vitamines,
+                            mineralen en
+                            spoorelementen
+                            jij dagelijks nodig hebt.</p>
                         <p class="text-base text-white text-justify mt-4">
                             Deze hoeveelheden kunnen afhankelijk zijn van verschillende
                             factoren zoals leeftijd, geslacht, huidskleur, het geven van borstvoeding en
@@ -176,15 +181,18 @@
                                 href="/energy-calculator" class="link link-accent">TDEE
                                 calculator</a>.
                         </p>
+
                     </div>
                     <button type="button"
-                        class="collapse-toggle text-center link text-white flex mx-auto items-center mt-4"
-                        id="show-hide-collapse" aria-expanded="false" aria-controls="show-hide-collapse-heading"
-                        data-collapse="#show-hide-collapse-heading1">
-                        <span class="collapse-open:hidden">Lees meer</span>
-                        <span class="collapse-open:block hidden">Lees minder</span>
+                        class="collapse-toggle text-center link text-white flex mx-auto items-center my-2 pb-4"
+                        id="show-hide-collapse3" aria-expanded="false" aria-controls="show-hide-collapse-heading"
+                        data-collapse="#show-hide-collapse-heading3">
+                        <span class="collapse-open:hidden text-secondary">Ik wil uitleg!</span>
+                        <span class="collapse-open:block hidden text-secondary">Ik het heb begrepen!</span>
                         <span class="icon-[tabler--chevron-down] collapse-open:rotate-180 ms-2 size-4"></span>
                     </button>
+
+
 
 
                 </div>

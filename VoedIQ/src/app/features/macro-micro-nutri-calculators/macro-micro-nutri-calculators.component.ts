@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { MacronutrientCalculatorComponent } from '../../shared/components/macronutrient-calculator/macronutrient-calculator.component';
-import { MicronutrientCalculatorComponent } from '../../shared/micronutrient-calculator/micronutrient-calculator.component';
+import { MicronutrientCalculatorComponent } from '../../shared/components/micronutrient-calculator/micronutrient-calculator.component';
 
 @Component({
   selector: 'app-macro-micro-nutri-calculators',

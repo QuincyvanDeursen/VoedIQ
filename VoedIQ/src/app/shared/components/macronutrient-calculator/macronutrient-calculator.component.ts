@@ -1,5 +1,11 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import {
+  AfterViewChecked,
+  ChangeDetectorRef,
+  Component,
+  OnDestroy,
+  OnInit,
+} from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ButtonHoldService } from '../../services/button-hold.service';
 import { ToastService } from '../../services/toast.service';
@@ -10,7 +16,9 @@ import { ToastService } from '../../services/toast.service';
   templateUrl: './macronutrient-calculator.component.html',
   styleUrls: ['./macronutrient-calculator.component.css'],
 })
-export class MacronutrientCalculatorComponent implements OnInit, OnDestroy {
+export class MacronutrientCalculatorComponent
+  implements OnInit, OnDestroy, AfterViewChecked
+{
   tdee: number = 2000; // Default TDEE waarde (kcal)
   hasOverweight: boolean = false; // Extra input om overgewicht aan te geven
 
@@ -38,10 +46,31 @@ export class MacronutrientCalculatorComponent implements OnInit, OnDestroy {
   private readonly CALORIES_PER_GRAM_FAT: number = 9;
   private readonly CALORIES_PER_GRAM_SATURATED_FAT: number = 9;
 
+  private shouldScroll = false;
+  private sectionId: string | null = null;
+  copied = false; // Houdt bij of er gekopieerd is
+
   constructor(
     private buttonHoldService: ButtonHoldService,
-    private toastService: ToastService
+    private toastService: ToastService,
+    private cdr: ChangeDetectorRef
   ) {}
+
+  ngAfterViewChecked() {
+    if (this.shouldScroll && this.sectionId) {
+      setTimeout(() => {
+        if (!this.sectionId) return; // Als de sectie ondertussen gereset is, stop met scroll
+        const element = document.getElementById(this.sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        } else {
+          console.warn(`Element met ID '${this.sectionId}' niet gevonden.`);
+        }
+        this.shouldScroll = false;
+        this.sectionId = null; // Reset de sectie na scrollen
+      }, 100); // 100ms wacht zodat de DOM echt geladen is
+    }
+  }
 
   ngOnInit(): void {
     this.retrieveInfoFromLocalStorage();
@@ -55,7 +84,38 @@ export class MacronutrientCalculatorComponent implements OnInit, OnDestroy {
     );
   }
 
-  calculateHealthyRanges() {
+  copyToClipboard() {
+    const value = this.macroDataToString();
+    navigator.clipboard
+      .writeText(value.toString())
+      .then(() => {
+        this.copied = true; // Zet de melding aan
+        setTimeout(() => (this.copied = false), 2000); // Verberg na 2 sec
+      })
+      .catch((err) => {
+        console.error('Fout bij kopiëren:', err);
+      });
+  }
+
+  private macroDataToString(): string {
+    return `
+  TDEE: ${this.tdee} kcal
+  Eiwitten: min. ${this.proteinRange[0]} - max. ${this.proteinRange[1]} gram
+  Vet: min. ${this.fatRange[0]} - max. ${this.fatRange[1]} gram
+  Koolhydraten: min. ${this.carbRange[0]} - max. ${this.carbRange[1]} gram
+  Verzadigd vet: min. ${this.saturatedFatRange[0]} - max. ${this.saturatedFatRange[1]} gram
+  Vezels: min. ${this.fiber} gram
+    `.trim();
+  }
+
+  scrollToElement(section: string) {
+    this.sectionId = section; // Onthoud naar welke sectie we willen scrollen
+    this.shouldScroll = true;
+
+    this.cdr.detectChanges(); // Forceer een DOM update
+  }
+
+  calculate() {
     const fatRange = this.hasOverweight
       ? this.fatPercentRangeOverweight
       : this.fatPercentRange;

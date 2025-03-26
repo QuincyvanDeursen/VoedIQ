@@ -1,4 +1,6 @@
 import {
+  AfterViewChecked,
+  ChangeDetectorRef,
   Component,
   ElementRef,
   Inject,
@@ -16,7 +18,7 @@ import { ToastService } from '../../services/toast.service';
   templateUrl: './pal-calculator.component.html',
   styleUrl: './pal-calculator.component.css',
 })
-export class PalCalculatorComponent implements OnInit {
+export class PalCalculatorComponent implements OnInit, AfterViewChecked {
   @ViewChild('scrollContainer') private scrollContainer!: ElementRef;
   activities: {
     data: {
@@ -27,11 +29,53 @@ export class PalCalculatorComponent implements OnInit {
 
   calculatePalValue: number = 0; // PAL-waarde
 
-  constructor(private toastService: ToastService) {}
+  private shouldScroll = false;
+  private sectionId: string | null = null;
+  copied = false; // Houdt bij of er gekopieerd is
+
+  constructor(
+    private toastService: ToastService,
+    private cdr: ChangeDetectorRef
+  ) {}
+
+  ngAfterViewChecked() {
+    if (this.shouldScroll && this.sectionId) {
+      setTimeout(() => {
+        if (!this.sectionId) return; // Als de sectie ondertussen gereset is, stop met scroll
+        const element = document.getElementById(this.sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        } else {
+          console.warn(`Element met ID '${this.sectionId}' niet gevonden.`);
+        }
+        this.shouldScroll = false;
+        this.sectionId = null; // Reset de sectie na scrollen
+      }, 100); // 100ms wacht zodat de DOM echt geladen is
+    }
+  }
 
   ngOnInit() {
     // Zorgt ervoor dat er ten minste één activiteit is, een lege activiteit
     this.activities.push({ data: { activity: undefined, totalMinutes: 0 } });
+  }
+
+  copyToClipboard(value: number) {
+    navigator.clipboard
+      .writeText(value.toString())
+      .then(() => {
+        this.copied = true; // Zet de melding aan
+        setTimeout(() => (this.copied = false), 2000); // Verberg na 2 sec
+      })
+      .catch((err) => {
+        console.error('Fout bij kopiëren:', err);
+      });
+  }
+
+  scrollToElement(section: string) {
+    this.sectionId = section; // Onthoud naar welke sectie we willen scrollen
+    this.shouldScroll = true;
+
+    this.cdr.detectChanges(); // Forceer een DOM update
   }
 
   //////////////////////////////////////////////////////////////////////
