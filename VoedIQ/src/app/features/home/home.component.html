@@ -22,11 +22,11 @@
         <div class=" lg:hidden">
           <img src="homepage_banner.svg" alt="Banner foto" class="object-contain mx-auto h-[180px] md:h-[260px]" />
         </div>
-        <button (click)="scrollToElement('cursus_aanbod')"
+        <button [appScrollTo]="'cursus_aanbod'" [scrollBlock]="'start'"
           class="w-full sm:w-1/2 lg:w-1/2 px-6 py-3 text-lg font-semibold text-white bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full shadow-lg hover:scale-105 transition-all duration-300">
           Bekijk Gratis Cursussen
         </button>
-        <button (click)="scrollToElement('calculators')"
+        <button [appScrollTo]="'calculators'" [scrollBlock]="'start'"
           class="w-full sm:w-1/2 lg:w-1/2 px-6 py-3 text-lg font-semibold text-white bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full shadow-lg hover:scale-105 transition-all duration-300">
           Bekijk Health Calculators
         </button>

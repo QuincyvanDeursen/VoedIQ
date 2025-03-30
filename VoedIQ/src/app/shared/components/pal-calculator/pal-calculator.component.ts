@@ -11,10 +11,11 @@ import { ActivityInputComponent } from '../activity-input/activity-input.compone
 import { CommonModule } from '@angular/common';
 import { Activity } from '../../../core/models/activity';
 import { ToastService } from '../../services/toast.service';
+import { ScrollToDirective } from '../../directives/scroll-to.directive';
 
 @Component({
   selector: 'app-pal-calculator',
-  imports: [ActivityInputComponent, CommonModule],
+  imports: [ActivityInputComponent, CommonModule, ScrollToDirective],
   templateUrl: './pal-calculator.component.html',
   styleUrl: './pal-calculator.component.css',
 })

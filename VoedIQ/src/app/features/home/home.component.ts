@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { card } from '../../shared/components/card/card.component';
+import { ScrollToDirective } from '../../shared/directives/scroll-to.directive';
 
 @Component({
   selector: 'app-home',
-  imports: [CommonModule, card],
+  imports: [CommonModule, card, ScrollToDirective],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
@@ -31,15 +32,6 @@ export class HomeComponent {
     return ['Goedenacht', 'Goedemorgen', 'Goedemiddag', 'Goedenavond'][
       hour < 5 ? 0 : hour < 12 ? 1 : hour < 18 ? 2 : 3
     ];
-  }
-
-  scrollToElement(section: string) {
-    const element = document.getElementById(section);
-    if (element) {
-      element.scrollIntoView({
-        behavior: 'smooth', // Zorgt voor een soepele scroll
-      });
-    }
   }
 
   retrieveLocalStorageData() {
