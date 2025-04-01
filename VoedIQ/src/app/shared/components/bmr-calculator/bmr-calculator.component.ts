@@ -1,8 +1,9 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { AfterViewChecked, ChangeDetectorRef, Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ToastService } from '../../services/toast.service';
 import { ButtonHoldService } from '../../services/button-hold.service';
+import { timeout } from 'rxjs';
 
 @Component({
   selector: 'app-bmr-calculator',
@@ -10,18 +11,56 @@ import { ButtonHoldService } from '../../services/button-hold.service';
   templateUrl: './bmr-calculator.component.html',
   styleUrls: ['./bmr-calculator.component.css'],
 })
-export class BmrCalculatorComponent {
+export class BmrCalculatorComponent implements AfterViewChecked {
   gender: string = 'male';
   age: number | null = 30;
   weight: number | null = 50;
   height: number | null = 150;
   bmr: number | null = null;
-  private interval: any;
+  private shouldScroll = false;
+  private sectionId: string | null = null;
+  copied = false; // Houdt bij of er gekopieerd is
 
   constructor(
     private toastService: ToastService,
-    private buttonHoldService: ButtonHoldService
+    private buttonHoldService: ButtonHoldService,
+    private cdr: ChangeDetectorRef
   ) {}
+
+  scrollToElement(section: string) {
+    this.sectionId = section; // Onthoud naar welke sectie we willen scrollen
+    this.shouldScroll = true;
+
+    this.cdr.detectChanges(); // Forceer een DOM update
+  }
+
+  ngAfterViewChecked() {
+    if (this.shouldScroll && this.sectionId) {
+      setTimeout(() => {
+        if (!this.sectionId) return; // Als de sectie ondertussen gereset is, stop met scroll
+        const element = document.getElementById(this.sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        } else {
+          console.warn(`Element met ID '${this.sectionId}' niet gevonden.`);
+        }
+        this.shouldScroll = false;
+        this.sectionId = null; // Reset de sectie na scrollen
+      }, 100); // 100ms wacht zodat de DOM echt geladen is
+    }
+  }
+
+  copyToClipboard(value: number) {
+    navigator.clipboard
+      .writeText(value.toString())
+      .then(() => {
+        this.copied = true; // Zet de melding aan
+        setTimeout(() => (this.copied = false), 2000); // Verberg na 2 sec
+      })
+      .catch((err) => {
+        console.error('Fout bij kopiëren:', err);
+      });
+  }
 
   calculateBMR(): void {
     if (!this.validateForm()) return;

@@ -11,40 +11,136 @@
             <img src="calculator.svg" alt="energy-calculators"
                 class=" h-auto max-h-[300px] md:max-h-[400px] object-contain lg:hidden">
             <div class="mx-5">
-                <p class=" text-xl text-justify">
-                    Op deze pagina kun jij een schatting maken van hoeveel energie jouw lichaam nodig heeft. <span
-                        class="text-primary font-bold">VoedIQ</span> biedt daarvoor drie handige calculators aan.
-                    Probeer ze
-                    uit door het onderstaande menu te gebruiken en ontdek wat jij nodig hebt!
-                </p>
+                <div class="accordion accordion-shadow">
 
-                <h2 class="text-2xl text-primary font-bold mt-4">
-                    Wat heb je aan deze informatie?
-                </h2>
-                <P class="text-xl text-justify"> Met de BMR en PAL kun je je dagelijkse caloriebehoefte (TDEE) schatten.
-                    Wanneer je je TDEE weet kun je gemakkelijker aan je doelen werken of dat
-                    nou afvallen, aankomen of gezonder leven is. Als je weet hoeveel calorieën je dagelijks mag, kun je
-                    bijvoorbeeld afvallen door minder dan deze berekende hoeveelheid calorieën binnen te krijgen. Voor
-                    aankomen geldt
-                    dat je juist meer calorieën tot je neemt dan je TDEE. Een handige tool om je opweg te helpen is de
-                    <a class="link link-accent ">gewichtsdoel
-                        calculator.</a> Deze geeft je een beknopt advies om je doel te behalen
-                </P>
+                    <!-- Accordion Item 1: Wat is BMR, PAL en TDEE? -->
+                    <div class="accordion-item active" id="what-is-bmr-pal-tdee">
+                        <button
+                            class="accordion-toggle inline-flex items-center gap-x-4 px-5 py-4 text-start text-xl lg:text-2xl font-bold text-primary"
+                            aria-controls="what-is-bmr-pal-tdee-collapse" aria-expanded="true">
+                            <span
+                                class="icon-[tabler--plus] accordion-item-active:hidden text-base-content size-4.5 block shrink-0"></span>
+                            <span
+                                class="icon-[tabler--minus] accordion-item-active:block text-base-content size-4.5 hidden shrink-0"></span>
+                            Wat is BMR, PAL en TDEE?
+                        </button>
+                        <div id="what-is-bmr-pal-tdee-collapse"
+                            class="accordion-content w-full overflow-hidden transition-[height] duration-300"
+                            aria-labelledby="what-is-bmr-pal-tdee" role="region">
+                            <div class="px-5 pb-4">
+                                <p class="text-base md:text-xl text-justify">
+                                    BMR (Basal Metabolic Rate) is de hoeveelheid energie die je lichaam in rust
+                                    verbruikt om
+                                    basale functies zoals ademhaling, hartslag en celherstel te onderhouden. Het is de
+                                    minimale hoeveelheid
+                                    calorieën die je lichaam nodig heeft om te overleven zonder enige fysieke
+                                    activiteit.
+                                </p>
 
-                <p class="text-xl text-justify mt-5">
-                    Bovendien is het mogelijk om aan de hand van je
-                    TDEE te bereken wat voor jou gezonde hoeveelheden macronutriënten (eiwitten, koolhydraten en vetten)
-                    zijn. Ook daarvoor is een handige tool beschikbaar, de <a class="link link-accent ">macronutriënt
-                        calculator</a>!
+                                <p class="text-base md:text-xl text-justify mt-4">
+                                    PAL (Physical Activity Level) is een maat voor de hoeveelheid fysieke activiteit
+                                    die je dagelijks
+                                    verricht. Het wordt gebruikt om je totale energieverbruik aan te passen op basis van
+                                    hoe actief je bent.
+                                    De PAL-waarde wordt berekend aan de hand van de intensiteit van je dagelijkse
+                                    activiteiten.
+                                </p>
 
-                </p>
+                                <p class="text-base md:text-xl text-justify mt-4">
+                                    TDEE (Total Daily Energy Expenditure) is de totale hoeveelheid energie
+                                    (calorieën) die je
+                                    dagelijks verbruikt. Het is het resultaat van je BMR, vermenigvuldigd met je PAL.
+                                    TDEE geeft je een
+                                    beter inzicht in hoeveel calorieën je dagelijks nodig hebt, rekening houdend met je
+                                    fysieke activiteit.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
+                    <!-- Accordion Item 2: Wat kun je doen met deze informatie? -->
+                    <div class="accordion-item" id="what-can-you-do-with-this-info">
+                        <button
+                            class="accordion-toggle inline-flex items-center gap-x-4 px-5 py-4 text-start text-xl lg:text-2xl font-bold text-primary"
+                            aria-controls="what-can-you-do-with-this-info-collapse" aria-expanded="false">
+                            <span
+                                class="icon-[tabler--plus] accordion-item-active:hidden text-base-content size-4.5 block shrink-0"></span>
+                            <span
+                                class="icon-[tabler--minus] accordion-item-active:block text-base-content size-4.5 hidden shrink-0"></span>
+                            Wat kun je doen met deze informatie?
+                        </button>
+                        <div id="what-can-you-do-with-this-info-collapse"
+                            class="accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+                            aria-labelledby="what-can-you-do-with-this-info" role="region">
+                            <div class="px-5 pb-4">
+                                <p class="text-base md:text-xl text-justify">
+                                    Met je TDEE kun je veel doen om je gezondheid en fitnessdoelen te bereiken.
+                                    Zodra je weet hoeveel
+                                    calorieën je dagelijks nodig hebt, kun je je dieet en je activiteiten hierop
+                                    afstemmen. Bijvoorbeeld:
+                                </p>
 
+                                <ul class="text-base md:text-xl text-justify mt-5">
+                                    <li><strong>Afvallen:</strong> Om gewicht te verliezen, wil je een calorie-tekort
+                                        creëren, wat betekent
+                                        dat je minder calorieën eet dan je TDEE.</li>
+                                    <li><strong>Aankomen:</strong> Als je wilt aankomen, moet je meer calorieën
+                                        binnenkrijgen dan je TDEE.</li>
+                                    <li><strong>Gewicht behouden:</strong> Als je je huidige gewicht wilt behouden, eet
+                                        dan ongeveer
+                                        hetzelfde aantal calorieën als je TDEE.</li>
+                                </ul>
 
+                                <p class="text-base md:text-xl text-justify mt-5">Je kunt ook de
+                                    macronutriënt- (eiwitten,
+                                    koolhydraten en vetten) en micronutriëntbehoefte (vitaminen, mineralen en
+                                    spoorelementen) aan de hand van je caloriebehoefte. Dat kun je doen met voedIQ's
+                                    <a href="/nutrient-calculator" class="link link-primary">nutriënt calculator</a>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
-                <p class=" text-xl text-justify mt-4">
+                    <!-- Accordion Item 3: Wat doet de calculator? -->
+                    <div class="accordion-item" id="what-does-the-calculator-do">
+                        <button
+                            class="accordion-toggle inline-flex items-center gap-x-4 px-5 py-4 text-start text-xl lg:text-2xl font-bold text-primary"
+                            aria-controls="what-does-the-calculator-do-collapse" aria-expanded="false">
+                            <span
+                                class="icon-[tabler--plus] accordion-item-active:hidden text-base-content size-4.5 block shrink-0"></span>
+                            <span
+                                class="icon-[tabler--minus] accordion-item-active:block text-base-content size-4.5 hidden shrink-0"></span>
+                            Wat doet de calculator?
+                        </button>
+                        <div id="what-does-the-calculator-do-collapse"
+                            class="accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+                            aria-labelledby="what-does-the-calculator-do" role="region">
+                            <div class="px-5 pb-4">
+                                <p class="text-base-content/80 font-normal md:text-xl text-justify">
+                                    De calculator berekent je BMR, PAL en TDEE op basis van je
+                                    persoonlijke gegevens
+                                    zoals leeftijd, geslacht, gewicht, lengte en alle activiteiten die jij doet in een
+                                    week. Het betreft niet enkel sportactiviteiten, maar ook dingen zoals
+                                    boodschappendoen, de hond uitlaten, schoonmaken et cetera. Deze informatie
+                                    helpt je om een
+                                    duidelijker inzicht te krijgen in je energiebehoefte en om gerichte keuzes te maken
+                                    voor je dieet en
+                                    trainingsroutine.
+                                </p>
 
-                </p>
+                                <p class="text-base-content/80 font-normal md:text-xl text-justify mt-5">
+                                    De calculators geven je een indicatie van de hoeveelheid calorieën die je dagelijks
+                                    nodig hebt, maar
+                                    houd er rekening mee dat het slechts een schatting is. Iedereen is uniek, en je
+                                    daadwerkelijke
+                                    energiebehoefte kan variëren op basis van factoren zoals genetica, gezondheid en
+                                    levensstijl.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
@@ -53,126 +149,178 @@
 
 
 </div>
-<div class="flex flex-col lg:flex-row max-w-7xl  mx-5 xl:mx-auto ">
+<div class="flex flex-col lg:flex-row max-w-7xl  mx-5 xl:mx-auto " id="navbar">
     <div class="flex flex-col item-center mt-20 w-full     mb-[400px] ">
-        <nav class="tabs space-x-1 rtl:space-x-reverse overflow-x-auto" aria-label="Tabs" role="tablist"
-            aria-orientation="horizontal">
-            <button type="button"
-                class="grow btn btn-text active-tab:bg-primary active-tab:text-white bg-primary/20 text-primary active hover:bg-primary/40"
-                id="tabs-fill-item-1" data-tab="#tabs-fill-1" aria-controls="tabs-fill-1" role="tab"
-                aria-selected="false">
-                BMR
+        <nav class="tabs space-x-1 rtl:space-x-reverse overflow-x-auto" aria-label="Tabs" role="tablist">
+            <button type="button" class="grow btn btn-text" [ngClass]="{
+                  'bg-primary text-white active hover:bg-primary/60': activeStep === 1,
+                  'bg-primary/20 text-primary hover:bg-primary/40': activeStep !== 1
+                }" (click)="setActiveStep(1)">
+                1. BMR
             </button>
-            <button type="button"
-                class="grow btn btn-text active-tab:bg-primary active-tab:text-white bg-primary/20 text-primary hover:bg-primary/40"
-                id="tabs-fill-item-2" data-tab="#tabs-fill-2" aria-controls="tabs-fill-2" role="tab"
-                aria-selected="false">
-                PAL
+            <button type="button" class="grow btn btn-text" [ngClass]="{
+                  'bg-primary text-white active hover:bg-primary/60': activeStep === 2,
+                  'bg-primary/20 text-primary hover:bg-primary/40': activeStep !== 2
+                }" (click)="setActiveStep(2)">
+                2. PAL
             </button>
-            <button type="button"
-                class="grow btn btn-text active-tab:bg-primary active-tab:text-white bg-primary/20 text-primary hover:bg-primary/40"
-                id="tabs-fill-item-3" data-tab="#tabs-fill-3" aria-controls="tabs-fill-3" role="tab"
-                aria-selected="false">
-                TDEE
+            <button type="button" class="grow btn btn-text" [ngClass]="{
+                  'bg-primary text-white active hover:bg-primary/60': activeStep === 3,
+                  'bg-primary/20 text-primary hover:bg-primary/40': activeStep !== 3
+                }" (click)="setActiveStep(3)">
+                3. TDEE
             </button>
         </nav>
 
         <div class="mt-3">
-            <div id="tabs-fill-1" role="tabpanel" aria-labelledby="tabs-fill-item-1">
-                <div class="bg-primary/80 rounded-t-xl">
-                    <h1 class="text-xl lg:text-3xl text-center text-white font-bold p-4">Basal Metabolic Rate (BMR)
+            <!-- Ruststofwisseling (BMR) Calculator -->
+            <div id="tabs-fill-1" role="tabpanel" aria-labelledby="tabs-fill-item-1" *ngIf="activeStep === 1">
+                <div class="bg-primary rounded-xl">
+                    <h1 class="text-xl lg:text-2xl text-center text-white font-bold px-4 pt-4">Ruststofwisseling (BMR)
                         Calculator</h1>
+                    <div class="bg-primary rounded-b-xl mb-4">
+                        <div id="show-hide-collapse-heading"
+                            class="collapse w-full overflow-hidden transition-[height] duration-300 p-5"
+                            [ngClass]="{ 'hidden': !isCollapseOpen }" aria-labelledby="show-hide-collapse">
+                            <p class="text-white text-justify text-base">
+                                Deze calculator berekent hoeveel calorieën jouw lichaam in rust verbrandt. Dit wordt ook
+                                wel de ruststofwisseling genoemd.
+                            </p>
+                            <p class="text-base text-white text-justify mt-4">
+                                het resultaat is de
+                                hoeveelheid energie die jouw lichaam nodig heeft om in leven te blijven. Denk daarbij
+                                aan activiteiten zoals ademen, het hebben van hartslag en
+                                celvernieuwing.Deze calculator
+                                is gebasseerd op de Mifflin-St Jeor formule. Deze formule is <a class="link link-info "
+                                    target="_blank" rel="noopener noreferrer"
+                                    href="https://pubmed.ncbi.nlm.nih.gov/15883556/">een van de
+                                    meest
+                                    nauwkeurige formules</a> om de BMR te berekenen. De formule gebruikt vier
+                                variabelen:
+                                geslacht, leeftijd, gewicht en lengte.
 
-                </div>
-                <div class="bg-primary/65 rounded-b-xl mb-5 p-5">
-
-                    <p class=" text-xl text-white text-justify mt-4">
-                        De <strong>Basal Metabolic Rate (BMR) </strong>calculator. Deze calculator berekent
-                        hoeveel calorieën
-                        jouw lichaam in rust verbrandt. Dit is de
-                        hoeveelheid energie die jouw lichaam nodig heeft om te functioneren. Dit wordt ook wel
-                        ruststofwisselingg
-                        genoemd. Deze calculator is gebasseerd op de Mifflin-St Jeor formule. Deze formule is <a
-                            class="link link-accent " target="_blank" rel="noopener noreferrer"
-                            href="https://pubmed.ncbi.nlm.nih.gov/15883556/">een van de
-                            meest
-                            nauwkeurige formules</a> om de BMR te berekenen.
-                    </p>
-
+                            </p>
+                        </div>
+                        <button type="button"
+                            class="collapse-toggle text-center link text-white flex mx-auto items-center my-2 pb-4"
+                            (click)="toggleCollapse()">
+                            <span *ngIf="!isCollapseOpen" class="text-secondary">Ik wil uitleg!</span>
+                            <span *ngIf="isCollapseOpen" class="text-secondary">Ik heb het begrepen!</span>
+                            <span class="icon-[tabler--chevron-down]"
+                                [ngClass]="{ 'rotate-180': isCollapseOpen }"></span>
+                        </button>
+                    </div>
                 </div>
                 <app-bmr-calculator class="w-full max-w-full"></app-bmr-calculator>
             </div>
-            <div id="tabs-fill-2" class="hidden" role="tabpanel" aria-labelledby="tabs-fill-item-2">
-                <div class="bg-primary/80 rounded-t-xl">
-                    <h1 class="text-xl lg:text-3xl text-center text-white font-bold p-4">Physical Activity Level (PAL)
-                        Calculator</h1>
 
+            <!-- Physical Activity Level (PAL) Calculator -->
+            <div id="tabs-fill-2" role="tabpanel" aria-labelledby="tabs-fill-item-2" *ngIf="activeStep === 2">
+                <div class="bg-primary rounded-xl mb-4">
+                    <h1 class="text-xl lg:text-2xl text-center text-white font-bold px-4 pt-4">Physical Activity Level
+                        (PAL) Calculator</h1>
+                    <div id="show-hide-collapse-heading2"
+                        class="collapse w-full overflow-hidden transition-[height] duration-300 p-5"
+                        [ngClass]="{ 'hidden': !isCollapseOpen }" aria-labelledby="show-hide-collapse">
+                        <p class="text-white text-justify text-base">
+                            Deze calculator berekent de gemiddelde activiteitenfactor van een persoon op basis van alle
+                            activiteiten die de persoon doet in een week.
+                        </p>
+
+                        <p class="text-base text-white text-justify mt-4">
+                            Dit is een belangrijke
+                            factor om
+                            te
+                            bepalen hoeveel calorieën een individu per dag nodig hebt voor fysieke activiteiten. Om dit
+                            mogelijk te maken zijn er
+                            meer
+                            dan
+                            1100
+                            activiteiten opgenomen in de database van VoedIQ. Deze activiteiten zijn gebaseerd op
+                            MET-values.
+                            MET-values
+                            zijn een maat voor de intensiteit van een activiteit. Hoe hoger de MET-waarde, hoe
+                            intensiever
+                            de
+                            activiteit.
+                            De data is afkomstig van de <a class="link link-info" target="_blank"
+                                rel="noopener noreferrer" href="https://pacompendium.com/">Compendium
+                                of
+                                Physical
+                                Activities.</a>
+
+                        </p>
+                        <ul>
+                            <li class="mt-4"><span class="text-warning text-justify ">Let op!</span> </li>
+                            <li class="text-white mt-4">
+                                - Vul alle activiteiten in die
+                                je doet in een
+                                week, ook niet-sportieve activiteiten zoals boodschappen doen, schoonmaken, de hond
+                                uitlaten, etc. Dit geeft een beter beeld van je totale energieverbruik.
+                            </li>
+                            <li class="text-white mt-4">
+                                - Indien een activiteit niet in de lijst staat, probeer dan een activiteit te kiezen die
+                                het meest lijkt op de activiteit die je doet. Bijvoorbeeld, de hond uitlaten kan worden
+                                vergeleken met wandelen, padellen met squash, etc.
+                            </li>
+                            <li class="text-white mt-4">
+                                - Niet toegewezen uren worden automatisch als inactief beschouwd (Slapen). Dit zorgt
+                                ervoor dat de calculator eerder een onderschatting dan een
+                                overschatting geeft van je totale energieverbruik indien je niet alle uren invult.
+                            </li>
+                        </ul>
+
+
+
+
+
+
+                    </div>
+                    <button type="button"
+                        class="collapse-toggle text-center link text-white flex mx-auto items-center my-2 pb-4"
+                        (click)="toggleCollapse()">
+                        <span *ngIf="!isCollapseOpen" class="text-secondary">Ik wil uitleg!</span>
+                        <span *ngIf="isCollapseOpen" class="text-secondary">Ik heb het begrepen!</span>
+                        <span class="icon-[tabler--chevron-down]" [ngClass]="{ 'rotate-180': isCollapseOpen }"></span>
+                    </button>
                 </div>
-                <div class="bg-primary/65 rounded-b-xl mb-5 p-5">
-
-                    <p class="text-xl text-justify mt-4 text-white">
-                        De <strong>physical activity level (PAL) </strong>calculator. Hiermee krijg je inzicht in hoe
-                        jouw
-                        fysieke
-                        activiteit je energieverbruik beïnvloedt. Deze calculator berekent de gemiddelde activiteiten
-                        factor
-                        van
-                        een
-                        persoon op basis van alle activiteiten die de persoon doet in een week. Dit is een belangrijke
-                        factor om
-                        te
-                        bepalen hoeveel calorieën een individu per dag nodig hebt. Om dit mogelijk te maken zijn er meer
-                        dan
-                        1100
-                        activiteiten opgenomen in de database van VoedIQ. Deze activiteiten zijn gebaseerd op
-                        MET-values.
-                        MET-values
-                        zijn een maat voor de intensiteit van een activiteit. Hoe hoger de MET-waarde, hoe intensiever
-                        de
-                        activiteit.
-                        De data is afkomstig van de <a class="link link-accent" target="_blank"
-                            rel="noopener noreferrer" href="https://pacompendium.com/">Compendium
-                            of
-                            Physical
-                            Activities.</a>
-                    </p>
-
-                    <li class="text-white mt-3">
-                        <span class="font-bold text-orange-300">Let op!</span> De calculator werkt op basis van de
-                        activiteiten die je per week invoert.
-                    </li>
-                    <li class="text-white">
-                        Een week heeft 168 uur. Het is niet verplicht om al deze uren in te vullen.
-                        Niet-toegekende uren krijgen automatisch de laagste score (MET 1.0).
-                    </li>
-
-                </div>
-
                 <app-pal-calculator class="w-full max-w-full"></app-pal-calculator>
             </div>
-            <div id="tabs-fill-3" class="hidden" role="tabpanel" aria-labelledby="tabs-fill-item-3">
-                <div class="bg-primary/80 rounded-t-xl">
-                    <h1 class="text-xl lg:text-3xl text-center text-white font-bold p-4">Total Daily Energy Expenditure
-                        (TDEE)
-                        Calculator</h1>
 
-                </div>
-                <div class="bg-primary/65 rounded-b-xl mb-5 p-5">
-                    <p class=" text-xl text-justify mt-4 text-white">
-                        De <strong>Total Daily Energy Expenditure (TDEE) calculator</strong>. Hier bereken je hoeveel
-                        calorieën
-                        je
-                        per
-                        dag nodig hebt
-                        op basis van BMR en PAL-waarde. Met deze informatie kun je vervolgstappen nemen om naar je
-                        doelen toe te werken, of
-                        dat
-                        nou
-                        afvallen, aankomen of gezonder leven is!
-
-                    </p>
+            <!-- Dagelijkse Caloriebehoefte (TDEE) Calculator -->
+            <div id="tabs-fill-3" role="tabpanel" aria-labelledby="tabs-fill-item-3" *ngIf="activeStep === 3">
+                <div class="bg-primary rounded-xl">
+                    <h1 class="text-xl lg:text-2xl text-center text-white font-bold px-4 pt-4">Dagelijkse
+                        Caloriebehoefte (TDEE) Calculator</h1>
+                    <div id="show-hide-collapse-heading3"
+                        class="collapse w-full overflow-hidden transition-[height] duration-300 p-5"
+                        [ngClass]="{ 'hidden': !isCollapseOpen }" aria-labelledby="show-hide-collapse">
+                        <p class="text-white text-justify text-base">
+                            Hier bereken je hoeveel calorieën je per dag nodig hebt op basis van BMR en PAL-waarde die
+                            je in de voorgaande stappen hebt berekend. Dit is de hoeveelheid calorieën die je verbruikt
+                            inclusief de activiteiten die je doet.
+                        </p>
+                        <p class="text-base text-white text-justify mt-4">
+                            Met het resultaat kun je vervolgstappen nemen om naar je doelen toe te werken, of dat nu
+                            afvallen, aankomen of gezonder leven is!
+                        </p>
+                    </div>
+                    <button type="button"
+                        class="collapse-toggle text-center link text-white flex mx-auto items-center my-2 pb-4"
+                        (click)="toggleCollapse()">
+                        <span *ngIf="!isCollapseOpen" class="text-secondary">Ik wil uitleg!</span>
+                        <span *ngIf="isCollapseOpen" class="text-secondary">Ik heb het begrepen!</span>
+                        <span class="icon-[tabler--chevron-down]" [ngClass]="{ 'rotate-180': isCollapseOpen }"></span>
+                    </button>
                 </div>
                 <app-tdee-calculator class="w-full max-w-full"></app-tdee-calculator>
             </div>
         </div>
+        <div class="bg-primary rounded-xl mt-5 flex flex-col items-center p-4" *ngIf="activeStep < 3">
+            <button class="btn bg-secondary/20 rounded-xl w-full text-white m-3 lg:w-1/3" (click)="goToNextStep()"
+                [appScrollTo]="'navbar'" [scrollBlock]="'start'">
+                Volgende stap
+            </button>
+        </div>
+
     </div>

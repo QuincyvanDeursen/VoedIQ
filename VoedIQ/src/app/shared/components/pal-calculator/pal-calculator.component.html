@@ -1,44 +1,54 @@
-<div class="flex flex-col  bg-primary/65 border-4 border-secondary rounded-xl">
+<div class="flex flex-col  bg-primary/80  rounded-xl">
     <!-- Scrollbare container -->
     <div #scrollContainer
-        class="flex-grow overflow-auto  rounded-lg p-4  min-h-[30vh] max-h-[50vh] scrollbar-thin scrollbar-thumb-primary">
+        class="flex-grow overflow-auto  rounded-lg p-4  min-h-[65vh] max-h-[70vh]   lg:min-h-[50vh] lg:max-h-[70vh] scrollbar-thin scrollbar-thumb-primary">
         <div *ngFor="let activity of activities; let i = index" class="border border-gray-300 rounded-lg p-4 mb-2">
 
             <div class="flex flex-row justify-between">
                 <small class="text-white">Activiteit {{ i + 1 }}</small>
-                <button class="btn btn-error icon-[solar--close-square-bold] bg-[#751419] " (click)="removeActivity(i)">
+                <button class="btn btn-error icon-[solar--close-square-bold-duotone] bg-[#e95c5c] "
+                    (click)="removeActivity(i)">
                 </button>
             </div>
 
             <app-activity-input (activityData)="handleActivityData(i, $event)"></app-activity-input>
         </div>
+        <div class="flex flex-col sm:flex-row justify-center p-4 rounded-xl  gap-3 mb-[15vh] lg:mb-[30vh]">
+            <button class="btn bg-secondary/30 w-full sm:w-auto rounded-xl text-white "
+                (click)="addActivity(); scrollDown()">
+                <span class="icon-[solar--add-square-bold] size-6 bg-white"></span> Activiteit Toevoegen
+            </button>
+        </div>
     </div>
 
     <!-- Knop buiten de scrollbare container -->
-    <div
-        class="flex flex-col md:flex-row justify-center p-4 border-t-2 bg-primary/40 rounded border-secondary gap-3 mt-4">
-        <div class>
-            <button class="btn btn-primary w-full sm:w-auto rounded-xl text-white "
-                (click)="addActivity(); scrollDown()">
-                <span class="icon-[solar--add-square-bold] size-6 bg-white"></span>Activiteit toevoegen
-            </button>
-        </div>
+    <div class="flex flex-col sm:flex-row justify-center p-4  bg-primary rounded-xl  gap-3 mt-4">
+
         <div>
-            <button class="btn  btn-primary w-full sm:w-auto rounded-xl text-white " (click)="calculatePal()">
+            <button class="btn bg-warning/80 border border-white  btn-primary w-full sm:w-auto rounded-xl text-white "
+                (click)="calculatePal(); scrollToElement('result')">
                 <span class="icon-[solar--calculator-bold] size-6 flex-shrink-0 bg-white"></span>Bereken
             </button>
         </div>
     </div>
 </div>
-<div class="flex p-4 bg-primary/75 rounded-xl mt-4 border-4 border-secondary justify-center"
-    *ngIf=" calculatePalValue != 0">
-    <div class=" w-3/4 ">
-        <h1 class="text-2xl text-center text-white font-bold">PAL-waarde: {{ calculatePalValue }}</h1>
+<div id="result" class="flex flex-col  p-4 bg-primary rounded-xl mt-4  justify-center" *ngIf=" calculatePalValue != 0">
+    <div class=" ">
+        <h1 class="text-2xl text-center text-white font-bold">PAL-waarde: <span class="text-secondary">{{
+                calculatePalValue }}</span></h1>
 
     </div>
+    <div class="flex flex-col md:w-1/4 md:mx-auto">
+        <button (click)="copyToClipboard(calculatePalValue)"
+            class="ml-2 p-2 btn bg-blue-400 hover:bg-blue-800 text-white rounded-lg mt-2">
+            <span *ngIf="!copied" class="icon-[solar--clipboard-linear] size-6"></span>
+            <span *ngIf="copied" class="icon-[solar--check-square-bold] size-6 bg-secondary"></span>
+            <span *ngIf="!copied">Kopieer</span>
+            <span *ngIf="copied">Hebbes!</span>
+        </button>
+    </div>
 </div>
-<div class="flex p-4 bg-primary/65 rounded-xl mt-4 border-4 border-secondary justify-center"
-    *ngIf=" calculatePalValue == 0 ">
+<div class="flex p-4 bg-primary rounded-xl mt-4  justify-center" *ngIf=" calculatePalValue == 0 ">
     <div class=" mx-auto w-3/4 ">
         <h1 class="text-2xl text-center text-white font-bold">PAL-waarde: nog niet berekend!</h1>
     </div>

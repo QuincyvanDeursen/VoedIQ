@@ -7,7 +7,7 @@ import { TdeeCalculatorComponent } from '../../shared/components/tdee-calculator
 import { MacronutrientCalculatorComponent } from '../../shared/components/macronutrient-calculator/macronutrient-calculator.component';
 import { ToastService } from '../../shared/services/toast.service';
 import { TargetWeightTimeCalculatorComponent } from '../../shared/components/target-weight-time-calculator/target-weight-time-calculator.component';
-import { MicronutrientCalculatorComponent } from '../../shared/micronutrient-calculator/micronutrient-calculator.component';
+import { MicronutrientCalculatorComponent } from '../../shared/components/micronutrient-calculator/micronutrient-calculator.component';
 
 @Component({
   selector: 'app-sandbox',

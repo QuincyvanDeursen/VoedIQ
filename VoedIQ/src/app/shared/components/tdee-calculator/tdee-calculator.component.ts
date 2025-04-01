@@ -1,7 +1,12 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  OnDestroy,
+  AfterViewChecked,
+  ChangeDetectorRef,
+} from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { Router } from '@angular/router';
 import { ToastService } from '../../services/toast.service';
 import { ButtonHoldService } from '../../services/button-hold.service';
 
@@ -11,17 +16,57 @@ import { ButtonHoldService } from '../../services/button-hold.service';
   templateUrl: './tdee-calculator.component.html',
   styleUrls: ['./tdee-calculator.component.css'],
 })
-export class TdeeCalculatorComponent implements OnInit, OnDestroy {
+export class TdeeCalculatorComponent
+  implements OnInit, OnDestroy, AfterViewChecked
+{
   bmr: number = 1500; // Default waarde
   pal: number = 1.2; // Default waarde
   tdee: number | null = null;
   isVisible: boolean = false;
 
+  private shouldScroll = false;
+  private sectionId: string | null = null;
+  copied = false; // Houdt bij of er gekopieerd is
+
   constructor(
-    private router: Router,
+    private cdr: ChangeDetectorRef,
     private toastService: ToastService,
     private buttonHoldService: ButtonHoldService
   ) {}
+
+  scrollToElement(section: string) {
+    this.sectionId = section; // Onthoud naar welke sectie we willen scrollen
+    this.shouldScroll = true;
+    this.cdr.detectChanges(); // Forceer een DOM update
+  }
+
+  ngAfterViewChecked() {
+    if (this.shouldScroll && this.sectionId) {
+      setTimeout(() => {
+        if (!this.sectionId) return; // Als de sectie ondertussen gereset is, stop met scroll
+        const element = document.getElementById(this.sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        } else {
+          console.warn(`Element met ID '${this.sectionId}' niet gevonden.`);
+        }
+        this.shouldScroll = false;
+        this.sectionId = null; // Reset de sectie na scrollen
+      }, 100); // 100ms wacht zodat de DOM echt geladen is
+    }
+  }
+
+  copyToClipboard(value: number) {
+    navigator.clipboard
+      .writeText(value.toString())
+      .then(() => {
+        this.copied = true; // Zet de melding aan
+        setTimeout(() => (this.copied = false), 2000); // Verberg na 2 sec
+      })
+      .catch((err) => {
+        this.toastService.error('Kopiëren mislukt');
+      });
+  }
 
   ngOnInit(): void {
     this.retrieveInfoFromLocalStorage();
