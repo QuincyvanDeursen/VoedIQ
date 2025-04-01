@@ -34,6 +34,7 @@ export class AppComponent {
 
     this.router.events.subscribe(() => {
       this.showHeaderFooter = this.router.url !== '/landing'; // Verberg navbar/footer op de landing pagina
+      this.showHeaderFooter = this.router.url !== '/dummy-course';
     });
   }
 }

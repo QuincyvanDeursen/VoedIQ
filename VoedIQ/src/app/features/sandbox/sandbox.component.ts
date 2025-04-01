@@ -8,6 +8,7 @@ import { MacronutrientCalculatorComponent } from '../../shared/components/macron
 import { ToastService } from '../../shared/services/toast.service';
 import { TargetWeightTimeCalculatorComponent } from '../../shared/components/target-weight-time-calculator/target-weight-time-calculator.component';
 import { MicronutrientCalculatorComponent } from '../../shared/components/micronutrient-calculator/micronutrient-calculator.component';
+import { CourseContainerComponent } from '../../shared/components/course-container/course-container.component';
 
 @Component({
   selector: 'app-sandbox',
@@ -20,6 +21,7 @@ import { MicronutrientCalculatorComponent } from '../../shared/components/micron
     MacronutrientCalculatorComponent,
     TargetWeightTimeCalculatorComponent,
     MicronutrientCalculatorComponent,
+    CourseContainerComponent,
   ],
   templateUrl: './sandbox.component.html',
   styleUrl: './sandbox.component.css',
