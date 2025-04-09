@@ -2,7 +2,7 @@
   <div class="w-full md:flex md:items-center md:gap-2">
     <div class="flex items-center justify-between">
       <div class="navbar-start items-center justify-between max-md:w-full">
-        <a class="link text-white text-xl  font-semibold no-underline" href="/home">Voed<span
+        <a class="link text-white text-xl  font-semibold no-underline" [routerLink]="'/home'">Voed<span
             class="text-secondary">IQ</span></a>
         <div class="md:hidden">
           <button type="button" class="collapse-toggle btn btn-outline btn-secondary btn-sm btn-square"
@@ -25,9 +25,9 @@
           </button>
           <ul class="dropdown-menu dropdown-open:opacity-100 hidden" role="menu" aria-orientation="vertical"
             aria-labelledby="dropdown-link">
-            <li><a class="dropdown-item text-primary" href="#">Basiskennis</a></li>
-            <li><a class="dropdown-item text-primary" href="#">Doelgericht Eten</a></li>
-            <li><a class="dropdown-item text-primary" href="#">Gezond Eten</a></li>
+            <li><a class="dropdown-item text-primary" [routerLink]="">Basiskennis</a></li>
+            <li><a class="dropdown-item text-primary" [routerLink]="">Doelgericht Eten</a></li>
+            <li><a class="dropdown-item text-primary" [routerLink]="">Gezond Eten</a></li>
           </ul>
         </li>
         <li class="dropdown relative inline-flex [--auto-close:inside] [--offset:8] [--placement:bottom-end]">
@@ -39,12 +39,15 @@
           </button>
           <ul class="dropdown-menu dropdown-open:opacity-100 hidden" role="menu" aria-orientation="vertical"
             aria-labelledby="dropdown-link">
-            <li><a class="dropdown-item text-primary" href="/energy-calculator">Calorie Behoefte</a></li>
-            <li><a class="dropdown-item text-primary" href="/nutri-calculator">Macro- en Micronutriënten</a></li>
-            <li><a class="dropdown-item text-primary" href="#">Doelgewicht Tijdsschatting</a></li>
+            <li><a class="dropdown-item text-primary" [routerLink]="'/energy-calculator'">Calorie Behoefte</a></li>
+            <li><a class="dropdown-item text-primary" [routerLink]="'/nutri-calculator'">Macro- en Micronutriënten</a>
+            </li>
+            <li><a class="dropdown-item text-primary" [routerLink]="'/doelgewicht-calculator'">Doelgewicht
+                Tijdsschatting</a></li>
+
           </ul>
         </li>
-        <li><a href="#">Over Ons</a></li>
+        <li><a [routerLink]="">Over Ons</a></li>
       </ul>
     </div>
 

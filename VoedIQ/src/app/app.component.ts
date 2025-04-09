@@ -6,6 +6,8 @@ import { FooterComponent } from './shared/components/footer/footer.component';
 import { CommonModule } from '@angular/common';
 
 import { IStaticMethods } from 'flyonui/flyonui';
+import { Observable } from 'rxjs';
+import { LayoutService } from './core/services/layout.service';
 declare global {
   interface Window {
     HSStaticMethods: IStaticMethods;
@@ -19,22 +21,18 @@ declare global {
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  showHeaderFooter = true;
+  showHeaderFooter$!: Observable<boolean>;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private layoutService: LayoutService) {}
 
   ngOnInit() {
+    this.showHeaderFooter$ = this.layoutService.showHeaderFooter$;
     this.router.events.subscribe((event: Event) => {
       if (event instanceof NavigationEnd) {
         setTimeout(() => {
           window.HSStaticMethods.autoInit();
         }, 100);
       }
-    });
-
-    this.router.events.subscribe(() => {
-      this.showHeaderFooter = this.router.url !== '/landing'; // Verberg navbar/footer op de landing pagina
-      this.showHeaderFooter = this.router.url !== '/dummy-course';
     });
   }
 }

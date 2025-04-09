@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ButtonHoldService } from '../../services/button-hold.service';
+import { ToastService } from '../../services/toast.service';
 
 @Component({
   selector: 'app-target-weight-time-calculator',
@@ -19,7 +20,10 @@ export class TargetWeightTimeCalculatorComponent {
   bmiStatus: string = '';
   adviceColor: string = 'green';
 
-  constructor(private buttonHoldService: ButtonHoldService) {}
+  constructor(
+    private buttonHoldService: ButtonHoldService,
+    private toastService: ToastService
+  ) {}
 
   calculateWeightLossDuration() {
     if (
@@ -52,7 +56,7 @@ export class TargetWeightTimeCalculatorComponent {
     this.adviceColor =
       deficitPercentage <= 25
         ? 'green'
-        : deficitPercentage <= 40
+        : deficitPercentage <= 35
         ? 'orange'
         : 'red';
   }

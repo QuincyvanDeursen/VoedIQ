@@ -7,12 +7,48 @@
 
   </aside>
   <nav class="underline grid-flow-col text-white gap-4">
-    <a class="link link-hover" href="#">Home</a>
-    <a class="link link-hover" href="#">Overons</a>
-    <a class="link link-hover" href="#">Contact</a>
+    <a class="link link-hover" [routerLink]="">Home</a>
+    <a class="link link-hover" [routerLink]="">Overons</a>
+    <a class="link link-hover" [routerLink]="">Contact</a>
+    <p class="" data-overlay="#privacy-modal">Privacy</p>
   </nav>
   <small><a class="link link-hover link-secondary underline" href="http://www.freepik.com">Images designed by pch.vector
       /
       Freepik | VoedIQ Thanks you! </a></small>
   <p class="text-white">©2025</p>
 </footer>
+
+<div id="privacy-modal"
+  class="overlay modal-middle modal overlay-open:opacity-100 hidden [--tab-accessibility-limited:false] bg-primary/50"
+  role="dialog" tabindex="-1">
+  <div class="modal-dialog overlay-open:opacity-100 ">
+    <div class="modal-content bg-gradient-to-t from-white to-secondary shadow-lg">
+      <div class="modal-header">
+        <h3 class="modal-title text-primary text-center my-auto flex items-center justify-center">
+          <span class="icon-[solar--shield-check-bold] size-10 bg-primary mr-2"></span>
+          Privacy
+        </h3>
+        <button type="button" class="btn btn-text btn-circle btn-sm absolute end-3 top-3" aria-label="Close"
+          data-overlay="#privacy-modal"><span class="icon-[tabler--x] size-4"></span></button>
+      </div>
+      <form>
+        <div class="modal-body">
+          <div class="mb-4">
+            <p class="text-gray-600 text-justify">Bij VoedIQ vinden we jouw privacy belangrijk. Daarom willen we je
+              graag informeren
+              over wat er met jouw gegevens gebeurt.
+              VoedIQ en andere partijen kunnen <span class="font-bold">niet</span> inzien wat jij invult op deze
+              website. VoedIQ heeft namelijk geen database en kan dus ook niets opslaan.
+              In plaats daarvan wordt de data opgeslagen in de browser applicatie (bv. Chrome) op het aparaat waarmee
+              jij VoedIQ bezoekt. Dat is een offline-opslag en kan enkel op jouw apparaat worden ingezien. </p>
+          </div>
+        </div>
+        <div class="modal-footer">
+
+          <button class="btn btn-primary" type="button" data-overlay="#privacy-modal"> Duidelijk!</button>
+
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

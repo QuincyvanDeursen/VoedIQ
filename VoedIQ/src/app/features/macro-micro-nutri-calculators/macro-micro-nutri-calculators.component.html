@@ -33,13 +33,14 @@
                             aria-labelledby="what-need-you-info" role="region">
                             <div class="px-5 pb-4">
                                 <p class="text-base md:text-xl text-justify">
-                                    Macronutriënten (eiwitten, koolhydraten en vetten) leveren energie en spelen een
+                                    Macronutriënten (eiwitten, koolhydraten en vetten) leveren energie op en spelen een
                                     essentiële rol in
                                     lichaamsfuncties zoals spieropbouw, energievoorziening, celherstel en nog vele
-                                    andere. Micronutriënten - vitaminen en
-                                    mineralen - ondersteunen je immuunsysteem, bevorderen een gezonde stofwisseling en
+                                    andere. Micronutriënten (vitaminen en
+                                    mineralen) ondersteunen je immuunsysteem, bevorderen een gezonde stofwisseling en
                                     dragen bij aan tal van lichaamsprocessen.
-                                    Belangrijk om dus voldoende (niet te weinig, niet te veel) macro- en micronutriënten
+                                    Belangrijk om dus voldoende (niet te weinig en niet te veel) macro- en
+                                    micronutriënten
                                     binnen te krijgen.
                                 </p>
                             </div>
@@ -66,9 +67,9 @@
                                     belangrijk om voldoende van alle vormen van de macro- en micronutriënten binnen te
                                     krijgen. Dit kan je doen
                                     door een
-                                    gevarieerd dieet te volgen. Ieder voedingsmiddel heeft namelijk zijn eigen
+                                    gevarieerd voedingspatroonte volgen. Ieder voedingsmiddel heeft namelijk zijn eigen
                                     unieke samenstelling van macro- en micronutriënten. Het is dus belangrijk om te
-                                    variëren in je voeding.
+                                    variëren in je voeding zodat je alle stoffen voldoende binnenkrijgt.
 
 
                                 </p>
@@ -80,7 +81,7 @@
                                     niet alleen bij het optimaliseren van je gezondheid, maar kan ook bijdragen aan
                                     betere sportprestaties, meer
                                     energie en een sterker immuunsysteem. Hoewel VoedIQ geen samenwerking heeft met de
-                                    app <a href="https://mijn.voedingscentrum.nl/nl/eetmeter/" class="link link-accent"
+                                    app <a href="https://mijn.voedingscentrum.nl/nl/eetmeter/" class="link link-primary"
                                         target="_blank" rel="noopener noreferrer">MijnEetMeter</a>, is het wel
                                     een handige app om je voeding bij te houden en inzicht te krijgen in je
                                     voedingspatroon en eventuele overschotten of tekorten te identificeren.
@@ -104,13 +105,13 @@
                             class="accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
                             aria-labelledby="what-does-the-calculator-do" role="region">
                             <div class="px-5 pb-4">
-                                <p class="text-base-content/80 font-normal text-justify">
+                                <p class="text-base md:text-xl text-justify mt-5">
                                     De calculators berekenen de dagelijkse behoefte aan macro- en micronutriënten op
                                     basis van de
                                     richtlijnen van de <a href="https://www.gezondheidsraad.nl/" target="_blank"
-                                        rel="noopener noreferrer" class="link link-accent">Gezondheidsraad</a> en het
+                                        rel="noopener noreferrer" class="link link-primary">Gezondheidsraad</a> en het
                                     <a href="https://www.voedingscentrum.nl/" target="_blank" rel="noopener noreferrer"
-                                        class="link link-accent">Voedingscentrum</a>. Deze richtlijnen zijn bedoeld om
+                                        class="link link-primary">Voedingscentrum</a>. Deze richtlijnen zijn bedoeld om
                                     je
                                     te helpen een gezond voedingspatroon samen te stellen. De calculators geven je een
                                     indicatie van de hoeveelheden die je dagelijks nodig hebt, maar het is belangrijk om
@@ -166,7 +167,8 @@
                         <p class="text-base text-white text-justify mt-4">
                             Deze richtlijnen geven aan dat een gezond voedingspatroon bestaat uit een specifieke
                             verhouding van macronutriënten.
-                            Dit wordt uitgedrukt in energieprocenten (en%).
+                            Dit wordt uitgedrukt in energieprocenten (en%). Deze tool vertaalt Deze richtlijnen naar een
+                            aantal gram per macronutriënt per dag.
                         </p>
                         <p class="text-base text-white text-justify mt-4">
                             Het enige wat je hoeft te doen, is je totale dagelijkse energiebehoefte (TDEE) invullen.
@@ -177,9 +179,10 @@
                         class="collapse-toggle text-center link text-white flex mx-auto items-center my-2 pb-4"
                         id="show-hide-collapse" [attr.aria-expanded]="isCollapseOpen.toString()"
                         (click)="toggleCollapse()">
-                        <span *ngIf="!isCollapseOpen" class="text-secondary">Ik wil uitleg!</span>
+                        <span *ngIf="!isCollapseOpen" class="text-warning">Ik wil uitleg!</span>
                         <span *ngIf="isCollapseOpen" class="text-secondary">Ik heb het begrepen!</span>
-                        <span class="icon-[tabler--chevron-down]" [ngClass]="{ 'rotate-180': isCollapseOpen }"></span>
+                        <span class="icon-[tabler--chevron-down] bg-warning"
+                            [ngClass]="{ 'rotate-180': isCollapseOpen }"></span>
                     </button>
                 </div>
 
@@ -199,7 +202,7 @@
                         <p class="text-base text-white text-justify mt-4">
                             Deze hoeveelheden kunnen afhankelijk zijn van verschillende factoren zoals leeftijd,
                             geslacht, huidskleur, het geven van borstvoeding en zwangerschap.
-                            De informatie is afkomstig van het <a class="link link-accent" target="_blank"
+                            De informatie is afkomstig van het <a class="link link-info" target="_blank"
                                 rel="noopener noreferrer"
                                 href="https://www.voedingscentrum.nl/Assets/Uploads/voedingscentrum/Documents/Professionals/Pers/Factsheets/Factsheet%20Aanbevelingen%20vitamines%20en%20mineralen.pdf">VoedingsCentrum</a>
                             en de Gezondheidsraad.
@@ -208,7 +211,7 @@
                             Het enige wat je hoeft te doen, is je totale dagelijkse energiebehoefte (TDEE), leeftijd,
                             geslacht en extra factoren in te invullen.
                             Mocht je je TDEE deze nog niet weten, dan kun je deze berekenen met de <a
-                                href="/energy-calculator" class="link link-accent">TDEE calculator</a>.
+                                [routerLink]="'/energy-calculator'" class="link link-info">TDEE calculator</a>.
                         </p>
                     </div>
 
@@ -217,9 +220,10 @@
                         class="collapse-toggle text-center link text-white flex mx-auto items-center my-2 pb-4"
                         id="show-hide-collapse3" [attr.aria-expanded]="isCollapseOpen.toString()"
                         (click)="toggleCollapse()">
-                        <span *ngIf="!isCollapseOpen" class="text-secondary">Ik wil uitleg!</span>
+                        <span *ngIf="!isCollapseOpen" class="text-warning">Ik wil uitleg!</span>
                         <span *ngIf="isCollapseOpen" class="text-secondary">Ik heb het begrepen!</span>
-                        <span class="icon-[tabler--chevron-down]" [ngClass]="{ 'rotate-180': isCollapseOpen }"></span>
+                        <span class="icon-[tabler--chevron-down] bg-warning"
+                            [ngClass]="{ 'rotate-180': isCollapseOpen }"></span>
                     </button>
                 </div>
 
