@@ -1,9 +1,9 @@
 <div class="flex flex-col min-h-screen">
-    <app-navbar *ngIf="showHeaderFooter"></app-navbar>
+    <app-navbar *ngIf="showHeaderFooter$ | async"></app-navbar>
 
     <main class="flex flex-col flex-grow">
         <router-outlet></router-outlet>
     </main>
 
-    <app-footer *ngIf="showHeaderFooter"></app-footer>
+    <app-footer *ngIf="showHeaderFooter$ | async"></app-footer>
 </div>

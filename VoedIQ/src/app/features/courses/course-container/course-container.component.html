@@ -1,0 +1,129 @@
+<div class="flex flex-col pt-[10.5vh]  px-5   min-h-[95vh]  pb-10 bg-gradient-to-b from-secondary/40 to-white">
+    <div
+        class="flex flex-col w-full flex-grow vertical-scrollbar rounded-scrollbar overflow-auto max-h-[79vh]  lg:max-h-[80vh]   lg:max-w-5xl mx-auto rounded-2xl p-8 shadow-xl shadow-primary bg-white ">
+        <router-outlet></router-outlet>
+    </div>
+</div>
+<div class="fixed top-0 left-0 w-full bg-primary shadow-md  flex justify-between items-center h-[8vh]">
+    <div class=" flex flex-row max-w-5xl gap-8 mx-auto">
+
+        <div class=" flex flex-row max-w-5xl gap-8 mx-auto">
+            <h1 class="text-xl font-bold text-white">Voed<span class="text-secondary">IQ</span> </h1>
+        </div>
+    </div>
+</div>
+
+
+<div
+    class="fixed bottom-0 left-0 w-full bg-primary shadow-md  flex justify-between items-center border-t border-gray-300  h-full max-h-[8vh] ">
+    <div class=" flex flex-row  gap-4  w-full mx-10 justify-center lg:max-w-5xl lg:mx-auto ">
+        <button class="btn bg-secondary/30 w-1/5 hover:bg-secondary  shadow shadow-gray-900 animation-button"
+            id="contentButton" data-overlay="#overlay-custom-backdrop" value="motion-preset-slide-right"><span
+                class="icon-[solar--notebook-minimalistic-bold] size-8 text-white"></span></button>
+        <button class="btn bg-secondary/30 w-2/5 hover:bg-secondary shadow shadow-gray-900"
+            (click)="goToPreviousLesson()" id="prevButton"><span
+                class="icon-[solar--map-arrow-left-bold] size-8 text-white"></span></button>
+        <button class="btn bg-secondary/30 w-2/5  hover:bg-secondary shadow shadow-gray-900" (click)="goToNextLesson()"
+            id="nextButton"><span class="icon-[solar--map-arrow-right-bold] size-8 text-white"></span></button>
+    </div>
+</div>
+
+
+
+<div id="overlay-custom-backdrop"
+    class="overlay overlay-open:translate-x-0 drawer drawer-start overlay-backdrop-open:bg-primary/80 hidden  bg-gradient-to-b from-white to-secondary/80"
+    role="dialog" tabindex="-1">
+    <div class="drawer-header bg-primary">
+
+        <h3 class="drawer-title text-xl text-white">Voed<span class="text-secondary ">IQ</span> - Cursus inhoud</h3>
+
+        <button type="button" class="btn btn-text btn-circle btn-sm absolute end-3 top-3 " aria-label="Close"
+            data-overlay="#overlay-custom-backdrop">
+            <span class="icon-[tabler--x] size-5 bg-white"></span>
+        </button>
+    </div>
+    <div class="drawer-body pt-5">
+        <h1 class="text-xl">{{course?.title}}</h1>
+
+
+        <div id="tree-view-nested-alt" class="rounded-sm" role="tree" aria-orientation="vertical" data-tree-view="">
+            <!-- Tree Root -->
+            <div id="tree-view-checkbox" role="tree" aria-orientation="vertical"
+                data-tree-view='{"controlBy": "checkbox","autoSelectChildren": true}'>
+                <!-- 1st Level Accordion Group -->
+                <ng-container *ngFor="let module of course?.modules; let i = index">
+                    <div data-nested-draggable="">
+                        <!-- 1st Level Accordion -->
+                        <div class="accordion-item dragged:bg-primary/20 dragged:rounded-sm nested-2-1" role="treeitem"
+                            aria-expanded="false" [attr.id]="'checkbox-tree-heading-' + module.title"
+                            [attr.data-tree-view-item]='{"value": module.title, "isDir": true}'>
+                            <!-- 1st Level Accordion Heading -->
+                            <div
+                                class="accordion-heading tree-view-selected:bg-base-300/40 flex w-full items-center gap-x-0.5 rounded-md py-0.5 bg-primary mt-4 text-white ">
+                                <button class="accordion-toggle btn btn-sm btn-circle btn-text" aria-expanded="false"
+                                    [attr.aria-controls]="'checkbox-tree-collapse-' + module.title">
+                                    <span
+                                        class="icon-[tabler--plus] text-base-content/80 accordion-item-active:rotate-45 size-4 transition-all duration-300"></span>
+                                </button>
+                                <div class="tree-view-selected:bg-base-300/40 grow  rounded-md px-1.5">
+                                    <div class="flex items-center gap-2 ">
+
+                                        <label class="label-text text-base font-bold"
+                                            [for]="module.title">{{module.title}}</label>
+                                        <input type="checkbox" class="checkbox checkbox-xs checkbox-secondary"
+                                            [id]="module.title" [value]="module.title "
+                                            [(ngModel)]="module.completion" />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End 1st Level Accordion Heading -->
+                            <!-- 1st Level Collapse -->
+                            <div [attr.id]="'checkbox-tree-collapse-' + module.title"
+                                class="accordion-content hidden w-full overflow-hidden transition-[height] duration-300"
+                                role="group" [attr.aria-labelledby]="'checkbox-tree-heading-' + module.title">
+                                <div class="tree-view-space" data-nested-draggable="">
+                                    <ng-container *ngFor="let lesson of module.lessons">
+                                        <!-- 1st Level Item -->
+                                        <div class="tree-view-selected:bg-base-300/40 dragged:bg-primary/20 dragged:rounded-sm nested-2-2 rounded-md px-2 mt-3 ml-5"
+                                            role="treeitem"
+                                            [attr.data-tree-view-item]='{"value": lesson.title, "isDir": false}'>
+                                            <div class="flex items-center gap-2">
+                                                <label class="label-text text-base" [for]="lesson.title">
+                                                    <a class="text-link link"
+                                                        [routerLink]="['/cursus', course!.route, module.route, lesson.route.split('/')[1]]">
+                                                        {{ lesson.title }}
+                                                    </a>
+                                                </label>
+                                                <input type="checkbox" class="checkbox checkbox-xs checkbox-secondary"
+                                                    [id]="lesson.title" [value]="lesson.title"
+                                                    [(ngModel)]="lesson.completion" />
+                                            </div>
+                                        </div>
+                                        <!-- End 1st Level Item -->
+                                    </ng-container>
+
+                                </div>
+                            </div>
+                            <!-- End 1st Level Collapse -->
+                        </div>
+                        <!-- End 1st Level Accordion -->
+                    </div>
+                </ng-container>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="drawer-footer">
+        <div class="flex flex-row w-full  gap-8 justify-center">
+            <button type="button" class="btn btn-soft btn-primary"
+                data-overlay="#overlay-custom-backdrop">Verlaten</button>
+            <button type="button" class="btn btn-soft btn-primary"
+                data-overlay="#overlay-custom-backdrop">Sluiten</button>
+        </div>
+
+    </div>
+</div>

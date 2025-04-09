@@ -3,6 +3,7 @@ import { MacronutrientCalculatorComponent } from '../../shared/components/macron
 import { MicronutrientCalculatorComponent } from '../../shared/components/micronutrient-calculator/micronutrient-calculator.component';
 import { CommonModule } from '@angular/common';
 import { ScrollToDirective } from '../../shared/directives/scroll-to.directive';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-macro-micro-nutri-calculators',
@@ -11,6 +12,7 @@ import { ScrollToDirective } from '../../shared/directives/scroll-to.directive';
     MicronutrientCalculatorComponent,
     CommonModule,
     ScrollToDirective,
+    RouterModule,
   ],
   templateUrl: './macro-micro-nutri-calculators.component.html',
   styleUrl: './macro-micro-nutri-calculators.component.css',

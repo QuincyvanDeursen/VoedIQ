@@ -39,13 +39,26 @@
 <!-- first container-->
 <div class="flex flex-col bg-white py-10 px-6 max-w-4xl mx-auto">
   <!-- Titel + Intro -->
-  <div class="text-center mb-6">
-    <h1 class="text-3xl sm:text-4xl font-bold text-gray-900">
-      {{ greeting }} <span *ngIf="userName" class="text-primary"> {{ userName }}</span>!
-    </h1>
-    <p class="text-gray-600  sm:text-lg text-xl mt-2">Ik heb je recentste resultaten voor je onthouden!</p>
-    <small>*Dit is apparaat gebonden</small>
+
+  <div class="flex flex-col">
+    <div class="flex flex-row justify-center items-center">
+      <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 ">
+        {{ greeting }}<span *ngIf="userName" class="text-primary"> {{ userName }}</span>!
+      </h1>
+      <button type="button" class="btn border-none  " aria-haspopup="dialog" aria-expanded="false"
+        aria-controls="tab-modal" data-overlay="#tab-modal">
+        <span class="icon-[solar--pen-new-round-bold-duotone] bg-blue-600 hover:bg-warning size-8"></span>
+      </button>
+    </div>
+    <div class="flex flex-col items-center mb-4">
+      <p class="text-gray-600  sm:text-lg text-xl mt-2">Ik heb je recentste resultaten voor je onthouden!</p>
+      <small>*Dit is apparaat gebonden</small>
+    </div>
   </div>
+
+
+
+
 
   <!-- Energie Gegevens -->
   <div class="mb-8">
@@ -143,55 +156,40 @@
       </div>
     </div>
   </div>
-  <div>
-    <h2 class="text-xl sm:text-2xl text-center font-bold text-gray-800 m-4">Micronutriënt Behoefte (In development)</h2>
 
-  </div>
 </div>
 
 
 <!-- Feitjes container -->
 <div class="bg-primary">
 
-  <div class="flex flex-col bg-primary py-10 px-6 max-w-4xl mx-auto">
-    <div id="auto-play" data-carousel='{ "loadingClasses": "opacity-0", "isAutoPlay": true, "speed": 4000 }'
+  <div class="flex flex-col bg-primary py-10  max-w-4xl mx-auto">
+    <div id="auto-play" data-carousel='{ "loadingClasses": "opacity-0", "isAutoPlay": true, "speed": 5000 }'
       class="relative w-full">
-      <div class="carousel h-20">
+      <div class="carousel h-28">
         <div class="carousel-body opacity-0 h-full">
           <!-- Slide 1 -->
-          <div class="carousel-slide">
-            <div class="bg-base-300/60 flex h-full justify-center p-6">
-              <span class="self-center "> <small class="text-white">(Nog in development en niet
-                  werkend)</small></span>
-            </div>
-          </div>
-          <!-- Slide 2 -->
-          <div class="carousel-slide">
-            <div class="bg-base-300/80 flex h-full justify-center p-6">
-              <span class="self-center"> <small class="text-white">(Nog in development en niet
-                  werkend)</small></span>
-            </div>
-          </div>
-          <!-- Slide 3 -->
-          <div class="carousel-slide">
-            <div class="bg-base-300 flex h-full justify-center p-6">
-              <span class="self-center "> <small class="text-white">(Nog in development en niet
-                  werkend)</small></span>
+          <div class="carousel-slide px-6" *ngFor="let fact of facts; let i = index" [attr.data-carousel-item]="i">
+            <div class="bg-base-300/60 flex h-full justify-center py-12 px-6 lg:px-12 ">
+              <span class="self-center text-center text-white font-bold md:text-xl lg:text-xl">{{ fact
+                }}</span>
+
             </div>
           </div>
         </div>
       </div>
+
       <!-- Previous Slide -->
       <button type="button" class="carousel-prev">
-        <span class="size-9.5 bg-base-100 flex items-center justify-center rounded-full shadow">
+        <span class="size-5 lg:size-9.5 bg-base-100 flex items-center justify-center rounded-full shadow">
           <span class="icon-[tabler--chevron-left] size-5 cursor-pointer rtl:rotate-180"></span>
         </span>
-        <span class="sr-only">Previous</span>
+        <span class="sr-only">Vorige</span>
       </button>
       <!-- Next Slide -->
-      <button type="button" class="carousel-next">
-        <span class="sr-only">Next</span>
-        <span class="size-9.5 bg-base-100 flex items-center justify-center rounded-full shadow">
+      <button type="button" class="carousel-next ">
+        <span class="sr-only">Volgende</span>
+        <span class="size-5  lg:size-9.5 bg-base-100 flex items-center justify-center rounded-full shadow">
           <span class="icon-[tabler--chevron-right] size-5 cursor-pointer rtl:rotate-180"></span>
         </span>
       </button>
@@ -238,6 +236,38 @@
 
     <app-course-card title="Doelgewicht Tijdsschatting"
       description="Deze calculator schat de tijd die nodig is om je doelgewicht te bereiken op basis van je huidige gewicht, doelgewicht en calorie-inname."
-      imageUrl="calculator_6.svg" buttonText="Bereken!">
+      imageUrl="calculator_6.svg" linkUrl="/doelgewicht-calculator" buttonText="Bereken!">
     </app-course-card>
+  </div>
+
+  <!-- adjust name component -->
+
+
+  <div id="tab-modal"
+    class="overlay modal-middle modal overlay-open:opacity-100 hidden [--tab-accessibility-limited:false] bg-primary/50"
+    role="dialog" tabindex="-1">
+    <div class="modal-dialog overlay-open:opacity-100 ">
+      <div class="modal-content bg-gradient-to-t from-white to-secondary shadow-lg">
+        <div class="modal-header">
+          <h3 class="modal-title text-primary">Naam wijzigen</h3>
+          <button type="button" class="btn btn-text btn-circle btn-sm absolute end-3 top-3" aria-label="Close"
+            data-overlay="#tab-modal"><span class="icon-[tabler--x] size-4"></span></button>
+        </div>
+        <form>
+          <div class="modal-body">
+            <div class="mb-4">
+              <label class="label label-text text-primary font-bold" for="modalTabFullName"> Wat is jouw naam?
+              </label>
+              <input type="text" placeholder="{{userName}}" name="userNameInput" class="input" id="modalTabFullName"
+                [(ngModel)]="userName" />
+            </div>
+          </div>
+          <div class="modal-footer">
+
+            <button type="submit" class="btn btn-primary" data-overlay="#tab-modal"
+              (click)="updateUserName()">Update</button>
+          </div>
+        </form>
+      </div>
+    </div>
   </div>

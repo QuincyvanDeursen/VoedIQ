@@ -1,0 +1,47 @@
+<div
+    class="space-y-4 border-2 border-gray-300 rounded-lg p-4 bg-gradient-to-bl from-white to-secondary/20 shadow-md my-4">
+    <h2 class="text-base font-semibold text-primary text-justify">Vraag: {{ question.question }}</h2>
+
+    <div class="flex flex-col sm:flex-row gap-4 ">
+        <button *ngFor="let option of question.options"
+            class=" rounded-lg font-medium transition-all border-2 border-primary w-full flex items-stretch text-left hover:zoom-100 hover:scale-105"
+            [ngClass]="{
+          'bg-primary text-white': selectedOption === option && option.isCorrect,
+          'bg-red-300 ': selectedOption === option && !option.isCorrect,
+          'bg-white text-black': !selectedOption
+        }" (click)="choose(option)">
+            <!-- Label apart gestyled -->
+            <div [ngClass]="{
+                ' text-white': selectedOption === option && option.isCorrect,
+                'bg-red-300 text-black': selectedOption === option && !option.isCorrect,
+                'bg-primary text-white': !selectedOption
+              }" class=" bg-primary px-3 py-2 rounded-l-md font-bold">
+                {{ option.label }}
+            </div>
+
+            <!-- Antwoordtekst vult automatisch de ruimte -->
+            <div class="flex-1 px-4 py-2">
+                {{ option.text }}
+            </div>
+        </button>
+    </div>
+
+    <div *ngIf="selectedOption && explanation"
+        class="mt-4 text-sm text-muted-foreground border-2 border-primary rounded-lg  bg-gray-100">
+        <div class="flex flex-row">
+            <div class=" p-2 rounded-l-md border-1 bg-gray-100 items-center flex">
+                <span *ngIf="!selectedOption.isCorrect" class="icon-[tabler--circle-x] bg-red-600 size-8"></span>
+                <span *ngIf="selectedOption.isCorrect" class="icon-[tabler--circle-check] bg-green-700 size-8"></span>
+            </div>
+            <div class="p-2">
+                <p *ngIf="selectedOption.isCorrect" class="text-green-700 font-bold">Goedgedaan, antwoord <span
+                        class="font-bold ">{{ selectedOption.label
+                        }}</span> is juist!</p>
+                <p *ngIf="!selectedOption.isCorrect" class="text-red-700 font-bold">Helaas, antwoord {{
+                    selectedOption.label }} is fout. Het juiste antwoord is
+                    {{ correctAnswerLabel }}</p>
+                <p class="text-justify"><strong>Uitleg:</strong> {{ selectedOption.explanation }}</p>
+            </div>
+        </div>
+    </div>
+</div>

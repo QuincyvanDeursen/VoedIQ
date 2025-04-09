@@ -1,0 +1,19 @@
+<div [style.max-height]="maxHeightVh + 'vh'" class="overflow-y-auto space-y-6 p-4 border rounded-lg bg-muted/30">
+    <ng-container *ngFor="let question of questions; let i = index">
+        <app-quiz-question [question]="question" (answerGiven)="onAnswer(i, $event)"
+            [explanation]="true"></app-quiz-question>
+    </ng-container>
+
+    <!-- Score of waarschuwing onderaan -->
+    <div id="result" class="mt-4 p-4 border-t-2 border-primary  text-center shadow-inner" [ngClass]="{
+        'bg-primary text-white': isComplete,
+        'bg-yellow-100 text-yellow-800': !isComplete
+      }">
+        <p *ngIf="isComplete" class="font-semibold text-lg">
+            ✅ Je hebt {{ totalCorrect }} van de {{ questions.length }} vragen goed beantwoord!
+        </p>
+        <p *ngIf="!isComplete" class="font-semibold text-base">
+            ⚠️ Indien je dit kan lezen, heb je niet alle vragen beantwoord.
+        </p>
+    </div>
+</div>
