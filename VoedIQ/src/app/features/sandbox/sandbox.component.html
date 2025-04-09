@@ -1,5 +1,7 @@
 <div class="container w-full flex justify-center mx-auto items-center">
     <div class="flex flex-col flex-grow h-full p-4 my-20 gap-y-4">
+        <app-quiz [questions]="questions" [maxHeightVh]="30"></app-quiz>
+        <app-quiz-question [question]="questions[0]" [explanation]="true"></app-quiz-question>
         <h1 class="text-3xl">Standalone input field</h1>
         <ul>
             <li>- Haalt 1100+ activiteiten op met MET-values zonder externe database</li>
@@ -102,6 +104,15 @@
         <button class="btn btn-primary" (click)="showInfoToast()">Info</button>
         <button class="btn btn-primary" (click)="showErrorToast()">Error</button>
         <button class="btn btn-primary" (click)="showWarningToast()">Warning</button>
-    </div>
-    <div class="flex flex-col flex-grow h-full p-4 my-20">
+
+        <h1 class="text-3xl mt-20">Course Container</h1>
+        <ul>
+            <li>- Is een generieke container voor het tonen van een cursus</li>
+            <li>- Is volledig responsive voor alle soorten schermen</li>
+            <li>- Heeft een fade in en fade out animatie</li>
+            <li>- Is uitbreidbaar met meerdere soorten cursussen</li>
+            <li>- Is generiek opgezet, en dus herbruikbaar</li>
+            <li>- Is volledig te stylen met css en html</li>
+        </ul>
+
     </div>

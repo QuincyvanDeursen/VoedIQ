@@ -4,6 +4,7 @@ import { PalCalculatorComponent } from '../../shared/components/pal-calculator/p
 import { TdeeCalculatorComponent } from '../../shared/components/tdee-calculator/tdee-calculator.component';
 import { CommonModule } from '@angular/common';
 import { ScrollToDirective } from '../../shared/directives/scroll-to.directive';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-energy-calculators',
@@ -13,6 +14,7 @@ import { ScrollToDirective } from '../../shared/directives/scroll-to.directive';
     TdeeCalculatorComponent,
     CommonModule,
     ScrollToDirective,
+    RouterModule,
   ],
   templateUrl: './energy-calculators.component.html',
   styleUrl: './energy-calculators.component.css',

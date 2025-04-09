@@ -74,17 +74,18 @@
                             aria-labelledby="what-can-you-do-with-this-info" role="region">
                             <div class="px-5 pb-4">
                                 <p class="text-base md:text-xl text-justify">
-                                    Met je TDEE kun je veel doen om je gezondheid en fitnessdoelen te bereiken.
+                                    Wanneer je je TDEE weet, kun je veel doen om je gezondheid en fitnessdoelen te
+                                    bereiken.
                                     Zodra je weet hoeveel
                                     calorieën je dagelijks nodig hebt, kun je je dieet en je activiteiten hierop
                                     afstemmen. Bijvoorbeeld:
                                 </p>
 
                                 <ul class="text-base md:text-xl text-justify mt-5">
-                                    <li><strong>Afvallen:</strong> Om gewicht te verliezen, wil je een calorie-tekort
-                                        creëren, wat betekent
-                                        dat je minder calorieën eet dan je TDEE.</li>
-                                    <li><strong>Aankomen:</strong> Als je wilt aankomen, moet je meer calorieën
+                                    <li><strong>Afvallen:</strong> Om gewicht te verliezen wil je een calorie-tekort
+                                        creëren. Dat betekent
+                                        dat je minder calorieën dientn binnen te krijgen dan je TDEE.</li>
+                                    <li><strong>Aankomen:</strong> Als je wilt aankomen moet je meer calorieën
                                         binnenkrijgen dan je TDEE.</li>
                                     <li><strong>Gewicht behouden:</strong> Als je je huidige gewicht wilt behouden, eet
                                         dan ongeveer
@@ -94,8 +95,10 @@
                                 <p class="text-base md:text-xl text-justify mt-5">Je kunt ook de
                                     macronutriënt- (eiwitten,
                                     koolhydraten en vetten) en micronutriëntbehoefte (vitaminen, mineralen en
-                                    spoorelementen) aan de hand van je caloriebehoefte. Dat kun je doen met voedIQ's
-                                    <a href="/nutrient-calculator" class="link link-primary">nutriënt calculator</a>.
+                                    spoorelementen) aan de hand van je caloriebehoefte berekenen. Dat kun je doen met
+                                    VoedIQ's
+                                    <a [routerLink]="'/nutri-calculator'" class="link link-primary">nutriënt
+                                        calculator</a>.
                                 </p>
                             </div>
                         </div>
@@ -204,9 +207,9 @@
                         <button type="button"
                             class="collapse-toggle text-center link text-white flex mx-auto items-center my-2 pb-4"
                             (click)="toggleCollapse()">
-                            <span *ngIf="!isCollapseOpen" class="text-secondary">Ik wil uitleg!</span>
+                            <span *ngIf="!isCollapseOpen" class="text-warning">Ik wil uitleg!</span>
                             <span *ngIf="isCollapseOpen" class="text-secondary">Ik heb het begrepen!</span>
-                            <span class="icon-[tabler--chevron-down]"
+                            <span class="icon-[tabler--chevron-down] bg-warning"
                                 [ngClass]="{ 'rotate-180': isCollapseOpen }"></span>
                         </button>
                     </div>
@@ -279,9 +282,10 @@
                     <button type="button"
                         class="collapse-toggle text-center link text-white flex mx-auto items-center my-2 pb-4"
                         (click)="toggleCollapse()">
-                        <span *ngIf="!isCollapseOpen" class="text-secondary">Ik wil uitleg!</span>
+                        <span *ngIf="!isCollapseOpen" class="text-warning">Ik wil uitleg!</span>
                         <span *ngIf="isCollapseOpen" class="text-secondary">Ik heb het begrepen!</span>
-                        <span class="icon-[tabler--chevron-down]" [ngClass]="{ 'rotate-180': isCollapseOpen }"></span>
+                        <span class="icon-[tabler--chevron-down] bg-warning"
+                            [ngClass]="{ 'rotate-180': isCollapseOpen }"></span>
                     </button>
                 </div>
                 <app-pal-calculator class="w-full max-w-full"></app-pal-calculator>
@@ -308,9 +312,10 @@
                     <button type="button"
                         class="collapse-toggle text-center link text-white flex mx-auto items-center my-2 pb-4"
                         (click)="toggleCollapse()">
-                        <span *ngIf="!isCollapseOpen" class="text-secondary">Ik wil uitleg!</span>
+                        <span *ngIf="!isCollapseOpen" class="text-warning">Ik wil uitleg!</span>
                         <span *ngIf="isCollapseOpen" class="text-secondary">Ik heb het begrepen!</span>
-                        <span class="icon-[tabler--chevron-down]" [ngClass]="{ 'rotate-180': isCollapseOpen }"></span>
+                        <span class="icon-[tabler--chevron-down] bg-warning"
+                            [ngClass]="{ 'rotate-180': isCollapseOpen }"></span>
                     </button>
                 </div>
                 <app-tdee-calculator class="w-full max-w-full"></app-tdee-calculator>
