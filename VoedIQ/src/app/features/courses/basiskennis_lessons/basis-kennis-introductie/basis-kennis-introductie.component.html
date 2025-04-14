@@ -82,9 +82,9 @@
 
 
 <!-- Modal Inhoud -->
-<div id="quiz-modal" class="overlay modal modal-middle overlay-open:opacity-100 hidden bg-primary/70 z-10" role="dialog"
-    tabindex="-1">
-    <div class="modal-dialog overlay-open:opacity-100 w-full max-w-5xl">
+<div id="quiz-modal" class="overlay modal modal-middle overlay-open:opacity-100 hidden bg-primary/70    z-10"
+    role="dialog" tabindex="-1">
+    <div class="modal-dialog overlay-open:opacity-100 w-full max-w-5xl max-h-[80vh] flex justify-center"> ">
         <div class="modal-content">
             <div class="modal-header">
                 <h3 class="modal-title">Voorkennis Quiz</h3>
@@ -94,9 +94,9 @@
                 </button>
             </div>
             <div class="modal-body">
-                <app-quiz [questions]="questions" [maxHeightVh]="60"></app-quiz>
+                <app-quiz [questions]="questions" [maxHeightVh]="50"></app-quiz>
             </div>
-            <div class="modal-footer">
+            <div class="modal-footer mt-10">
                 <!-- Deze sluitknop moet de modal sluiten -->
                 <button type="button" class="btn btn-primary" data-overlay="#quiz-modal">Sluiten</button>
             </div>
