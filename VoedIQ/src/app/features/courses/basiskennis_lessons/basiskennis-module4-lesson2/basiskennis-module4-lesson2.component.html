@@ -1,0 +1,57 @@
+<h1 class="text-xl lg:text-3xl mb-4 p-4 font-bold text-center bg-primary rounded-2xl text-white py-2">
+    Wat zijn E-nummers?
+</h1>
+
+
+<div class="flex flex-col mb-10">
+    <div class="flex flex-col gap-3">
+
+        <p class="text-base text-justify">
+            E-nummers zijn toevoegingen aan voeding die de houdbaarheid, kleur, smaak of structuur verbeteren. Ze zorgen
+            ervoor
+            dat producten langer goed blijven, waardoor supermarkten minder voedsel hoeven weg te gooien en wij niet
+            dagelijks
+            boodschappen hoeven te doen om verse producten in huis te hebben. Ook zorgen E-nummers ervoor dat de
+            ingrediëntenlijst
+            van een product niet te groot wordt. Daarnaast moet voeding er aantrekkelijk uitzien en goed smaken, want
+            anders wordt
+            het niet gegeten noch gekocht.
+        </p>
+
+        <p class="text-base text-justify">
+            Sommige mensen zijn huiverig voor E-nummers, maar ze zijn goedgekeurd en veilig bevonden door de Europese
+            Voedselveiligheidsautoriteit (EFSA). Vaak associëren mensen E-nummers met niet-natuurlijke stoffen, terwijl
+            veel E-nummers
+            juist afkomstig zijn uit natuurlijke bronnen. Zo is E300 simpelweg vitamine C, en komt E160a (bètacaroteen)
+            voor in wortels
+            en paprika’s. Bovendien zegt de oorsprong van een stof (natuurlijk of synthetisch) niets over hoe gezond of
+            schadelijk het
+            is. Er zijn natuurlijke stoffen die giftig zijn (zoals bepaalde paddenstoelen en cyanide) en synthetische
+            stoffen die
+            volledig veilig zijn. Wat echt telt, is hoe een stof in het lichaam werkt en in welke hoeveelheid je het
+            binnenkrijgt.
+            Zelfs water is in extreme hoeveelheden dodelijk!
+        </p>
+
+        <p class="text-base text-justify">
+            Voorbeelden van veelvoorkomende E-nummers:
+        </p>
+
+        <ul class="list-disc list-inside text-base flex flex-col gap-4 mt-2">
+            <li><strong>E100–E199:</strong> Kleurstoffen (bijv. bètacaroteen, E160a, dat wortels hun oranje kleur
+                geeft).</li>
+            <li><strong>E200–E299:</strong> Conserveermiddelen (bijv. sorbinezuur, E200, voorkomt bederf).</li>
+            <li><strong>E300–E399:</strong> Antioxidanten (bijv. ascorbinezuur, E300, ook bekend als vitamine C).</li>
+        </ul>
+
+        <app-quiz-question [id]="0" [explanation]="true" [question]="{
+            question: 'Wat is waar over E-nummers?',
+            options: [
+                { label: 'A', text: 'Alle E-nummers zijn schadelijk voor je gezondheid.', isCorrect: false, explanation: 'Dit is een mythe! De meeste E-nummers zijn veilig en sommige komen zelfs van nature in voeding voor.' },
+                { label: 'B', text: 'De meeste E-nummers zijn veilig en komen van nature in voeding voor.', isCorrect: true, explanation: 'Dit is juist! De meeste E-nummers zijn veilig en zijn goedgekeurd door de EFSA. Alleen bij hoge inname kunnen sommige nadelen hebben.' }
+            ]
+        }">
+        </app-quiz-question>
+
+    </div>
+</div>

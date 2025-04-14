@@ -17,6 +17,7 @@ import { QuizOption } from '../../../core/models/quiz-option';
   styleUrl: './quiz-question.component.css',
 })
 export class QuizQuestionComponent implements OnChanges {
+  @Input() id = 0;
   @Input() explanation = true;
   @Input() question!: QuizQuestion;
   @Output() answerGiven = new EventEmitter<boolean>();

@@ -1,0 +1,282 @@
+[
+  {
+    "question": "Waarom is een gebalanceerd dieet noodzakelijk, zelfs als je enkel gezonde producten eet?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Omdat een enkel product zelden alle voedingsstoffen bevat die je lichaam nodig heeft.",
+        "isCorrect": true,
+        "explanation": "Juist! Een gezond dieet bevat genoeg van alle voedingsstoffen (niet te weinig, en niet te veel) ."
+      },
+      {
+        "label": "B",
+        "text": "Omdat gezonde producten niet genoeg energie leveren.",
+        "isCorrect": false,
+        "explanation": "Onjuist – de hoeveelheid calorieën in een product is niet altijd een maat voor de voedingswaarde."
+      },
+      {
+        "label": "C",
+        "text": "Omdat ongezond eten af en toe nodig is en vaak lekker is.",
+        "isCorrect": false,
+        "explanation": "Dit klopt niet – het gaat erom dat je van alles voldoende binnenkrijgt."
+      }
+    ]
+  },
+  {
+    "question": "Wat is waar over vetten?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Het levert veel energie, maar geen bouwstoffen.",
+        "isCorrect": false,
+        "explanation": "Vet levert inderdaad veel energie, maar is ook een belangrijke bouwstof waar het lichaam niet zonder mee kan!"
+      },
+      {
+        "label": "B",
+        "text": "Het helpt bij het transporten en de opname van vitamines.",
+        "isCorrect": true,
+        "explanation": "Klopt! Vet beschermt organen, isoleert het lichaam en helpt bij het transport van vetoplosbare vitamines (A, D, E en K)."
+      },
+      {
+        "label": "C",
+        "text": "Vet is ongezond en moet vermeden worden.",
+        "isCorrect": false,
+        "explanation": "Vet heeft meerdere belangrijke functies, niet alleen opslag."
+      }
+    ]
+  },
+  {
+    "question": "Welk vet wordt als gezond beschouwd?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Verzadigd vet",
+        "isCorrect": false,
+        "explanation": "Verzadigd vet verhoogt het LDL-cholesterol en moet je liever beperken."
+      },
+      {
+        "label": "B",
+        "text": "Onverzadigd vet",
+        "isCorrect": true,
+        "explanation": "Juist! Onverzadigd vet helpt het cholesterolgehalte gezond te houden."
+      },
+      {
+        "label": "C",
+        "text": "Transvet",
+        "isCorrect": false,
+        "explanation": "Transvet is zelfs slechter dan verzadigd vet voor je gezondheid."
+      }
+    ]
+  },
+  {
+    "question": "Wat is een calorie?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Een eenheid van energie die aangeeft hoeveel energie een voedingsmiddel bevat.",
+        "isCorrect": true,
+        "explanation": "Juist! Calorieën zijn een maat voor de hoeveelheid energie in voeding."
+      },
+      {
+        "label": "B",
+        "text": "Een stof die zorgt voor gewichtstoename.",
+        "isCorrect": false,
+        "explanation": "Calorieën zijn een maat voor energie, niet per se iets dat je dik maakt."
+      },
+
+      {
+        "label": "C",
+        "text": "Een maat voor hoe gezond een product is.",
+        "isCorrect": false,
+        "explanation": "Calorieën zeggen niks over hoe gezond een product is. het is slechts een eenheid om aan te geven hoeveel energie er in een product zit."
+      }
+    ]
+  },
+  {
+    "question": "Wat gebeurt er als je meer calorieën binnenkrijgt dan je verbruikt?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Je valt af.",
+        "isCorrect": false,
+        "explanation": "Bij een calorie-overschot kom je meestal aan, niet af."
+      },
+
+      {
+        "label": "B",
+        "text": "Je lichaam gaat meer energie verbruiken.",
+        "isCorrect": false,
+        "explanation": "Dat gebeurt meestal niet vanzelf."
+      },
+      {
+        "label": "C",
+        "text": "Je slaat de overtollige energie op als vet.",
+        "isCorrect": true,
+        "explanation": "Correct! Het lichaam slaat overtollige energie op, vaak als vet."
+      }
+    ]
+  },
+  {
+    "question": "Wat is rustmetabolisme (BMR)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "De energie die je verbruikt tijdens het sporten.",
+        "isCorrect": false,
+        "explanation": "Dat valt onder actieve verbranding."
+      },
+      {
+        "label": "B",
+        "text": "De energie die je lichaam gebruikt om basisfuncties te onderhouden, zoals het hebben van een hartslag, ademenen et cetera.",
+        "isCorrect": true,
+        "explanation": "Juist! BMR is de energie die je lichaam nodig heeft in volledige rust."
+      },
+      {
+        "label": "C",
+        "text": "Een maatstaaf om uit te drukken hoe snel jij vetmassa verliest of aankomt",
+        "isCorrect": false,
+        "explanation": "Vetmassa aankomen is het gevolg van een calorie-overschot, niet het rustmetabolisme."
+      }
+    ]
+  },
+  {
+    "question": "Wat is een juist verschil tussen eenvoudige en complexe koolhydraten?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Eenvoudige koolhydraten geven langdurige energie, terwijl complexe koolhydraten snel een piek veroorzaken.",
+        "isCorrect": false,
+        "explanation": "Onjuist – dit is juist andersom. Eenvoudige koolhydraten geven snel energie, complexe koolhydraten leveren geleidelijke energie."
+      },
+      {
+        "label": "B",
+        "text": "Complexe koolhydraten worden langzamer afgebroken en zorgen voor een stabielere bloedsuikerspiegel.",
+        "isCorrect": true,
+        "explanation": "Correct! Complexe koolhydraten, zoals zetmeel, worden langzamer afgebroken en geven langdurige energie."
+      },
+      {
+        "label": "C",
+        "text": "Eenvoudige koolhydraten bevatten meer vezels dan complexe koolhydraten.",
+        "isCorrect": false,
+        "explanation": "Onjuist – complexe koolhydraten bevatten vaker vezels, wat goed is voor de spijsvertering."
+      }
+    ]
+  },
+  {
+    "question": "Wat klopt over de opbouw van eiwitten?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Eiwitten bestaan uit suikers die het lichaam gebruikt voor energie.",
+        "isCorrect": false,
+        "explanation": "Onjuist – eiwitten bestaan uit aminozuren, geen suikers. Ze zijn vooral bouwstoffen, niet energiebronnen."
+      },
+      {
+        "label": "B",
+        "text": "Eiwitten zijn opgebouwd uit aminozuren, waarvan sommige essentieel zijn.",
+        "isCorrect": true,
+        "explanation": "Correct! Eiwitten bestaan uit aminozuren. Negen daarvan zijn essentieel en moeten via voeding binnenkomen."
+      },
+      {
+        "label": "C",
+        "text": "Eiwitten is enkel voor krachtsporters belangrijk.",
+        "isCorrect": false,
+        "explanation": "Onjuist – iedereen heeft eiwitten nodig. Krachtsporters hebben echter wel extra eiwitten nodig voor hun herstel."
+      }
+    ]
+  },
+  {
+    "question": "Welke uitspraak over de energiebehoefte van het lichaam is juist?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Zelfs wanneer we slapen verbruikt het lichaam energie.",
+        "isCorrect": true,
+        "explanation": "Correct! Zelfs als je niets doet verbruiken je organen, vooral je hersenen, veel energie."
+      },
+      {
+        "label": "B",
+        "text": "Iedereen zijn energiebehoefte is ongeveer het zelfde.",
+        "isCorrect": false,
+        "explanation": "Onjuist – de verschillen onderling zijn erg groot. Zelfs bij mensen die even zwaar en lang zijn."
+      },
+
+      {
+        "label": "C",
+        "text": "Voeding is alleen nodig tijdens lichamelijke inspanning.",
+        "isCorrect": false,
+        "explanation": "Onjuist – ook in rust zijn voedingsstoffen nodig voor o.a. herstel, temperatuurregulatie en hersenfunctie."
+      }
+    ]
+  },
+  {
+    "question": "Wat kun je afleiden uit de volgorde van de ingrediënten op een voedseletiket?",
+    "options": [
+      {
+        "label": "A",
+        "text": "De minst voorkomende ingrediënten staan altijd bovenaan.",
+        "isCorrect": false,
+        "explanation": "Onjuist. Het ingrediënt dat het meest voorkomt, staat juist bovenaan."
+      },
+      {
+        "label": "B",
+        "text": "De volgorde zegt niets over de hoeveelheid.",
+        "isCorrect": false,
+        "explanation": "Dat klopt niet. De ingrediënten staan juist op volgorde van hoeveelheid."
+      },
+      {
+        "label": "C",
+        "text": "Het ingrediënt dat het meest voorkomt, staat als eerste genoemd.",
+        "isCorrect": true,
+        "explanation": "Helemaal juist! Zo kun je bijvoorbeeld zien of suiker een hoofdingrediënt is."
+      }
+    ]
+  },
+  {
+    "question": "Wat is waar over E-nummers?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Sommige E-nummers zijn afkomstig uit natuurlijke bronnen.",
+        "isCorrect": true,
+        "explanation": "Klopt! E300 is bijvoorbeeld gewoon vitamine C, en E160a komt voor in wortels."
+      },
+      {
+        "label": "B",
+        "text": "E-nummers zijn altijd schadelijk voor je gezondheid.",
+        "isCorrect": false,
+        "explanation": "Nee, E-nummers zijn goedgekeurd en veilig bevonden door de EFSA."
+      },
+
+      {
+        "label": "C",
+        "text": "Alle E-nummers zijn synthetisch en onnatuurlijk.",
+        "isCorrect": false,
+        "explanation": "Niet waar. Veel E-nummers zijn juist natuurlijk of afgeleid van natuurlijke stoffen."
+      }
+    ]
+  },
+  {
+    "question": "Hoe herken je ultra bewerkte voeding?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Het bevat weinig ingrediënten en vooral natuurlijke producten.",
+        "isCorrect": false,
+        "explanation": "Dat is juist typisch voor onbewerkte voeding, niet voor ultra bewerkt."
+      },
+      {
+        "label": "B",
+        "text": "Het heeft vaak een lange ingrediëntenlijst met toegevoegde suikers en vetten.",
+        "isCorrect": true,
+        "explanation": "Juist! Ultra bewerkte producten bevatten vaak veel toevoegingen en kunstmatige stoffen."
+      },
+      {
+        "label": "C",
+        "text": "Ultra bewerkte voeding is altijd ongezond, zelfs in kleine hoeveelheden.",
+        "isCorrect": false,
+        "explanation": "Niet per se. Het gaat om het totaalplaatje van je voedingspatroon en de frequentie."
+      }
+    ]
+  }
+]

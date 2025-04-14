@@ -1,0 +1,42 @@
+<h1 class="text-xl lg:text-3xl mb-4 p-4 font-bold text-center bg-primary rounded-2xl text-white py-2">
+    Verschil tussen energierijke en voedingsrijke producten
+</h1>
+
+<div class="flex flex-col mb-10">
+    <div class="flex flex-col gap-3">
+        <p class="text-base text-justify">
+            Sommige voedingsmiddelen leveren veel calorieën zonder waardevolle voedingsstoffen, terwijl andere juist
+            boordevol vitamines, mineralen en vezels zitten. Een combinatie van zowel calorierijk en voedingsrijk is
+            uiteraard ook mogelijk! Er zijn echter enkele punten waar je op kunt letten:
+        </p>
+
+        <h2 class="text-xl font-semibold">Calorierijke voedingsmiddelen:</h2>
+        <ul class="list-disc list-inside text-base">
+            <li>Bevatten veel calorieën in verhouding tot hun gewicht of volume. Vaak komt dit door een hoge hoeveelheid
+                suiker en/of vet.</li>
+            <li>Vaak bewerkt en minder rijk aan essentiële voedingsstoffen (bijv. chips, snoep, frisdrank).</li>
+            <li>Leveren vaak snelle energie (door suikers), maar geven minder verzadiging, waardoor je sneller opnieuw
+                honger kunt krijgen.</li>
+        </ul>
+
+        <h2 class="text-xl font-semibold">Nutriëntenrijke producten:</h2>
+        <ul class="list-disc list-inside text-base">
+            <li>Bevatten vaak veel vitamines, mineralen en vezels die belangrijk zijn voor de gezondheid.</li>
+            <li>Bestaan meestal uit onbewerkte, natuurlijke ingrediënten zoals groenten, fruit en volkoren granen.</li>
+            <li>Kunnen energierijk zijn, maar leveren ook langdurige verzadiging en dragen bij aan een gebalanceerd
+                dieet, wat ze ideaal maakt voor een gezonde voeding.</li>
+        </ul>
+        <p class="text-base text-justify">
+            In module 4 van deze cursus leer je hoe je beide kunt herkennen!
+        </p>
+
+        <app-info-block class="my-4" type="fact"
+            content="Een avocado bevat ongeveer 240 kcal per stuk! Ondanks het hoge caloriegehalte zit een avocado boordevol gezonde vetten, vezels en vitamines, waardoor het een voedzame keuze is.">
+        </app-info-block>
+
+        <div class="divider divider-accent"></div>
+
+        <app-quiz-question [id]="0" [explanation]="true" [question]="voedingsvraag">
+        </app-quiz-question>
+    </div>
+</div>

@@ -1,5 +1,14 @@
 <div class="container w-full flex justify-center mx-auto items-center">
     <div class="flex flex-col flex-grow h-full p-4 my-20 gap-y-4">
+        <app-info-block type="tip" content="Drink genoeg water, zelfs bij weinig dorst. Je brein heeft het nodig!">
+        </app-info-block>
+
+        <app-info-block type="fact" content="Je lichaam verbrandt zelfs calorieën terwijl je slaapt.">
+        </app-info-block>
+
+        <app-info-block type="story"
+            content="Iemand vertelde dat ze zich fitter voelde na het vervangen van frisdrank door water.">
+        </app-info-block>
         <app-quiz [questions]="questions" [maxHeightVh]="30"></app-quiz>
         <app-quiz-question [question]="questions[0]" [explanation]="true"></app-quiz-question>
         <h1 class="text-3xl">Standalone input field</h1>

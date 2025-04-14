@@ -11,6 +11,7 @@ import { MicronutrientCalculatorComponent } from '../../shared/components/micron
 import { QuizQuestion } from '../../core/models/quiz-question';
 import { QuizQuestionComponent } from '../../shared/components/quiz-question/quiz-question.component';
 import { QuizComponent } from '../../shared/components/quiz/quiz.component';
+import { InfoBlockComponent } from '../../shared/components/info-block/info-block.component';
 
 @Component({
   selector: 'app-sandbox',
@@ -25,6 +26,7 @@ import { QuizComponent } from '../../shared/components/quiz/quiz.component';
     MicronutrientCalculatorComponent,
     QuizQuestionComponent,
     QuizComponent,
+    InfoBlockComponent,
   ],
   templateUrl: './sandbox.component.html',
   styleUrl: './sandbox.component.css',
