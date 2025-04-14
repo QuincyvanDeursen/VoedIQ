@@ -1,8 +1,20 @@
 import { Injectable } from '@angular/core';
 
-import { LessonDummyComponent } from '../../features/courses/lesson-dummy/lesson-dummy.component';
-import { LessonIntroductionComponent } from '../../features/courses/lesson-introduction/lesson-introduction.component';
 import { Course } from '../models/course';
+import { BasiskennisModule1Lesson1Component } from '../../features/courses/basiskennis_lessons/basiskennis-module1-lesson1/basiskennis-module1-lesson1.component';
+import { BasiskennisModule1Lesson3Component } from '../../features/courses/basiskennis_lessons/basiskennis-module1-lesson3/basiskennis-module1-lesson3.component';
+import { BasiskennisModule1Lesson2Component } from '../../features/courses/basiskennis_lessons/basiskennis-module1-lesson2/basiskennis-module1-lesson2.component';
+import { BasiskennisModule2Lesson1Component } from '../../features/courses/basiskennis_lessons/basiskennis-module2-lesson1/basiskennis-module2-lesson1.component';
+import { BasiskennisModule2Lesson2Component } from '../../features/courses/basiskennis_lessons/basiskennis-module2-lesson2/basiskennis-module2-lesson2.component';
+import { BasiskennisModule2Lesson3Component } from '../../features/courses/basiskennis_lessons/basiskennis-module2-lesson3/basiskennis-module2-lesson3.component';
+import { BasiskennisModule3Lesson1Component } from '../../features/courses/basiskennis_lessons/basiskennis-module3-lesson1/basiskennis-module3-lesson1.component';
+import { BasiskennisModule3Lesson2Component } from '../../features/courses/basiskennis_lessons/basiskennis-module3-lesson2/basiskennis-module3-lesson2.component';
+import { BasiskennisModule3Lesson3Component } from '../../features/courses/basiskennis_lessons/basiskennis-module3-lesson3/basiskennis-module3-lesson3.component';
+import { BasiskennisModule4Lesson2Component } from '../../features/courses/basiskennis_lessons/basiskennis-module4-lesson2/basiskennis-module4-lesson2.component';
+import { BasiskennisModule4Lesson1Component } from '../../features/courses/basiskennis_lessons/basiskennis-module4-lesson1/basiskennis-module4-lesson1.component';
+import { BasiskennisModule4Lesson3Component } from '../../features/courses/basiskennis_lessons/basiskennis-module4-lesson3/basiskennis-module4-lesson3.component';
+import { BasiskennisModule5Lesson1Component } from '../../features/courses/basiskennis_lessons/basiskennis-module5-lesson1/basiskennis-module5-lesson1.component';
+import { BasisKennisIntroductieComponent } from '../../features/courses/basiskennis_lessons/basis-kennis-introductie/basis-kennis-introductie.component';
 
 @Injectable({
   providedIn: 'root',
@@ -23,33 +35,121 @@ export class CourseService {
           lessons: [
             {
               title: 'Introductie',
-              route: 'introductie/intro1',
-              component: LessonIntroductionComponent,
-              completion: false,
-            },
-            {
-              title: 'Dummy 1',
-              route: 'introductie/dummy',
-              component: LessonDummyComponent,
+              route: 'introductie/les1',
+              component: BasisKennisIntroductieComponent,
               completion: false,
             },
           ],
         },
         {
-          title: 'Module1',
+          title: 'Module 1 - Voeding',
           route: 'module1',
           completion: false,
           lessons: [
             {
-              title: 'Introductie 2',
-              route: 'module1/introductie2',
-              component: LessonIntroductionComponent,
+              title: 'Definitie van Voeding',
+              route: 'module1/les1',
+              component: BasiskennisModule1Lesson1Component,
               completion: false,
             },
             {
-              title: 'Dummy 2',
-              route: 'module1/dummy2',
-              component: LessonDummyComponent,
+              title: 'Waarom hebben we voeding nodig?',
+              route: 'module1/les2',
+              component: BasiskennisModule1Lesson2Component,
+              completion: false,
+            },
+            {
+              title: 'Definitie van een dieet',
+              route: 'module1/les3',
+              component: BasiskennisModule1Lesson3Component,
+              completion: false,
+            },
+          ],
+        },
+        {
+          title: 'Module 2 - Voedingsstoffen',
+          route: 'module2',
+          completion: false,
+          lessons: [
+            {
+              title: 'Definitie van Voeding',
+              route: 'module2/les1',
+              component: BasiskennisModule2Lesson1Component,
+              completion: false,
+            },
+            {
+              title: 'Waarom hebben we voeding nodig?',
+              route: 'module2/les2',
+              component: BasiskennisModule2Lesson2Component,
+              completion: false,
+            },
+            {
+              title: 'Definitie van een dieet',
+              route: 'module2/les3',
+              component: BasiskennisModule2Lesson3Component,
+              completion: false,
+            },
+          ],
+        },
+        {
+          title: 'Module 3 - Energie',
+          route: 'module3',
+          completion: false,
+          lessons: [
+            {
+              title: 'De Calorie',
+              route: 'module3/les1',
+              component: BasiskennisModule3Lesson1Component,
+              completion: false,
+            },
+            {
+              title: 'Energierijk vs. Voedingsrijk',
+              route: 'module3/les2',
+              component: BasiskennisModule3Lesson2Component,
+              completion: false,
+            },
+            {
+              title: 'Aankomen en Afvallen',
+              route: 'module3/les3',
+              component: BasiskennisModule3Lesson3Component,
+              completion: false,
+            },
+          ],
+        },
+        {
+          title: 'Module 4 - Het Voedseletiket en Voedselbewerking',
+          route: 'module4',
+          completion: false,
+          lessons: [
+            {
+              title: 'Het Voedseletiket',
+              route: 'module4/les1',
+              component: BasiskennisModule4Lesson1Component,
+              completion: false,
+            },
+            {
+              title: 'E-nummers',
+              route: 'module4/les2',
+              component: BasiskennisModule4Lesson2Component,
+              completion: false,
+            },
+            {
+              title: 'Bewerkte Voeding',
+              route: 'module4/les3',
+              component: BasiskennisModule4Lesson3Component,
+              completion: false,
+            },
+          ],
+        },
+        {
+          title: 'Module 5 - Afronding',
+          route: 'module5',
+          completion: false,
+          lessons: [
+            {
+              title: 'Cursus Afronding',
+              route: 'module5/les1',
+              component: BasiskennisModule5Lesson1Component,
               completion: false,
             },
           ],
@@ -74,7 +174,7 @@ export class CourseService {
     }
 
     const module = course.modules.find(
-      (mod) => mod.title.toLowerCase().replace(/\s+/g, '-') === moduleTitle
+      (mod) => mod.route.toLowerCase().replace(/\s+/g, '-') === moduleTitle
     );
     if (!module) {
       console.error(`Module ${moduleTitle} not found in course ${courseTitle}`);
@@ -100,6 +200,10 @@ export class CourseService {
     lessonTitle: string
   ): any {
     const lessonData = this.getLesson(courseTitle, moduleTitle, lessonTitle);
+    if (!lessonData?.lesson.component) {
+      console.error('Lesson data not found!');
+      return null;
+    }
     return lessonData ? lessonData.lesson.component : null;
   }
 
@@ -114,18 +218,19 @@ export class CourseService {
     const { course, module, lesson } = lessonData;
     const lessonIndex = module.lessons.indexOf(lesson);
 
+    // Als er meerdere lessen zijn
     if (lessonIndex < module.lessons.length - 1) {
       return module.lessons[lessonIndex + 1].route;
     }
 
-    // Check for the next module
+    // Wanneer er maar één les is, ga naar de eerste les van de volgende module
     const moduleIndex = course.modules.indexOf(module);
     if (moduleIndex < course.modules.length - 1) {
       const nextModule = course.modules[moduleIndex + 1];
-      return nextModule.lessons[0]?.route || null; // First lesson of the next module
+      return nextModule.lessons[0]?.route || null; // Eerste les van de volgende module
     }
 
-    return null; // No next lesson or module
+    return null; // Geen volgende les of module
   }
 
   getPreviousLessonUrl(

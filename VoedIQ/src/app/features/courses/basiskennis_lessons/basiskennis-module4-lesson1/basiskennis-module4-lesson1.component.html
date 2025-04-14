@@ -1,0 +1,50 @@
+<h1 class="text-xl lg:text-3xl mb-4 p-4 font-bold text-center bg-primary rounded-2xl text-white py-2">
+    Hoe lees je een voedseletiket?
+</h1>
+
+
+
+<div class="flex flex-col mb-10">
+    <div class="flex flex-col gap-3">
+
+        <p class="text-base text-justify">
+            Een voedseletiket vertelt je precies wat er in een product zit. Het helpt je om bewustere keuzes te maken op
+            basis van ingrediënten en voedingswaarden.
+        </p>
+
+        <h2 class="text-xl font-semibold mt-4">Belangrijke onderdelen van een voedseletiket:</h2>
+        <p class="text-base text-justify mt-2">Het lezen van een voedseletiket helpt je bewuste keuzes te maken over de
+            voedingsmiddelen die je in je dieet opneemt. Het geeft je inzicht in de samenstelling van het product, de
+            hoeveelheid energie die het levert en welke belangrijke voedingsstoffen erin zitten. In de volgende lijst
+            worden de belangrijkste onderdelen van een voedseletiket toegelicht, zodat je makkelijker kunt beoordelen
+            wat je eet en of het past bij je doelen.</p>
+
+        <ul class="list-disc list-inside text-base flex flex-col gap-4 mt-2">
+            <li>
+                <strong>Ingrediëntenlijst:</strong> De ingrediënten staan op volgorde van hoeveelheid. Het eerste
+                ingrediënt is dus het meest aanwezig. Let goed op suiker, vet en bewerkte toevoegingen!
+            </li>
+            <li>
+                <strong>Voedingswaarden:</strong> Hier zie je hoeveel calorieën, vetten, koolhydraten, suikers, vezels
+                en eiwitten er in 100 gram of per portie zitten.
+            </li>
+            <li>
+                <strong>Portiegrootte:</strong> Let op: wat als ‘één portie’ wordt aangegeven, is niet altijd wat jij
+                eet. Een klein zakje chips lijkt onschuldig, tot je beseft dat je de hele zak eet in plaats van ‘één
+                portie’.
+            </li>
+            <li>
+                <strong>Nutri-Score:</strong> Een kleurcode en letter (van A – groen tot E – rood) die laat zien hoe
+                gezond een product is binnen zijn categorie. Let op: een pizza met score A is gezonder dan andere
+                pizza’s, maar niet per se gezonder dan een bakje muesli met score B.
+            </li>
+        </ul>
+        <img src="voedingsetiket.svg" alt="Voedseletiket illustratie" class="lg:w-3/4 mx-auto my-5" />
+        <app-info-block class="my-4" type="tip"
+            content="Check altijd de ingrediëntenlijst en de voedingswaarden. Laat je niet misleiden door slimme marketing!">
+        </app-info-block>
+        <app-quiz-question [id]="0" [explanation]="true" [question]="etiketVraag1"></app-quiz-question>
+        <app-quiz-question [id]="1" [explanation]="true" [question]="etiketVraag2"></app-quiz-question>
+        <app-quiz-question [id]="2" [explanation]="true" [question]="etiketVraag3"></app-quiz-question>
+    </div>
+</div>

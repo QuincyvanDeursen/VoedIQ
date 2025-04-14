@@ -1,0 +1,63 @@
+<h1 class="text-xl lg:text-3xl mb-4 p-4 font-bold text-center bg-primary rounded-2xl text-white py-2">
+    Bewerkte vs Onbewerkte Voeding
+</h1>
+
+<div class="flex flex-col mb-10">
+    <div class="flex flex-col gap-3">
+
+        <p class="text-base text-justify">
+            Niet al het bewerkte voedsel is slecht, maar er is een groot verschil tussen licht bewerkte en ultra
+            bewerkte producten.
+            Hier leggen we uit wat de verschillende bewerkingsniveaus van voeding zijn en hoe je ze kunt herkennen.
+        </p>
+        <div class="divider divider-accent"></div>
+        <h2 class="text-xl font-semibold mt-4">Bewerkingsniveaus van voeding:</h2>
+
+        <ul class="list-disc list-inside text-base flex flex-col gap-4 mt-2">
+            <li>
+                <strong>Onbewerkte voeding:</strong> Dit zijn producten die in hun natuurlijke staat verkeren, zonder
+                enige toevoegingen of bewerkingen. Ze zijn onbewerkt en bevatten geen extra stoffen zoals suiker, zout,
+                vetten of conserveringsmiddelen. Voorbeelden zijn groenten, fruit, noten, peulvruchten, onbewerkt vlees
+                en vis. Deze voedingsmiddelen behouden hun oorspronkelijke voedingswaarde en bieden een breed scala aan
+                vitaminen, mineralen, vezels en antioxidanten. Onbewerkte voeding is vaak het meest voedzaam en bevat
+                geen verborgen toevoegingen die je gezondheid kunnen schaden.
+            </li>
+            <li>
+                <strong>Bewerkte voeding:</strong> Dit is voedsel dat enige bewerking heeft ondergaan, maar nog steeds
+                relatief dicht bij zijn oorspronkelijke vorm blijft. Deze bewerkingen kunnen processen zijn zoals
+                pasteurisatie (waarbij voedsel verhit wordt om bacteriën te doden) of fermentatie (zoals bij yoghurt of
+                kaas). Dit soort voeding behoudt meestal de meeste voedingsstoffen, maar kan wel een klein aantal
+                ingrediënten bevatten zoals zout, suiker of conserveringsmiddelen om de houdbaarheid te verbeteren.
+                Voorbeelden zijn volkorenbrood, yoghurt, kaas, en gefermenteerde groenten. Dit type voeding is vaak nog
+                steeds een gezonde keuze, zolang de bewerking minimaal is en het product niet vol zit met ongezonde
+                toevoegingen.
+            </li>
+            <li>
+                <strong>Ultra bewerkte voeding:</strong> Deze producten zijn sterk bewerkt en bevatten vaak vele
+                toevoegingen die het origineel ver van hun natuurlijke staat verwijderen. Ze worden meestal geproduceerd
+                door fabrikanten en bevatten ingrediënten die je normaal niet in je eigen keuken zou vinden. Ultra
+                bewerkte voedingsmiddelen bevatten vaak hoge niveaus van suiker, zout, ongezonde vetten, kunstmatige
+                kleur- en smaakstoffen, conserveermiddelen en andere kunstmatige ingrediënten. Voorbeelden zijn chips,
+                frisdrank, snoep, kant-en-klaarmaaltijden en fastfood. Dit type voeding is vaak erg smakelijk en
+                makkelijk toegankelijk, maar wordt vaak in verband gebracht met ongezonde eetgewoonten en kan bijdragen
+                aan gewichtstoename en gezondheidsproblemen zoals diabetes en hartziekten. Het is het beste om ultra
+                bewerkte voeding zoveel mogelijk te vermijden of alleen af en toe te consumeren.
+            </li>
+        </ul>
+        <app-quiz-question [id]="1" [explanation]="true" [question]="voedingsvraag">
+        </app-quiz-question>
+        <div class="divider divider-accent"></div>
+        <h2 class="text-xl font-semibold mt-4">Hoe herken je ultra bewerkte voeding?</h2>
+
+        <ul class="list-disc list-inside text-base flex flex-col gap-4 mt-2">
+            <li>Lange ingrediëntenlijst met veel onbekende namen.</li>
+            <li>Veel toegevoegde suikers en ongezonde vetten.</li>
+            <li>Vaak makkelijk en snel te consumeren (bijv. fastfood).</li>
+        </ul>
+
+        <app-info-block class="my-4" type="tip"
+            content="Probeer zoveel mogelijk onbewerkte of licht bewerkte voeding te kiezen. Het is vaak voedzamer en gezonder voor je lichaam. Denk aan verse groenten, fruit en volkoren producten!">
+        </app-info-block>
+
+    </div>
+</div>

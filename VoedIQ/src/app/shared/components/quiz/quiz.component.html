@@ -1,6 +1,6 @@
 <div [style.max-height]="maxHeightVh + 'vh'" class="overflow-y-auto space-y-6 p-4 border rounded-lg bg-muted/30">
     <ng-container *ngFor="let question of questions; let i = index">
-        <app-quiz-question [question]="question" (answerGiven)="onAnswer(i, $event)"
+        <app-quiz-question [question]="question" [id]="i" (answerGiven)="onAnswer(i, $event)"
             [explanation]="true"></app-quiz-question>
     </ng-container>
 

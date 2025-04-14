@@ -63,15 +63,39 @@
     </div>
     <div class="divider divider-accent"></div>
     <div class="flex flex-col gap-3">
-        <h1 class="text-2xl font-bold text-justify">Test je kennis!</h1>
+        <h1 class="text-2xl font-bold text-justify">Test je kennis vooraf!</h1>
         <p class="text-base text-justify">Ook wij beseffen dat jouw tijd kostbaar is. Om er zeker van te zijn
             dat het een leerzame ervaring wordt en we niet jouw tijd verspillen,
             kun je met de onderstaande knop een quiz openen. Indien je hoog scoort, dan is cursus wellicht niets
-            voor. Het maken van de quiz is echter optineel!
+            voor. Het maken van de quiz is echter optioneel!
 
         </p>
-        <button class="btn btn-warning text-white w-1/2 mx-auto mt-5 hover:bg-primary shadow shadow-gray-900"
-            id="quizButton" data-overlay="#overlay-custom-backdrop" value="motion-preset-slide-right"><span
+        <button type="button"
+            class="btn btn-warning text-white w-1/2 mx-auto mt-5 hover:bg-yellow-500 shadow shadow-gray-900"
+            id="quizButton" aria-haspopup="dialog" aria-expanded="false" aria-controls="quiz-modal"
+            data-overlay="#quiz-modal" value="motion-preset-slide-right"><span
                 class="icon-[solar--notebook-minimalistic-bold] size-8 text-white"></span> Quiz</button>
+    </div>
+</div>
+
+
+
+<div id="quiz-modal" class="overlay modal overlay-open:opacity-100 hidden bg-primary/70 " role="dialog" tabindex="-1">
+    <div class="modal-dialog overlay-open:opacity-100 w-full max-w-5xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Voorkennis Quiz</h3>
+                <button type="button" class="btn btn-text btn-circle btn-sm absolute end-3 top-3" aria-label="Close"
+                    data-overlay="#quiz-modal">
+                    <span class="icon-[tabler--x] size-4"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <app-quiz [questions]="questions" [maxHeightVh]="80"></app-quiz>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-overlay="#quiz-modal">Sluiten</button>
+            </div>
+        </div>
     </div>
 </div>

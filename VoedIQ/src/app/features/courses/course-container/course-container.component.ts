@@ -37,7 +37,6 @@ export class CourseContainerComponent implements OnInit {
     this.router.events
       .pipe(filter((event) => event instanceof NavigationEnd))
       .subscribe(() => {
-        console.log('[NavigationEnd] gedetecteerd ✅');
         this.extractRouteData(this.route);
       });
   }

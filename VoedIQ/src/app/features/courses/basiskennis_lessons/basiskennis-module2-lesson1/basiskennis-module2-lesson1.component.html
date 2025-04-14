@@ -1,0 +1,88 @@
+<h1 class="text-xl lg:text-3xl mb-4 p-4 font-bold text-center bg-primary rounded-2xl text-white py-2">
+    Macronutriënten
+</h1>
+
+<img src="macronutrient.svg" alt="macronutriënten illustratie"
+    class=" w-full lg:w-1/2 mx-auto my-5 order-1 lg:order-1" />
+
+<div class="flex flex-col mb-10">
+    <div class="flex flex-col gap-3">
+
+        <p class="text-base text-justify">
+            Macronutriënten zijn voedingsstoffen die het lichaam in grote hoeveelheden nodig heeft. Ze leveren energie
+            en ondersteunen belangrijke lichaamsfuncties. We onderscheiden drie soorten macronutriënten: koolhydraten,
+            eiwitten en vetten.
+        </p>
+
+        <div class="divider divider-accent"></div>
+
+        <h2 class="text-xl font-semibold">Koolhydraten: De primaire energiebron</h2>
+        <p class="text-base text-justify">
+            Koolhydraten worden onderverdeeld in eenvoudige (suikers) en complexe (zetmeel) koolhydraten. Beide worden
+            afgebroken tot glucose, de belangrijkste brandstof voor je spieren en hersenen. Suikers bestaan uit één of
+            twee moleculen en worden snel opgenomen in het bloed, terwijl zetmeel uit lange ketens bestaat en langzamer
+            verteert.
+        </p>
+
+        <ul class="list-disc list-inside text-base text-justify">
+            <li><strong>Eenvoudige koolhydraten:</strong> Snelle energiebronnen (bijv. suiker, snoep, witbrood,
+                frisdrank).</li>
+            <li><strong>Complexe koolhydraten:</strong> Leveren langdurige energie en bevatten vaak vezels (bijv.
+                volkorenbrood, volkorenpasta, peulvruchten, groenten).</li>
+        </ul>
+
+        <app-quiz-question [id]="0" [explanation]="true" [question]="zetmeelVraag"></app-quiz-question>
+
+        <div class="divider divider-accent"></div>
+
+        <h2 class="text-xl font-semibold">Eiwitten: Bouwstenen van het lichaam</h2>
+        <p class="text-base text-justify">
+            Eiwitten spelen een essentiële rol bij de opbouw en het herstel van cellen, spieren, hormonen en enzymen. Ze
+            zijn opgebouwd uit aminozuren. Er bestaan 20 aminozuren, waarvan er 9 essentieel zijn. Dat betekent dat het
+            lichaam ze niet zelf kan aanmaken en dat je ze via voeding binnen moet krijgen.
+        </p>
+
+        <p class="text-base text-justify">
+            Tijdens de vertering worden eiwitten afgebroken tot aminozuren, die vervolgens gebruikt worden om
+            lichaamseigen eiwitten op te bouwen. Goede bronnen van eiwitten zijn vlees, vis, peulvruchten, noten en
+            zuivelproducten.
+        </p>
+
+        <app-info-block class="my-4" type="fact"
+            content="Wist je dat het menselijk lichaam zo’n 50.000 verschillende eiwitten kan aanmaken uit slechts 20 aminozuren? Door ze in unieke volgordes te combineren, ontstaan talloze eiwitten met elk hun eigen functie – van antilichamen tot huidcollageen.">
+        </app-info-block>
+
+        <div class="divider divider-accent"></div>
+
+        <h2 class="text-xl font-semibold">Vetten: Meer dan alleen een energiebron</h2>
+        <p class="text-base text-justify">
+            Hoewel vetten vaak als ongezond worden gezien, zijn ze essentieel. Ze leveren energie, beschermen organen,
+            isoleren het lichaam en helpen bij de opname van vitamines A, D, E en K. Ook zijn ze bouwstenen van hormonen
+            zoals oestrogeen en cortisol.
+        </p>
+
+        <p class="text-base text-justify">
+            Er zijn drie hoofdgroepen vetten:
+        </p>
+
+        <ul class="list-disc list-inside text-base text-justify">
+            <li><strong>Onverzadigde vetten:</strong> Gezond, verlagen LDL-cholesterol. Te vinden in plantaardige oliën,
+                noten, zaden en vette vis.</li>
+            <li><strong>Verzadigde vetten:</strong> Mogelijk minder gezond. Vooral in vet vlees, zuivel, boter en
+                palmolie.</li>
+            <li><strong>Transvetten:</strong> Kunstmatig gehard vet, verhoogt slecht cholesterol en verlaagt goed
+                cholesterol. Zit vaak in bewerkte voeding.</li>
+        </ul>
+
+        <app-info-block class="my-4" type="fact"
+            content="Wist je dat 60% van je hersenen uit vet bestaat? Omega-3 vetzuren (uit vis, lijnzaad en walnoten) zijn belangrijk voor je geheugen en concentratie.">
+        </app-info-block>
+
+        <p class="text-base text-justify">
+            Sinds 2020 bevatten Nederlandse supermarktproducten vrijwel geen industriële transvetten meer, dankzij
+            strikte regelgeving. Toch blijft het belangrijk om vooral te kiezen voor onverzadigde vetten, verzadigde
+            vetten met mate te gebruiken en transvetten te vermijden.
+        </p>
+
+    </div>
+</div>

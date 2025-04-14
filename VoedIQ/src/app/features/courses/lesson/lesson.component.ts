@@ -1,12 +1,19 @@
-import { Component, OnInit, ViewChild, ViewContainerRef } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import {
+  AfterViewInit,
+  Component,
+  OnInit,
+  ViewChild,
+  ViewContainerRef,
+} from '@angular/core';
+import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { CourseService } from '../../../core/services/course.service';
+import { filter } from 'rxjs';
 
 @Component({
   selector: 'app-lesson',
   template: `<ng-container #lessonContainer></ng-container>`,
 })
-export class LessonComponent implements OnInit {
+export class LessonComponent implements AfterViewInit {
   @ViewChild('lessonContainer', { read: ViewContainerRef, static: true })
   container!: ViewContainerRef;
 
@@ -16,12 +23,27 @@ export class LessonComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
+    private router: Router,
     private courseService: CourseService
   ) {}
 
-  ngOnInit(): void {
-    console.log('LessonComponent geladen!');
+  ngAfterViewInit(): void {
+    // Luister naar router events en filter alleen NavigationEnd events
+    this.listenToRouteChanges();
+    // Zorg ervoor dat de eerste keer de component wordt geladen
+    this.getRouteData();
+  }
 
+  private listenToRouteChanges() {
+    // Luister naar router events en filter alleen NavigationEnd events
+    this.router.events
+      .pipe(filter((event) => event instanceof NavigationEnd))
+      .subscribe(() => {
+        this.getRouteData();
+      });
+  }
+
+  private getRouteData() {
     // Verkrijg de parent routeparameters (courseTitle, moduleTitle)
     this.route.parent?.paramMap.subscribe((params) => {
       this.courseTitle = params.get('courseTitle');
@@ -31,21 +53,23 @@ export class LessonComponent implements OnInit {
     // Verkrijg de child routeparameter (lessonTitle)
     this.route.paramMap.subscribe((params) => {
       this.lessonTitle = params.get('lessonTitle');
-
       if (this.courseTitle && this.moduleTitle && this.lessonTitle) {
-        // Haal de juiste lescomponent op
-        const lessonComponent = this.courseService.getLessonComponent(
-          this.courseTitle,
-          this.moduleTitle,
-          this.lessonTitle
-        );
-        console.log(lessonComponent);
-
-        if (lessonComponent) {
-          this.container.clear();
-          this.container.createComponent(lessonComponent);
-        }
+        this.loadLessonComponent();
       }
     });
+  }
+
+  private loadLessonComponent() {
+    if (this.courseTitle && this.moduleTitle && this.lessonTitle) {
+      const lessonComponent = this.courseService.getLessonComponent(
+        this.courseTitle,
+        this.moduleTitle,
+        this.lessonTitle
+      );
+      if (lessonComponent) {
+        this.container.clear();
+        this.container.createComponent(lessonComponent);
+      }
+    }
   }
 }

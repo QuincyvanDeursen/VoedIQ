@@ -1,0 +1,85 @@
+<h1 class="text-xl lg:text-3xl mb-4 p-4 font-bold text-center bg-primary rounded-2xl text-white py-2">
+    Water: De sleutel tot hydratatie
+</h1>
+
+<img src="water.svg" alt="illustratie van een glas water" class="lg:w-1/2 mx-auto my-5  order-1 lg:order-1" />
+
+<div class="flex flex-col mb-10">
+    <div class="flex flex-col gap-3">
+
+        <p class="text-base text-justify">
+            Vocht is onmisbaar voor het lichaam. Het speelt een cruciale rol in bijna alle lichaamsprocessen: van het
+            transport van voedingsstoffen tot het reguleren van de lichaamstemperatuur en het afvoeren van afvalstoffen.
+            Ons lichaam bestaat voor ongeveer <strong>60%</strong> uit water – dat zegt genoeg!
+        </p>
+
+        <p class="text-base text-justify">
+            Wanneer je dorst hebt, ben je eigenlijk al (licht) uitgedroogd. Genoeg drinken is dus essentieel om optimaal
+            te functioneren. Het is niet voor niets dat we maar een paar dagen zonder water kunnen overleven.
+        </p>
+
+        <p class="text-base text-justify">
+            We halen vocht niet alleen uit water, maar ook uit thee, melk, frisdrank en zelfs uit voedsel zoals
+            komkommer, watermeloen en sinaasappel. Let wel op: dranken met cafeïne zoals koffie of energiedrankjes
+            kunnen juist vochtafdrijvend werken.
+        </p>
+
+        <div class="divider divider-accent"></div>
+
+        <h2 class="text-xl font-semibold mt-10">Functies van water</h2>
+
+        <div class="w-full rounded-lg pb-2 my-4">
+            <div class="overflow-x-auto scrollbar-horizontal">
+                <table class="table">
+                    <thead>
+                        <tr class="bg-primary text-white border-0">
+                            <th class="rounded-s-lg">Functie</th>
+                            <th class="rounded-e-lg">Beschrijving</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Hydratatie</td>
+                            <td>Voorkomt uitdroging en ondersteunt de werking van cellen.</td>
+                        </tr>
+                        <tr>
+                            <td>Transport</td>
+                            <td>Helpt voedingsstoffen en zuurstof door het lichaam te verplaatsen.</td>
+                        </tr>
+                        <tr>
+                            <td>Temperatuurregulatie</td>
+                            <td>Via zweten en verdamping houdt water je lichaam koel.</td>
+                        </tr>
+                        <tr>
+                            <td>Afvoer van afvalstoffen</td>
+                            <td>Ondersteunt de nieren en stofwisseling via urine en zweet.</td>
+                        </tr>
+                        <tr>
+                            <td>Gewrichtssmering</td>
+                            <td>Water vormt een belangrijk onderdeel van gewrichtsvloeistof.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+        <app-quiz-question [question]="waterVraag" [id]="0" [explanation]="true">
+        </app-quiz-question>
+
+        <div class="divider divider-accent"></div>
+
+        <h2 class="text-xl font-semibold">Hoeveel water heb je nodig?</h2>
+
+        <ul class="list-disc list-inside text-base">
+            <li>Gemiddeld <strong>2 tot 3 liter</strong> per dag voor een volwassene.</li>
+            <li>Meer nodig bij warm weer, sport of bij ziekte (zoals koorts of diarree).</li>
+            <li>Voedingsmiddelen zoals komkommer en watermeloen dragen ook bij aan je vochtinname!</li>
+        </ul>
+
+        <app-info-block type="fact" class="my-4"
+            content="Wist je dat je hersenen voor ongeveer 75% uit water bestaan? Zelfs een klein vochttekort kan al invloed hebben op je concentratie en stemming!">
+        </app-info-block>
+
+    </div>
+</div>
