@@ -30,9 +30,7 @@ export class BasisKennisIntroductieComponent {
       return;
     }
 
-    if (this.courseTitle === 'basiskennis') {
-      this.questions = questions;
-    }
+    this.questions = questions;
   }
   //get userEmail from local storage
 }

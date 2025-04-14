@@ -1,5 +1,5 @@
-import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { CommonModule, ViewportScroller } from '@angular/common';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import {
   ActivatedRoute,
   NavigationEnd,
@@ -20,6 +20,8 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './course-container.component.css',
 })
 export class CourseContainerComponent implements OnInit {
+  @ViewChild('scrollContainer') scrollContainer!: ElementRef<HTMLDivElement>;
+
   course: Course | undefined;
   courseTitle: string | null = null;
   moduleTitle: string | null = null;
@@ -33,11 +35,16 @@ export class CourseContainerComponent implements OnInit {
 
   ngOnInit(): void {
     this.extractRouteData(this.route);
-    // Dan: reageren op navigaties binnen de app
+
     this.router.events
       .pipe(filter((event) => event instanceof NavigationEnd))
       .subscribe(() => {
         this.extractRouteData(this.route);
+
+        // Scroll de container naar boven
+        if (this.scrollContainer) {
+          this.scrollContainer.nativeElement.scrollTop = 0;
+        }
       });
   }
 
