@@ -73,15 +73,18 @@
         <button type="button"
             class="btn btn-warning text-white w-1/2 mx-auto mt-5 hover:bg-yellow-500 shadow shadow-gray-900"
             id="quizButton" aria-haspopup="dialog" aria-expanded="false" aria-controls="quiz-modal"
-            data-overlay="#quiz-modal" value="motion-preset-slide-right"><span
-                class="icon-[solar--notebook-minimalistic-bold] size-8 text-white"></span> Quiz</button>
+            data-overlay="#quiz-modal" value="motion-preset-slide-right">
+            <span class="icon-[solar--notebook-minimalistic-bold] size-8 text-white"></span> Quiz
+        </button>
     </div>
 </div>
 
 
 
-<div id="quiz-modal" class="overlay modal overlay-open:opacity-100 hidden bg-primary/70 " role="dialog" tabindex="-1">
-    <div class="modal-dialog overlay-open:opacity-100 w-full max-w-5xl">
+<!-- Modal Inhoud -->
+<div id="quiz-modal" class="overlay modal modal-middle overlay-open:opacity-100 hidden bg-primary/70    z-10"
+    role="dialog" tabindex="-1">
+    <div class="modal-dialog overlay-open:opacity-100 w-full max-w-5xl max-h-[80vh] flex justify-center"> ">
         <div class="modal-content">
             <div class="modal-header">
                 <h3 class="modal-title">Voorkennis Quiz</h3>
@@ -91,9 +94,10 @@
                 </button>
             </div>
             <div class="modal-body">
-                <app-quiz [questions]="questions" [maxHeightVh]="80"></app-quiz>
+                <app-quiz [questions]="questions" [maxHeightVh]="50"></app-quiz>
             </div>
-            <div class="modal-footer">
+            <div class="modal-footer mt-10">
+                <!-- Deze sluitknop moet de modal sluiten -->
                 <button type="button" class="btn btn-primary" data-overlay="#quiz-modal">Sluiten</button>
             </div>
         </div>
