@@ -1,14 +1,16 @@
 import { Component } from '@angular/core';
 import { QuizComponent } from '../../../../shared/components/quiz/quiz.component';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-basiskennis-module5-lesson1',
-  imports: [QuizComponent],
+  imports: [QuizComponent, RouterLink],
   templateUrl: './basiskennis-module5-lesson1.component.html',
   styleUrl: './basiskennis-module5-lesson1.component.css',
 })
 export class BasiskennisModule5Lesson1Component {
   // Vervang dit met je daadwerkelijke quizvragen
+
   eindQuizVragen = [
     {
       question: 'Wat is een slimme strategie bij afvallen?',
@@ -106,10 +108,4 @@ export class BasiskennisModule5Lesson1Component {
       ],
     },
   ];
-
-  // Functie om de gebruiker terug naar de hoofdpagina te sturen
-  goToHomePage() {
-    console.log('Terug naar de hoofdpagina');
-    // Hier zou je router navigatie kunnen toevoegen om naar de hoofdpagina te gaan
-  }
 }

@@ -47,19 +47,19 @@ export class CourseService {
           completion: false,
           lessons: [
             {
-              title: 'Definitie van Voeding',
+              title: '1.1 Definitie van Voeding',
               route: 'module1/les1',
               component: BasiskennisModule1Lesson1Component,
               completion: false,
             },
             {
-              title: 'Waarom hebben we voeding nodig?',
+              title: '1.2 Waarom hebben we voeding nodig?',
               route: 'module1/les2',
               component: BasiskennisModule1Lesson2Component,
               completion: false,
             },
             {
-              title: 'Definitie van een dieet',
+              title: '1.3 Definitie van een dieet',
               route: 'module1/les3',
               component: BasiskennisModule1Lesson3Component,
               completion: false,
@@ -72,19 +72,19 @@ export class CourseService {
           completion: false,
           lessons: [
             {
-              title: 'Definitie van Voeding',
+              title: '2.1 Definitie van Voeding',
               route: 'module2/les1',
               component: BasiskennisModule2Lesson1Component,
               completion: false,
             },
             {
-              title: 'Waarom hebben we voeding nodig?',
+              title: '2.2 Waarom hebben we voeding nodig?',
               route: 'module2/les2',
               component: BasiskennisModule2Lesson2Component,
               completion: false,
             },
             {
-              title: 'Definitie van een dieet',
+              title: '2.3 Definitie van een dieet',
               route: 'module2/les3',
               component: BasiskennisModule2Lesson3Component,
               completion: false,
@@ -97,19 +97,19 @@ export class CourseService {
           completion: false,
           lessons: [
             {
-              title: 'De Calorie',
+              title: '3.1 De Calorie',
               route: 'module3/les1',
               component: BasiskennisModule3Lesson1Component,
               completion: false,
             },
             {
-              title: 'Energierijk vs. Voedingsrijk',
+              title: '3.2 Energierijk vs. Voedingsrijk',
               route: 'module3/les2',
               component: BasiskennisModule3Lesson2Component,
               completion: false,
             },
             {
-              title: 'Aankomen en Afvallen',
+              title: '3.3 Aankomen en Afvallen',
               route: 'module3/les3',
               component: BasiskennisModule3Lesson3Component,
               completion: false,
@@ -122,19 +122,19 @@ export class CourseService {
           completion: false,
           lessons: [
             {
-              title: 'Het Voedseletiket',
+              title: '4.1 Het Voedseletiket',
               route: 'module4/les1',
               component: BasiskennisModule4Lesson1Component,
               completion: false,
             },
             {
-              title: 'E-nummers',
+              title: '4.2 E-nummers',
               route: 'module4/les2',
               component: BasiskennisModule4Lesson2Component,
               completion: false,
             },
             {
-              title: 'Bewerkte Voeding',
+              title: '4.3 Bewerkte Voeding',
               route: 'module4/les3',
               component: BasiskennisModule4Lesson3Component,
               completion: false,
@@ -220,13 +220,21 @@ export class CourseService {
 
     // Als er meerdere lessen zijn
     if (lessonIndex < module.lessons.length - 1) {
+      localStorage.setItem('currentLessonUrl', lesson.route.split('/')[1]); // Sla de huidige les op in local storage
+      localStorage.setItem('currentModuleTitle', module.route); // Sla de huidige cursus op in local storage
+      localStorage.setItem('currentCourseTitle', course.route); // Sla de huidige module op in local storage
+
       return module.lessons[lessonIndex + 1].route;
     }
 
     // Wanneer er maar één les is, ga naar de eerste les van de volgende module
     const moduleIndex = course.modules.indexOf(module);
     if (moduleIndex < course.modules.length - 1) {
+      localStorage.setItem('currentLessonUrl', lesson.route.split('/')[1]); // Sla de huidige les op in local storage
+      localStorage.setItem('currentModuleTitle', module.route); // Sla de huidige cursus op in local storage
+      localStorage.setItem('currentCourseTitle', course.route); // Sla de huidige module op in local storage
       const nextModule = course.modules[moduleIndex + 1];
+
       return nextModule.lessons[0]?.route || null; // Eerste les van de volgende module
     }
 
@@ -283,9 +291,5 @@ export class CourseService {
     if (allLessonsCompleted) {
       module.completion = true; // Markeer de module als voltooid
     }
-    //als alle modules in de cursus zijn voltooid, markeer de cursus als voltooid
-
-    // Hier kun je ook logica toevoegen om de voortgang op te slaan in local storage of een backend
-    // Bijvoorbeeld: localStorage.setItem('completedLessons', JSON.stringify(this.courses));
   }
 }

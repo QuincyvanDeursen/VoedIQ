@@ -57,62 +57,60 @@
 </div>
 
 <!-- Resultaten container alleen zichtbaar als berekend -->
-<div id="result" *ngIf="resultsCalculated" class="flex   mt-4    ">
-    <div class="w-full">
+<div id="result" *ngIf="resultsCalculated" class="flex mt-4 justify-center">
+    <div class="mx-auto">
+        <div class="p-4 mt-4">
+            <h3 class="text-lg font-semibold mt-2 text-center text-white">Macronutriënten</h3>
+            <div class="w-full rounded-lg pb-2 my-4">
+                <div class="overflow-x-auto scrollbar-horizontal">
+                    <table class="table w-full text-xs">
+                        <thead>
+                            <tr class="bg-primary text-white border-0">
+                                <th class="rounded-s-lg">Macronutriënt</th>
+                                <th>Min.</th>
+                                <th class="rounded-e-lg">Max.</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-secondary/20">
+                                <td class="text-black ">Eiwitten</td>
+                                <td>{{ proteinRange[0] }} g</td>
+                                <td>{{ proteinRange[1] }} g</td>
+                            </tr>
+                            <tr class="bg-secondary/20">
+                                <td class="text-black ">Totaal vet</td>
+                                <td>{{ fatRange[0] }} g</td>
+                                <td>{{ fatRange[1] }} g</td>
+                            </tr>
+                            <tr class="bg-secondary/20">
+                                <td class="text-black ">Verzadigd vet</td>
+                                <td>n.v.t.</td>
+                                <td>{{ saturatedFatRange[1] }} g</td>
+                            </tr>
+                            <tr class="bg-secondary/20">
+                                <td class="text-black ">Koolhydraten</td>
+                                <td>{{ carbRange[0] }} g</td>
+                                <td>{{ carbRange[1] }} g</td>
+                            </tr>
+                            <tr class="bg-secondary/20">
+                                <td class="text-black">Vezels</td>
+                                <td>30 g</td>
+                                <td>n.v.t.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
 
-        <div class="mt-4 p-4 bg-primary rounded-xl   lg:w-1/2 mx-auto">
-
-            <h1 class="text-2xl text-center text-white font-bold">Aanbevolen hoeveelheden</h1>
-
-            <!-- Tabel voor resultaten -->
-            <table class="table-auto  text-white  mx-auto">
-                <thead>
-                    <tr>
-                        <th class=" text-left w-1/3 pr-2 text-secondary">Macronutriënt</th>
-                        <th class="  text-left w-1/3 text-secondary">Min.</th>
-                        <th class="  text-left w-1/3 text-secondary">Max.</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="border-t ">
-                        <td class=" text-secondary"><strong>Eiwitten</strong></td>
-                        <td class=" ">{{ proteinRange[0] }} g</td>
-                        <td class=" ">{{ proteinRange[1] }} g</td>
-                    </tr>
-                    <tr class="border-t ">
-                        <td class="text-secondary"><strong>Totaal vet</strong></td>
-                        <td class="">{{ fatRange[0] }} g</td>
-                        <td class="">{{ fatRange[1] }} g</td>
-                    </tr>
-                    <tr class="border-t ">
-                        <td class="text-secondary"><strong>Verzadigd vet</strong></td>
-                        <td class="">n.v.t.</td>
-                        <td class="">{{ saturatedFatRange[1] }} g</td>
-                    </tr>
-                    <tr class="border-t ">
-                        <td class="text-secondary"><strong>Koolhydraten</strong></td>
-                        <td class="">{{ carbRange[0] }} g</td>
-                        <td class="">{{ carbRange[1] }} g</td>
-                    </tr>
-                    <!-- Extra rij voor vezels -->
-                    <tr class="border-t ">
-                        <td class="text-secondary"><strong>Vezels</strong></td>
-                        <td class="">30 g</td>
-                        <td class="">n.v.t.</td>
-                    </tr>
-                </tbody>
-            </table>
-            <div class="flex flex-col md:w-1/4 mx-auto mt-2 "> <button (click)="copyToClipboard()"
-                    class="ml-2 p-2 btn bg-blue-400 hover:bg-blue-800 text-white rounded-lg mt-2 ">
+            <div class="flex flex-col md:mx-auto bg-primary rounded-xl p-5">
+                <button (click)="copyToClipboard()"
+                    class="ml-2 p-2 btn bg-blue-400 hover:bg-blue-800 text-white rounded-lg mt-2">
                     <span *ngIf="!copied" class="icon-[solar--clipboard-linear] size-6"></span>
                     <span *ngIf="copied" class="icon-[solar--check-square-bold] size-6 bg-secondary"></span>
                     <span *ngIf="!copied">Kopieer</span>
                     <span *ngIf="copied">Hebbes!</span>
-                </button></div>
+                </button>
+            </div>
         </div>
-
     </div>
-
-
-
 </div>

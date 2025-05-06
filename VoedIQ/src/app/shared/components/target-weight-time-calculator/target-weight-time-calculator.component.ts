@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ButtonHoldService } from '../../services/button-hold.service';
 import { ToastService } from '../../services/toast.service';
@@ -10,7 +10,7 @@ import { ToastService } from '../../services/toast.service';
   templateUrl: './target-weight-time-calculator.component.html',
   styleUrl: './target-weight-time-calculator.component.css',
 })
-export class TargetWeightTimeCalculatorComponent {
+export class TargetWeightTimeCalculatorComponent implements OnInit {
   weight: number = 70; // Huidig gewicht in kg
   height: number = 175; // Lengte in cm
   tdee: number = 2500; // Totaal dagelijkse energiebehoefte
@@ -24,6 +24,10 @@ export class TargetWeightTimeCalculatorComponent {
     private buttonHoldService: ButtonHoldService,
     private toastService: ToastService
   ) {}
+
+  ngOnInit(): void {
+    this.tdee = parseInt(localStorage.getItem('tdee') || '2500', 10); // Haal TDEE op uit local storage of gebruik standaardwaarde
+  }
 
   calculateWeightLossDuration() {
     if (
@@ -59,6 +63,8 @@ export class TargetWeightTimeCalculatorComponent {
         : deficitPercentage <= 35
         ? 'orange'
         : 'red';
+
+    this.toastService.success('Berekening voltooid!');
   }
 
   startAdjusting(field: string, change: number, decimalPlaces: number): void {

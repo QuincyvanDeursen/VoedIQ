@@ -139,7 +139,7 @@ export class MicronutrientCalculatorComponent implements AfterViewChecked {
         if (!this.sectionId) return; // Als de sectie ondertussen gereset is, stop met scroll
         const element = document.getElementById(this.sectionId);
         if (element) {
-          element.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
         } else {
           console.warn(`Element met ID '${this.sectionId}' niet gevonden.`);
         }

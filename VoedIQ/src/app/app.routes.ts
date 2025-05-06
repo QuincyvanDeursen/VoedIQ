@@ -7,11 +7,13 @@ import { MacroMicroNutriCalculatorsComponent } from './features/macro-micro-nutr
 import { CourseContainerComponent } from './features/courses/course-container/course-container.component';
 import { LessonComponent } from './features/courses/lesson/lesson.component';
 import { TargetWeightCalculatorComponent } from './features/target-weight-calculator/target-weight-calculator.component';
+import { DashboardComponent } from './features/dashboard/dashboard.component';
 
 export const routes: Routes = [
-  { path: '', redirectTo: '/landing', pathMatch: 'full' }, // Standaard naar landing
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'landing', component: LandingComponent },
   { path: 'home', component: HomeComponent },
+  { path: 'dashboard', component: DashboardComponent },
   { path: 'energy-calculator', component: EnergyCalculatorsComponent },
   { path: 'nutri-calculator', component: MacroMicroNutriCalculatorsComponent },
   {

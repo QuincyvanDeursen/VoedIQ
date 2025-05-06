@@ -33,6 +33,10 @@ export class CourseContainerComponent implements OnInit {
     private router: Router
   ) {}
 
+  stringify(obj: any): string {
+    return JSON.stringify(obj, null, 2);
+  }
+
   ngOnInit(): void {
     this.extractRouteData(this.route);
 
