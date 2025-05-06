@@ -12,12 +12,9 @@
       <h2 class="text-white text-xl md:text-3xl lg:text-4xl mt-3">Jouw gids naar een gezonder, sterker en energieker
         leven.
       </h2>
-      <p class="text-white mt-3 md:text-xl lg:text-2xl">Of je nu fitter wilt worden, je gezondheid wilt verbeteren of
-        meer
-        wilt leren
-        over
-        voeding, wij helpen je met
-        praktische tips en waardevolle kennis. Zet vandaag de eerste stap naar jouw gezondheidsdoelen!</p>
+      <p class="text-white mt-8 md:text-xl lg:text-2xl">Of je nu fitter wilt worden, je beter wilt voelen of gewoon
+        duidelijkheid zoekt — wij geven je eerlijke informatie, zonder verkooppraatjes. Geen ruis, geen verborgen
+        agenda. Alleen wat écht werkt. Zet vandaag de eerste stap naar een vitaler leven.</p>
       <div class="flex flex-col items-center gap-4 mt-4 lg:flex-row lg:mt-6 ">
         <div class=" lg:hidden">
           <img src="homepage_banner.svg" alt="Banner foto" class="object-contain mx-auto h-[180px] md:h-[260px]" />
@@ -37,139 +34,60 @@
 
 
 <!-- first container-->
-<div class="flex flex-col bg-white py-10 px-6 max-w-4xl mx-auto">
-  <!-- Titel + Intro -->
+<!-- first container-->
+<div class="flex flex-col bg-white py-10 px-6 max-w-5xl mx-auto">
 
-  <div class="flex flex-col">
-    <div class="flex flex-row justify-center items-center">
-      <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 ">
-        {{ greeting }}<span *ngIf="userName" class="text-primary"> {{ userName }}</span>!
-      </h1>
-      <button type="button" class="btn border-none  " aria-haspopup="dialog" aria-expanded="false"
-        aria-controls="tab-modal" data-overlay="#tab-modal">
-        <span class="icon-[solar--pen-new-round-bold-duotone] bg-blue-600 hover:bg-warning size-8"></span>
-      </button>
-    </div>
-    <div class="flex flex-col items-center mb-4">
-      <p class="text-gray-600  sm:text-lg text-xl mt-2">Ik heb je recentste resultaten voor je onthouden!</p>
-      <small>*Dit is apparaat gebonden</small>
-    </div>
+  <!-- Titel -->
+  <h2 class="text-3xl sm:text-3xl font-bold text-primary mb-6 text-center">
+    De Kracht van Voeding: Hoe Ik Mijn Lijf en Leven Veranderde
+  </h2>
+
+  <!-- Teasertekst -->
+  <div class="flex flex-col text-gray-800 text-base leading-relaxed text-justify">
+    Als kind had ik overgewicht, sportte ik niet en bracht ik mijn dagen liever gamend door met suikerwafels. Fysieke
+    activiteiten waren
+    een ramp. Toch had ik één doel: militair worden. Niemand geloofde erin, behalve ikzelf.
+
+    Op mijn 15e veranderde ik alles. Zelfstandig verdiepte ik me in voeding, training en discipline. Drie jaar later
+    doorstond ik met succes de zwaarste fysieke én mentale keuringen van de Landmacht. Militair wilde ik uiteindelijk
+    niet meer worden, maar de weg
+    ernaartoe gaf mijn leven meer richting.
+
+    Vanaf mij 18e werd kracht mijn obsessie: 150 kg bankdrukken, 200 kg squatten, 235 kg deadliften, 5 km rennen in 21
+    minuten. Ik deed het allemaal.
+    Alles draaide daarbij om voeding, training en toewijding. Al meer dan tien jaar zijn die drie elementen mijn
+    fundament. Ze gaven me niet alleen
+    fysieke kracht, maar ook mentaal vertrouwen.
+
+    Jij hoeft niet dezelfde fouten te maken als ik. Leer van mijn ervaring. Zet vandaag die eerste stap en leer hoe
+    jij jouw lichaamsdoel kunt behalen.
   </div>
 
 
 
-
-
-  <!-- Energie Gegevens -->
-  <div class="mb-8">
-    <h2 class="text-xl sm:text-2xl text-center font-bold text-gray-800 mb-4">Energie Gegevens</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-      <div class="relative flex flex-col items-center bg-secondary p-3 sm:p-4 rounded-xl shadow-md">
-
-        <!-- Tooltip-knop rechtsboven -->
-        <div class="absolute top-2 right-2 tooltip">
-          <button type="button"
-            class="tooltip-toggle btn-secondary bg-primary btn btn-xs btn-square icon-[solar--info-square-bold]"
-            aria-label="Tooltip">
-          </button>
-          <span
-            class="tooltip-content tooltip-shown:opacity-100 tooltip-shown:visible overflow-visible max-w-md lg:max-w-none break-words"
-            role="tooltip">
-            <span class="tooltip-body">Basal Metabolic Rate (BMR) is de hoeveelheid kcal jouw lichaam verbruikt in
-              rust.</span>
-          </span>
-        </div>
-
-        <!-- Titel en waarde -->
-        <div class="flex items-start gap-1">
-          <h3 class="text-base sm:text-lg font-semibold text-gray-900">BMR</h3>
-        </div>
-
-        <p class="text-xl sm:text-2xl font-bold text-primary">{{bmr || 0}} <small
-            class="text-gray-700 text-sm">kcal</small></p>
-      </div>
-
-      <!-- TDEE -->
-      <div class="relative flex flex-col items-center bg-secondary p-3 sm:p-4 rounded-xl shadow-md">
-        <!-- Tooltip-knop rechtsboven -->
-        <div class="absolute top-2 right-2 tooltip">
-          <button type="button"
-            class="tooltip-toggle btn-secondary bg-primary btn btn-xs btn-square icon-[solar--info-square-bold]"
-            aria-label="Tooltip">
-          </button>
-          <span
-            class="tooltip-content tooltip-shown:opacity-100 tooltip-shown:visible overflow-visible max-w-xs break-words"
-            role="tooltip">
-            <span class="tooltip-body">Total Daily Energy Expenditure (TDEE) is het totaal aantal kcal dat je per dag
-              verbruikt.</span>
-          </span>
-        </div>
-
-        <h3 class="text-base sm:text-lg font-semibold text-gray-900">TDEE</h3>
-        <p class="text-xl sm:text-2xl font-bold text-primary">{{tdee || 0}} <small
-            class="text-gray-700 text-sm">kcal</small></p>
-      </div>
-
-      <!-- PAL -->
-      <div class="relative flex flex-col items-center bg-secondary p-3 sm:p-4 rounded-xl shadow-md">
-        <!-- Tooltip-knop rechtsboven -->
-        <div class="absolute top-2 right-2 tooltip">
-          <button type="button"
-            class="tooltip-toggle btn-secondary bg-primary btn btn-xs btn-square icon-[solar--info-square-bold]"
-            aria-label="Tooltip">
-          </button>
-          <span
-            class="tooltip-content tooltip-shown:opacity-100 tooltip-shown:visible overflow-visible max-w-xs break-words"
-            role="tooltip">
-            <span class="tooltip-body ">
-              Physical Activity Level (PAL) drukt uit hoe actief je bent. Vaak op een schaal van 1.0 (Niet actief) tot
-              2.0 (Heel actief).
-            </span>
-          </span>
-        </div>
-
-        <h3 class="text-base sm:text-lg font-semibold text-gray-900">PAL</h3>
-        <p class="text-xl sm:text-2xl font-bold text-primary">{{pal || 0}}</p>
-      </div>
-
-    </div>
+  <!-- Lees meer knop -->
+  <div class="mt-6 flex justify-center">
+    <button
+      class="btn bg-primary text-white px-6 py-2 rounded-full hover:bg-secondary/80 transition-all duration-300 shadow-md"
+      data-overlay="#full-story-modal">
+      Lees mijn volledige verhaal
+    </button>
   </div>
-
-  <!-- Macronutriënt Behoefte -->
-  <div>
-    <h2 class="text-xl sm:text-2xl text-center font-bold text-gray-800 mb-4">Macronutriënt Behoefte</h2>
-    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-      <div class="flex flex-col items-center bg-secondary p-3 sm:p-4 rounded-xl shadow-md">
-        <h3 class="text-base sm:text-lg font-semibold text-gray-900">Eiwitten</h3>
-        <p class="text-xl sm:text-2xl font-bold text-primary">{{proteinMin || 0}}-{{proteinMax || 0}} <small
-            class="text-gray-700 text-sm">g</small></p>
-      </div>
-      <div class="flex flex-col items-center bg-secondary p-3 sm:p-4 rounded-xl shadow-md">
-        <h3 class="text-base sm:text-lg font-semibold text-gray-900">Koolhydraten</h3>
-        <p class="text-xl sm:text-2xl font-bold text-primary">{{carbsMin || 0}}-{{carbsMax || 0}} <small
-            class="text-gray-700 text-sm">g</small></p>
-      </div>
-      <div class="flex flex-col items-center bg-secondary p-3 sm:p-4 rounded-xl shadow-md">
-        <h3 class="text-base sm:text-lg font-semibold text-gray-900">Vetten</h3>
-        <p class="text-xl sm:text-2xl font-bold text-primary">{{fatMin || 0}}-{{fatMax || 0}} <small
-            class="text-gray-700 text-sm">g</small></p>
-      </div>
-    </div>
-  </div>
-
 </div>
+
+
 
 
 <!-- Feitjes container -->
 <div class="bg-primary">
 
   <div class="flex flex-col bg-primary py-10  max-w-4xl mx-auto">
-    <div id="auto-play" data-carousel='{ "loadingClasses": "opacity-0", "isAutoPlay": true, "speed": 5000 }'
+    <div id="auto-play" data-carousel='{ "loadingClasses": "opacity-0", "isAutoPlay": true, "speed": 6000 }'
       class="relative w-full">
       <div class="carousel h-28">
         <div class="carousel-body opacity-0 h-full">
           <!-- Slide 1 -->
-          <div class="carousel-slide px-6" *ngFor="let fact of facts; let i = index" [attr.data-carousel-item]="i">
+          <div class="carousel-slide px-10" *ngFor="let fact of facts; let i = index" [attr.data-carousel-item]="i">
             <div class="bg-base-300/60 flex h-full justify-center py-12 px-6 lg:px-12 ">
               <span class="self-center text-center text-white font-bold md:text-xl lg:text-xl">{{ fact
                 }}</span>
@@ -199,7 +117,7 @@
 
 <!-- cursus aanbod container -->
 <div class="bg-white pb-24" id="cursus_aanbod">
-  <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 text-center pt-25 ">Cursus Aanbod</h1>
+  <h1 class="text-3xl sm:text-4xl font-bold text-primary text-center pt-25 ">Cursus Aanbod</h1>
   <div class="flex flex-wrap justify-center gap-7 py-10 px-6 max-w-6xl mx-auto">
     <!-- Card 1 -->
     <app-course-card title="Basiskennis" description="De cursus Basiskennis Voeding biedt inzicht in hoe het lichaam voedingsstoffen gebruikt, 
@@ -240,35 +158,4 @@
       imageUrl="calculator_6.svg" linkUrl="/doelgewicht-calculator" buttonText="Bereken!">
     </app-course-card>
   </div>
-
-  <!-- adjust name component -->
-
-
-  <div id="tab-modal"
-    class="overlay modal-middle modal overlay-open:opacity-100 hidden [--tab-accessibility-limited:false] bg-primary/50"
-    role="dialog" tabindex="-1">
-    <div class="modal-dialog overlay-open:opacity-100 ">
-      <div class="modal-content bg-gradient-to-t from-white to-secondary shadow-lg">
-        <div class="modal-header">
-          <h3 class="modal-title text-primary">Naam wijzigen</h3>
-          <button type="button" class="btn btn-text btn-circle btn-sm absolute end-3 top-3" aria-label="Close"
-            data-overlay="#tab-modal"><span class="icon-[tabler--x] size-4"></span></button>
-        </div>
-        <form>
-          <div class="modal-body">
-            <div class="mb-4">
-              <label class="label label-text text-primary font-bold" for="modalTabFullName"> Wat is jouw naam?
-              </label>
-              <input type="text" placeholder="{{userName}}" name="userNameInput" class="input" id="modalTabFullName"
-                [(ngModel)]="userName" />
-            </div>
-          </div>
-          <div class="modal-footer">
-
-            <button type="submit" class="btn btn-primary" data-overlay="#tab-modal"
-              (click)="updateUserName()">Update</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
+</div>

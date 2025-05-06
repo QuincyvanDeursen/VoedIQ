@@ -15,7 +15,7 @@ export class BasiskennisModule3Lesson2Component {
       {
         label: 'A',
         text: 'Calorieën zijn altijd slecht voor je gezondheid en moeten zoveel mogelijk vermeden worden.',
-        isCorrect: true,
+        isCorrect: false,
         explanation:
           'Calorieën zijn niet slecht op zich; ze zijn een belangrijke energiebron voor het lichaam. Het draait allemaal om het kiezen van de juiste balans tussen calorie-inname en verbruik. Te veel calorieën zonder voldoende activiteit kunnen leiden tot gewichtstoename, maar een matige hoeveelheid calorieën is essentieel voor het functioneren van het lichaam.',
       },
@@ -29,9 +29,9 @@ export class BasiskennisModule3Lesson2Component {
       {
         label: 'C',
         text: 'Als je meer calorieën eet dan je verbruikt, kom je altijd aan, ongeacht de bron van die calorieën.',
-        isCorrect: false,
+        isCorrect: true,
         explanation:
-          'Hoewel het waar is dat een calorisch overschot kan leiden tot gewichtstoename, is het niet alleen de hoeveelheid calorieën die telt, maar ook de bron van die calorieën. Voedingsrijke producten met een hoge voedingswaarde kunnen nog steeds deel uitmaken van een gezond dieet, zelfs als ze meer calorieën bevatten.',
+          'Klopt! Het is waar dat als je meer calorieën consumeert dan je lichaam verbruikt, je zult aankomen. Dit geldt ongeacht of die calorieën afkomstig zijn van gezonde of ongezonde voedingsmiddelen. Het is belangrijk om een balans te vinden tussen calorie-inname en -verbruik voor een gezond gewicht.',
       },
     ],
   };

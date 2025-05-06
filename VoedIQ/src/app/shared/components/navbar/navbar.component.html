@@ -34,19 +34,20 @@
           <button id="dropdown-link" type="button"
             class="dropdown-toggle dropdown-open:bg-base-content/10 dropdown-open:text-base-content"
             aria-haspopup="menu" aria-expanded="false" aria-label="Dropdown">
-            Health Calculators
+            Calculators
             <span class="icon-[tabler--chevron-down] dropdown-open:rotate-180 size-4"></span>
           </button>
           <ul class="dropdown-menu dropdown-open:opacity-100 hidden" role="menu" aria-orientation="vertical"
             aria-labelledby="dropdown-link">
             <li><a class="dropdown-item text-primary" [routerLink]="'/energy-calculator'">Calorie Behoefte</a></li>
-            <li><a class="dropdown-item text-primary" [routerLink]="'/nutri-calculator'">Macro- en Micronutriënten</a>
+            <li><a class="dropdown-item text-primary" [routerLink]="'/nutri-calculator'">Voedingsstofbehoefte</a>
             </li>
             <li><a class="dropdown-item text-primary" [routerLink]="'/doelgewicht-calculator'">Doelgewicht
                 Tijdsschatting</a></li>
 
           </ul>
         </li>
+        <li><a [routerLink]="'/dashboard'">Dashboard</a></li>
         <li><a [routerLink]="">Over Ons</a></li>
       </ul>
     </div>

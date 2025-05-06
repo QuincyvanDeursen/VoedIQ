@@ -33,15 +33,14 @@
 
         <!-- Google Form Link -->
         <div class="w-full flex justify-center mb-10">
-            <iframe src="https://forms.gle/placeholder" width="100%" height="600"
-                class="rounded-2xl border border-gray-300 max-w-3xl" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+            <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLSfGTmk8etmsZR-npp6lDMrxndi6AWVbz2Ed8s8aUXz0JNBfbQ/viewform?embedded=true"
+                width="640" height="838" frameborder="0" marginheight="0" marginwidth="0">Laden…</iframe>
         </div>
         <div class="divider divider-accent"></div>
         <!-- Terug naar Hoofdpagina -->
         <div class="text-center">
-            <button class="px-6 py-2 bg-primary text-white rounded-lg font-semibold" (click)="goToHomePage()">
+            <button class="px-6 py-2 bg-primary text-white rounded-lg font-semibold" [routerLink]="'/home'">
                 Terug naar de Hoofdpagina
             </button>
         </div>
@@ -49,8 +48,9 @@
 </div>
 
 <!-- Quiz Modal (zelfde als je eerder gebruikte) -->
-<div id="quiz-modal" class="overlay modal overlay-open:opacity-100 hidden bg-primary/70" role="dialog" tabindex="-1">
-    <div class="modal-dialog overlay-open:opacity-100 w-full max-w-5xl">
+<div id="quiz-modal" class="overlay modal overlay-open:opacity-100 hidden bg-primary/70  z-10" role="dialog"
+    tabindex="-1">
+    <div class="modal-dialog overlay-open:opacity-100 w-full max-w-5xl max-h-[80vh] flex justify-center">
         <div class="modal-content">
             <div class="modal-header">
                 <h3 class="modal-title">Eindquiz</h3>

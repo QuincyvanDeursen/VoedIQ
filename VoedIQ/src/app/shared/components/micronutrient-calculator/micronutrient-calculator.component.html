@@ -147,84 +147,91 @@
     <!-- Resultaten: alleen tonen als calculationDone true is -->
 
 </div>
-<div *ngIf="calculationDone" class="flex lg:flex-row p-4   mt-4  justify-center">
-    <div class="mx-auto">
-        <div class="mt-4 p-4 bg-primary rounded-xl ">
-            <h2 class="text-xl text-white font-bold mt-4 text-center mb-10">Vitaminen</h2>
-            <table id="result" class="table-auto w-full text-white mt-2 text-xs">
-                <thead>
-                    <tr>
-                        <th class="px-1 py-2 text-left text-secondary">Vitamine</th>
-                        <th class="px-1 py-2 text-left text-secondary">Aanbevolen</th>
-                        <th class="px-1 py-2 text-left text-secondary">Bovengrens</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class=" border-b" *ngFor="let vitamin of vitamins[sex]">
-                        <td class="px-1 py-2 w-1/3 text-secondary">{{ vitamin.name }}</td>
-                        <td class="px-1 py-2 w-1/3 ">{{ vitamin.adh }}</td>
-                        <td class="px-1 py-2 w-1/3">{{ vitamin.ab }}</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+<div id="result" *ngIf="calculationDone" class="flex lg:flex-row p-4 mt-4 justify-center">
+    <div class="mx-auto max-w-full">
+        <div *ngIf="calculationDone" class="p-4 mt-4">
 
-
-        <!-- Algemene aanbevelingen: Mineralen -->
-        <div class="mt-4 p-4 bg-primary rounded-xl ">
-            <h2 class="text-xl text-white font-bold mt-4 text-center mb-10">Mineralen/spoorelementen</h2>
-            <table class="table-auto w-full text-white mt-2 text-xs">
-                <thead>
-                    <tr>
-                        <th class=" py-2 text-left text-secondary">Mineraal</th>
-                        <th class=" py-2 text-left text-secondary">Aanbevolen</th>
-                        <th class=" py-2 text-left text-secondary">Bovengrens</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class=" border-b" *ngFor="let mineral of minerals[sex]">
-                        <td class=" py-2 w-1/3 text-secondary">{{ mineral.name }}</td>
-                        <td class=" py-2 w-1/3">{{ mineral.adh }}</td>
-                        <td class=" py-2 w-1/3">{{ mineral.ab }}</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-
-
-        <!-- Persoonlijk extra suppletieadvies -->
-        <div class="mt-4 p-4 bg-primary rounded-xl ">
-            <h2 class="text-xl text-white font-bold text-center">Suppletie Advies</h2>
-            <ul class="text-white text-lg">
-                <li class="border-b mt-3" *ngFor="let supplement of recommendedSupplements">
-                    <strong class="text-secondary ">{{ supplement.name }}:</strong> {{ supplement.amount }} extra
-                    (reden: {{supplement.reason}})
-                </li>
-
-            </ul>
-            <p *ngIf="recommendedSupplements.length === 0" class="text-center text-white">
-                Geen extra suppletie geadviseerd (mits voeding in orde).
-
-            </p>
-            <div class=" mt-3">
-                <small class="text-white">Advies afkomstig van het <a class="link link-info" target="_blank"
-                        rel="noopener noreferrer"
-                        href="https://www.voedingscentrum.nl/encyclopedie/vitamines.aspx">VoedingsCentrum</a></small>.
+            <!-- Vitaminen -->
+            <h3 class="text-lg font-semibold mt-2 text-center text-white">Vitaminen</h3>
+            <div class="w-full rounded-lg pb-2 my-4">
+                <div class="overflow-x-auto scrollbar-horizontal">
+                    <table class="table w-full text-xs min-w-[400px]">
+                        <thead>
+                            <tr class="bg-primary text-white border-0">
+                                <th class="rounded-s-lg">Vitamine</th>
+                                <th>Aanbevolen</th>
+                                <th class="rounded-e-lg">Bovengrens</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-secondary/20" *ngFor="let vitamin of vitamins[sex]">
+                                <td>{{ vitamin.name }}</td>
+                                <td>{{ vitamin.adh }}</td>
+                                <td>{{ vitamin.ab }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-        </div>
-        <div class="flex flex-col md:mx-auto bg-primary rounded-xl mt-4 p-5">
-            <button (click)="copyToClipboard()"
-                class="ml-2 p-2 btn bg-blue-400 hover:bg-blue-800 text-white rounded-lg mt-2">
-                <span *ngIf="!copied" class="icon-[solar--clipboard-linear] size-6"></span>
-                <span *ngIf="copied" class="icon-[solar--check-square-bold] size-6 bg-secondary"></span>
-                <span *ngIf="!copied">Kopieer</span>
-                <span *ngIf="copied">Hebbes!</span>
-            </button>
-        </div>
 
+            <!-- Mineralen/spoorelementen -->
+            <h3 class="text-lg font-semibold mt-2 text-center text-white">Mineralen / Spoorelementen</h3>
+            <div class="w-full rounded-lg pb-2 my-4">
+                <div class="overflow-x-auto scrollbar-horizontal scrollbar-primary ">
+                    <table class="table w-full text-xs min-w-[400px]">
+                        <thead>
+                            <tr class="bg-primary text-white border-0">
+                                <th class="rounded-s-lg">Mineraal</th>
+                                <th>Aanbevolen</th>
+                                <th class="rounded-e-lg">Bovengrens</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-secondary/20" *ngFor="let mineral of minerals[sex]">
+                                <td>{{ mineral.name }}</td>
+                                <td>{{ mineral.adh }}</td>
+                                <td>{{ mineral.ab }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Suppletieadvies -->
+            <div class="mt-4 p-4 bg-primary rounded-xl">
+                <h2 class="text-xl text-white font-bold text-center">Suppletie Advies</h2>
+                <ul class="text-white text-lg">
+                    <li class="border-b mt-3" *ngFor="let supplement of recommendedSupplements">
+                        <strong class="text-secondary">{{ supplement.name }}:</strong>
+                        {{ supplement.amount }} extra (reden: {{ supplement.reason }})
+                    </li>
+                </ul>
+                <p *ngIf="recommendedSupplements.length === 0" class="text-center text-white">
+                    Geen extra suppletie geadviseerd (mits voeding in orde).
+                </p>
+                <div class="mt-3">
+                    <small class="text-white">
+                        Advies afkomstig van het
+                        <a class="link link-info" target="_blank" rel="noopener noreferrer"
+                            href="https://www.voedingscentrum.nl/encyclopedie/vitamines.aspx">VoedingsCentrum</a>
+                    </small>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:mx-auto bg-primary rounded-xl mt-4 p-5">
+                <button (click)="copyToClipboard()"
+                    class="ml-2 p-2 btn bg-blue-400 hover:bg-blue-800 text-white rounded-lg mt-2">
+                    <span *ngIf="!copied" class="icon-[solar--clipboard-linear] size-6"></span>
+                    <span *ngIf="copied" class="icon-[solar--check-square-bold] size-6 bg-secondary"></span>
+                    <span *ngIf="!copied">Kopieer</span>
+                    <span *ngIf="copied">Hebbes!</span>
+                </button>
+            </div>
+
+        </div>
     </div>
-
 </div>
+
 <div *ngIf="!calculationDone" class="flex p-4 bg-primary rounded-xl mt-4  justify-center">
     <div class="mx-auto w-3/4">
         <h1 class="text-2xl text-center text-white font-bold">Resultaat nog niet berekend!</h1>
