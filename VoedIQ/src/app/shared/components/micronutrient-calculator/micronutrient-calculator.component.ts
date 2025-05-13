@@ -274,8 +274,9 @@ export class MicronutrientCalculatorComponent implements AfterViewChecked {
     const nutrientData = {
       vitamins: this.vitamins[this.sex],
       minerals: this.minerals[this.sex],
+      supplements: this.recommendedSupplements, // <-- Toegevoegd
     };
-
+    console.log('Nutrient data:', this.recommendedSupplements); // Debugging
     localStorage.setItem('micronutrient', JSON.stringify(nutrientData));
   }
 

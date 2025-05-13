@@ -151,7 +151,14 @@
             <!-- Ruststofwisseling (BMR) Calculator -->
             <div id="tabs-fill-1" role="tabpanel" aria-labelledby="tabs-fill-item-1" *ngIf="activeStep === 1">
                 <div class="bg-primary rounded-xl">
-                    <h1 class="text-xl lg:text-2xl text-center text-white font-bold px-4 pt-4">Doelgewicht Calculator
+                    <h1
+                        class="text-xl lg:text-2xl text-center text-white font-bold px-4 pt-4 flex justify-center items-center gap-2">
+                        Doelgewicht Calculator
+                        <button type="button" (click)="toggleCollapse()"
+                            class="collapse-toggle text-white focus:outline-none">
+                            <span *ngIf="!isCollapseOpen"
+                                class="text-warning icon-[solar--question-square-bold-duotone] size-10"></span>
+                        </button>
                     </h1>
                     <div class="bg-primary rounded-b-xl mb-4">
                         <div id="show-hide-collapse-heading"
@@ -187,14 +194,6 @@
 
 
                         </div>
-                        <button type="button"
-                            class="collapse-toggle text-center link text-white flex mx-auto items-center my-2 pb-4"
-                            (click)="toggleCollapse()">
-                            <span *ngIf="!isCollapseOpen" class="text-warning">Ik wil uitleg!</span>
-                            <span *ngIf="isCollapseOpen" class="text-secondary">Ik heb het begrepen!</span>
-                            <span class="icon-[tabler--chevron-down] bg-warning"
-                                [ngClass]="{ 'rotate-180': isCollapseOpen }"></span>
-                        </button>
                     </div>
                 </div>
                 <app-target-weight-time-calculator> </app-target-weight-time-calculator>

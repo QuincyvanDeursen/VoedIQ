@@ -152,7 +152,7 @@
 
 
 </div>
-<div class="flex flex-col lg:flex-row mt-20   mx-5 xl:mx-auto ">
+<div class="flex flex-col lg:flex-row mt-20 max-w-7xl  mx-5 xl:mx-auto ">
     <div class="bg-primary rounded-xl w-full">
         <h1 class="text-xl lg:text-2xl text-center text-white font-bold px-4 py-4">Doorloop alle stappen om je
             caloriebehoefte te berekenen!</h1>
@@ -186,9 +186,17 @@
             <!-- Ruststofwisseling (BMR) Calculator -->
             <div id="tabs-fill-1" role="tabpanel" aria-labelledby="tabs-fill-item-1" *ngIf="activeStep === 1">
                 <div class="bg-primary rounded-xl">
-                    <h1 class="text-xl lg:text-2xl text-center text-white font-bold px-4 pt-4">Ruststofwisseling
-                        (BMR)
-                        Calculator</h1>
+                    <h1
+                        class="text-xl lg:text-2xl text-center text-white font-bold px-4 pt-4 flex justify-center items-center gap-2">
+                        Ruststofwisseling (BMR) Calculator
+                        <button type="button" (click)="toggleCollapse()"
+                            class="collapse-toggle text-white focus:outline-none">
+                            <span *ngIf="!isCollapseOpen"
+                                class="text-warning icon-[solar--question-square-bold-duotone] size-10"></span>
+                        </button>
+                    </h1>
+
+
                     <div class="bg-primary rounded-b-xl mb-4">
                         <div id="show-hide-collapse-heading"
                             class="collapse w-full overflow-hidden transition-[height] duration-300 p-5"
@@ -214,14 +222,6 @@
 
                             </p>
                         </div>
-                        <button type="button"
-                            class="collapse-toggle text-center link text-white flex mx-auto items-center my-2 pb-4"
-                            (click)="toggleCollapse()">
-                            <span *ngIf="!isCollapseOpen" class="text-warning">Ik wil uitleg!</span>
-                            <span *ngIf="isCollapseOpen" class="text-secondary">Ik heb het begrepen!</span>
-                            <span class="icon-[tabler--chevron-down] bg-warning"
-                                [ngClass]="{ 'rotate-180': isCollapseOpen }"></span>
-                        </button>
                     </div>
                 </div>
                 <app-bmr-calculator class="w-full max-w-full"></app-bmr-calculator>
@@ -230,9 +230,16 @@
             <!-- Physical Activity Level (PAL) Calculator -->
             <div id="tabs-fill-2" role="tabpanel" aria-labelledby="tabs-fill-item-2" *ngIf="activeStep === 2">
                 <div class="bg-primary rounded-xl mb-4">
-                    <h1 class="text-xl lg:text-2xl text-center text-white font-bold px-4 pt-4">Physical Activity
-                        Level
-                        (PAL) Calculator</h1>
+                    <h1
+                        class="text-xl lg:text-2xl text-center text-white font-bold px-4 pt-4 flex justify-center items-center gap-2">
+                        Physical Activity Level (PAL) Calculator
+                        <button type="button" (click)="toggleCollapse()"
+                            class="collapse-toggle text-white focus:outline-none">
+                            <span *ngIf="!isCollapseOpen"
+                                class="text-warning icon-[solar--question-square-bold-duotone] size-10"></span>
+
+                        </button>
+                    </h1>
                     <div id="show-hide-collapse-heading2"
                         class="collapse w-full overflow-hidden transition-[height] duration-300 p-5"
                         [ngClass]="{ 'hidden': !isCollapseOpen }" aria-labelledby="show-hide-collapse">
@@ -294,23 +301,23 @@
 
 
                     </div>
-                    <button type="button"
-                        class="collapse-toggle text-center link text-white flex mx-auto items-center my-2 pb-4"
-                        (click)="toggleCollapse()">
-                        <span *ngIf="!isCollapseOpen" class="text-warning">Ik wil uitleg!</span>
-                        <span *ngIf="isCollapseOpen" class="text-secondary">Ik heb het begrepen!</span>
-                        <span class="icon-[tabler--chevron-down] bg-warning"
-                            [ngClass]="{ 'rotate-180': isCollapseOpen }"></span>
-                    </button>
                 </div>
                 <app-pal-calculator class="w-full max-w-full"></app-pal-calculator>
             </div>
 
             <!-- Dagelijkse Caloriebehoefte (TDEE) Calculator -->
             <div id="tabs-fill-3" role="tabpanel" aria-labelledby="tabs-fill-item-3" *ngIf="activeStep === 3">
-                <div class="bg-primary rounded-xl">
-                    <h1 class="text-xl lg:text-2xl text-center text-white font-bold px-4 pt-4">Dagelijkse
-                        Caloriebehoefte (TDEE) Calculator</h1>
+                <div class="bg-primary rounded-xl mb-4">
+                    <h1
+                        class="text-xl lg:text-2xl text-center text-white font-bold px-4 pt-4 flex justify-center items-center gap-2">
+                        Dagelijkse Caloriebehoefte (TDEE) Calculator
+                        <button type="button" (click)="toggleCollapse()"
+                            class="collapse-toggle text-white focus:outline-none">
+                            <span *ngIf="!isCollapseOpen"
+                                class="text-warning icon-[solar--question-square-bold-duotone] size-10"></span>
+                        </button>
+                    </h1>
+
                     <div id="show-hide-collapse-heading3"
                         class="collapse w-full overflow-hidden transition-[height] duration-300 p-5"
                         [ngClass]="{ 'hidden': !isCollapseOpen }" aria-labelledby="show-hide-collapse">
@@ -326,21 +333,14 @@
                             afvallen, aankomen of gezonder leven is!
                         </p>
                     </div>
-                    <button type="button"
-                        class="collapse-toggle text-center link text-white flex mx-auto items-center my-2 pb-4"
-                        (click)="toggleCollapse()">
-                        <span *ngIf="!isCollapseOpen" class="text-warning">Ik wil uitleg!</span>
-                        <span *ngIf="isCollapseOpen" class="text-secondary">Ik heb het begrepen!</span>
-                        <span class="icon-[tabler--chevron-down] bg-warning"
-                            [ngClass]="{ 'rotate-180': isCollapseOpen }"></span>
-                    </button>
                 </div>
                 <app-tdee-calculator class="w-full max-w-full"></app-tdee-calculator>
             </div>
         </div>
         <div class="bg-primary rounded-xl mt-5 flex flex-col items-center p-4" *ngIf="activeStep < 3">
-            <button class="btn bg-secondary/20 rounded-xl w-full text-white m-3 lg:w-1/3" (click)="goToNextStep()"
-                [appScrollTo]="'navbar'" [scrollBlock]="'start'">
+            <button
+                class="btn bg-blue-600/20 hover:bg-secondary hover:text-black rounded-xl w-full text-white m-3 lg:w-1/3"
+                (click)="goToNextStep()" [appScrollTo]="'navbar'" [scrollBlock]="'start'">
                 Volgende stap
             </button>
         </div>

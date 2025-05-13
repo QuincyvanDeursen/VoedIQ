@@ -5,10 +5,11 @@ import { ScrollToDirective } from '../../shared/directives/scroll-to.directive';
 import { FormsModule } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { FactService } from '../../core/services/fact.service';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-home',
-  imports: [CommonModule, card, ScrollToDirective, FormsModule],
+  imports: [CommonModule, card, ScrollToDirective, FormsModule, RouterLink],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })

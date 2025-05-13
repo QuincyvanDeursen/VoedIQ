@@ -3,11 +3,11 @@
     <div class="absolute inset-0 bg-cover bg-center z-0" style="background-image: url('/course_background.svg');"></div>
 
     <!-- Gradient overlay -->
-    <div class="absolute inset-0 bg-gradient-to-b from-secondary/40 to-white z-10"></div>
+    <div class="absolute inset-0 bg-gradient-to-b from-secondary/40 to-white z-1"></div>
 
     <!-- Dashboard content -->
     <div
-        class="relative z-20 flex flex-col w-full flex-grow vertical-scrollbar rounded-scrollbar overflow-auto max-h-[79vh] lg:max-h-[80vh] lg:max-w-5xl mx-auto rounded-2xl p-8 shadow-xl shadow-primary bg-white">
+        class="relative z-2 flex flex-col w-full flex-grow vertical-scrollbar rounded-scrollbar overflow-auto max-h-[79vh] lg:max-h-[80vh] lg:max-w-5xl mx-auto rounded-2xl p-8 shadow-xl shadow-primary bg-white">
 
         <!-- Titel en intro -->
         <div class="flex flex-col items-center text-center">
@@ -29,7 +29,7 @@
         </div>
 
         <!-- Geen resultaten -->
-        <div *ngIf="!fatMin && !bmr" class="flex flex-col items-center my-8">
+        <div *ngIf="!fatMin && !bmr && !vitamins" class="flex flex-col items-center my-8">
             <img src="questionmark.svg" alt="Geen resultaten" class="object-contain h-[180px] md:h-[260px]" />
             <p class="text-xl text-gray-600 mt-4">Nog geen resultaten gevonden!</p>
         </div>
@@ -84,6 +84,46 @@
                     <h3 class="font-semibold text-gray-900">Vetten</h3>
                     <p class="text-2xl font-bold text-primary">{{fatMin}}–{{fatMax}} <small
                             class="text-sm text-gray-700">g</small></p>
+                </div>
+            </div>
+        </div>
+        <!-- Vitamines -->
+        <div *ngIf="vitamins?.length" class="mb-8 w-full">
+            <h2 class="text-2xl font-bold text-gray-800 text-center mb-4">Vitamines</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div *ngFor="let vit of vitamins" class="bg-secondary p-4 rounded-xl shadow-md text-center">
+                    <h3 class="font-semibold text-gray-900">{{ vit.name }}</h3>
+                    <p class="text-sm text-gray-700">ADH: <span class="font-bold text-primary">{{ vit.adh }}</span></p>
+                    <p class="text-sm text-gray-700">Bovenlimiet:
+                        <span class="font-bold text-primary">{{ vit.ab || '—' }}</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mineralen -->
+        <div *ngIf="minerals?.length" class="mb-8 w-full">
+            <h2 class="text-2xl font-bold text-gray-800 text-center mb-4">Mineralen</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div *ngFor="let min of minerals" class="bg-secondary p-4 rounded-xl shadow-md text-center">
+                    <h3 class="font-semibold text-gray-900">{{ min.name }}</h3>
+                    <p class="text-sm text-gray-700">ADH: <span class="font-bold text-primary">{{ min.adh }}</span></p>
+                    <p class="text-sm text-gray-700">Bovenlimiet:
+                        <span class="font-bold text-primary">{{ min.ab || '—' }}</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Supplementen -->
+        <div *ngIf="supplements?.length" class="mb-8 w-full">
+            <h2 class="text-2xl font-bold text-gray-800 text-center mb-4">Aanbevolen Supplementen</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div *ngFor="let sup of supplements" class="bg-secondary p-4 rounded-xl shadow-md text-center">
+                    <h3 class="font-semibold text-gray-900">{{ sup.name }}</h3>
+                    <p class="text-sm text-gray-700">Hoeveelheid: <span class="font-bold text-primary">{{ sup.amount
+                            }}</span></p>
+                    <p class="text-sm text-gray-700">Reden: <span class="italic">{{ sup.reason }}</span></p>
                 </div>
             </div>
         </div>

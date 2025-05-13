@@ -26,6 +26,10 @@ export class DashboardComponent implements OnInit {
 
   greeting: string = this.setGreeting();
 
+  vitamins: any[] = [];
+  minerals: any[] = [];
+  supplements: any[] = [];
+
   ngOnInit() {
     this.retrieveLocalStorageData();
   }
@@ -47,6 +51,17 @@ export class DashboardComponent implements OnInit {
     this.course = localStorage.getItem('currentCourseTitle') || '';
     this.module = localStorage.getItem('currentModuleTitle') || '';
     this.lesson = localStorage.getItem('currentLessonUrl') || '';
+    const raw = localStorage.getItem('micronutrient');
+    if (raw) {
+      try {
+        const parsed = JSON.parse(raw);
+        this.vitamins = parsed.vitamins || [];
+        this.minerals = parsed.minerals || [];
+        this.supplements = parsed.supplements || [];
+      } catch (e) {
+        console.error('Fout bij het laden van voedingsdata:', e);
+      }
+    }
   }
 
   updateUserName() {
