@@ -26,7 +26,7 @@ export class TargetWeightTimeCalculatorComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.tdee = parseInt(localStorage.getItem('tdee') || '2500', 10); // Haal TDEE op uit local storage of gebruik standaardwaarde
+    this.loadDataFromLocalStorage();
   }
 
   calculateWeightLossDuration() {
@@ -64,7 +64,36 @@ export class TargetWeightTimeCalculatorComponent implements OnInit {
         ? 'orange'
         : 'red';
 
+    this.saveLengthToLocalStorage();
+    this.saveWeightToLocalStorage();
     this.toastService.success('Berekening voltooid!');
+  }
+  private saveLengthToLocalStorage() {
+    if (this.height) {
+      localStorage.setItem('length', JSON.stringify(this.height));
+    }
+  }
+  private saveWeightToLocalStorage() {
+    if (this.weight) {
+      localStorage.setItem('weight', JSON.stringify(this.weight));
+    }
+  }
+
+  private loadDataFromLocalStorage() {
+    const storedLength = localStorage.getItem('length');
+    const storedWeight = localStorage.getItem('weight');
+    const storedTDEE = localStorage.getItem('tdee');
+
+    if (storedLength) {
+      this.height = JSON.parse(storedLength);
+    }
+    if (storedWeight) {
+      this.weight = JSON.parse(storedWeight);
+    }
+
+    if (storedTDEE) {
+      this.tdee = JSON.parse(storedTDEE);
+    }
   }
 
   startAdjusting(field: string, change: number, decimalPlaces: number): void {

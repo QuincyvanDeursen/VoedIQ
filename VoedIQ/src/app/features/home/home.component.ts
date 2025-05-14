@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { FactService } from '../../core/services/fact.service';
 import { RouterLink } from '@angular/router';
+import { ToastService } from '../../shared/services/toast.service';
 
 @Component({
   selector: 'app-home',
@@ -19,9 +20,18 @@ export class HomeComponent {
   ngOnInit() {
     this.loadFacts();
   }
-  constructor(private factService: FactService) {}
+  constructor(
+    private factService: FactService,
+    private toastService: ToastService
+  ) {}
 
   private loadFacts(): void {
     this.facts = this.factService.getFacts();
+  }
+
+  noContentAlert() {
+    this.toastService.warning(
+      'Deze cursus is nog in ontwikkeling! Wordt verwacht voor juni 2025.'
+    );
   }
 }

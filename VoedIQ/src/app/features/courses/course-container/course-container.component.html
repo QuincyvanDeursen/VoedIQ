@@ -27,12 +27,22 @@
     <div class=" flex flex-row  gap-4  w-full mx-10 justify-center lg:max-w-5xl lg:mx-auto ">
         <button class="btn bg-secondary/30 w-1/5 hover:bg-secondary  shadow shadow-gray-900 animation-button"
             id="contentButton" data-overlay="#overlay-custom-backdrop" value="motion-preset-slide-right"><span
-                class="icon-[solar--notebook-minimalistic-bold] size-8 text-white"></span></button>
+                class="icon-[solar--notebook-minimalistic-bold] size-8 text-white"></span><small
+                class="text-white hidden sm:inline">Lessen</small></button>
+        <!-- Terug-knop -->
         <button class="btn bg-secondary/30 w-2/5 hover:bg-secondary shadow shadow-gray-900"
-            (click)="goToPreviousLesson()" id="prevButton"><span
-                class="icon-[solar--map-arrow-left-bold] size-8 text-white"></span></button>
-        <button class="btn bg-secondary/30 w-2/5  hover:bg-secondary shadow shadow-gray-900" (click)="goToNextLesson()"
-            id="nextButton"><span class="icon-[solar--map-arrow-right-bold] size-8 text-white"></span></button>
+            (click)="goToPreviousLesson()" id="prevButton">
+            <span class="icon-[solar--map-arrow-left-bold] size-8  text-white"></span>
+            <small class="text-white hidden sm:inline">Vorige</small>
+        </button>
+
+        <!-- Volgende-knop -->
+        <button class="btn bg-secondary/30 w-2/5 hover:bg-secondary shadow shadow-gray-900" (click)="goToNextLesson()"
+            id="nextButton">
+            <small class="text-white hidden sm:inline">Volgende</small>
+            <span class="icon-[solar--map-arrow-right-bold] size-8 text-white"></span>
+        </button>
+
     </div>
 </div>
 
@@ -62,16 +72,19 @@
                 <ng-container *ngFor="let module of course?.modules; let i = index">
                     <div data-nested-draggable="">
                         <!-- 1st Level Accordion -->
-                        <div class="accordion-item dragged:bg-primary/20 dragged:rounded-sm nested-2-1" role="treeitem"
+                        <div class="accordion-item dragged:bg-primary/20 dragged:rounded-sm nested-2-1 " role="treeitem"
                             aria-expanded="false" [attr.id]="'checkbox-tree-heading-' + module.title">
                             <!-- 1st Level Accordion Heading -->
-                            <div
-                                class="accordion-heading tree-view-selected:bg-base-300/40 flex w-full items-center gap-x-0.5 rounded-md py-0.5 bg-primary mt-4 text-white ">
+                            <div style="position: relative;"
+                                class="accordion-heading py-4 tree-view-selected:bg-base-300/40 flex w-full items-center gap-x-0.5 rounded-md px-2 bg-primary mt-4 text-white ">
                                 <button class="accordion-toggle btn btn-sm btn-circle btn-text" aria-expanded="false"
-                                    [attr.aria-controls]="'checkbox-tree-collapse-' + module.title">
+                                    [attr.aria-controls]="'checkbox-tree-collapse-' + module.title"
+                                    style="position: absolute; inset: 0; width: 100%; height: 100%; z-index: 10; background: transparent; border: none; cursor: pointer;">
                                     <span
-                                        class="icon-[tabler--plus] text-base-content/80 accordion-item-active:rotate-45 size-4 transition-all duration-300"></span>
+                                        class="text-base-content/80 accordion-item-active:rotate-45 size-4 transition-all duration-300"
+                                        style="pointer-events: none;"></span>
                                 </button>
+
                                 <div class="tree-view-selected:bg-base-300/40 grow  rounded-md px-1.5">
                                     <div class="flex items-center justify-between w-full gap-2 ">
 

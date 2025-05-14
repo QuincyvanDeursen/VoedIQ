@@ -1,5 +1,10 @@
 import { CommonModule } from '@angular/common';
-import { AfterViewChecked, ChangeDetectorRef, Component } from '@angular/core';
+import {
+  AfterViewChecked,
+  ChangeDetectorRef,
+  Component,
+  OnInit,
+} from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ToastService } from '../../services/toast.service';
 import { ButtonHoldService } from '../../services/button-hold.service';
@@ -11,7 +16,7 @@ import { timeout } from 'rxjs';
   templateUrl: './bmr-calculator.component.html',
   styleUrls: ['./bmr-calculator.component.css'],
 })
-export class BmrCalculatorComponent implements AfterViewChecked {
+export class BmrCalculatorComponent implements AfterViewChecked, OnInit {
   gender: string = 'male';
   age: number | null = 30;
   weight: number | null = 50;
@@ -26,6 +31,9 @@ export class BmrCalculatorComponent implements AfterViewChecked {
     private buttonHoldService: ButtonHoldService,
     private cdr: ChangeDetectorRef
   ) {}
+  ngOnInit(): void {
+    this.loadDataFromLocalStorage();
+  }
 
   scrollToElement(section: string) {
     this.sectionId = section; // Onthoud naar welke sectie we willen scrollen
@@ -83,7 +91,43 @@ export class BmrCalculatorComponent implements AfterViewChecked {
       return;
     }
     this.updateBMR(this.bmr);
+    this.saveLengthToLocalStorage();
+    this.saveWeightToLocalStorage();
+    this.saveAgeToLocalStorage();
     this.toastService.success('Berekening voltooid!');
+  }
+
+  private saveLengthToLocalStorage() {
+    if (this.height) {
+      localStorage.setItem('length', JSON.stringify(this.height));
+    }
+  }
+  private saveWeightToLocalStorage() {
+    if (this.weight) {
+      localStorage.setItem('weight', JSON.stringify(this.weight));
+    }
+  }
+
+  private saveAgeToLocalStorage() {
+    if (this.age) {
+      localStorage.setItem('age', JSON.stringify(this.age));
+    }
+  }
+
+  private loadDataFromLocalStorage() {
+    const storedLength = localStorage.getItem('length');
+    const storedWeight = localStorage.getItem('weight');
+    const storedAge = localStorage.getItem('age');
+
+    if (storedLength) {
+      this.height = JSON.parse(storedLength);
+    }
+    if (storedWeight) {
+      this.weight = JSON.parse(storedWeight);
+    }
+    if (storedAge) {
+      this.age = JSON.parse(storedAge);
+    }
   }
 
   private updateBMR(value: number) {

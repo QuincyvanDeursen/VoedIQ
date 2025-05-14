@@ -201,6 +201,10 @@ export class MicronutrientCalculatorComponent implements AfterViewChecked {
     if (storedTdee !== null) {
       this.tdee = JSON.parse(storedTdee);
     }
+    const storedAge = localStorage.getItem('age');
+    if (storedAge !== null) {
+      this.age = JSON.parse(storedAge);
+    }
   }
 
   ////////////////////////////////////////////////////
@@ -247,6 +251,7 @@ export class MicronutrientCalculatorComponent implements AfterViewChecked {
     this.saveNutrientDataToLocalStorage();
 
     this.calculationDone = true;
+    this.saveAgeToLocalStorage();
     this.toastService.success('Berekening voltooid');
   }
 
@@ -264,6 +269,12 @@ export class MicronutrientCalculatorComponent implements AfterViewChecked {
     }
 
     return true;
+  }
+
+  private saveAgeToLocalStorage() {
+    if (this.age) {
+      localStorage.setItem('age', JSON.stringify(this.age));
+    }
   }
 
   ////////////////////////////////////////////////////

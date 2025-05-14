@@ -182,9 +182,9 @@
             </button>
         </nav>
 
-        <div class="mt-3">
-            <!-- Ruststofwisseling (BMR) Calculator -->
-            <div id="tabs-fill-1" role="tabpanel" aria-labelledby="tabs-fill-item-1" *ngIf="activeStep === 1">
+        <div class="mt-3" [ngSwitch]="activeStep">
+            <!-- BMR Tab -->
+            <div [hidden]="activeStep !== 1">
                 <div class="bg-primary rounded-xl">
                     <h1
                         class="text-xl lg:text-2xl text-center text-white font-bold px-4 pt-4 flex justify-center items-center gap-2">
@@ -196,39 +196,35 @@
                         </button>
                     </h1>
 
+                    <div id="show-hide-collapse-heading"
+                        class="collapse w-full overflow-hidden transition-[height] duration-300 p-5"
+                        [ngClass]="{ 'hidden': !isCollapseOpen }" aria-labelledby="show-hide-collapse">
+                        <p class="text-white text-justify text-base">
+                            Deze calculator berekent hoeveel calorieën jouw lichaam in rust verbrandt. Dit wordt
+                            ook
+                            wel de ruststofwisseling genoemd.
+                        </p>
+                        <p class="text-base text-white text-justify mt-4">
+                            het resultaat is de
+                            hoeveelheid energie die jouw lichaam nodig heeft om in leven te blijven. Denk
+                            daarbij
+                            aan activiteiten zoals ademen, het hebben van hartslag en
+                            celvernieuwing.Deze calculator
+                            is gebasseerd op de Mifflin-St Jeor formule. Deze formule is <a class="link link-info "
+                                target="_blank" rel="noopener noreferrer"
+                                href="https://pubmed.ncbi.nlm.nih.gov/15883556/">een van de
+                                meest
+                                nauwkeurige formules</a> om de BMR te berekenen. De formule gebruikt vier
+                            variabelen:
+                            geslacht, leeftijd, gewicht en lengte.
 
-                    <div class="bg-primary rounded-b-xl mb-4">
-                        <div id="show-hide-collapse-heading"
-                            class="collapse w-full overflow-hidden transition-[height] duration-300 p-5"
-                            [ngClass]="{ 'hidden': !isCollapseOpen }" aria-labelledby="show-hide-collapse">
-                            <p class="text-white text-justify text-base">
-                                Deze calculator berekent hoeveel calorieën jouw lichaam in rust verbrandt. Dit wordt
-                                ook
-                                wel de ruststofwisseling genoemd.
-                            </p>
-                            <p class="text-base text-white text-justify mt-4">
-                                het resultaat is de
-                                hoeveelheid energie die jouw lichaam nodig heeft om in leven te blijven. Denk
-                                daarbij
-                                aan activiteiten zoals ademen, het hebben van hartslag en
-                                celvernieuwing.Deze calculator
-                                is gebasseerd op de Mifflin-St Jeor formule. Deze formule is <a class="link link-info "
-                                    target="_blank" rel="noopener noreferrer"
-                                    href="https://pubmed.ncbi.nlm.nih.gov/15883556/">een van de
-                                    meest
-                                    nauwkeurige formules</a> om de BMR te berekenen. De formule gebruikt vier
-                                variabelen:
-                                geslacht, leeftijd, gewicht en lengte.
-
-                            </p>
-                        </div>
+                        </p>
                     </div>
                 </div>
-                <app-bmr-calculator class="w-full max-w-full"></app-bmr-calculator>
             </div>
 
-            <!-- Physical Activity Level (PAL) Calculator -->
-            <div id="tabs-fill-2" role="tabpanel" aria-labelledby="tabs-fill-item-2" *ngIf="activeStep === 2">
+            <!-- PAL Tab -->
+            <div [hidden]="activeStep !== 2">
                 <div class="bg-primary rounded-xl mb-4">
                     <h1
                         class="text-xl lg:text-2xl text-center text-white font-bold px-4 pt-4 flex justify-center items-center gap-2">
@@ -237,7 +233,6 @@
                             class="collapse-toggle text-white focus:outline-none">
                             <span *ngIf="!isCollapseOpen"
                                 class="text-warning icon-[solar--question-square-bold-duotone] size-10"></span>
-
                         </button>
                     </h1>
                     <div id="show-hide-collapse-heading2"
@@ -302,11 +297,10 @@
 
                     </div>
                 </div>
-                <app-pal-calculator class="w-full max-w-full"></app-pal-calculator>
             </div>
 
-            <!-- Dagelijkse Caloriebehoefte (TDEE) Calculator -->
-            <div id="tabs-fill-3" role="tabpanel" aria-labelledby="tabs-fill-item-3" *ngIf="activeStep === 3">
+            <!-- TDEE Tab -->
+            <div [hidden]="activeStep !== 3">
                 <div class="bg-primary rounded-xl mb-4">
                     <h1
                         class="text-xl lg:text-2xl text-center text-white font-bold px-4 pt-4 flex justify-center items-center gap-2">
@@ -317,7 +311,6 @@
                                 class="text-warning icon-[solar--question-square-bold-duotone] size-10"></span>
                         </button>
                     </h1>
-
                     <div id="show-hide-collapse-heading3"
                         class="collapse w-full overflow-hidden transition-[height] duration-300 p-5"
                         [ngClass]="{ 'hidden': !isCollapseOpen }" aria-labelledby="show-hide-collapse">
@@ -334,8 +327,10 @@
                         </p>
                     </div>
                 </div>
-                <app-tdee-calculator class="w-full max-w-full"></app-tdee-calculator>
             </div>
+            <app-bmr-calculator class="w-full max-w-full" [hidden]="activeStep !== 1"></app-bmr-calculator>
+            <app-pal-calculator class="w-full max-w-full" [hidden]="activeStep !== 2"></app-pal-calculator>
+            <app-tdee-calculator class="w-full max-w-full" [hidden]="activeStep !== 3"></app-tdee-calculator>
         </div>
         <div class="bg-primary rounded-xl mt-5 flex flex-col items-center p-4" *ngIf="activeStep < 3">
             <button
@@ -346,3 +341,4 @@
         </div>
 
     </div>
+</div>

@@ -92,7 +92,13 @@
         <h1 class="text-2xl text-center text-white font-bold">
             BMR: <span class="text-secondary">{{ bmr }}</span> kcal/dag
         </h1>
+        <p class="text-sm text-center text-white mt-1">
+            <span class="text-warning">Let op:</span> Dit is niet je totaal dagelijkse behoefte, die bereken je aan het
+            einde van deze tool.
+            eind
+        </p>
     </div>
+
     <div class="flex flex-col md:w-1/4 md:mx-auto">
         <button (click)="copyToClipboard(bmr)"
             class="ml-2 p-2 btn bg-blue-400 hover:bg-blue-800 text-white rounded-lg mt-2">

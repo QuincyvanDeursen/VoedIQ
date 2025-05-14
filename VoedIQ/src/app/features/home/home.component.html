@@ -36,28 +36,35 @@
 <!-- first container-->
 <!-- first container-->
 <div class="flex flex-col bg-white py-10 px-6 max-w-5xl mx-auto">
-
   <!-- Titel -->
   <h2 class="text-3xl sm:text-3xl font-bold text-primary mb-6 text-center">
     De Kracht van Voeding: Hoe Ik Mijn Lijf en Leven Veranderde
   </h2>
 
-  <!-- Teasertekst -->
-  <div class="flex flex-col text-gray-800 text-base leading-relaxed text-justify">
-    Als tiener had ik overgewicht, sportte ik niet en bracht ik mijn dagen liever gamend door met een suikerwafel in de
-    hand. Op mijn achttiende doorstond ik de zwaarste fysieke en mentale keuringen van Defensie, zonder uiteindelijk
-    militair te worden. In de jaren daarna behaalde ik prestaties zoals 150 kilo bankdrukken, 200 kilo squatten, 235
-    kilo deadliften en vijf kilometer rennen in 21 minuten. Na ruim tien jaar ervaring kan ik zeggen dat ik de meest
-    efficiënte en ontspannen manier heb gevonden om mijn lichaamsgewicht onder controle te houden. Niet dankzij geheime
-    trucjes of wondermiddelen, maar door de juiste kennis én het daadwerkelijk toepassen ervan.
-    Met ontspannen bedoel ik dat ik mezelf geen strikte regels opleg en niet uitsluitend vasthoud aan gezonde voeding.
-    Er is ruimte voor flexibiliteit en genieten, terwijl ik toch de balans bewaar. Ik deel mijn kennis graag met jou
-    zonder winstoogmerk, omdat ik weet hoeveel het je
-    leven kan
-    veranderen. Alles begint bij voeding, het is het fundament van elk fysiek resultaat.
+  <!-- Afbeelding en tekst naast elkaar -->
+  <div class="flex flex-col md:flex-row gap-8 items-center">
+    <!-- Afbeelding -->
+    <div class="w-full md:w-1/3">
+      <img src="ik_spiegel.png" alt="Transformatie" class="rounded-2xl shadow-lg w-full h-auto object-cover" />
+    </div>
+
+    <!-- Tekst -->
+    <div class="w-full md:w-2/3 text-gray-800 text-base leading-relaxed text-justify">
+      Als tiener had ik overgewicht, sportte ik niet en bracht ik mijn dagen liever gamend door met een suikerwafel in
+      de
+      hand. Op mijn achttiende doorstond ik de zwaarste fysieke en mentale keuringen van Defensie, zonder uiteindelijk
+      militair te worden. In de jaren daarna behaalde ik prestaties zoals 150 kilo bankdrukken, 200 kilo squatten, 235
+      kilo deadliften en vijf kilometer rennen in 21 minuten. Na ruim tien jaar ervaring kan ik zeggen dat ik de meest
+      efficiënte en ontspannen manier heb gevonden om mijn lichaamsgewicht onder controle te houden. Niet dankzij
+      geheime
+      trucjes of wondermiddelen, maar door de juiste kennis én het daadwerkelijk toepassen ervan.
+      Met ontspannen bedoel ik dat ik mezelf geen strikte regels opleg en niet uitsluitend vasthoud aan gezonde voeding.
+      Er is ruimte voor flexibiliteit en genieten, terwijl ik toch de balans bewaar. Ik deel mijn kennis graag met jou
+      zonder winstoogmerk, omdat ik weet hoeveel het je leven kan veranderen. Alles begint bij voeding, het is het
+      fundament
+      van elk fysiek resultaat.
+    </div>
   </div>
-
-
 
   <!-- Lees meer knop -->
   <div class="mt-6 flex justify-center">
@@ -68,6 +75,7 @@
     </button>
   </div>
 </div>
+
 
 
 
@@ -121,11 +129,11 @@
 
     <app-course-card title="Doelgericht Eten" description="In deze cursus leer je hoe je voeding kunt afstemmen op je doelen, zoals afvallen of aankomen, 
     met praktische tips voor een effectief en duurzaam resultaat." imageUrl="cursus_doelgericht.svg"
-      buttonText="Start!"></app-course-card>
+      buttonText="Start!" (click)='noContentAlert();'></app-course-card>
 
     <app-course-card title="Gezond Eten" description="Deze cursus biedt inzicht in wat een gezond dieet is, met aandacht voor gebalanceerde voeding, 
     het belang van verschillende voedingsgroepen en hoe je een gezonde eetstijl kunt behouden."
-      imageUrl="cursus_gezond.svg" buttonText="Start!"></app-course-card>
+      imageUrl="cursus_gezond.svg" buttonText="Start!" (click)='noContentAlert();'></app-course-card>
 
   </div>
 
