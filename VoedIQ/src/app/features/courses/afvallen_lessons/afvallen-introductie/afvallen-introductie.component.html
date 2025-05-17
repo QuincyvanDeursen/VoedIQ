@@ -1,0 +1,135 @@
+<h1 class="text-3xl font-bold text-center bg-primary rounded-2xl text-white py-2 ">
+    Intro </h1>
+<div class="flex flex-col mb-10">
+    <div class="flex flex-col gap-3">
+
+
+        <div class="flex flex-col  lg:flex-row">
+            <div class="flex flex-col lg:w-1/2 gap-3 order-2 lg:order-1">
+                <h1 class="text-2xl font-bold mt-10">Inleiding</h1>
+                <p class="text-base text-justify ">{{ userName ? userName + '!' : '' }} Welkom bij de cursus
+                    {{courseTitle}} van
+                    VoedIQ! Alle eerst willen we je vertellen dat je een geweldige keuze hebt gemaakt om jezelf
+                    te
+                    ontwikkelen en je kennis over voeding te vergroten. Deze cursus is speciaal ontworpen om een
+                    laag
+                    drempelige
+                    en toegankelijkere manier te bieden om meer te leren over voeding en gezondheid. De
+                    informatie
+                    uit
+                    deze cursus is afkomstig van
+                    betrouwbare bronnen zoals de <a href="https://www.gezondheidsraad.nl/" target="_blank"
+                        rel="noopener noreferrer" class="link link-primary hover:link-info">Gezondheidsraad</a>
+                    en
+                    het
+                    <a href="https://www.voedingscentrum.nl/nl.aspx" target="_blank" rel="noopener noreferrer"
+                        class="link link-primary hover:link-info">Voedingscentrum</a>.
+                </p>
+                <p class="text-base text-justify ">We
+                    hebben ons best gedaan om de
+                    informatie zo duidelijk en leuk mogelijk te maken, zodat je deze gemakkelijk kunt toepassen
+                    in je dagelijks leven. We zijn er van overtuigd dat je veel zult leren en dat je deze kennis
+                    kunt
+                    toepassen in je dagelijks leven.</p>
+                <div class="flex flex-col gap-3">
+                    <h1 class="text-2xl font-bold text-justify mt-5">Afvallen: hoe werkt het écht?</h1>
+                    <p class="text-base text-justify">
+                        In een wereld vol diëten, afvalproducten en kant-en-klare schema’s lijkt het alsof je vooral
+                        iemand nodig hebt die je vertelt wat je moet eten.
+                        Maar als dat echt werkte, zouden we nu allemaal in topvorm zijn. Wat jij lekker vindt om te
+                        eten, vindt de ander mogelijk smerig.
+                        Exact elkaars eetschema’s kopiëren heeft dan ook geen zin.
+                    </p>
+                    <p class="text-base text-justify">
+                        We starten deze cursus met de theorie achter afvallen – niet om je te overladen met feiten, maar
+                        om je te helpen zelf keuzes te kunnen maken.
+                        Het eetschema moet namelijk passend zijn bij jóu!
+                    </p>
+                    <p class="text-base text-justify">
+                        VoedIQ gelooft in zelfsturing in plaats van afhankelijkheid. Als jij begrijpt waarom iets werkt,
+                        hoef je niet telkens te zoeken naar een nieuwe oplossing.
+                        Je leert patronen herkennen, fabels doorzien en met meer rust omgaan met schommelingen in
+                        gewicht of motivatie.
+                        Je wordt minder vatbaar voor marketingpraatjes over wonderdiëten of afslankthee en je bouwt aan
+                        een fundament dat je de rest van je leven kunt gebruiken.
+                    </p>
+                    <p class="text-base text-justify">
+                        In plaats van dat iemand je vertelt: “eet dit product en vermijd dat product,” leer je straks
+                        zelf begrijpen hoe je lichaam werkt.
+                        Dat maakt je onafhankelijk, veerkrachtig en realistisch. En dát is uiteindelijk de sleutel tot
+                        duurzame verandering.
+                    </p>
+                </div>
+
+            </div>
+
+            <img src="cursus_basiskennis.svg" alt="VoedIQ Logo" class="lg:w-1/3 mx-auto mb-5 order-1 lg:order-2" />
+        </div>
+
+    </div>
+    <div class="divider divider-accent"></div>
+    <div class="flex flex-col gap-3">
+        <h1 class="text-2xl font-bold text-justify">Hoe werkt het?</h1>
+        <p class="text-base text-justify">Het gebruik van deze cursus is vrij simpel, toch leggen we het je
+            graag even uit.
+            Onderaan jouw scherm
+            vind je een navigatiebalk. Daarmee kan je door de cursus bladeren. Je kan naar de volgende of vorige
+            pagina gaan door op de pijlen te klikken. Ook kan je de inhoud van de cursus bekijken door op het
+            notitieboekje te klikken. Dit is een handige manier om snel naar de juiste pagina te gaan, indien je
+            informatie
+            wilt terugvinden. Soms is het witte gedeelte van de pagina scrolbaar, dit is te herkennen aan de
+            scrollbalk
+        </p>
+        <p class="text-base text-justify">Gedurende de cursus zijn er verschillende interactieve elementen. Dit
+            zijn
+            elementen die je kan aanklikken of invullen. Dit kan bijvoorbeeld een
+            quiz zijn of het invullen van een calculator. Deze elementen zijn speciaal ontworpen om je te
+            helpen
+            de
+            informatie beter te begrijpen en te onthouden. We raden je aan om deze elementen goed te bekijken en
+            te
+            gebruiken.</p>
+
+    </div>
+    <div class="divider divider-accent"></div>
+    <div class="flex flex-col gap-3">
+        <h1 class="text-2xl font-bold text-justify">Test je kennis vooraf!</h1>
+        <p class="text-base text-justify">Ook wij beseffen dat jouw tijd kostbaar is. Om er zeker van te zijn
+            dat het een leerzame ervaring wordt en we niet jouw tijd verspillen,
+            kun je met de onderstaande knop een quiz openen. Indien je hoog scoort, dan is cursus wellicht niets
+            voor. Het maken van de quiz is echter optioneel!
+
+        </p>
+        <button type="button"
+            class="btn btn-warning text-white w-1/2 mx-auto mt-5 hover:bg-yellow-500 shadow shadow-gray-900"
+            id="quizButton" aria-haspopup="dialog" aria-expanded="false" aria-controls="quiz-modal"
+            data-overlay="#quiz-modal" value="motion-preset-slide-right">
+            <span class="icon-[solar--notebook-minimalistic-bold] size-8 text-white"></span> Quiz
+        </button>
+    </div>
+</div>
+
+
+
+<!-- Modal Inhoud -->
+<div id="quiz-modal" class="overlay modal modal-middle overlay-open:opacity-100 hidden bg-primary/70    z-10"
+    role="dialog" tabindex="-1">
+    <div class="modal-dialog overlay-open:opacity-100 w-full max-w-5xl max-h-[80vh] flex justify-center">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Voorkennis Quiz</h3>
+                <button type="button" class="btn btn-text btn-circle btn-sm absolute end-3 top-3" aria-label="Close"
+                    data-overlay="#quiz-modal">
+                    <span class="icon-[tabler--x] size-4"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <app-quiz [questions]="questions" [maxHeightVh]="50"></app-quiz>
+            </div>
+            <div class="modal-footer mt-10">
+                <!-- Deze sluitknop moet de modal sluiten -->
+                <button type="button" class="btn btn-primary" data-overlay="#quiz-modal">Sluiten</button>
+            </div>
+        </div>
+    </div>
+</div>

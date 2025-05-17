@@ -1,0 +1,111 @@
+<h1 class="lg:text-3xl text-xl font-bold text-center bg-primary rounded-2xl text-white p-4 mb-4">
+    1.5 Supplementen: zin of onzin?
+</h1>
+<img src="supplement.svg" alt="Weegschaal" class=" mx-auto mb-5 order-1 sm:w-1/2 pt-10" />
+<div class="flex flex-col mb-10">
+    <div class="flex flex-col gap-3">
+        <div class="flex flex-col gap-3">
+            <div class="flex flex-col lg:flex-row">
+                <div class="flex flex-col gap-3 order-2 lg:order-1">
+
+                    <h3 class="text-lg font-semibold mt-5">De belofte van supplementen</h3>
+                    <p class="text-base text-justify">
+                        Supplementen klinken vaak veelbelovend, als je leest wat ze allemaal wel niet voor je kunnen
+                        doen
+                        krijg je het idee dat je superman wordt. Op de verpakking lees je dat ze bijdragen aan je
+                        stofwisseling, je energieniveau verhogen of vetverbranding ondersteunen. Het lijkt soms alsof je
+                        met
+                        een pilletje sneller je doelen kunt bereiken.
+                    </p>
+                    <div
+                        class="mx-auto flex flex-col text-center max-w-2xl w-full my-5 border-gray-50 bg-gray-50 shadow-lg rounded-3xl">
+
+                        <p class="bg-accent text-white p-4 rounded-3xl w-full">Ben jij ook wel is verleid door de
+                            beloftes van
+                            supplementen?
+                        </p>
+
+                        <div class="flex flex-row gap-2 mx-auto my-5">
+                            <button class="btn btn-accent" (click)="antwoord = true">Ja</button>
+
+                            <button class="btn btn-accent" (click)="antwoord = false">Nee</button>
+                        </div>
+
+                        <div class=" text-center text-accent bg-gray-50 rounded-xl p-4 " *ngIf="antwoord !== null">
+                            <ng-container *ngIf="antwoord; else neeAntwoord">
+                                Herkenbaar. De eigenaar van VoedIQ, Quincy, ook. Hij heeft ieder supplement wel is
+                                geprobeerd om extra vet te verliezen. De marketing speelt in op de onzekerheid van
+                                mensen. Het
+                                idee dat je met een pilletje sneller je doelen kunt bereiken is verleidelijk. Maar de
+                                waarheid is dat supplementen niet de oplossing zijn die ze beloven te zijn. Het
+                                draait altijd om het hebben van een calorie-tekort. Een theetje of
+                                een pil gaat dat niet
+                                veranderen.
+                            </ng-container>
+                            <ng-template #neeAntwoord>
+                                Heel fijn. De marketing speelt in op de onzekerheid van mensen. Jou hebben ze blijkbaar
+                                niet kunnen
+                                verleiden. Afvallen draait altijd om het hebben van een calorie-tekort. Een theetje of
+                                een pil gaat dat niet
+                                veranderen. Het is goed dat je dat weet.
+                            </ng-template>
+                        </div>
+                    </div>
+                    <div class="divider divider-accent"></div>
+                    <h3 class="text-lg font-semibold">Meer is niet altijd beter</h3>
+                    <p class="text-base text-justify">
+                        In de werkelijkheid ligt het een stuk genuanceerder. Dat een voedingsstof een rol speelt in
+                        processen zoals de stofwisseling, betekent nog niet dat je lichaam er baat bij heeft om er extra
+                        van
+                        binnen te krijgen. Als je geen tekort hebt, dan ga je ook niks merken met een extra hoeveelheid.
+                        Meer is niet automatisch beter. In veel gevallen doet je lichaam niks met een overschot en
+                        scheidt
+                        het het teveel gewoon weer uit.
+                    </p>
+                    <div class="divider divider-accent"></div>
+                    <h3 class="text-lg font-semibold">Eerst meten, dan slikken</h3>
+                    <p class="text-base text-justify">
+                        Tenzij je een vastgesteld tekort hebt, heeft het slikken van supplementen dus vaak weinig
+                        effect.
+                        VoedIQ raadt het daarom af om zomaar supplementen te kopen. Ze zijn geen vervanging voor een
+                        gezond
+                        en volwaardig dieet. Mocht je twijfelen of je ergens een tekort aan hebt of verveel je je en wil
+                        je
+                        geld uitgeven, laat dan bloedonderzoek doen. Op basis daarvan kun je gerichte keuzes maken en
+                        eventueel je voeding of suppletie aanpassen.
+                    </p>
+                    <app-info-block type="tip" class="my-8"
+                        content="Veel supplementen zijn eigenlijk gewoon voeding in geconcentreerde vorm. Zo is eiwitpoeder niets anders dan gedroogd melk- of plantaardig eiwit, vezelsupplementen doen hetzelfde als volkoren producten of groente, en dextrose is pure druivensuiker die ook in fruit zit. Creatine komt van nature voor in vlees, en omega 3-capsules zijn geconcentreerde visolie. VoedIQ vind de term supplementen voor deze middelen dan ook onjuist. We noemen suikerklontjes immers ook geen supplement."></app-info-block>
+                    <h3 class=" text-lg font-semibold">Geen magische vetverbranders</h3>
+                    <p class="text-base text-justify">
+                        Er bestaat geen theetje, pil of fatburner dat ervoor zorgt dat je vanzelf vet verliest.
+                        Vetverlies
+                        is het gevolg van een langdurig calorie-tekort en consistent gedrag. Supplementen kunnen
+                        eventueel
+                        een ondersteunende rol spelen bij tekorten of specifieke gezondheidsdoelen, maar ze
+                        vervangen
+                        nooit
+                        een goede basis van voeding, slaap en beweging. Gebruik supplementen alleen als aanvulling
+                        wanneer
+                        dat echt nodig is, niet als een snel alternatief voor inzet.
+                    </p>
+                    <p class="text-base text-justify font-semibold mt-10">
+                        Kortom: supplementen zijn een hulpmiddel, geen wondermiddel. Ze kunnen een waardevolle rol
+                        spelen
+                        als je een tekort hebt of een specifiek doel nastreeft, maar ze lossen geen fundamentele
+                        problemen
+                        op. Als de basis niet goed zit, hebben supplementen weinig zin. Focus op een gezond en
+                        gebalanceerd
+                        voedingspatroon. Daarmee leg je de basis voor echte, duurzame resultaten.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="divider divider-accent lg:my-10"></div>
+
+    <app-quiz-question [id]="0" [explanation]="true" [question]="supplementenVraag">
+    </app-quiz-question>
+</div>

@@ -1,0 +1,232 @@
+[
+  {
+    "question": "Waarom is langzaam afvallen vaak effectiever dan snel afvallen?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Het voorkomt het verlies van spiermassa en is beter vol te houden.",
+        "isCorrect": true,
+        "explanation": "Juist! Langzaam afvallen helpt je lichaam aanpassen en verkleint de kans op terugval (jojo-effect)."
+      },
+      {
+        "label": "B",
+        "text": "Omdat je lichaam vet verbrandt bij een hoge snelheid van afvallen.",
+        "isCorrect": false,
+        "explanation": "Dat klopt niet – bij snel afvallen verlies je vaak vooral vocht en spiermassa."
+      },
+      {
+        "label": "C",
+        "text": "Dat is niet waar, snel afvallen is altijd beter.",
+        "isCorrect": false,
+        "explanation": "Dat is een misverstand. Snel afvallen kan leiden tot ongezonde gewoontes en terugval."
+      }
+    ]
+  },
+  {
+    "question": "Wat is een veelvoorkomende psychologische valkuil bij afvallen?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Te weinig groente eten.",
+        "isCorrect": false,
+        "explanation": "Dat is fysiek nadelig, maar geen psychologische valkuil."
+      },
+      {
+        "label": "B",
+        "text": "Elke dag op de weegschaal staan.",
+        "isCorrect": false,
+        "explanation": "Dat is niet per se slecht, zolang het je niet obsessief maakt of demotiveert."
+      },
+      {
+        "label": "C",
+        "text": "Denken dat één 'slechte' dag het hele proces verpest.",
+        "isCorrect": true,
+        "explanation": "Klopt! Deze alles-of-niets-gedachte leidt vaak tot opgeven, terwijl één dag geen ramp is."
+      }
+    ]
+  },
+  {
+    "question": "Welke rol speelt eiwit bij afvallen?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Eiwit helpt spiermassa behouden tijdens een calorietekort.",
+        "isCorrect": true,
+        "explanation": "Juist! Dit is essentieel om een gezond metabolisme te behouden tijdens gewichtsverlies."
+      },
+      {
+        "label": "B",
+        "text": "Eiwit verhoogt het hongergevoel.",
+        "isCorrect": false,
+        "explanation": "Integendeel – eiwitten zorgen juist voor een verzadigd gevoel."
+      },
+      {
+        "label": "C",
+        "text": "Eiwit wordt niet gebruikt door het lichaam tijdens een dieet.",
+        "isCorrect": false,
+        "explanation": "Onjuist – eiwitten blijven belangrijk, zelfs of juist tijdens een dieet."
+      }
+    ]
+  },
+  {
+    "question": "Wat is waar over sporten tijdens een afvalproces?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Sporten zorgt ervoor dat je automatisch minder eet.",
+        "isCorrect": false,
+        "explanation": "Soms krijg je juist meer trek na intensieve inspanning."
+      },
+      {
+        "label": "B",
+        "text": "Beweging is nuttig, maar voeding bepaalt het grootste deel van het resultaat.",
+        "isCorrect": true,
+        "explanation": "Correct! Je kunt niet 'uit-sporten' wat je inneemt aan calorieën."
+      },
+      {
+        "label": "C",
+        "text": "Alleen krachttraining helpt bij vetverlies.",
+        "isCorrect": false,
+        "explanation": "Ook cardio, wandelen en andere vormen van beweging dragen bij aan verbranding."
+      }
+    ]
+  },
+  {
+    "question": "Wat gebeurt er met je stofwisseling als je langdurig te weinig eet?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Je lichaam gaat automatisch spieren opbouwen.",
+        "isCorrect": false,
+        "explanation": "Bij een tekort breekt het lichaam juist spierweefsel af voor energie."
+      },
+      {
+        "label": "B",
+        "text": "Je stofwisseling versnelt om vetreserves te verbranden.",
+        "isCorrect": false,
+        "explanation": "Dat is onjuist – het lichaam vertraagt de stofwisseling bij langdurig tekort."
+      },
+      {
+        "label": "C",
+        "text": "Je lichaam past zich aan en verbrandt minder energie in rust.",
+        "isCorrect": true,
+        "explanation": "Juist! Dit is een overlevingsmechanisme bij langdurige energiebeperking."
+      }
+    ]
+  },
+  {
+    "question": "Wat is het voordeel van een eetdagboek bij afvallen?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Het helpt je patronen en onbewust eetgedrag herkennen.",
+        "isCorrect": true,
+        "explanation": "Klopt! Veel mensen eten zonder erbij stil te staan. Een dagboek maakt dat zichtbaar."
+      },
+      {
+        "label": "B",
+        "text": "Het voorkomt dat je te veel slaapt.",
+        "isCorrect": false,
+        "explanation": "Slaap heeft er niets mee te maken. Het gaat om bewustwording van eetgewoontes."
+      },
+      {
+        "label": "C",
+        "text": "Het verhoogt je stofwisseling.",
+        "isCorrect": false,
+        "explanation": "Nee – registreren verandert niets aan je verbranding, maar wel aan je gedrag."
+      }
+    ]
+  },
+  {
+    "question": "Wat maakt afvallen op de lange termijn succesvol?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Het schrappen van een hele voedingsgroep, zoals koolhydraten.",
+        "isCorrect": false,
+        "explanation": "Dat is zelden nodig en vaak ongezond. Balans is belangrijker."
+      },
+      {
+        "label": "B",
+        "text": "Een streng en tijdelijk dieet.",
+        "isCorrect": false,
+        "explanation": "Dat leidt vaak tot terugval. Duurzame gedragsverandering werkt beter."
+      },
+      {
+        "label": "C",
+        "text": "Een voedingspatroon dat je kunt volhouden.",
+        "isCorrect": true,
+        "explanation": "Juist! Afvallen is pas blijvend als je het nieuwe gedrag vol kunt houden."
+      }
+    ]
+  },
+  {
+    "question": "Wat betekent het als iemand in een 'calorie-evenwicht' zit?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ze eten evenveel vet als koolhydraten.",
+        "isCorrect": false,
+        "explanation": "Dat zegt niets over calorieën of lichaamsgewicht."
+      },
+      {
+        "label": "B",
+        "text": "Ze verbranden meer dan ze eten.",
+        "isCorrect": false,
+        "explanation": "Dan zouden ze afvallen, en dat is geen evenwicht."
+      },
+      {
+        "label": "C",
+        "text": "Ze eten evenveel als ze verbranden.",
+        "isCorrect": true,
+        "explanation": "Precies! In een calorie-evenwicht blijf je op hetzelfde gewicht."
+      }
+    ]
+  },
+  {
+    "question": "Waarom is alleen minder eten vaak niet genoeg om gezond af te vallen?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Omdat voeding ook moet voorzien in vitaminen, mineralen en verzadiging.",
+        "isCorrect": true,
+        "explanation": "Juist! Alleen minder eten kan leiden tot tekorten en honger. Kwaliteit telt mee."
+      },
+      {
+        "label": "B",
+        "text": "Omdat je altijd moet vasten om af te vallen.",
+        "isCorrect": false,
+        "explanation": "Vasten is een methode, geen vereiste. Het draait om energie-inname en gezondheid."
+      },
+      {
+        "label": "C",
+        "text": "Omdat je lichaam vet niet gebruikt als brandstof.",
+        "isCorrect": false,
+        "explanation": "Je lichaam kan juist vet gebruiken bij een energietekort."
+      }
+    ]
+  },
+  {
+    "question": "Wat is een realistisch en gezond gewichtsverlies per week?",
+    "options": [
+      {
+        "label": "A",
+        "text": "2 tot 3 kilo per week.",
+        "isCorrect": false,
+        "explanation": "Dat is te snel en vaak niet duurzaam. Grote kans op terugval."
+      },
+      {
+        "label": "B",
+        "text": "Meer dan 4 kilo per week.",
+        "isCorrect": false,
+        "explanation": "Dat is ongezond en duidt vaak op vochtverlies of een crashdieet."
+      },
+      {
+        "label": "C",
+        "text": "0,5 tot 1 kilo per week.",
+        "isCorrect": true,
+        "explanation": "Klopt! Dit is haalbaar en helpt je spiermassa behouden en gewoontes veranderen."
+      }
+    ]
+  }
+]

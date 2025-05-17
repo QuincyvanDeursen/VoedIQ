@@ -36,7 +36,7 @@ export class LayoutService {
   private isNoHeaderFooterPage(url: string): boolean {
     // Controleer of de URL een cursuspagina bevat (dynamisch) en geen header/footer moet tonen
     const courseName = this.getCourseNameFromUrl(url);
-    return courseName === 'basiskennis' || courseName === 'gezondevoeding';
+    return courseName === 'basiskennis' || courseName === 'afvallen';
   }
 
   // Haal de courseName uit de URL

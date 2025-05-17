@@ -15,6 +15,14 @@ import { BasiskennisModule4Lesson1Component } from '../../features/courses/basis
 import { BasiskennisModule4Lesson3Component } from '../../features/courses/basiskennis_lessons/basiskennis-module4-lesson3/basiskennis-module4-lesson3.component';
 import { BasiskennisModule5Lesson1Component } from '../../features/courses/basiskennis_lessons/basiskennis-module5-lesson1/basiskennis-module5-lesson1.component';
 import { BasisKennisIntroductieComponent } from '../../features/courses/basiskennis_lessons/basis-kennis-introductie/basis-kennis-introductie.component';
+import { AfvallenIntroductieComponent } from '../../features/courses/afvallen_lessons/afvallen-introductie/afvallen-introductie.component';
+import { AfvallenModule1Lesson1Component } from '../../features/courses/afvallen_lessons/afvallen-module1-lesson1/afvallen-module1-lesson1.component';
+import { AfvallenModule1Lesson2Component } from '../../features/courses/afvallen_lessons/afvallen-module1-lesson2/afvallen-module1-lesson2.component';
+import { AfvallenModule1Lesson3Component } from '../../features/courses/afvallen_lessons/afvallen-module1-lesson3/afvallen-module1-lesson3.component';
+import { AfvallenModule1Lesson4Component } from '../../features/courses/afvallen_lessons/afvallen-module1-lesson4/afvallen-module1-lesson4.component';
+import { AfvallenModule1Lesson5Component } from '../../features/courses/afvallen_lessons/afvallen-module1-lesson5/afvallen-module1-lesson5.component';
+import { AfvallenModule1Lesson6Component } from '../../features/courses/afvallen_lessons/afvallen-module1-lesson6/afvallen-module1-lesson6.component';
+import { AfvallenModule1Lesson7Component } from '../../features/courses/afvallen_lessons/afvallen-module1-lesson7/afvallen-module1-lesson7.component';
 
 @Injectable({
   providedIn: 'root',
@@ -154,6 +162,76 @@ export class CourseService {
             },
           ],
         },
+      ],
+    },
+    afvallen: {
+      title: 'Afvallen Cursus',
+      route: 'afvallen',
+      description: 'Leer de basis van afvallen!',
+      modules: [
+        {
+          title: 'Introductie',
+          route: 'introductie',
+          completion: false,
+          lessons: [
+            {
+              title: 'Introductie',
+              route: 'introductie/les1',
+              component: AfvallenIntroductieComponent,
+              completion: false,
+            },
+          ],
+        },
+        {
+          title: 'Module 1 - Theorie van Afvallen',
+          route: 'module1',
+          completion: false,
+          lessons: [
+            {
+              title: '1.1 Fundamenten van Afvallen',
+              route: 'module1/les1',
+              component: AfvallenModule1Lesson1Component,
+              completion: false,
+            },
+            {
+              title: '1.2 Gewichtsverlies vs. Vetverlies',
+              route: 'module1/les2',
+              component: AfvallenModule1Lesson2Component,
+              completion: false,
+            },
+            {
+              title: '1.3 Crashdiëten',
+              route: 'module1/les3',
+              component: AfvallenModule1Lesson3Component,
+              completion: false,
+            },
+            {
+              title: '1.4 Prgressie meten',
+              route: 'module1/les4',
+              component: AfvallenModule1Lesson4Component,
+              completion: false,
+            },
+            {
+              title: '1.5 Supplementen',
+              route: 'module1/les5',
+              component: AfvallenModule1Lesson5Component,
+              completion: false,
+            },
+            {
+              title: '1.6 Caloriedichtheid',
+              route: 'module1/les6',
+              component: AfvallenModule1Lesson6Component,
+              completion: false,
+            },
+            {
+              title: '1.7 Vaakgemaakte Misverstanden',
+              route: 'module1/les7',
+              component: AfvallenModule1Lesson7Component,
+              completion: false,
+            },
+          ],
+        },
+        // Voeg hier meer modules en lessen toe
       ],
     },
   };
