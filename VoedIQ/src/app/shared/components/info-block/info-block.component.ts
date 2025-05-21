@@ -8,7 +8,8 @@ import { Component, Input } from '@angular/core';
   styleUrl: './info-block.component.css',
 })
 export class InfoBlockComponent {
-  @Input() type: 'tip' | 'fact' | 'story' = 'tip';
+  @Input() type: 'tip' | 'fact' | 'story' | 'example' = 'tip';
+
   @Input() content: string = '';
 
   get iconClass(): string {
@@ -17,6 +18,8 @@ export class InfoBlockComponent {
         return 'icon-[solar--notebook-bookmark-bold]';
       case 'story':
         return 'icon-[solar--chat-round-line-bold]';
+      case 'example':
+        return 'icon-[solar--presentation-graph-bold]';
       default:
         return 'icon-[solar--lightbulb-minimalistic-bold]';
     }
@@ -28,6 +31,8 @@ export class InfoBlockComponent {
         return 'bg-green-100';
       case 'story':
         return 'bg-yellow-100';
+      case 'example':
+        return 'bg-pink-100';
       default:
         return 'bg-blue-100';
     }
@@ -39,6 +44,8 @@ export class InfoBlockComponent {
         return 'bg-blue-600';
       case 'fact':
         return 'bg-green-600';
+      case 'example':
+        return 'bg-pink-600';
       case 'story':
         return 'bg-yellow-400';
       default:

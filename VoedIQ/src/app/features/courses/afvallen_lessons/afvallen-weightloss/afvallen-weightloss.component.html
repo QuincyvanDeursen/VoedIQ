@@ -1,0 +1,123 @@
+<h1 class="lg:text-3xl text-xl font-bold text-center bg-primary rounded-2xl text-white p-4 mb-4">
+    1.2 Vetverlies & gewichtsverlies
+</h1>
+<img src="cursus_doelgericht.svg" alt="Weegschaal" class=" mx-auto mb-5 order-1 sm:w-1/2 pt-10" />
+<div class="flex flex-col mb-10">
+    <div class="flex flex-col gap-3">
+        <div class="flex flex-col lg:flex-row">
+            <div class="flex flex-col  gap-3 order-2 lg:order-1">
+                <h1 class="text-2xl font-bold mt-10">Het verschil tussen vetverlies en gewichtsverlies</h1>
+
+                <p class="text-base text-justify">
+                    Veel mensen richten zich volledig op het getal op de weegschaal. Maar vetverlies en gewichtsverlies
+                    zijn niet hetzelfde.
+                    Je doel is vaak niet simpelweg minder wegen, maar er fitter uitzien en gezonder zijn. Dat kun je
+                    niet meten
+                    met alleen de weegschaal. Deze cursus focust zich op vetverlies, niet op gewichtsverlies.
+                </p>
+
+                <p class="text-base text-justify">
+                    We gaan nu wel even wat dieper in op gewichtsverlies, er is namelijk een belangrijk punt wat je je
+                    moet
+                    realiseren. Je kunt gewicht verliezen zonder vet te
+                    verliezen, bijvoorbeeld door vocht of spiermassa kwijt te
+                    raken. Omgekeerd kun je vet verliezen
+                    zonder dat de weegschaal een lager getal toont bijvoorbeeld omdat je tegelijkertijd spiermassa
+                    opbouwt of toevallig meer vocht vasthoudt. Laat je niet misleiden door de weegschaal!
+                </p>
+
+
+
+
+                <div
+                    class="mx-auto flex flex-col text-center max-w-2xl w-full my-5 border-gray-50 bg-gray-50 shadow-lg rounded-3xl">
+
+                    <p class="bg-accent text-white p-4 rounded-3xl w-full">Maak jij je ook schuldig aan overhaaste
+                        conclusies?
+                    </p>
+
+                    <div class="flex flex-row gap-2 mx-auto my-5">
+                        <button class="btn btn-accent" (click)="antwoord = true">Ja</button>
+
+                        <button class="btn btn-accent" (click)="antwoord = false">Nee</button>
+                    </div>
+
+                    <div class=" text-center text-accent bg-gray-50 rounded-xl p-4 " *ngIf="antwoord !== null">
+                        <ng-container *ngIf="antwoord; else neeAntwoord">
+                            Bijna iedereen doet dat! We zijn immers onze grootste criticus.
+                            Lees gauw door, dan leer je begrijpen waarom de weegschaal echt niet de beste tool is. Later
+                            leer je hoe je hem wel goed kunt gebruiken.
+                        </ng-container>
+                        <ng-template #neeAntwoord>
+                            Super! Dan ben je al een stap verder. De weegschaal is niet de beste tool om je voortgang te
+                            meten.
+                            Later leer je hoe je hem wel goed kunt gebruiken.
+                        </ng-template>
+                    </div>
+                </div>
+
+
+
+
+                <app-info-block type="story" content="Er bestaan weegschalen die je vetpercentage meten via een elektrische puls (bio-elektrische
+                    impedantie), maar deze zijn vaak onnauwkeurig.
+                    De stroom loopt meestal alleen via je benen en dus krijg je eigenlijk ook alleen een idee van jouw vet percentage in jouw benen. Bovendien beïnvloeden factoren zoals hydratatie, temperatuur of je
+                    voetzolen de meting. Je hebt dus niet veel aan zo'n weegschaal!"></app-info-block>
+
+                <div class="divider divider-accent"></div>
+
+
+                <h2 class="text-xl font-semibold mt-6">Gewichtsschommelingen zijn normaal</h2>
+
+
+
+                <p class="text-base text-justify">
+                    Oke, tijd voor wat harde getallen. Een kilo lichaamsvet bevat ongeveer 7.700 kcal. Om twee kg
+                    vet
+                    aan te komen
+                    in één dag zou je ruim 15.400kcal (2x7700)
+                    teveel moeten eten. Dat is bijna onmogelijk en is zeker niet iets wat je even perongeluk doet.
+                    Nou kom het wel is voor dat je jezelf weegt en dan zie je een plotselinge stijging van 1 à 2 kg
+                    in
+                    lichaamsgewicht in
+                    vergelijking met de dag ervoor. VoedIQ zal je gerust stellen: dat is normaal!
+                    Dit is geen vettoename, maar een schommeling in je gewicht wat met name te maken heeft met
+                    vocht.
+                </p>
+
+                <p class="text-base text-justify">
+                    De weegschaal meet simpelweg je totaalgewicht, zonder onderscheid te maken tussen vet, spieren,
+                    vocht, glycogeen of voedsel in je darmen. Drink je bijvoorbeeld twee glazen water? Dan zal de
+                    weegschaal dat meteen laten zien door een iets hoger gewicht. Toch zijn we vaak geneigd onszelf te
+                    beoordelen op dat getal, zonder rekening te houden met deze factoren. Dit is een van de grootste
+                    valkuilen tijdens het afvallen.
+                </p>
+
+                <p class="text-base text-justify">
+                    Je lichaam bestaat voor 60-65% uit water. Normale schommelingen van 0.1 tot 3 kg kunnen komen
+                    door:
+                </p>
+
+                <ul class="list-disc list-inside text-base ml-4">
+                    <li>Zout- of koolhydraatrijke maaltijden</li>
+                    <li>Hormonale schommelingen (bijv. menstruatie)</li>
+                    <li>Hitte of kou</li>
+                    <li>Stress</li>
+                    <li>Te weinig of juist veel vochtinname</li>
+                    <li>Slaaptekort</li>
+                </ul>
+                <p class="text-base text-justify">
+                    Laat je dus niet misleiden of demotiveren door de weegschaal.
+                </p>
+                <app-info-block class="mt-10" type="fact"
+                    content="Wist je dat je gewicht in de ochtend lager is door vochtverlies tijdens het slapen? Gemiddeld adem je per nacht zo’n 300 milliliter water uit en verlies je nog eens 200 tot 500 milliliter via zweet. Daarom wegen mensen ’s ochtends vaak minder dan de avond ervoor!" />
+
+            </div>
+        </div>
+    </div>
+
+    <div class="divider divider-accent lg:my-10"></div>
+
+    <app-quiz-question [id]="0" [explanation]="true" [question]="vetverliesVraag">
+    </app-quiz-question>
+</div>

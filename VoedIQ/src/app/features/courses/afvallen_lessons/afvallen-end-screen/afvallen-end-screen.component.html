@@ -1,0 +1,74 @@
+<h1 class="text-xl lg:text-3xl mb-4 p-4 font-bold text-center bg-primary rounded-2xl text-white py-2">
+    Je hebt de cursus afgerond!
+</h1>
+<img src="cursus_basiskennis.svg" alt="foto met boeken" class="lg:w-1/2 mx-auto my-5 px-5 order-1 lg:order-1 " />
+<div class="flex flex-col mb-10">
+    <div class="flex flex-col gap-3">
+
+        <p class="text-base text-justify">
+            Gefeliciteerd! Je hebt de cursus bijna helemaal doorlopen. We hopen dat je nieuwe inzichten hebt gekregen in
+            de basis van voeding en dat je er direct iets mee kunt in je dagelijks leven.
+        </p>
+
+        <p class="text-base text-justify">
+            Wil je testen hoeveel je hebt onthouden? Klik dan op de knop hieronder om de eindquiz te starten.
+        </p>
+
+        <!-- Quiz Start Knop -->
+        <div class="text-center mb-8">
+            <button type="button"
+                class="btn btn-warning text-white w-1/2 mx-auto mt-5 hover:bg-yellow-500 shadow shadow-gray-900"
+                id="quizButton" aria-haspopup="dialog" aria-expanded="false" aria-controls="quiz-modal"
+                data-overlay="#quiz-modal" value="motion-preset-slide-right">
+                <span class="icon-[solar--notebook-minimalistic-bold] size-8 text-white"></span> Quiz
+            </button>
+        </div>
+        <div class="divider divider-accent"></div>
+        <!-- Feedback Uitleg -->
+        <h2 class="text-xl font-semibold">Help ons VoedIQ te verbeteren!</h2>
+        <p class="text-base text-justify">
+            We zijn altijd bezig met verbeteren! Heb je een paar minuten? Laat ons weten wat je van de cursus vond via
+            het formulier hieronder.
+        </p>
+
+        <!-- Google Form Link -->
+        <div class="w-full flex justify-center mb-10">
+            <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLScWRgHJVMgnqKgfIbq9CevIe9YyZ4TvvxFEVHivQ5yW07761g/viewform?embedded=true"
+                width="640" height="635" frameborder="0" marginheight="0" marginwidth="0">Laden…</iframe>
+        </div>
+        <div class="divider divider-accent"></div>
+        <!-- Terug naar Hoofdpagina -->
+        <div class="text-center flex flex-row justify-center gap-5">
+            <button class="px-6 py-2 bg-primary text-white rounded-lg font-semibold" [routerLink]="'/home'">
+                Terug naar de Hoofdpagina
+            </button>
+            <button class="px-6 py-2 bg-accent text-white rounded-lg font-semibold"
+                [routerLink]="'/cursus/afvallen/module3/les1'">
+                Extra content bekijken
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Quiz Modal (zelfde als je eerder gebruikte) -->
+<div id="quiz-modal" class="overlay modal overlay-open:opacity-100 hidden bg-primary/70  z-10" role="dialog"
+    tabindex="-1">
+    <div class="modal-dialog overlay-open:opacity-100 w-full max-w-5xl max-h-[80vh] flex justify-center">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Eindquiz</h3>
+                <button type="button" class="btn btn-text btn-circle btn-sm absolute end-3 top-3" aria-label="Close"
+                    data-overlay="#quiz-modal">
+                    <span class="icon-[tabler--x] size-4"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <app-quiz [questions]="eindQuizVragen" [maxHeightVh]="80"></app-quiz>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-overlay="#quiz-modal">Sluiten</button>
+            </div>
+        </div>
+    </div>
+</div>

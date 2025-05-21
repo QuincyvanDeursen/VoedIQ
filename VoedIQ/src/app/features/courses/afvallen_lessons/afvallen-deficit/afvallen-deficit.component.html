@@ -1,0 +1,76 @@
+<h1 class="lg:text-3xl text-xl font-bold text-center bg-primary rounded-2xl text-white p-4 mb-4">
+    2.2 Een calorietekort plan
+</h1>
+
+<div class="flex flex-col mb-10">
+    <div class="flex flex-col gap-3">
+        <div class="flex flex-col lg:flex-row">
+            <div class="flex flex-col gap-3 order-2 lg:order-1">
+
+                <h1 class="text-2xl font-bold mt-10">Van inzicht naar actie</h1>
+
+                <p class="text-base text-justify">
+                    Nu je weet <span *ngIf="tdee != 0"> dat jouw dagelijkse calorie behoefte
+                        <strong>{{tdee}}kcal</strong> is</span><span *ngIf="tdee == 0">hoeveel calorieën je ongeveer per
+                        dag nodig hebt om op gewicht te
+                        blijven</span>, is het tijd om een plan te maken. Om af te vallen, moet je minder calorieën
+                    binnenkrijgen dan je verbruikt. Hoe groter het tekort aan calorieën, hoe sneller
+                    je
+                    afvalt. Dat betekent echter niet dat je jezelf moet gaan uithongeren. Toch lijk het sommige mensen
+                    een goed idee om bijna niks eten. Daar schiet je niets mee op. Het is ongezond en de kans dat je het
+                    volhoudt is
+                    klein.
+                </p>
+
+                <app-info-block class="my-5" type="story"
+                    content="Eén kilogram lichaamsvet bevat ongeveer 7.700 kcal aan energie. Stel dat je helemaal niets zou eten, maar wel even actief blijft als nu (met een TDEE van {{tdee}}kcal), dan zou het theoretisch ongeveer {{theoreticFatLoss}} dagen duren om één kilo vet te verliezen. In de praktijk verlies je echter niet alleen vet, maar ook spiermassa en vocht. Bovendien is volledig vasten erg ongezond en wordt het sterk afgeraden.">
+                </app-info-block>
+
+
+                <p class="text-justify text-base"> Het is belangrijk om een
+                    tekort te
+                    creëren dat je kunt volhouden. Afvallen kost hoe dan ook tijd. Bovendien gaat het om het veranderen
+                    van je huidige eetgedrag. Doe je dat niet, dan is de kans groot dat je
+                    na het afvallen weer terugvalt in je oude gewoontes en dat is waarschijnlijk niet wat jij wil.</p>
+
+                <p class="text-base text-justify">
+                    Een goed begin om af te vallen is om dagelijks ongeveer 500 calorieën minder te eten dan je nu
+                    doet. Echter is deze hoeveelheid voor iedereen anders. Je kunt je voorstellen dat iemand die maar
+                    1500kcal mag, meer moeite heeft met een tekort van 500kcal dan iemand die 2500kcal mag. Daarom
+                    is het belangrijk dat je dit zelf uitprobeert. Met 500kcal minder per dag, val je ongeveer 0,5
+                    kilogram per week af. Dit is een gezond tempo. Nogmaals, het is beter om langzaam af te vallen dan
+                    snel.
+                </p>
+
+
+                <app-info-block class="my-5" type="tip" content="                    Als je gewent bent structureel te veel calorieën binnen te krijgen, kan het slim zijn om de eerste maand
+                    op onderhoud te eten. Met onderhoud wordt hier jouw TDEE bedoelt ({{tdee}}kcal). Zo wordt het verschil
+                    met
+                    je afval-fase niet te groot. Een plotseling te groot tekort zorgt
+                    vaak voor honger, weinig energie en mogelijk vroegtijdig stoppen met het dieet."></app-info-block>
+
+                <div class="divider divider-accent lg:my-10"></div>
+
+                <p class="text-justify text-base my-5">Hieronder is een tool van VoedIQ die jouw helpt een geschikt
+                    energie
+                    tekort te bepalen. Vul je gegevens in en je gewenste gewicht. Geef ook aan welk energie tekort je
+                    zou willen hanteren. 500kcal is vaak een goede start. Voor sommigen is meer mogelijk, voor sommigen
+                    is minder beter. Kies de grote van je calorie tekort. Zodra je op bereken klikt, krijg je een
+                    advies. </p>
+
+                <app-target-weight-time-calculator></app-target-weight-time-calculator>
+                <app-info-block class="my-5" type="tip" content="                    Onthoud: gewichtstoename gebeurt ook niet in een paar dagen. Gun je lichaam daarom ook de tijd om
+                    gezond af te vallen."></app-info-block>
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="divider divider-accent lg:my-10"></div>

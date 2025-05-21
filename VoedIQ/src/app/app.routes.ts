@@ -9,6 +9,7 @@ import { LessonComponent } from './features/courses/lesson/lesson.component';
 import { TargetWeightCalculatorComponent } from './features/target-weight-calculator/target-weight-calculator.component';
 import { DashboardComponent } from './features/dashboard/dashboard.component';
 import { AboutUsComponent } from './features/about-us/about-us.component';
+import { FeedbackComponent } from './features/feedback/feedback.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -18,6 +19,7 @@ export const routes: Routes = [
   { path: 'energy-calculator', component: EnergyCalculatorsComponent },
   { path: 'nutri-calculator', component: MacroMicroNutriCalculatorsComponent },
   { path: 'over-ons', component: AboutUsComponent },
+  { path: 'feedback', component: FeedbackComponent },
   {
     path: 'doelgewicht-calculator',
     component: TargetWeightCalculatorComponent,

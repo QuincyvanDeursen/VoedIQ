@@ -40,7 +40,7 @@
 
     <!-- Bereken TDEE knop -->
     <div class="flex w-full md:flex-row justify-center p-4  bg-primary/80 rounded-xl  gap-3 mt-4">
-        <button class="btn bg-warning/80 text-white" (click)="calculateTDEE(); scrollToElement('result')">
+        <button class="btn bg-warning/80 text-white" (click)="calculateTDEE(); scrollToElement('resulttdee')">
             <span class="icon-[solar--calculator-bold] size-6 flex-shrink-0 bg-white"></span>Bereken
         </button>
 
@@ -49,7 +49,7 @@
 </div>
 
 <!-- Resultaatcontainer onder de hoofdcontainer -->
-<div id="result" class="flex p-4 bg-primary   rounded-xl justify-center mt-4">
+<div id="resulttdee" class="flex p-4 bg-primary   rounded-xl justify-center mt-4">
     <div class="w-3/4">
         <div *ngIf="isVisible">
             <h1 class="text-2xl text-center text-white font-bold">TDEE: <span class="text-secondary">{{ tdee }}</span>

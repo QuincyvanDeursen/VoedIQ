@@ -1,0 +1,172 @@
+<h1 class="lg:text-3xl text-xl font-bold text-center bg-primary rounded-2xl text-white p-4 mb-4">
+    2.3 Eetpatroon Analyseren
+</h1>
+<img src="analyse.svg" alt="Weegschaal" class=" mx-auto mb-5 order-1 sm:w-1/2 pt-10" />
+<div class="flex flex-col mb-10 gap-3">
+    <p class="text-base text-justify">
+        In de vorige les heb je berekend hoeveel calorieën je nodig hebt om af te vallen. Nu is het tijd om je
+        eetpatroon te analyseren. Dit geeft inzicht in je gewoonten en laat zien waar je eenvoudig calorieën kunt
+        besparen.
+    </p>
+
+    <p class="text-base text-justify">
+        Afvallen hoeft niet te betekenen dat je je hele voedingspatroon omgooit. Dat is de fout die velen maken. Soms is
+        wat minder eten of meer bewegen
+        al voldoende. Voor anderen kan het helpen om bepaalde producten te vervangen.
+    </p>
+
+    <p class="text-base text-justify">
+        Ook een diëtist zal altijd eerst vragen wat je nu eet. Waarom? Omdat alleen dan gerichte en haalbare
+        aanpassingen mogelijk zijn. Kies daarom een aanpak die bij jou past, en niet per se wat voor anderen werkt. Deze
+        zelfsturing vraagt mogelijk in het begin
+        wat extra tijd, maar het is de moeite waard. Dit is de enige manier om je eetpatroon blijvend te veranderen.
+    </p>
+
+    <p class="text-base text-justify">
+        Onthoud: Het doel is afvallen op een manier die je volhoudt. Je favoriete maaltijden blijven mogelijk, zolang je
+        slimme
+        keuzes maakt. Houd het simpel, realistisch en persoonlijk.
+    </p>
+
+
+    <div
+        class="mx-auto flex flex-col text-center max-w-2xl w-full my-5 border-gray-50 bg-gray-50 shadow-lg rounded-3xl">
+
+        <p class="bg-accent text-white p-4 rounded-3xl w-full">Ben jij wel is heel streng voor jezelf geweest
+            met
+            je voeding met als doel af te vallen?</p>
+
+
+        <div class="flex flex-row gap-2 mx-auto my-5">
+            <button class="btn btn-accent" (click)="antwoord = true">Ja</button>
+
+            <button class="btn btn-accent" (click)="antwoord = false">Nee</button>
+        </div>
+
+        <div class=" text-center text-accent bg-gray-50 rounded-xl p-4 " *ngIf="antwoord !== null">
+            <ng-container *ngIf="antwoord; else neeAntwoord">
+                Het komt vaak voor! Mensen bestempelen voeding vaak als gezond of ongezond op basis van het aantal
+                calorieën.
+                Gezonde voeding kan echt net zo goed calorierijk zijn. Denk bijvoorbeeld
+                aan noten, avocado's en olijfolie. Dit zijn allemaal gezonde voedingsmiddelen, maar ze bevatten ook veel
+                calorieën. Gezond eten doe je niet om af te vallen, maar om je lichaam te
+                voeden. Het is belangrijk om te begrijpen dat gezond eten niet betekent dat je zal afvallen.
+            </ng-container>
+            <ng-template #neeAntwoord>
+                Goed zo! Het is belangrijk om te begrijpen dat gezond
+                eten niet betekent dat je gaat afvallen.
+                Gezond eten doe je om je lichaam te
+                voeden en zo fit en energiek mogelijk te zijn.
+            </ng-template>
+        </div>
+    </div>
+
+    <div class="divider divider-accent lg:my-10"></div>
+
+    <h2 class="text-xl font-semibold mt-6">Eetpatroon analyseren</h2>
+
+    <p class="text-base text-justify">
+        Als je je eetpatroon wilt verbeteren, moet je eerst weten waar je nu staat. De beste manier om dat te doen, is
+        door minimaal een week lang eerlijk bij te houden wat je eet en drinkt. Dat kan in een app of gewoon op papier.
+        Het hoeft niet perfect, maar hoe nauwkeuriger je bent, hoe meer inzicht je krijgt. Leer jezelf aan om
+        verpakkingen te lezen. Een website zoals
+        <a href="https://www.voedingswaardetabel.nl/voedingswaarde/" target="_blank"
+            class="text-accent font-semibold underline">Voedingswaardetabel</a> kan ook helpen om inzicht te krijgen in
+        de hoeveelheid
+        calorieën en voedingsstoffen in je voeding. Dit kan je helpen om betere keuzes te maken.
+    </p>
+
+    <app-info-block type="tip" class="my-5"
+        content="Gebruik apps zoals MijnEetMeter, MyFitnessPal of Cronometer om gemakkelijk je voeding bij te houden."></app-info-block>
+
+    <p class="text-base text-justify">
+        In het begin lijkt calorieën tellen misschien veel werk, maar het levert je waardevolle inzichten op. Je ontdekt
+        patronen, ziet waar onbewuste valkuilen zitten en krijgt grip op je inname. Zeker in de eerste weken is dit van
+        grote waarde. In de carousel hieronder vind je de voordelen van het bijhouden van je voeding.
+    </p>
+
+    <app-info-block type="story" class="my-5"
+        content="Calorieën tellen of een eetdagboek bijhouden is meestal maar tijdelijk. Zodra je goede gewoontes hebt opgebouwd en vooruitgang boekt, hoef je pas opnieuw te gaan bijhouden als je merkt dat je stagneert of wilt bijsturen. Voortdurend bijhouden geeft je echter de meeste vrijheid en de beste resultaten."></app-info-block>
+
+
+
+
+    <!-- Slider -->
+    <div data-carousel='{
+    "loadingClasses": "opacity-0",
+    "dotsItemClasses": "carousel-box"
+  }' class="relative w-full">
+        <div class="carousel h-80">
+            <div class="carousel-body h-full opacity-0">
+                <div class="carousel-slide">
+                    <div class="bg-base-300/60 flex h-full justify-center p-6">
+                        <span class="self-center text-lg sm:text-xl text-center max-w-xl">
+                            <strong>Het kost weinig tijd:</strong> Na wat oefening kost het je minder dan 5 minuten
+                            per dag, maar levert het enorm veel inzicht op.
+                        </span>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="bg-base-300/70 flex h-full justify-center p-6">
+                        <span class="self-center text-lg sm:text-xl text-center max-w-xl">
+                            <strong>Je wordt bewuster van je eetgedrag:</strong> Je ontdekt waar je (onbewust) te
+                            veel eet — denk aan sauzen, snacks of drankjes. Zo kun je gerichter
+                            aanpassingen maken.
+                        </span>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="bg-base-300/80 flex h-full justify-center p-6">
+                        <span class="self-center text-lg sm:text-xl text-center max-w-xl">
+                            <strong>Concrete feedback:</strong> Je ziet direct hoeveel calorieën je binnenkrijgt,
+                            waardoor je zelf kan kiezen of je nog ruimte hebt voor een snack terwijl je afvalt.
+                        </span>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="bg-base-300 flex h-full justify-center p-6">
+                        <span class="self-center text-lg sm:text-xl text-center max-w-xl">
+                            <strong>Flexibiliteit:</strong> Je hoeft niets uit te sluiten — je leert hoe je jouw
+                            favoriete eten in balans houdt met je doelen.
+                        </span>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="bg-base-300/90 flex h-full justify-center p-6">
+                        <span class="self-center text-lg sm:text-xl text-center max-w-xl">
+                            <strong>Stabiele gewoontes opbouwen:</strong> Door dagelijks bij te houden, ontwikkel je
+                            snel gezondere gewoontes.
+                        </span>
+                    </div>
+                </div>
+                <div class="carousel-slide">
+                    <div class="bg-base-300/95 flex h-full justify-center p-6">
+                        <span class="self-center text-lg sm:text-xl text-center max-w-xl">
+                            <strong>Meer motivatie:</strong> Kleine successen zijn zichtbaar, wat zorgt voor
+                            motivatie en doorzettingsvermogen. Resultaten zijn zo goed als gegarandeerd, zolang je
+                            consistent
+                            blijft. Daarvoor moet je wel weten wat je eet.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button type="button" class="carousel-prev">
+            <span class="size-9.5 bg-base-100 flex items-center justify-center rounded-full shadow">
+                <span class="icon-[tabler--chevron-left] size-5 cursor-pointer rtl:rotate-180"></span>
+            </span>
+            <span class="sr-only">Vorige</span>
+        </button>
+        <button type="button" class="carousel-next">
+            <span class="sr-only">Volgende</span>
+            <span class="size-9.5 bg-base-100 flex items-center justify-center rounded-full shadow">
+                <span class="icon-[tabler--chevron-right] size-5 cursor-pointer rtl:rotate-180"></span>
+            </span>
+        </button>
+
+        <div class="carousel-pagination absolute bottom-3 end-0 start-0 flex justify-center gap-3"></div>
+    </div>
+    <!-- End Slider -->
+
+</div>

@@ -121,7 +121,8 @@
 <div *ngIf="daysToGoal !== null" class="mt-4 p-4 bg-primary rounded-xl ">
     <h2 class="text-xl text-white font-bold text-center">Resultaat</h2>
     <p class="text-white text-center border rounded-2xl p-4 mt-4">
-        Indien je de {{tdee - calorieDeficit}} kcal per dag aanhoudt, dan zal je in de komende
+        Indien je de <span class="font-bold text-secondary">{{tdee - calorieDeficit}}</span> kcal per dag aanhoudt, dan
+        zal je in de komende
         <span class="font-bold text-secondary">{{ daysToGoal }}</span> dagen je doelgewicht van
         <span class="font-bold text-secondary">{{ goalWeight }}</span> kg bereiken.
         <br> Dit is een gewichtsverlies van <span class="font-bold text-secondary">{{ weight - goalWeight }}</span> kg.
@@ -130,10 +131,11 @@
     <p class="text-center lg:mt-2 text-white border rounded-2xl p-4 mt-4">
         Calorie advies:
         <span *ngIf=" adviceColor==='green'">✅ Gekozen calorie tekort of overschot is goed vol te houden</span>
-        <span *ngIf=" adviceColor==='orange'">⚠️ Gekozen calorie tekort of overschot is mogelijk lastig vol te
-            houden</span>
-        <span *ngIf=" adviceColor==='red'">❌ Gekozen calorie tekort of overschot is groot en moeilijk vol te
-            houden</span>
+        <span *ngIf=" adviceColor==='orange'">⚠️ Gekozen calorie tekort of overschot is aan de hoge kant. Dit is lastig
+            vol te
+            houden. </span>
+        <span *ngIf=" adviceColor==='red'">❌ Gekozen calorie tekort of overschot is niet reëel. Dit is niet of heel
+            moeilijk vol te houden.</span>
     </p>
     <div class=" text-white text-center lg:mt-2 border rounded-2xl p-4 mt-4">
         <p>Doelgewicht BMI klasse: {{ bmiStatus }}

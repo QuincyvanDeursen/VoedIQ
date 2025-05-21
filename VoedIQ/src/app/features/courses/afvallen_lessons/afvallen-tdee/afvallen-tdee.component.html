@@ -1,0 +1,95 @@
+<h1 class="lg:text-3xl text-xl font-bold text-center bg-primary rounded-2xl text-white p-4 mb-4">
+    2.1 Je onderhoud berekenen
+</h1>
+
+<img src="lunchtime.svg" alt="geinige foto" class="mx-auto mb-5 order-1 sm:w-1/2 pt-10" />
+
+<div class="flex flex-col mb-10">
+    <div class="flex flex-col gap-3">
+        <div class="flex flex-col lg:flex-row">
+            <div class="flex flex-col gap-3 order-2 lg:order-1">
+                <p class="text-base text-justify mt-6">
+                    Het is tijd voor de eerste praktische stap: ontdekken hoeveel calorieën je
+                    dagelijks nodig hebt om op gewicht te blijven. Pas als je weet wat je verbruikt, kun je gericht gaan
+                    bijsturen. Afvallen begint dus niet bij
+                    ‘gewoon minder eten’, maar bij weten hoeveel minder. De hoeveelheid calorieën die je dagelijks nodig
+                    hebt om op gewicht te blijven, is je onderhoudsniveau. Dit is de hoeveelheid energie die je lichaam
+                    verbruikt om zijn basisfuncties uit te voeren, plus de energie die je verbruikt door dagelijkse
+                    activiteiten en beweging.
+                    Dit wordt ook wel je TDEE genoemd
+                    (Totale Dagelijkse Energieverbruik).
+
+                </p>
+
+
+
+                <p class="text-base text-justify">
+                    VoedIQ heeft een rekentool ontwikkeld die jouw persoonlijke onderhoudsniveau schat in drie stappen.
+                </p>
+                <p class=" text-2xl bg-accent text-white p-4 rounded-2xl"> <span class="text-secondary font-bold">Stap 1
+                    </span> - Ruststofwisseling </p>
+                <p class="text-base text-justify my-4">
+                    De ruststofwisseling, ook wel BMR (Basal Metabolic Rate) genoemd, is het aantal calorieën dat je
+                    lichaam nodig heeft om in volledige rust te functioneren. Dit is de energie die je gebruikt voor
+                    essentiële processen zoals ademhalen, je hart laten kloppen, je lichaamstemperatuur op peil houden
+                    en zelfs denken. Met andere woorden: dit is wat je lichaam verbruikt als je de hele dag zou liggen
+                    zonder iets te doen. Met de tool hieronder bereken je jouw BMR.</p>
+                <app-bmr-calculator></app-bmr-calculator>
+
+                <div class="divider divider-accent my-10"></div>
+                <p class="  text-2xl bg-accent text-white p-4 rounded-2xl"> <span class="text-secondary font-bold">Stap
+                        2 </span> - Activteitentoeslag
+                </p>
+                <p class="text-base text-justify">
+                    De activteitentoeslag is de hoeveelheid calorieën jij extra mag eten door jouw levenstijl. Dit
+                    draait niet alleen om sport. Kantoorwerk, boodschappendoen, het huishouden, maar ook
+                    je hobby’s tellen mee. Het is de energie die je verbruikt door dagelijkse activiteiten en beweging.
+                    Deze activiteittoeslag wordt uitgedrukt in een factor, ook wel PAL (Physical Activity Level)
+                    genoemd. Hoe actiever je bent hoe hoger je PAL, en dus hoe meer calorieën je dagelijks verbruikt. De
+                    tool hieronder helpt je om jouw activteitentoeslag te berekenen.</p>
+
+                <div class="bg-orange-50 border-l-4 border-orange-500 p-4 my-4 rounded">
+                    <p class="text-orange-600 font-semibold mb-2">Let op bij het invullen van je activiteitenniveau:</p>
+                    <ul class="list-disc list-inside text-base text-justify text-orange-700 space-y-2">
+                        <li>Vul je activiteiten in op weekbasis, dus hoeveel je gemiddeld per week doet.</li>
+                        <li>Alle vormen van activiteit tellen mee — van sporten en wandelen tot huishoudelijke taken en
+                            kantoorwerk.</li>
+                        <li>Staat je specifieke activiteit er niet bij? Kies dan een vergelijkbare vorm, zoals
+                            "Krachttraining" voor "Fitness" of "kantoorwerk" voor "studeren".</li>
+                    </ul>
+                </div>
+
+
+                <app-pal-calculator></app-pal-calculator>
+
+                <div class="divider divider-accent lg:my-10"></div>
+                <p class="text-2xl bg-accent text-white p-4 rounded-2xl"> <span class="text-secondary font-bold">Stap 3
+                    </span> - Dagelijkse Caloriebehoefte
+                </p>
+                <p class="text-base text-justify">
+                    In de vorige twee stappen heb je je <strong>ruststofwisseling (BMR)</strong> en je
+                    <strong>activiteitsniveau (PAL)</strong> berekend. Door deze twee waarden met elkaar te combineren,
+                    krijg je jouw <strong>Totale Dagelijkse Energieverbruik (TDEE)</strong>: de hoeveelheid calorieën
+                    die je lichaam gemiddeld per dag verbrandt, inclusief al je activiteiten.
+                </p>
+                <p class="text-base text-justify mt-2 mb-10">
+                    Dit getal vormt de basis voor elk voedingsdoel. Of je nu wil afvallen, aankomen of op gewicht wil
+                    blijven — inzicht in je TDEE is essentieel om gericht bij te kunnen sturen.
+                </p>
+
+
+
+
+
+
+                <app-tdee-calculator></app-tdee-calculator>
+
+
+
+                <div class="divider divider-accent lg:my-10"></div>
+
+                <app-quiz-question [id]="0" [explanation]="true" [question]="tdeeQuizVraag"></app-quiz-question>
+            </div>
+        </div>
+    </div>
+</div>
