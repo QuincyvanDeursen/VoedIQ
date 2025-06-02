@@ -7,10 +7,11 @@ import { RouterLink } from '@angular/router';
   imports: [CommonModule, RouterLink],
   templateUrl: './card.component.html',
 })
-export class card {
+export class CardComponent {
   @Input() title: string = '';
   @Input() description: string = '';
   @Input() imageUrl: string = '';
   @Input() buttonText: string = 'Start!';
   @Input() linkUrl: string = '';
+  @Input() disabled: boolean = false;
 }

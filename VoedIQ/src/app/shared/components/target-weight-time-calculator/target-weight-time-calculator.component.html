@@ -87,7 +87,7 @@
         <div>
             <label class="text-white">Gewenste dagelijkse calorietekort of overschot (kcal)</label>
             <div class="input-group max-w-sm">
-                <input class="input" type="number" [(ngModel)]="calorieDeficit" min="1">
+                <input class="input" type="number" [(ngModel)]="calorieDelta" min="1">
                 <span class="input-group-text gap-3">
                     <button type="button" class="btn btn-primary btn-soft size-[22px] rounded min-h-0 p-0"
                         (pointerdown)="startAdjusting('calorieDeficit', -50, 1)" (pointerup)="stopAdjusting()"
@@ -121,12 +121,15 @@
 <div *ngIf="daysToGoal !== null" class="mt-4 p-4 bg-primary rounded-xl ">
     <h2 class="text-xl text-white font-bold text-center">Resultaat</h2>
     <p class="text-white text-center border rounded-2xl p-4 mt-4">
-        Indien je de <span class="font-bold text-secondary">{{tdee - calorieDeficit}}</span> kcal per dag aanhoudt, dan
-        zal je in de komende
+        Indien je de
+        <span class="font-bold text-secondary">{{ dailyCalorieIntake }}</span> kcal per dag aanhoudt,
+        dan zal je in de komende
         <span class="font-bold text-secondary">{{ daysToGoal }}</span> dagen je doelgewicht van
         <span class="font-bold text-secondary">{{ goalWeight }}</span> kg bereiken.
-        <br> Dit is een gewichtsverlies van <span class="font-bold text-secondary">{{ weight - goalWeight }}</span> kg.
-    </p>
+        <br>
+        Dit is een {{ weightChangeType }} van
+        <span class="font-bold text-secondary">{{ weightChange }}</span> kg.
+
 
     <p class="text-center lg:mt-2 text-white border rounded-2xl p-4 mt-4">
         Calorie advies:

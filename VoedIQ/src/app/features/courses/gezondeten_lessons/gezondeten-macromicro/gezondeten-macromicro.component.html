@@ -1,0 +1,78 @@
+<h1 class="lg:text-3xl text-xl font-bold text-center bg-primary rounded-2xl text-white p-4 mb-4">
+    2.2 Jouw dagelijkse voedingsbehoefte berekenen
+</h1>
+
+<img src="macronutrient.svg" alt="leuke afbeelding" class="mx-auto mb-5 order-1 sm:w-1/2 pt-10" />
+
+<div class="flex flex-col mb-10">
+    <div class="flex flex-col gap-3">
+        <div class="flex flex-col lg:flex-row">
+            <div class="flex flex-col gap-3 order-2 lg:order-1">
+                <p class="text-base text-justify mt-6">
+                    Als je weet hoeveel energie je lichaam nodig heeft, kun je nog een stap verder gaan door te kijken
+                    naar de verdeling van voedingsstoffen binnen die energie. Je voeding bestaat uit macronutriënten en
+                    micronutriënten. Beide zijn belangrijk voor een gezond en gebalanceerd eetpatroon.
+                </p>
+
+                <p class="text-2xl bg-accent text-white p-4 rounded-2xl">
+                    <span class="text-secondary font-bold">Stap 1</span> - Macronutriënten
+                </p>
+                <p class="text-base text-justify">
+                    Macronutriënten zijn voedingsstoffen die je lichaam in grotere hoeveelheden nodig heeft. Ze leveren
+                    calorieën en vervullen belangrijke functies. Eiwitten zijn essentieel voor het herstel en behoud van
+                    spieren. Koolhydraten zijn een efficiënte energiebron en vetten ondersteunen onder andere de opname
+                    van vitaminen en de aanmaak van hormonen.
+                </p>
+                <p class="text-base text-justify mt-2 mb-6">
+                    Deze tool helpt je bij het berekenen van jouw persoonlijke behoefte aan eiwitten, koolhydraten en
+                    vetten, gebaseerd op je dagelijkse calorie-inname die je in de vorige les berekend hebt.
+                </p>
+
+                <app-macronutrient-calculator></app-macronutrient-calculator>
+                <p class="text-base text-justify mt-4 mb-6">
+                    Deze hoeveelheden zijn gebaseerd op de aanbevelingen van de Gezondheidsraad en afgestemd op jouw
+                    energieverbruik.
+                    Let op dat de maximale hoeveelheden van alle voedingsstoffen bij elkaar opgeteld meer calorieën
+                    bevatten dan je dagelijks nodig hebt.
+                    Het is daarom niet de bedoeling om telkens de maximale hoeveelheden van alle nutriënten volledig te
+                    benutten, omdat dit kan leiden tot ongewenste gewichtstoename.
+                </p>
+
+                <div class="divider divider-accent my-10"></div>
+
+
+
+                <p class="text-2xl bg-accent text-white p-4 rounded-2xl">
+                    <span class="text-secondary font-bold">Stap 2</span> - Micronutriënten
+                </p>
+                <p class="text-base text-justify">
+                    Micronutriënten zijn vitaminen en mineralen die je lichaam in kleinere hoeveelheden nodig heeft,
+                    maar die wel onmisbaar zijn voor een goede gezondheid. Ze ondersteunen onder andere je weerstand,
+                    energiestofwisseling, botopbouw en cognitieve functies.
+                </p>
+                <p class="text-base text-justify mt-2">
+                    Met deze tool kun je nagaan of je inname van micronutriënten aansluit bij de aanbevolen hoeveelheden
+                    op basis van je leeftijd, geslacht en levensfase.
+                </p>
+
+                <p class="text-base text-justify mt-2 mb-6">
+                    Het is niet de bedoeling dat je deze hoeveelheden allemaal uit je hoofd leert. Dat is veel te
+                    ingewikkeld en onpraktisch.
+                    Deze tools helpen je juist om inzicht te krijgen in wat je lichaam nodig heeft en of je mogelijk
+                    risico loopt op tekorten door bepaalde omstandigheden zoals leeftijd, geslacht of leefstijl.
+                </p>
+
+                <app-micronutrient-calculator></app-micronutrient-calculator>
+
+                <p class="text-base text-justify mt-6 mb-10">
+                    In de volgende les leer je hoe je je voeding kunt analyseren en welke aanpassingen je kunt maken om
+                    beter aan je voedingsbehoeften te voldoen.
+                </p>
+
+                <div class="divider divider-accent my-10"></div>
+
+                <app-quiz-question [id]="0" [explanation]="true" [question]="macroMicroQuizVraag"></app-quiz-question>
+            </div>
+        </div>
+    </div>
+</div>

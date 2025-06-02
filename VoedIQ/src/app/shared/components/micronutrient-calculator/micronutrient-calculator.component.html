@@ -131,7 +131,7 @@
         <!-- Medicijngebruik waarschuwing -->
 
         <button class="btn bg-warning/80 text-white  mx-auto"
-            (click)="calculate(); calculationDone = true; scrollToElement('result')">
+            (click)="calculate(); calculationDone = true; scrollToElement('micro-result')">
             <span class="icon-[solar--calculator-bold] size-6 flex-shrink-0 bg-white"></span> Bereken
         </button>
         <div *ngIf="takesMedication" class="mt-4 p-4 bg-red-500 rounded-xl">
@@ -147,7 +147,7 @@
     <!-- Resultaten: alleen tonen als calculationDone true is -->
 
 </div>
-<div id="result" *ngIf="calculationDone" class="flex lg:flex-row p-4 mt-4 justify-center">
+<div id="micro-result" *ngIf="calculationDone" class="flex lg:flex-row p-4 mt-4 justify-center">
     <div class="mx-auto max-w-full">
         <div *ngIf="calculationDone" class="p-4 mt-4">
 

@@ -26,13 +26,14 @@
 
         <div>
             <button class="btn bg-warning/80 border border-white  btn-primary w-full sm:w-auto rounded-xl text-white "
-                (click)="calculatePal(); scrollToElement('result')">
+                (click)="calculatePal(); scrollToElement('pal-result')">
                 <span class="icon-[solar--calculator-bold] size-6 flex-shrink-0 bg-white"></span>Bereken
             </button>
         </div>
     </div>
 </div>
-<div id="result" class="flex flex-col  p-4 bg-primary rounded-xl mt-4  justify-center" *ngIf=" calculatePalValue != 0">
+<div id="pal-result" class="flex flex-col  p-4 bg-primary rounded-xl mt-4  justify-center"
+    *ngIf=" calculatePalValue != 0">
     <div class=" ">
         <h1 class="text-2xl text-center text-white font-bold">PAL-waarde: <span class="text-secondary">{{
                 calculatePalValue }}</span></h1>

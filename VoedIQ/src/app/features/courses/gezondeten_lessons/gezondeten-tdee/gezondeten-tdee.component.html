@@ -1,0 +1,82 @@
+<h1 class="lg:text-3xl text-xl font-bold text-center bg-primary rounded-2xl text-white p-4 mb-4">
+    2.1 Je dagelijkse caloriebehoefte berekenen
+</h1>
+
+<img src="lunchtime.svg" alt="leuke afbeelding" class="mx-auto mb-5 order-1 sm:w-1/2 pt-10" />
+
+<div class="flex flex-col mb-10">
+    <div class="flex flex-col gap-3">
+        <div class="flex flex-col lg:flex-row">
+            <div class="flex flex-col gap-3 order-2 lg:order-1">
+                <p class="text-base text-justify mt-6">
+                    De eerste stap in het begrijpen van je voeding is bepalen hoeveel calorieën je lichaam dagelijks
+                    nodig heeft.
+                    Dit helpt je om een gezond eetpatroon aan te houden dat past bij jouw leefstijl en doelen.
+                    Je dagelijkse caloriebehoefte is de hoeveelheid energie die je lichaam verbruikt om te functioneren
+                    en actief te blijven.
+                </p>
+
+                <p class="text-base text-justify">
+                    Onze rekentool helpt je om in drie stappen jouw persoonlijke caloriebehoefte te schatten.
+                </p>
+
+                <p class="text-2xl bg-accent text-white p-4 rounded-2xl">
+                    <span class="text-secondary font-bold">Stap 1</span> - Ruststofwisseling (BMR)
+                </p>
+                <p class="text-base text-justify my-4">
+                    Je ruststofwisseling, ook wel Basal Metabolic Rate (BMR) genoemd, is het aantal calorieën dat je
+                    lichaam verbruikt in volledige rust.
+                    Dit is de energie die nodig is voor vitale functies zoals ademhalen, je hartslag en je
+                    lichaamstemperatuur op peil houden.
+                    Met onze tool kun je eenvoudig jouw BMR berekenen.
+                </p>
+                <app-bmr-calculator></app-bmr-calculator>
+
+                <div class="divider divider-accent my-10"></div>
+                <p class="text-2xl bg-accent text-white p-4 rounded-2xl">
+                    <span class="text-secondary font-bold">Stap 2</span> - Activiteitentoename (PAL)
+                </p>
+                <p class="text-base text-justify">
+                    Naast rust verbruikt je lichaam extra energie door dagelijkse activiteiten zoals wandelen, werken,
+                    sporten en hobby's.
+                    Deze extra energie noemen we de activiteitentoename, uitgedrukt in de PAL-waarde (Physical Activity
+                    Level).
+                    Hoe actiever je bent, hoe hoger je PAL en dus je caloriebehoefte. Onze tool helpt je om jouw PAL te
+                    bepalen.
+                </p>
+
+                <div class="bg-orange-50 border-l-4 border-orange-500 p-4 my-4 rounded">
+                    <p class="text-orange-600 font-semibold mb-2">Tips bij het invullen van je activiteitenniveau:</p>
+                    <ul class="list-disc list-inside text-base text-justify text-orange-700 space-y-2">
+                        <li>Geef een gemiddelde op voor je wekelijkse activiteiten.</li>
+                        <li>Alle vormen van beweging tellen mee: van sporten en wandelen tot huishoudelijke taken en
+                            werken.</li>
+                        <li>Komt jouw activiteit niet precies overeen? Kies een vergelijkbare activiteit.</li>
+                    </ul>
+                </div>
+
+                <app-pal-calculator></app-pal-calculator>
+
+                <div class="divider divider-accent lg:my-10"></div>
+                <p class="text-2xl bg-accent text-white p-4 rounded-2xl">
+                    <span class="text-secondary font-bold">Stap 3</span> - Totale dagelijkse caloriebehoefte
+                </p>
+                <p class="text-base text-justify">
+                    Door je BMR en PAL samen te voegen, berekenen we je totale dagelijkse energieverbruik (TDEE).
+                    Dit is de hoeveelheid calorieën die je gemiddeld per dag nodig hebt, rekening houdend met al je
+                    activiteiten.
+                </p>
+                <p class="text-base text-justify mt-2 mb-10">
+                    Inzicht in je TDEE helpt je om je voedingspatroon goed af te stemmen op wat je lichaam nodig heeft,
+                    ongeacht je doel.
+                </p>
+
+                <app-tdee-calculator></app-tdee-calculator>
+
+                <div class="divider divider-accent lg:my-10"></div>
+
+                <app-quiz-question [id]="0" [explanation]="true" [question]="tdeeQuizVraag"></app-quiz-question>
+            </div>
+        </div>
+    </div>
+</div>

@@ -12,7 +12,6 @@ import { TargetWeightTimeCalculatorComponent } from '../../../../shared/componen
     TargetWeightTimeCalculatorComponent,
   ],
   templateUrl: './afvallen-deficit.component.html',
-  styleUrl: './afvallen-deficit.component.css',
 })
 export class AfvallenDeficitComponent implements OnInit {
   tdee = 0;

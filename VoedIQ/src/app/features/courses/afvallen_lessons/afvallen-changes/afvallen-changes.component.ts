@@ -5,6 +5,5 @@ import { InfoBlockComponent } from '../../../../shared/components/info-block/inf
   selector: 'app-afvallen-changes',
   imports: [InfoBlockComponent],
   templateUrl: './afvallen-changes.component.html',
-  styleUrl: './afvallen-changes.component.css',
 })
 export class AfvallenChangesComponent {}

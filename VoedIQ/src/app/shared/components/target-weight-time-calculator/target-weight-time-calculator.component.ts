@@ -6,6 +6,7 @@ import { ToastService } from '../../services/toast.service';
 
 @Component({
   selector: 'app-target-weight-time-calculator',
+  standalone: true,
   imports: [FormsModule, CommonModule],
   templateUrl: './target-weight-time-calculator.component.html',
   styleUrl: './target-weight-time-calculator.component.css',
@@ -15,7 +16,7 @@ export class TargetWeightTimeCalculatorComponent implements OnInit {
   height: number = 175; // Lengte in cm
   tdee: number = 2500; // Totaal dagelijkse energiebehoefte
   goalWeight: number = 65; // Doelgewicht in kg
-  calorieDeficit: number = 500; // Dagelijks calorietekort
+  calorieDelta: number = 500; // Dagelijkse calorie verandering (tekort of overschot)
   daysToGoal: number | null = null;
   bmiStatus: string = '';
   adviceColor: string = 'green';
@@ -30,37 +31,50 @@ export class TargetWeightTimeCalculatorComponent implements OnInit {
   }
 
   calculateWeightLossDuration() {
-    if (
-      !this.tdee ||
-      !this.weight ||
-      !this.goalWeight ||
-      !this.calorieDeficit
-    ) {
+    if (!this.tdee || !this.weight || !this.goalWeight || !this.calorieDelta) {
       return;
     }
 
-    let weightDifference = this.goalWeight - this.weight; // Kan positief (aankomen) of negatief (afvallen) zijn
-    let totalCaloriesNeeded = Math.abs(weightDifference) * 7700;
+    const isLosing = this.goalWeight < this.weight;
+    const weightDifferenceKg = Math.abs(this.goalWeight - this.weight);
+    const totalCaloriesNeeded = weightDifferenceKg * 7700;
 
-    // **Check of het afvallen of aankomen is**
-    if (weightDifference < 0) {
-      // Afvallen: calorietekort mag niet groter zijn dan de TDEE
-      this.calorieDeficit = Math.min(this.calorieDeficit, this.tdee);
+    const intake = isLosing
+      ? this.tdee - this.calorieDelta
+      : this.tdee + this.calorieDelta;
+
+    if (this.calorieDelta <= 0) {
+      this.toastService.error(
+        'Dagelijkse calorie wijziging moet groter zijn dan 0.'
+      );
+      this.daysToGoal = null;
+      return;
     }
 
-    this.daysToGoal = Math.ceil(totalCaloriesNeeded / this.calorieDeficit);
+    if (isLosing && intake <= 0) {
+      this.toastService.error('Calorie tekort is te groot.');
+      this.daysToGoal = null;
+      return;
+    }
 
-    // **BMI berekenen op basis van het doelgewicht**
-    let bmi = this.goalWeight / Math.pow(this.height / 100, 2);
+    const actualDelta = Math.abs(this.dailyCalorieIntake - this.tdee);
 
+    if (actualDelta === 0) {
+      this.toastService.error('Geen calorietekort of -overschot vastgesteld.');
+      this.daysToGoal = null;
+      return;
+    }
+
+    this.daysToGoal = Math.ceil(totalCaloriesNeeded / actualDelta);
+    const bmi = this.goalWeight / Math.pow(this.height / 100, 2);
     this.bmiStatus =
       bmi < 18.5 ? 'Ondergewicht' : bmi > 25 ? 'Overgewicht' : 'Gezond gewicht';
 
-    let deficitPercentage = (this.calorieDeficit / this.tdee) * 100;
+    const deltaPercentage = (this.calorieDelta / this.tdee) * 100;
     this.adviceColor =
-      deficitPercentage <= 25
+      deltaPercentage <= 25
         ? 'green'
-        : deficitPercentage <= 35
+        : deltaPercentage <= 35
         ? 'orange'
         : 'red';
 
@@ -68,11 +82,31 @@ export class TargetWeightTimeCalculatorComponent implements OnInit {
     this.saveWeightToLocalStorage();
     this.toastService.success('Berekening voltooid!');
   }
+
+  get isLosingWeight(): boolean {
+    return this.goalWeight < this.weight;
+  }
+
+  get dailyCalorieIntake(): number {
+    return this.isLosingWeight
+      ? this.tdee - this.calorieDelta
+      : this.tdee + this.calorieDelta;
+  }
+
+  get weightChange(): number {
+    return Math.abs(this.goalWeight - this.weight);
+  }
+
+  get weightChangeType(): string {
+    return this.isLosingWeight ? 'gewichtsverlies' : 'gewichtstoename';
+  }
+
   private saveLengthToLocalStorage() {
     if (this.height) {
       localStorage.setItem('length', JSON.stringify(this.height));
     }
   }
+
   private saveWeightToLocalStorage() {
     if (this.weight) {
       localStorage.setItem('weight', JSON.stringify(this.weight));
@@ -84,16 +118,9 @@ export class TargetWeightTimeCalculatorComponent implements OnInit {
     const storedWeight = localStorage.getItem('weight');
     const storedTDEE = localStorage.getItem('tdee');
 
-    if (storedLength) {
-      this.height = JSON.parse(storedLength);
-    }
-    if (storedWeight) {
-      this.weight = JSON.parse(storedWeight);
-    }
-
-    if (storedTDEE) {
-      this.tdee = JSON.parse(storedTDEE);
-    }
+    if (storedLength) this.height = JSON.parse(storedLength);
+    if (storedWeight) this.weight = JSON.parse(storedWeight);
+    if (storedTDEE) this.tdee = JSON.parse(storedTDEE);
   }
 
   startAdjusting(field: string, change: number, decimalPlaces: number): void {

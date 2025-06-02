@@ -1,0 +1,83 @@
+<h1 class="lg:text-3xl text-xl font-bold text-center bg-primary rounded-2xl text-white p-4 mb-4">
+    1.2 Waarom gezond eten?
+</h1>
+
+<img src="thinking_man.svg" alt="VoedIQ Logo" class="mx-auto mb-5 order-1 sm:w-1/2 pt-10" />
+
+<div class="flex flex-col mb-10">
+    <div class="flex flex-col gap-3">
+        <div class="flex flex-col lg:flex-row">
+            <div class="flex flex-col gap-3 order-2 lg:order-1">
+                <h1 class="text-2xl font-bold mt-10">Gezond eten is meer dan alleen eten</h1>
+
+                <p class="text-base text-justify">
+                    Gezond eten is veel meer dan alleen voeding binnenkrijgen. Het gaat erom je lichaam te voorzien van
+                    wat het nodig heeft om goed te functioneren en je energie te geven. Er zijn veel processen in het
+                    lichaam, waar je zelf niet altijd bij stilstaat. Ieder proces heeft zijn eigen voedingsstoffen nodig
+                    om goed te kunnen werken. Door gezond te eten, kun je deze processen ondersteunen en ervoor zorgen
+                    dat je lichaam optimaal functioneert. Hieronder staan enkele voordelen van gezond eten:
+
+                </p>
+
+                <div class="grid gap-3 my-6">
+                    <div class="flex items-start gap-3 bg-gray-100 p-3 rounded-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mt-1 text-green-600" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <p class="text-base">Je energiek te voelen gedurende de dag</p>
+                    </div>
+                    <div class="flex items-start gap-3 bg-gray-100 p-3 rounded-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mt-1 text-green-600" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <p class="text-base">Je immuunsysteem te versterken</p>
+                    </div>
+                    <div class="flex items-start gap-3 bg-gray-100 p-3 rounded-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mt-1 text-green-600" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <p class="text-base">Je mentale scherpte te ondersteunen</p>
+                    </div>
+                    <div class="flex items-start gap-3 bg-gray-100 p-3 rounded-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mt-1 text-green-600" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                        <p class="text-base">Je risico op chronische ziekten te verlagen</p>
+                    </div>
+                </div>
+
+
+
+                <app-info-block class="my-10" type="fact"
+                    content="Gezond eten gaat over balans, niet perfectie. Een diepvriespizza op vrijdagavond is geen probleem als je verder voedzaam eet. Ook genieten hoort erbij. Een zomerse avond op het terras met alleen een wortel en een glas water voelt anders dan een drankje met een bitterbal erbij. Dit soort momenten dragen bij aan je welzijn en zijn onderdeel van een gezond eetpatroon. Het is echter niet de bedoeling dat je dit soort dingen te veel eet!"></app-info-block>
+
+                <div class="divider divider-accent lg:my-10"></div>
+                <h2 class="text-xl font-bold mt-8">Gezondheid is meer dan gewicht</h2>
+                <p class="text-base text-justify">
+                    Veel mensen starten met gezond eten om af te vallen. Afvallen is echter niet automatisch een gevolg
+                    van gezond eten. Afvallen draait om een calorietekort: minder calorieën binnenkrijgen dan je
+                    verbruikt. Ook gezonde producten bevatten calorieën. Denk aan avocado's en noten: voedzaam, maar ook
+                    calorierijk.
+                </p>
+                <p class="text-base text-justify">
+                    Je gewicht zegt niet alles over je gezondheid. Iemand met een “perfect” gewicht kan alsnog ongezond
+                    zijn, net zoals iemand met overgewicht zich energiek en fit kan voelen door voedzame keuzes.
+                </p>
+
+                <app-info-block class="my-10" type="story"
+                    content="Sumoworstelaars worden vaak gezien als het toonbeeld van overgewicht, maar toch hebben veel actieve sumoworstelaars verrassend goede bloedwaarden. Ze eten voedzaam, trainen intensief en hun gewicht bestaat grotendeels uit onderhuids vet, terwijl hun organen vaak goed beschermd blijven. Pas als ze stoppen met hun actieve leefstijl, ontstaan gezondheidsproblemen. Dit laat zien dat gezondheid niet alleen draait om gewicht, maar vooral om leefstijl en voedingskwaliteit."></app-info-block>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="divider divider-accent lg:my-10"></div>
+
+    <app-quiz-question [id]="0" [explanation]="true" [question]="gezondEtenVraag">
+    </app-quiz-question>
+</div>

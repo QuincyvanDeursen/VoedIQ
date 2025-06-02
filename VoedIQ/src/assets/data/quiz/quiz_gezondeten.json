@@ -1,0 +1,158 @@
+[
+  {
+    "question": "Kan een voedingsmiddel op zichzelf gezond of ongezond zijn?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ja",
+        "isCorrect": false,
+        "explanation": "Onjuist – gezondheid wordt bepaald door het totale eetpatroon, niet door een enkel product."
+      },
+      {
+        "label": "B",
+        "text": "Nee",
+        "isCorrect": true,
+        "explanation": "Correct! Het gaat om hoeveel, hoe vaak en in welke context je iets eet."
+      }
+    ]
+  },
+  {
+    "question": "Zeggen calorieën iets over hoe gezond een product is?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ja",
+        "isCorrect": false,
+        "explanation": "Onjuist – weinig calorieën zegt niets over voedingswaarde zoals vezels, vitamines of eiwitten."
+      },
+      {
+        "label": "B",
+        "text": "Nee",
+        "isCorrect": true,
+        "explanation": "Juist! Een product met veel calorieën kan nog steeds voedzaam zijn (zoals noten)."
+      }
+    ]
+  },
+  {
+    "question": "Moet vet in voeding zoveel mogelijk vermeden worden?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ja",
+        "isCorrect": false,
+        "explanation": "Onjuist – het lichaam kan niet zonder vet, vooral niet zonder onverzadigde vetten."
+      },
+
+      {
+        "label": "B",
+        "text": "Nee",
+        "isCorrect": true,
+        "explanation": "Correct! Gezonde vetten zijn onmisbaar voor je lichaam."
+      }
+    ]
+  },
+  {
+    "question": "Zijn koolhydraten slecht voor je?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Nee",
+        "isCorrect": true,
+        "explanation": "Juist! Vooral volkoren en vezelrijke koolhydraten zijn belangrijk voor een gezond dieet."
+      },
+
+      {
+        "label": "B",
+        "text": "Ja",
+        "isCorrect": false,
+        "explanation": "Niet helemaal waar – complexe koolhydraten geven juist geleidelijke energie en dus geen hoge piek."
+      }
+    ]
+  },
+  {
+    "question": "Wat maakt een product ‘ultra bewerkt’ en waarom kan dat een probleem zijn?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Omdat het vaak veel toegevoegde vetten, suikers en zout bevat, en weinig essentiële voedingsstoffen.",
+        "isCorrect": true,
+        "explanation": "Correct – de voedingswaarde is vaak laag ondanks een hoge energiedichtheid."
+      },
+      {
+        "label": "B",
+        "text": "Omdat bewerking per definitie ongezond is.",
+        "isCorrect": false,
+        "explanation": "Onjuist – ook gezonde producten kunnen bewerkt zijn (denk aan havermout)."
+      },
+      {
+        "label": "C",
+        "text": "Omdat het lichaam deze producten niet kan verteren.",
+        "isCorrect": false,
+        "explanation": "Niet waar – het probleem zit in voedingswaarde, niet in vertering."
+      }
+    ]
+  },
+  {
+    "question": "Wat betekent het als een product ‘natuurlijk’ wordt genoemd?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Dat het altijd gezond is.",
+        "isCorrect": false,
+        "explanation": "Onjuist – natuurlijk zegt niets over voedingswaarde. Denk aan natuurlijke producten zoals suiker of verzadigd vet."
+      },
+      {
+        "label": "B",
+        "text": "Dat er geen bewerking heeft plaatsgevonden.",
+        "isCorrect": false,
+        "explanation": "Ook niet correct – veel zogenaamd ‘natuurlijke’ producten zijn bewerkt (zoals vruchtensap)."
+      },
+      {
+        "label": "C",
+        "text": "Dat het een onbeschermde marketingterm is zonder strikte definitie.",
+        "isCorrect": true,
+        "explanation": "Juist – 'natuurlijk' klinkt gezond, maar is geen wettelijk beschermde term."
+      }
+    ]
+  },
+  {
+    "question": "Waarom zijn voedingsvezels belangrijk?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Omdat ze zorgen voor een stabiele bloedsuikerspiegel en een gezonde darmwerking.",
+        "isCorrect": true,
+        "explanation": "Klopt – vezels dragen bij aan verzadiging, darmgezondheid en voorkomen schommelingen in de bloedsuiker."
+      },
+      {
+        "label": "B",
+        "text": "Omdat ze de opname van vetten verhinderen.",
+        "isCorrect": false,
+        "explanation": "Onjuist – ze vertragen de opname, maar verhinderen die niet volledig."
+      },
+      {
+        "label": "C",
+        "text": "Omdat ze energie leveren aan de spieren tijdens inspanning.",
+        "isCorrect": false,
+        "explanation": "Vezels leveren niet zo  energie zoals koolhydraten of vetten dat doen."
+      }
+    ]
+  },
+  {
+    "question": "Zijn E-nummers per definitie schadelijk voor je gezondheid?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ja",
+        "isCorrect": false,
+        "explanation": "Onjuist – niet alle E-nummers zijn schadelijk. Ze zijn goedgekeurd na strenge veiligheidstesten."
+      },
+      {
+        "label": "B",
+        "text": "Nee",
+        "isCorrect": true,
+        "explanation": "Correct! E-nummers worden pas toegestaan als ze veilig zijn bevonden door voedselautoriteiten."
+      }
+    ]
+  }
+]

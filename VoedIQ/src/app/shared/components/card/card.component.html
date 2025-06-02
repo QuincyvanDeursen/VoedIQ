@@ -1,4 +1,5 @@
-<div [routerLink]="linkUrl"
+<!-- Hele card grayed out als disabled -->
+<div [class.opacity-60]="disabled" [class.pointer-events-none]="disabled"
     class="card group max-w-[300px] shadow-xl mx-4 lg:mx-2 shadow-gray-400 flex flex-col h-full">
 
     <figure class="h-48 w-full overflow-hidden p-4">
@@ -8,14 +9,17 @@
 
     <div class="card-body flex flex-col flex-grow">
         <h5 class="card-title mb-2.5 flex-grow break-words">{{ title }}</h5>
-        <p class="mb-6 text-base ">{{ description }}</p>
+        <p class="mb-6 text-base">{{ description }}</p>
+
         <div class="card-actions mt-auto">
-            <!-- Voeg hier een routerLink toe voor navigatie -->
-            <button *ngIf="linkUrl" [routerLink]="linkUrl" class="btn btn-primary lg:btn-wide mx-auto">
+            <!-- Knop met routerLink (als beschikbaar), disabled indien nodig -->
+            <button *ngIf="linkUrl" [routerLink]="!disabled ? linkUrl : null"
+                class="btn btn-primary lg:btn-wide mx-auto" [disabled]="disabled">
                 {{ buttonText }}
             </button>
-            <!-- Of een normale knop zonder link -->
-            <button *ngIf="!linkUrl" class="btn btn-primary lg:btn-wide mx-auto">
+
+            <!-- Normale knop zonder link, ook disablebaar -->
+            <button *ngIf="!linkUrl" class="btn btn-primary lg:btn-wide mx-auto" [disabled]="disabled">
                 {{ buttonText }}
             </button>
         </div>

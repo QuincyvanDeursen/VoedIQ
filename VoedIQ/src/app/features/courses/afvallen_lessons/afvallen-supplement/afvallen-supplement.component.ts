@@ -7,7 +7,6 @@ import { CommonModule } from '@angular/common';
   selector: 'app-afvallen-supplement',
   imports: [QuizQuestionComponent, InfoBlockComponent, CommonModule],
   templateUrl: './afvallen-supplement.component.html',
-  styleUrl: './afvallen-supplement.component.css',
 })
 export class AfvallenSupplementComponent {
   antwoord: boolean | null = null;

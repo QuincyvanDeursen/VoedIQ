@@ -1,0 +1,87 @@
+<h1 class="lg:text-3xl text-xl font-bold text-center bg-primary rounded-2xl text-white p-4 mb-4">
+    1.1 Wat bedoelen we met ‘gezond eten’?
+</h1>
+<img src="cursus_gezond.svg" alt="VoedIQ Logo" class=" mx-auto mb-5 order-1 sm:w-1/2 pt-10" />
+<div class="flex flex-col mb-10">
+    <div class="flex flex-col gap-3">
+        <div class="flex flex-col lg:flex-row">
+            <div class="flex flex-col gap-3 order-2 lg:order-1">
+                <h1 class="text-2xl font-bold mt-10">Wat is gezond eten eigenlijk?</h1>
+
+                <p class="text-base text-justify">
+                    Veel mensen denken bij gezond eten aan salades, smoothies of producten met het nutri-label 'A'. Maar
+                    dat beeld is te beperkt. Gezond eten betekent niet dat je alleen maar zogenaamd gezonde producten
+                    mag eten of dat je nooit meer iets lekkers kunt nemen.
+                </p>
+
+                <p class="text-base text-justify">
+                    Gezond eten draait om balans, variatie en voldoende voedingswaarde op de lange termijn. Eén
+                    ongezonde maaltijd maakt je eetpatroon niet ongezond, net zoals één gezonde maaltijd je niet ineens
+                    een voorbeeld van gezondheid maakt.
+                </p>
+
+                <p class="text-base text-justify">
+                    Producten worden soms onterecht bestempeld als goed of fout, dat komt mede door de nutri-label. Zo
+                    is witbrood niet per se ongezond,
+                    maar volkorenbrood bevat doorgaans meer vezels en voedingsstoffen en is dus een betere optie. En een
+                    handje chips in de avond?
+                    Dat hoeft ook geen enkel probleem te zijn als de rest van je eetpatroon in balans is.
+                </p>
+
+                <app-info-block class="my-10" type="fact"
+                    content="Wist je dat een nutri-label aangeeft hoe gezond een product is binnen zijn eigen productgroep? Een pizza met label A is dus niet per se gezond, maar simpelweg de minst ongezonde keuze binnen de categorie pizza’s. Best verwarrend, toch?"></app-info-block>
+                <div class="divider divider-accent lg:my-10"></div>
+                <h1 class="text-2xl font-bold mt-10">Een voorbeeld: overleven op een eiland</h1>
+
+                <div
+                    class="mx-auto flex flex-col text-center max-w-2xl w-full my-5 border-gray-50 bg-gray-50 shadow-lg rounded-3xl">
+
+                    <p class="bg-accent text-white p-4 rounded-3xl w-full">
+                        Stel je voor: je bent aangespoeld op een onbewoond eiland en hebt al een week nauwelijks
+                        gegeten. Je mag nu kiezen uit een wortel of een hamburger. Welke optie is het beste voor je
+                        gezondheid?
+                    </p>
+
+                    <div class="flex flex-row gap-2 mx-auto my-5">
+                        <button class="btn btn-accent" (click)="wortelKeuze = 'wortel'">Een wortel</button>
+                        <button class="btn btn-accent" (click)="wortelKeuze = 'hamburger'">Een hamburger</button>
+                    </div>
+
+                    <div class="text-center text-accent bg-gray-50 rounded-xl p-4" *ngIf="wortelKeuze">
+                        <ng-container *ngIf="wortelKeuze === 'wortel'; else hamburgerUitleg">
+                            <strong>Logische keuze?</strong><br />
+                            Veel mensen zien een wortel als gezond, en dat is in veel situaties ook zo. Maar in dit
+                            specifieke geval biedt de wortel te weinig calorieën, vetten en eiwitten om je lichaam te
+                            helpen herstellen van een periode van ondervoeding. Een hamburger bevat meer
+                            voedingsstoffen die je lichaam in dit scenario nodig heeft.
+                        </ng-container>
+                        <ng-template #hamburgerUitleg>
+                            <strong>Goede keuze in deze context!</strong><br />
+                            Hoewel een hamburger vaak als ongezond wordt gezien, bevat hij in dit geval juist wat je
+                            lichaam nodig heeft: vetten, eiwitten, koolhydraten en een hoop calorieën Na een periode van
+                            ondervoeding is dit de meest voedzame keuze.
+                        </ng-template>
+                    </div>
+                </div>
+
+
+                <p class="text-base text-justify">
+                    Of iets gezond of ongezond is, hangt sterk af van de situatie en behoefte van je lichaam op dat
+                    moment. Gezond eten is dus niet zwart-wit. Het gaat om het totaalplaatje en niet om één enkele
+                    maaltijd of product. Het is belangrijk om te kijken naar je eetpatroon over een langere periode.
+                    Heel simpel uitgedrukt is gezond eten dus niet te veel en niet te weinig, maar genoeg binnenkrijgen
+                    voor jouw lichaam en levensstijl. Gelukkig is er een heleboel ruimte voor variatie en
+                    genieten binnen een gezond eetpatroon.
+                </p>
+
+                <app-info-block class="my-10" type="fact"
+                    content="In Frankrijk gebruiken ze de term ‘manger équilibré’ voor gezond eten. Dat betekent letterlijk ‘gebalanceerd eten’. De balans over een langere periode is wat telt."></app-info-block>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="divider divider-accent lg:my-10"></div>
+
+    <app-quiz-question [id]="0" [explanation]="true" [question]="gezondEtenVraag"></app-quiz-question>
+</div>

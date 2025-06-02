@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { QuizQuestion } from '../../../../core/models/quiz-question';
 import questions from '../../../../../assets/data/quiz/quiz_basiskennis.json';
 import { QuizComponent } from '../../../../shared/components/quiz/quiz.component';
@@ -8,7 +8,7 @@ import { QuizComponent } from '../../../../shared/components/quiz/quiz.component
   templateUrl: './basis-kennis-introductie.component.html',
   styleUrl: './basis-kennis-introductie.component.css',
 })
-export class BasisKennisIntroductieComponent {
+export class BasisKennisIntroductieComponent implements OnInit {
   courseTitle: string | null = null;
   userName: string = '';
   questions: QuizQuestion[] = [];

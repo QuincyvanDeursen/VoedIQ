@@ -44,7 +44,7 @@
     <!-- Bereken knop -->
     <div class="flex flex-col md:flex-row justify-center p-4  bg-primary rounded-xl  gap-3 mt-4">
         <button type="button" class="btn bg-warning/80 text-white btn-lg"
-            (click)="calculate(); scrollToElement('result')">
+            (click)="calculate(); scrollToElement('macro-result')">
             <span class="icon-[solar--calculator-bold] size-6 flex-shrink-0 bg-white"></span>Bereken
         </button>
     </div>
@@ -57,7 +57,7 @@
 </div>
 
 <!-- Resultaten container alleen zichtbaar als berekend -->
-<div id="result" *ngIf="resultsCalculated" class="flex mt-4 justify-center">
+<div id="macro-result" *ngIf="resultsCalculated" class="flex mt-4 justify-center">
     <div class="mx-auto">
         <div class="p-4 mt-4">
             <h3 class="text-lg font-semibold mt-2 text-center text-white">Macronutriënten</h3>

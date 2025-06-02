@@ -132,9 +132,19 @@
     " imageUrl="cursus_doelgericht.svg" buttonText="Start!"
       linkUrl="/cursus/afvallen/introductie/les1"></app-course-card>
 
-    <app-course-card class="hidden" title="Gezond Eten" description="Deze cursus biedt inzicht in wat een gezond dieet is, met aandacht voor gebalanceerde voeding, 
+    <app-course-card title="Gezond Eten" description="Deze cursus biedt inzicht in wat een gezond dieet is, met aandacht voor gebalanceerde voeding, 
     het belang van verschillende voedingsgroepen en hoe je een gezonde eetstijl kunt behouden."
-      imageUrl="cursus_gezond.svg" buttonText="Start!" (click)='noContentAlert();'></app-course-card>
+      imageUrl="cursus_gezond.svg" linkUrl="/cursus/gezond/introductie/les1" buttonText="Start!"></app-course-card>
+
+    <app-course-card title="Basisprincipes Krachttraining"
+      description="Leer de fundamenten van krachttraining, inclusief de juiste technieken, trainingsfrequentie en het belang van herstel voor optimale resultaten."
+      imageUrl="training.svg" linkUrl="/cursus/gezond/introductie/les1" buttonText="In ontwikkeling!"
+      [disabled]="true"></app-course-card>
+
+    <app-course-card title="Voeding en Krachttraining"
+      description="Ontdek hoe je voeding je krachttraining ondersteunt, met aandacht voor macro- en micronutriënten, timing en het opbouwen van spiermassa."
+      imageUrl="training_voeding.svg" linkUrl="/cursus/gezond/introductie/les1" buttonText="In ontwikkeling!"
+      [disabled]="true"></app-course-card>
 
   </div>
 
