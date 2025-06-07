@@ -1,0 +1,87 @@
+<h1 class="lg:text-3xl text-xl font-bold text-center bg-primary rounded-2xl text-white p-4 mb-4">
+    2.2 Wat heeft jouw lichaam nodig?
+</h1>
+
+<img src="macronutrient.svg" alt="macronutriënten afbeelding" class="mx-auto mb-5 sm:w-1/2 pt-10" />
+
+<div class="flex flex-col mb-10">
+    <div class="flex flex-col gap-3">
+        <div class="flex flex-col lg:flex-row">
+            <div class="flex flex-col gap-3 order-2 lg:order-1">
+
+                <p class="text-base text-justify mt-6">
+                    Nu je weet hoeveel calorieën je ongeveer nodig hebt, is het tijd om te kijken waar die calorieën
+                    vandaan moeten komen.
+                    Want het draait niet alleen om hoeveel je eet, maar ook *wat* je eet.
+                </p>
+
+                <p class="text-base text-justify">
+                    In deze les ontdek je de juiste verhouding tussen eiwitten, koolhydraten en vetten
+                    (macronutriënten),
+                    en welke vitaminen en mineralen (micronutriënten) belangrijk zijn voor jouw gezondheid.
+                </p>
+
+                <!-- Stap 1 - Macronutriënten -->
+                <p class="text-2xl bg-accent text-white p-4 rounded-2xl mt-6">
+                    <span class="text-secondary font-bold">Stap 1</span> - De bouwstenen van je voeding
+                </p>
+
+                <p class="text-base text-justify">
+                    Eiwitten, koolhydraten en vetten leveren je energie en vervullen elk hun eigen functie:
+                </p>
+
+                <ul class="list-disc list-inside text-base text-justify mt-2 mb-4 space-y-1">
+                    <li><strong>Eiwitten:</strong> belangrijk voor spierherstel en -behoud</li>
+                    <li><strong>Koolhydraten:</strong> snelle en efficiënte energiebron</li>
+                    <li><strong>Vetten:</strong> ondersteunen hormonen, hersenen en opname van vitaminen</li>
+                </ul>
+
+                <p class="text-base text-justify mb-4">
+                    Deze tool berekent automatisch hoeveel gram van elk je nodig hebt op basis van je caloriebehoefte.
+                </p>
+
+                <app-macronutrient-calculator></app-macronutrient-calculator>
+
+                <div class="bg-yellow-50 border-l-4 border-yellow-500 p-4 my-6 rounded">
+                    <p class="text-yellow-700">
+                        👉 Tip: het gaat om richtlijnen, niet om perfectie. Probeer dus vooral *in de buurt te komen*
+                        van je aanbevolen verdeling.
+                    </p>
+                </div>
+
+                <!-- Stap 2 - Micronutriënten -->
+                <div class="divider divider-accent my-10"></div>
+
+                <p class="text-2xl bg-accent text-white p-4 rounded-2xl">
+                    <span class="text-secondary font-bold">Stap 2</span> - De kleine krachtpatsers: vitaminen &
+                    mineralen
+                </p>
+
+                <p class="text-base text-justify">
+                    Micronutriënten heb je in kleinere hoeveelheden nodig, maar ze zijn essentieel voor:
+                </p>
+
+                <ul class="list-disc list-inside text-base text-justify mt-2 mb-4 space-y-1">
+                    <li>Je weerstand en energieniveau</li>
+                    <li>Goede hersenfunctie</li>
+                    <li>Sterke botten en spieren</li>
+                </ul>
+
+                <p class="text-base text-justify mb-4">
+                    Met deze tool zie je of je voldoende binnenkrijgt, afgestemd op jouw leeftijd, geslacht en
+                    leefstijl.
+                </p>
+
+                <app-micronutrient-calculator></app-micronutrient-calculator>
+
+                <div class="bg-blue-50 border-l-4 border-blue-500 p-4 my-6 rounded">
+                    <p class="text-blue-700">
+                        📌 Geen zorgen: je hoeft deze hoeveelheden niet te onthouden. Het gaat erom dat je weet waar je
+                        op kunt letten.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>

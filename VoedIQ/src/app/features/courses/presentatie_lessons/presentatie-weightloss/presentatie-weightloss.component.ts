@@ -1,14 +1,15 @@
 import { Component } from '@angular/core';
-import { QuizQuestionComponent } from '../../../../shared/components/quiz-question/quiz-question.component';
 import { InfoBlockComponent } from '../../../../shared/components/info-block/info-block.component';
+import { QuizQuestionComponent } from '../../../../shared/components/quiz-question/quiz-question.component';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-afvallen-weightloss',
-  imports: [QuizQuestionComponent, InfoBlockComponent, CommonModule],
-  templateUrl: './afvallen-weightloss.component.html',
+  selector: 'app-presentatie-weightloss',
+  imports: [InfoBlockComponent, QuizQuestionComponent, CommonModule],
+  templateUrl: './presentatie-weightloss.component.html',
+  styleUrl: './presentatie-weightloss.component.css',
 })
-export class AfvallenWeightlossComponent {
+export class PresentatieWeightlossComponent {
   antwoord: boolean | null = null;
 
   vetverliesVraag = {

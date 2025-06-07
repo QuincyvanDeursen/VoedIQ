@@ -6,7 +6,6 @@ import { QuizQuestionComponent } from '../../../../shared/components/quiz-questi
   selector: 'app-basiskennis-macro',
   imports: [InfoBlockComponent, QuizQuestionComponent],
   templateUrl: './basiskennis-macro.component.html',
-  styleUrl: './basiskennis-macro.component.css',
 })
 export class BasiskennisMacroComponent {
   zetmeelVraag = {

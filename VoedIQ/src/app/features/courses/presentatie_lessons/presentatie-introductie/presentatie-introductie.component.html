@@ -1,0 +1,79 @@
+<h1 class="text-3xl font-bold text-center bg-primary rounded-2xl text-white py-2">
+    Voorproefje VoedIQ</h1>
+<div class="flex flex-col mb-10">
+    <div class="flex flex-col gap-3">
+
+        <div class="flex flex-col lg:flex-row">
+            <div class="flex flex-col lg:w-1/2 gap-3 order-2 lg:order-1">
+                <h1 class="text-2xl font-bold mt-10">Wat kun je verwachten?</h1>
+                <p class="text-base text-justify">
+                    Welkom bij <strong>VoedIQ</strong>! Deze mini-cursus is speciaal gemaakt voor deze presentatie aan
+                    Avans. Je krijgt een korte kennismaking met de website, waarmee je leert hoe je gezonder kunt eten
+                    en leven.
+                </p>
+                <p class="text-base text-justify">In dit voorproefje maak je kennis met de cursussen:</p>
+                <ul class="list-disc list-inside text-base">
+                    <li>Basiskennis</li>
+                    <li>Gezond eten</li>
+                    <li>Effectief afvallen</li>
+                </ul>
+                <p class="text-base text-justify">
+                    Deze proefcursus is een aanzienlijke verkorte versie van de volledige gratis cursussen die we
+                    aanbieden. Voor nu
+                    is er een theorie gedeelte en een praktijk gedeelte waar je je caloriebehoefte en
+                    voedingsstofbehoefte kunt berekenen. Zo heb je meteen wat handvatten om gezonder te eten en om aan
+                    je
+                    lichaamsdoel te werken.
+                </p>
+                <p class="text-base text-justify">Elke cursus bevat duidelijke uitleg, praktische tips en quizzen om je
+                    kennis te testen. De inhoud komt uit betrouwbare bronnen zoals de <a
+                        href="https://www.gezondheidsraad.nl/" target="_blank" rel="noopener noreferrer"
+                        class="link link-primary hover:link-info">Gezondheidsraad</a> en het <a
+                        href="https://www.voedingscentrum.nl/nl.aspx" target="_blank" rel="noopener noreferrer"
+                        class="link link-primary hover:link-info">Voedingscentrum</a>.</p>
+            </div>
+            <img src="cursus_basiskennis.svg" alt="VoedIQ Cursus" class="lg:w-1/3 mx-auto mb-5 order-1 lg:order-2" />
+        </div>
+    </div>
+
+    <div class="divider divider-accent"></div>
+
+    <div class="flex flex-col gap-3">
+        <h1 class="text-2xl font-bold text-justify">Test je kennis!</h1>
+        <p class="text-base text-justify">Wil je weten hoeveel je al weet? Doe dan de korte quiz hieronder. Het is
+            vrijblijvend en geeft je meteen een indruk van de inhoud.</p>
+
+        <button type="button"
+            class="btn btn-warning text-white w-1/2 mx-auto mt-5 hover:bg-yellow-500 shadow shadow-gray-900"
+            id="quizButton" aria-haspopup="dialog" aria-expanded="false" aria-controls="quiz-modal"
+            data-overlay="#quiz-modal" value="motion-preset-slide-right">
+            <span class="icon-[solar--notebook-minimalistic-bold] size-8 text-white"></span> Start de quiz
+        </button>
+        <p class="text-base text-justify mt-5">Met de pijlen onderaan het scherm kun je naar de vorige/volgende les
+            navigeren! Het boekje dat links onderaan het scherm staat, brengt je terug naar de inhoudsopgave van de
+            proefcursus. Zo kun je direct navigeren naar de les die je wilt volgen.</p>
+
+    </div>
+</div>
+
+<!-- Modal voor quiz -->
+<div id="quiz-modal" class="overlay modal modal-middle overlay-open:opacity-100 hidden bg-primary/70 z-10" role="dialog"
+    tabindex="-1">
+    <div class="modal-dialog overlay-open:opacity-100 w-full max-w-5xl max-h-[80vh] flex justify-center">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Voorproef Quiz</h3>
+                <button type="button" class="btn btn-text btn-circle btn-sm absolute end-3 top-3" aria-label="Close"
+                    data-overlay="#quiz-modal">
+                    <span class="icon-[tabler--x] size-4"></span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <app-quiz [questions]="questions" [maxHeightVh]="50"></app-quiz>
+            </div>
+            <div class="modal-footer mt-10">
+                <button type="button" class="btn btn-primary" data-overlay="#quiz-modal">Sluiten</button>
+            </div>
+        </div>
+    </div>
+</div>

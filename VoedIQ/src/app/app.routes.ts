@@ -10,9 +10,15 @@ import { TargetWeightCalculatorComponent } from './features/target-weight-calcul
 import { DashboardComponent } from './features/dashboard/dashboard.component';
 import { AboutUsComponent } from './features/about-us/about-us.component';
 import { FeedbackComponent } from './features/feedback/feedback.component';
+import { ContactComponent } from './features/contact/contact.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
+  {
+    path: 'presentatie',
+    redirectTo: '/cursus/presentatie/introductie/les1',
+    pathMatch: 'full',
+  }, // Redirect voor presentatie
   { path: 'landing', component: LandingComponent },
   { path: 'home', component: HomeComponent },
   { path: 'dashboard', component: DashboardComponent },
@@ -20,6 +26,7 @@ export const routes: Routes = [
   { path: 'nutri-calculator', component: MacroMicroNutriCalculatorsComponent },
   { path: 'over-ons', component: AboutUsComponent },
   { path: 'feedback', component: FeedbackComponent },
+  { path: 'contact', component: ContactComponent },
   {
     path: 'doelgewicht-calculator',
     component: TargetWeightCalculatorComponent,

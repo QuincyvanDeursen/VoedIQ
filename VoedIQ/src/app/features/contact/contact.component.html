@@ -1,0 +1,53 @@
+<div class="max-w-3xl mx-auto px-4 py-10 bg-primary/20 p-8 rounded-3xl shadow-lg my-10">
+    <h1 class="text-3xl font-bold text-center text-primary mb-6">
+        Vragen of feedback? Laat het ons weten!
+    </h1>
+
+    <img src="action.svg" alt="Feedback" class="mx-auto mb-5 order-1 sm:w-1/2 pt-10" />
+
+    <p class="text-base mb-10 text-justify">
+        Heb je ideeën, suggesties, feedback of vragen die je liever rechtstreeks met ons deelt? Vul onderstaand
+        formulier in en
+        we nemen snel contact met je op.
+    </p>
+
+    <!-- Contactformulier -->
+    <!-- Contactformulier -->
+    <div class="bg-white p-6 rounded-2xl shadow-md">
+        <h2 class="text-2xl font-semibold text-primary mb-4 text-center">Neem contact met ons op</h2>
+
+        <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm" class="space-y-4" novalidate>
+            <!-- Naam -->
+            <input type="text" name="name" [(ngModel)]="formData.name" placeholder="Jouw naam" required #name="ngModel"
+                class="w-full p-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary" />
+            <div *ngIf="name.invalid && name.touched" class="text-red-600 text-sm">
+                <div *ngIf="name.errors?.['required']">Vul je naam in.</div>
+            </div>
+
+            <!-- Email -->
+            <input type="email" name="email" [(ngModel)]="formData.email" placeholder="Jouw E-mailadres" required
+                pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,}$" #email="ngModel"
+                class="w-full p-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary" />
+            <div *ngIf="email.invalid && email.touched" class="text-red-600 text-sm">
+                <div *ngIf="email.errors?.['required']">Vul je e-mailadres in.</div>
+                <div *ngIf="email.errors?.['pattern']">Voer een geldig e-mailadres in.</div>
+            </div>
+
+
+            <!-- Bericht -->
+            <textarea name="message" [(ngModel)]="formData.message" placeholder="Je bericht..." rows="5" required
+                minlength="10" #message="ngModel"
+                class="w-full p-3 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+            <div *ngIf="message.invalid && message.touched" class="text-red-600 text-sm">
+                <div *ngIf="message.errors?.['required']">Vul je bericht in.</div>
+                <div *ngIf="message.errors?.['minlength']">Je bericht moet minimaal 10 tekens bevatten.</div>
+            </div>
+
+            <button type="submit" [disabled]="contactForm.invalid"
+                class="w-full bg-primary text-white py-3 px-6 rounded-xl font-semibold hover:bg-primary/80 transition-colors disabled:opacity-50 disabled:cursor-not-allowed">
+                Verstuur bericht
+            </button>
+        </form>
+    </div>
+
+</div>

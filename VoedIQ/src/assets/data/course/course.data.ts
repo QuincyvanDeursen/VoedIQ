@@ -43,6 +43,13 @@ import { GezondetenTipsComponent } from '../../../app/features/courses/gezondete
 import { GezondetenWaterComponent } from '../../../app/features/courses/gezondeten_lessons/gezondeten-water/gezondeten-water.component';
 import { GezondetenWhatComponent } from '../../../app/features/courses/gezondeten_lessons/gezondeten-what/gezondeten-what.component';
 import { GezondetenWhyComponent } from '../../../app/features/courses/gezondeten_lessons/gezondeten-why/gezondeten-why.component';
+import { PresentatieCaloriesComponent } from '../../../app/features/courses/presentatie_lessons/presentatie-calories/presentatie-calories.component';
+import { PresentatieEndscreenComponent } from '../../../app/features/courses/presentatie_lessons/presentatie-endscreen/presentatie-endscreen.component';
+import { PresentatieGezondEtenComponent } from '../../../app/features/courses/presentatie_lessons/presentatie-gezond-eten/presentatie-gezond-eten.component';
+import { PresentatieIntroductieComponent } from '../../../app/features/courses/presentatie_lessons/presentatie-introductie/presentatie-introductie.component';
+import { PresentatieMacroComponent } from '../../../app/features/courses/presentatie_lessons/presentatie-macro/presentatie-macro.component';
+import { PresentatieTdeeComponent } from '../../../app/features/courses/presentatie_lessons/presentatie-tdee/presentatie-tdee.component';
+import { PresentatieWeightlossComponent } from '../../../app/features/courses/presentatie_lessons/presentatie-weightloss/presentatie-weightloss.component';
 
 // 🔹 Losse variabelen
 export const BASISKENNIS_COURSE: Course = {
@@ -335,7 +342,7 @@ export const AFVALLEN_COURSE: Course = {
 
 export const GEZOND_COURSE: Course = {
   title: 'Gezond eten Cursus',
-  route: 'gezondeten',
+  route: 'gezond',
   description: 'Leer de basis van gezond eten!',
   modules: [
     {
@@ -443,9 +450,90 @@ export const GEZOND_COURSE: Course = {
   ],
 };
 
+export const PRESENTATIE: Course = {
+  title: 'VoedIQ Presentatie',
+  route: 'presentatie',
+  description: 'Een voorproef van de VoedIQ website!',
+  modules: [
+    {
+      title: 'Introductie',
+      route: 'introductie',
+      completion: false,
+      lessons: [
+        {
+          title: 'Introductie',
+          route: 'introductie/les1',
+          component: PresentatieIntroductieComponent,
+          completion: false,
+        },
+      ],
+    },
+    {
+      title: 'Module 1 - Theorie Informatie',
+      route: 'module1',
+      completion: false,
+      lessons: [
+        {
+          title: '1.1 Voorpoefje: Basiskennis',
+          route: 'module1/les1',
+          component: PresentatieCaloriesComponent,
+          completion: false,
+        },
+        {
+          title: '1.2 Voorproefje: Gezond Eten',
+          route: 'module1/les2',
+          component: PresentatieGezondEtenComponent,
+          completion: false,
+        },
+        {
+          title: '1.3 Voorproefje: Afvallen',
+          route: 'module1/les3',
+          component: PresentatieWeightlossComponent,
+          completion: false,
+        },
+      ],
+    },
+    {
+      title: 'Module 2 - Praktische Informatie',
+      route: 'module2',
+      completion: false,
+      lessons: [
+        {
+          title: '2.1 Hoeveel calorieën heb je nodig?',
+          route: 'module2/les1',
+          component: PresentatieTdeeComponent,
+          completion: false,
+        },
+        {
+          title: '2.2 Wat moet je eten?',
+          route: 'module2/les2',
+          component: PresentatieMacroComponent,
+          completion: false,
+        },
+      ],
+    },
+
+    {
+      title: 'Feedback',
+      route: 'feedback',
+      completion: false,
+      lessons: [
+        {
+          title: 'feedback',
+          route: 'feedback/les1',
+          component: PresentatieEndscreenComponent,
+          completion: false,
+        },
+      ],
+    },
+    // Voeg hier meer modules en lessen toe
+  ],
+};
+
 // 🔹 Samengevoegd object
 export const COURSES: { [key: string]: Course } = {
   basiskennis: BASISKENNIS_COURSE,
   afvallen: AFVALLEN_COURSE,
   gezond: GEZOND_COURSE,
+  presentatie: PRESENTATIE,
 };

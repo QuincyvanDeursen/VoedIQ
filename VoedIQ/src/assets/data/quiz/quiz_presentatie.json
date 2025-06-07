@@ -1,0 +1,261 @@
+[
+  {
+    "question": "Een product met nutri label A is altijd gezonder dan product met label B. Bijvoorbeeld een frisdrank met Nutri-Score A is gezonder dan een yoghurt met Nutri-Score B.",
+    "options": [
+      {
+        "label": "A",
+        "text": "Waar",
+        "isCorrect": false,
+        "explanation": "Nutri-Score vergelijkt producten binnen dezelfde categorie, dus een Nutri-Score A frisdrank kan nog steeds minder voedzaam zijn dan een Nutri-Score B yoghurt."
+      },
+      {
+        "label": "B",
+        "text": "Niet waar",
+        "isCorrect": true,
+        "explanation": "Nutri-Score vergelijkt producten binnen dezelfde categorie, dus een Nutri-Score A frisdrank kan nog steeds minder voedzaam zijn dan een Nutri-Score B yoghurt."
+      }
+    ]
+  },
+  {
+    "question": "Het lichaam kan zonder vet in de voeding.",
+    "options": [
+      {
+        "label": "A",
+        "text": "Waar",
+        "isCorrect": false,
+        "explanation": "Vetten zijn onder andere belangrijk voor de opname van vitamines (A,D, E en K) en de aanmaak van hormonen. Het lichaam kan niet zonder vetten."
+      },
+      {
+        "label": "B",
+        "text": "Niet waar",
+        "isCorrect": true,
+        "explanation": "Vetten zijn onder andere belangrijk voor de opname van vitamines (A,D, E en K) en de aanmaak van hormonen. Het lichaam kan niet zonder vetten."
+      }
+    ]
+  },
+
+  {
+    "question": "Een snelle piek in de bloedsuikerspiegel kan leiden tot vermoeidheid. Waar of niet waar?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Waar",
+        "isCorrect": true,
+        "explanation": "Een snelle stijging wordt vaak gevolgd door een snelle daling, wat kan zorgen voor vermoeidheid en energiedips. Suikers veroorzaken dit effect."
+      },
+      {
+        "label": "B",
+        "text": "Niet waar",
+        "isCorrect": false,
+        "explanation": "Snelle pieken in bloedsuiker kunnen juist leiden tot snelle dalingen en vermoeidheid. Suikers veroorzaken dit effect."
+      }
+    ]
+  },
+
+  {
+    "question": "Door gezond te eten val je af.",
+    "options": [
+      {
+        "label": "A",
+        "text": "Waar",
+        "isCorrect": false,
+        "explanation": "Niet helemaal juist. Ook gezonde voeding bevat calorieën. Zelfs als je alleen maar sla eet, kun je aankomen als je meer calorieën binnenkrijgt dan je verbruikt."
+      },
+      {
+        "label": "B",
+        "text": "Niet waar",
+        "isCorrect": true,
+        "explanation": "Afvallen vereist een negatieve energiebalans, los van hoe gezond de voeding is. In theorie kun je afvallen met enkel chocolade (maar dat is niet gezond), als je maar minder calorieën binnenkrijgt dan je verbruikt."
+      }
+    ]
+  },
+  {
+    "question": "Afvallen doe je door vet en suiker te vermijden.",
+    "options": [
+      {
+        "label": "A",
+        "text": "Waar",
+        "isCorrect": false,
+        "explanation": "Of je afvalt hangt af van de hoeveelheid calorieën die je binnenkrijgt en verbruikt, niet van de voedingsstoffen zelf."
+      },
+      {
+        "label": "B",
+        "text": "Niet waar",
+        "isCorrect": true,
+        "explanation": "Calorieën bepalen of je afvalt, niet alleen het vermijden van vet of suiker. Natuurlijk kunnen vet en suiker bijdragen aan een hogere calorie-inname, maar dat is niet de bepalende factor."
+      }
+    ]
+  },
+
+  {
+    "question": "Als je je wekelijks weegt om je progressie te meten, is dat een betrouwbare methode?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Waar",
+        "isCorrect": false,
+        "explanation": "Gewicht schommelt dagelijks in vochtbalans, soms tot wel 3kg lichter of zwaarder. Zo kun je denken dat je bent aangekomen doordat je meer vocht vasthoudt terwijl je wel degelijk vet verloren hebt."
+      },
+      {
+        "label": "B",
+        "text": "Niet waar",
+        "isCorrect": true,
+        "explanation": "Dagelijks wegen of meerdere metingen geven een beter beeld van je daadwerkelijke progressie. Het vergelijken van je wekelijkse gemiddelde is veel beter!"
+      }
+    ]
+  },
+
+  {
+    "question": "E-nummers zijn ongezond",
+    "options": [
+      {
+        "label": "A",
+        "text": "Waar",
+        "isCorrect": false,
+        "explanation": "Veel E-nummers zijn goedgekeurd en veilig in gebruik. Daar zijn strenge regels voor."
+      },
+      {
+        "label": "B",
+        "text": "Niet waar",
+        "isCorrect": true,
+        "explanation": "Sommige E-nummers kunnen schadelijk zijn bij extreem hoge doses, maar de hoeveelheden in onze voeding zijn doorgaans veilig."
+      }
+    ]
+  },
+  {
+    "question": "Is verzadigd vet een gezondere vetsoort dan onverzadigd vet?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Waar",
+        "isCorrect": false,
+        "explanation": "Verzadigd vet kan het LDL-cholesterol verhogen, wat het risico op hart- en vaatziekten vergroot."
+      },
+      {
+        "label": "B",
+        "text": "Niet waar",
+        "isCorrect": true,
+        "explanation": "Onverzadigde vetten kunnen het cholesterol verbeteren en zijn gunstiger voor de gezondheid van het hart."
+      }
+    ]
+  },
+  {
+    "question": "Is gezonde voeding altijd laag in calorieën?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Waar",
+        "isCorrect": false,
+        "explanation": "Gezonde voeding kan ook calorierijk zijn, afhankelijk van de voedingsstoffen. Denk aan noten en avocado's. Calorieën zijn geen maatstaaf voor gezondheid."
+      },
+      {
+        "label": "B",
+        "text": "Niet waar",
+        "isCorrect": true,
+        "explanation": "Gezonde voeding kan ook calorierijk zijn, afhankelijk van de voedingsstoffen. Denk aan noten en avocado's. Calorieën zijn geen maatstaaf voor gezondheid."
+      }
+    ]
+  },
+  {
+    "question": "Is afvallen en aankomen alleen een kwestie van meer of minder calorieën binnenkrijgen dan je verbruikt?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Waar",
+        "isCorrect": true,
+        "explanation": "Het lichaam volgt de energiebalans: als je meer calorieën binnenkrijgt dan je verbrandt, kom je aan; anders val je af. Dit is de basisregel."
+      },
+      {
+        "label": "B",
+        "text": "Niet waar",
+        "isCorrect": false,
+        "explanation": "Hoewel er meerdere factoren zijn die je gewicht beïnvloeden, zoals hormonen en stofwisseling, bepaalt de energiebalans uiteindelijk of je vetmassa aankomt of afvalt."
+      }
+    ]
+  },
+  {
+    "question": "Is je dieet per definitie gezond als je enkel 'gezonde' producten eet?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ja",
+        "isCorrect": false,
+        "explanation": "Het alleen eten van gezonde producten betekent niet automatisch dat je dieet compleet en uitgebalanceerd is; balans en variatie zijn ook belangrijk. Het gaat om het grotere plaatje van je voedingspatroon."
+      },
+      {
+        "label": "B",
+        "text": "Nee",
+        "isCorrect": true,
+        "explanation": "Ook gezonde voedingsmiddelen kunnen in grote hoeveelheden of verkeerde combinaties leiden tot tekorten of overschotten, waardoor je dieet alsnog ongezond kan zijn. Zo is het eten van alleen maar fruit niet gezond, omdat je dan belangrijke voedingsstoffen mist zoals eiwitten en vetten."
+      }
+    ]
+  },
+  {
+    "question": "Kom je sneller aan als je ’s avonds laat eet?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Waar",
+        "isCorrect": false,
+        "explanation": "Het tijdstip van eten bepaalt niet direct gewichtstoename."
+      },
+      {
+        "label": "B",
+        "text": "Niet waar",
+        "isCorrect": true,
+        "explanation": "Het totale aantal calorieën is bepalend. Niet het tijdstip."
+      }
+    ]
+  },
+  {
+    "question": "Kun je plaatselijk vet verbranden door specifieke oefeningen te doen, zoals buikspieroefeningen?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Waar",
+        "isCorrect": false,
+        "explanation": "Vetverlies gebeurt niet alleen op de plek waar je traint."
+      },
+      {
+        "label": "B",
+        "text": "Niet waar",
+        "isCorrect": true,
+        "explanation": "Vetverbranding is een algeheel proces. Plaatselijk vet verbranden is een mythe."
+      }
+    ]
+  },
+  {
+    "question": "Betekent een product dat ‘natuurlijk’ of ‘biologisch’ is automatisch dat het gezond is?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Waar",
+        "isCorrect": false,
+        "explanation": "Natuurlijk of biologisch betekent niet automatisch gezond. Cyanide is ook natuurlijk, maar al dodelijk in kleine hoeveelheden."
+      },
+      {
+        "label": "B",
+        "text": "Niet waar",
+        "isCorrect": true,
+        "explanation": "Deze termen zeggen vooral iets over productie, niet over voedingswaarde. Cyanide is ook natuurlijk, maar al dodelijk in kleine hoeveelheden."
+      }
+    ]
+  },
+  {
+    "question": "Word je dik van het eten van koolhydraten?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Waar",
+        "isCorrect": false,
+        "explanation": "Koolhydraten op zich veroorzaken geen gewichtstoename zonder een calorieoverschot."
+      },
+      {
+        "label": "B",
+        "text": "Niet waar",
+        "isCorrect": true,
+        "explanation": "Gewichtstoename ontstaat door een overschot aan calorieën, ongeacht de bron."
+      }
+    ]
+  }
+]

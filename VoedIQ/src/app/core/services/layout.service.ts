@@ -39,7 +39,8 @@ export class LayoutService {
     return (
       courseName === 'basiskennis' ||
       courseName === 'afvallen' ||
-      courseName === 'gezond'
+      courseName === 'gezond' ||
+      courseName === 'presentatie'
     );
   }
 

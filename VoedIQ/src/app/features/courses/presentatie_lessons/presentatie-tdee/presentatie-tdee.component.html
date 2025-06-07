@@ -1,0 +1,73 @@
+<h1 class="lg:text-3xl text-xl font-bold text-center bg-primary rounded-2xl text-white p-4 mb-4">
+    2.1 Wat is jouw caloriebehoefte?
+</h1>
+
+<img src="lunchtime.svg" alt="leuke afbeelding" class="mx-auto mb-5 order-1 sm:w-1/2 pt-10" />
+
+<div class="flex flex-col mb-10">
+    <div class="flex flex-col gap-3">
+        <div class="flex flex-col lg:flex-row">
+            <div class="flex flex-col gap-3 order-2 lg:order-1">
+
+                <p class="text-base text-justify mt-6">
+                    Als je gezonder wilt eten of je gewicht wilt aanpassen, is het belangrijk om eerst te weten hoeveel
+                    energie (calorieën) jouw lichaam dagelijks nodig heeft.
+                    Zo kun je beter bepalen hoeveel en wat je kunt eten.
+                </p>
+
+                <p class="text-base text-justify">
+                    Met onze rekentool ontdek je in drie stappen jouw persoonlijke energiebehoefte.
+                </p>
+
+                <p class="text-2xl bg-accent text-white p-4 rounded-2xl">
+                    <span class="text-secondary font-bold">Stap 1</span> - Je basisverbruik (BMR)
+                </p>
+                <p class="text-base text-justify">
+                    Je BMR is de energie die je lichaam verbruikt in rust, bijvoorbeeld voor je hartslag en ademhaling.
+                    Dit is je "startpunt". De hoeveelheid energie die je lichaam nodig heeft om goed te
+                    functioneren, zelfs als je niets doet.
+                </p>
+                <app-bmr-calculator></app-bmr-calculator>
+
+                <div class="divider divider-accent my-10"></div>
+
+                <p class="text-2xl bg-accent text-white p-4 rounded-2xl">
+                    <span class="text-secondary font-bold">Stap 2</span> - Activiteit erbij (PAL)
+                </p>
+                <p class="text-base text-justify">
+                    Daarna moeten we weten hoeveel je verbruikt met bewegen: wandelen, sporten, werken of het
+                    huishouden. Ook activiteiten zoals studeren, computeren en de wasdoen tellen mee. Je kunt het zo
+                    specifiek
+                    maken als je wilt. Dit noemen we de PAL-waarde (Physical Activity Level).
+                </p>
+                <div class="bg-orange-50 border-l-4 border-orange-500 p-4 my-4 rounded">
+                    <p class="text-orange-600 font-semibold mb-2">Let op bij het invullen van je activiteitenniveau:</p>
+                    <ul class="list-disc list-inside text-base text-justify text-orange-700 space-y-2">
+                        <li>Vul je activiteiten in op weekbasis, dus hoeveel je gemiddeld per week doet.</li>
+                        <li>Alle vormen van activiteit tellen mee — van sporten en wandelen tot huishoudelijke taken en
+                            kantoorwerk.</li>
+                        <li>Staat je specifieke activiteit er niet bij? Kies dan een vergelijkbare vorm, zoals
+                            "Krachttraining" voor "Fitness" of "kantoorwerk" voor "studeren".</li>
+                    </ul>
+                </div>
+                <app-pal-calculator></app-pal-calculator>
+
+                <div class="divider divider-accent my-10"></div>
+
+                <p class="text-2xl bg-accent text-white p-4 rounded-2xl">
+                    <span class="text-secondary font-bold">Stap 3</span> - Totale behoefte (TDEE)
+                </p>
+                <p class="text-base text-justify">
+                    Door stap 1 en 2 te combineren, bereken je jouw TDEE: het totaal aantal calorieën dat je dagelijks
+                    verbruikt.
+                    Dit helpt je keuzes maken: wil je afvallen, op gewicht blijven of juist aankomen?
+                </p>
+                <app-tdee-calculator></app-tdee-calculator>
+
+                <div class="divider divider-accent my-10"></div>
+
+                <app-quiz-question [id]="0" [explanation]="true" [question]="tdeeQuizVraag"></app-quiz-question>
+            </div>
+        </div>
+    </div>
+</div>

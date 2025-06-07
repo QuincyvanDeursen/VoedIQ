@@ -28,8 +28,10 @@
             aria-orientation="vertical" aria-labelledby="dropdown-link">
             <li><a class="dropdown-item text-primary"
                 [routerLink]="'/cursus/basiskennis/introductie/les1'">Basiskennis</a></li>
-            <li><a class="dropdown-item text-primary" [routerLink]="">Doelgericht Eten</a></li>
-            <li><a class="dropdown-item text-primary" [routerLink]="">Gezond Eten</a></li>
+            <li><a class="dropdown-item text-primary" [routerLink]="'/cursus/afvallen/introductie/les1'">Afvallen</a>
+            </li>
+            <li><a class="dropdown-item text-primary" [routerLink]="'/cursus/gezond/introductie/les1'">Gezond Eten</a>
+            </li>
           </ul>
         </li>
         <li class="dropdown relative inline-flex [--auto-close:inside] [--offset:8] [--placement:bottom-end]">
@@ -49,8 +51,10 @@
 
           </ul>
         </li>
+
         <li><a [routerLink]="'/dashboard'">Dashboard</a></li>
         <li><a [routerLink]="'/over-ons'">Mijn Verhaal</a></li>
+        <li><a [routerLink]="'/contact'">Contact</a></li>
       </ul>
     </div>
 
